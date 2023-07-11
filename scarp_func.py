@@ -43,17 +43,23 @@ def get_data_from_url(url, folder_path):
 
 # These 2 are used to order the data downloaded
 def min2sec(time):
-    if "h" in time:
-        hours, minutes, seconds = re.findall(r"(\d+)h(\d+):(\d+)", time)[0]
-        total_seconds = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
-    elif ":" in time:
-        minutes, seconds = map(float, time.split(":"))
-        total_seconds = minutes * 60 + seconds
-    else:
-        total_seconds = float(time)
-    if len(time.split(".")[-1]) == 1:       # manual to electrical time conversion, +0.24s
-        total_seconds += 0.24
-    return total_seconds
+    try:
+        if "h" in time:
+            hours, minutes, seconds = re.findall(r"(\d+)h(\d+):(\d+)", time)[0]
+            total_seconds = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
+        elif time == "5:50:01":                 # database typo in ZAMBELLI Beatrice...
+            total_seconds = 350
+        elif ":" in time:
+            minutes, seconds = map(float, time.split(":"))
+            total_seconds = minutes * 60 + seconds
+        else:
+            total_seconds = float(time)
+        if len(time.split(".")[-1]) == 1:       # manual to electrical time conversion, +0.24s
+            total_seconds += 0.24
+        return total_seconds
+    except Exception as e:                      # I have no idea
+        print(f"Error in converting time: {time}\n{str(e)}")
+        return 0
     
 def raw_sorting(in_folder):
 
