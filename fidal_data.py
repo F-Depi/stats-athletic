@@ -20,12 +20,12 @@ def get_data_from_url(url, folder_path):
             csv_file_name = f"{event_name}.csv"
             for char in r'<>:"/\|?*':
                 csv_file_name = csv_file_name.replace(char, '_')
-            
+            if not os.path.exists(folder_path):
+                os.makedirs(folder_path)
             file_exists = os.path.exists(f"{folder_path}/{csv_file_name}")
             with open(f"{folder_path}/{csv_file_name}", "a" if file_exists else "w", newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
                 if not file_exists:
-                    writer.writerow([event_name])
                     writer.writerow(column_names)
                 
                 for row in table.find_all("tr"):
