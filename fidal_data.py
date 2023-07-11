@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def get_data_from_url(url, folder_path):
+    os.makedirs(folder_path, exist_ok=True)
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
     header_row = None
@@ -20,8 +21,7 @@ def get_data_from_url(url, folder_path):
             csv_file_name = f"{event_name}.csv"
             for char in r'<>:"/\|?*':
                 csv_file_name = csv_file_name.replace(char, '_')
-            if not os.path.exists(folder_path):
-                os.makedirs(folder_path)
+                
             file_exists = os.path.exists(f"{folder_path}/{csv_file_name}")
             with open(f"{folder_path}/{csv_file_name}", "a" if file_exists else "w", newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)

@@ -11,7 +11,7 @@ def min2sec(time):
 def raw_sorting(in_folder):
 
     out_folder = in_folder.replace('raw', 'sorted')
-    os.makedirs(out_folder)
+    os.makedirs(out_folder, exist_ok=True)
 
     for file_name in os.listdir(in_folder):
         with open(f'{in_folder}/{file_name}','r') as in_f:

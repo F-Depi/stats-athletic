@@ -1,5 +1,10 @@
-from fidal_data import get_data_from_url
+from estrazione import estrazione
 
-url = "https://www.fidal.it/graduatorie.php?anno=2022&tipo_attivita=I&sesso=M&categoria=XM&gara=0&tipologia_estrazione=1&vento=2&regione=0&nazionalita=1&limite=0&societa=bl012&submit=Invia"
+folder_path = "database_M_ind/raw_data"
+env = "I"       # I per indoor, O per outdoor
+sex = "M"       # F per donne, M per uomini
+club = ""  # codice società, lasciare vuoto per tutte le società
+mode = "1"      # 1 per le liste, 2 per le graduatorie
+event = "01"    # empty for all (will only give first 100 results), different codes for the others. Codes are in event_code.txt
 
-get_data_from_url(url, "database_all")
+estrazione(folder_path, env, sex, club, mode, event)
