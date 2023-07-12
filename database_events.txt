@@ -1,0 +1,37 @@
+60m             01
+60HS 106		HB
+60HS 100		HC
+60HS 91-9.14	HD
+400m			06
+800m			08
+1500m			11
+3000m			13
+alto			26
+asta			27
+lungo			28
+triplo			29
+Peso 5kg		P5
+Peso 6kg		P6
+Peso 7kg		P7
+5000m marcia	45
+4x200			60
+4x400			48
+eptathlon		19
+
+60m             01
+60HS 84-8.50	HF
+60HS 76-8.50	HHD
+400m			06
+800m			08
+1500m			11
+3000m			13
+alto			26
+asta			27
+lungo			28
+triplo			29
+Peso 3kg		P3
+Peso 4kg		P4
+5000m marcia	45
+4x200			60
+4x400			48
+pentathlon		38
