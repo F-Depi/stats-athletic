@@ -65,7 +65,7 @@ def min2sec(time):
     
 def raw_sorting(in_folder):
 
-    out_folder = in_folder.replace('raw', 'sorted')
+    out_folder = in_folder.replace('raw_data', 'lists')
     os.makedirs(out_folder, exist_ok=True)
 
     for file_name in os.listdir(in_folder):
@@ -78,7 +78,7 @@ def raw_sorting(in_folder):
         sorted_data = sorted(data[1:], key=lambda row: min2sec(row[0]), reverse=rev_order)
         sorted_data = [data[0]] + sorted_data
         
-        with open(f'{out_folder}/sorted_{file_name}', 'w', newline='') as out_f:
+        with open(f'{out_folder}/list_{file_name}', 'w', newline='') as out_f:
             writer = csv.writer(out_f)
             writer.writerows(sorted_data)
 
