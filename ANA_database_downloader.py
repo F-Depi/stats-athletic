@@ -2,6 +2,7 @@ from scarp_func import estrazione
 
 envs = ["I", "P"]       # I per indoor, P per outdoor
 sexs = ["F","M"]       # F per donne, M per uomini
+
 for env in envs:
     for sex in sexs:
         club = "bl012"  # codice società, lasciare vuoto per tutte le società

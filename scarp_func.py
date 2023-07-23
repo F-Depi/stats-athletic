@@ -9,21 +9,30 @@ def get_data_from_url(url, folder_path):
     os.makedirs(folder_path, exist_ok=True)
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
-    header_row = None
-    year = None
-    column_names = ["Tempo", "Vento", "Atleta", "Età", "Società", "Posizione", "Luogo", "Data"]
     
     for table_index, table in enumerate(soup.find_all("table")):
+        
+        #first we take event name, year and enviroment from the even tables
         if table_index % 2 == 0:
             header_cells = [cell.text.strip() for cell in table.find_all(["td", "th"])]
-            header_row = [header_cells[0]]
+            event_name = header_cells[0]
             year = header_cells[1].split(":")[-1]
-        else:
-            event_name = header_row[0]
+            env = header_cells[3].split(":")[-1]
             csv_file_name = f"{event_name}.csv"
             for char in r'<>:"/\|?*':
                 csv_file_name = csv_file_name.replace(char, '_')
-                
+        
+        # now the actual data from the odd tables
+        else:
+
+            # takes out the wind from events where it isn't measured
+            if env == "Outdoor" and any(event in event_name for event in ["60", "80", "100", "110", "150", "200", "lungo", "triplo"]) and not any(event in event_name for event in ["800", "1000", "1500", "10000", "2000","+"]):
+                column_names = ["Prest.", "Vento", "Atleta", "Anno", "Società", "Città", "Data"]
+                wind = True
+            else:
+                column_names = ["Prest.", "Atleta", "Anno", "Società", "Città", "Data"]
+                wind = False
+            
             file_exists = os.path.exists(f"{folder_path}/{csv_file_name}")
             with open(f"{folder_path}/{csv_file_name}", "a" if file_exists else "w", newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
@@ -39,21 +48,34 @@ def get_data_from_url(url, folder_path):
                         continue
                     
                     row_data = [cell.text.strip() if cell_index != len(cells) - 1 else f"{cell.text.strip()}/{year}" for cell_index, cell in enumerate(cells)]
+                    del row_data[5]
+                    if wind == False:
+                        del row_data[1]
                     writer.writerow(row_data)
+
 
 # These 2 are used to order the data downloaded
 def min2sec(time):
     try:
         if time == "5:50:01":                 # database typo in ZAMBELLI Beatrice...
             total_seconds = 350
-        elif "-" in time:                     # database typo or something weird in jumps
+        elif time == "1.08.66":
+            total_seconds = 0
+        elif time == "8.13.9":
+            total_seconds = 0
+        elif any(typo in time for typo in ["-", "X", "R", "P"]):                     # database typo or something weird in jumps
             total_seconds = 0
         elif "h" in time:
             hours, minutes, seconds = re.findall(r"(\d+)h(\d+):(\d+)", time)[0]
             total_seconds = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
         elif ":" in time:
-            minutes, seconds = map(float, time.split(":"))
-            total_seconds = minutes * 60 + seconds
+            time_parts = list(map(float, time.split(":")))
+            if len(time_parts) == 3:
+                hours, minutes, seconds = time_parts
+                total_seconds = hours * 3600 + minutes * 60 + seconds
+            elif len(time_parts) == 2:
+                minutes, seconds = time_parts
+                total_seconds = minutes * 60 + seconds
         else:
             total_seconds = float(time)
         if len(time.split(".")[-1]) == 1:       # manual to electrical time conversion, +0.24s
