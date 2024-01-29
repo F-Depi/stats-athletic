@@ -1,70 +1,81 @@
-from bs4 import BeautifulSoup
-import requests
-import csv
-import re
+import pandas as pd
 
-def extract_results_from_html(url, output_file):
-    # Fetch the HTML content
-    response = requests.get(url)
-    html_content = response.text
+def results_OLD_sigma(url):
+    dfs = pd.read_html(url)
+    dfs = dfs[7:-1]   # the crap before is useless
 
-    """     # Trova l'indice della parola "Riepilogo"
-    index_riepilogo = html_content.find('RIEPILOGO')
-    print(index_riepilogo)
+    # Sort out to only take the tables that contains the heat and not the 'RIEPILOGO', to avoid duplicate results
+    riepilogo_index = None
 
-    # Se trova la parola "Riepilogo", rimuove tutto ciò che precede
-    if index_riepilogo != -1:
-        html_content = html_content[index_riepilogo:]
-    print(html_content) """
-        
-    # Parse the HTML content
-    soup = BeautifulSoup(html_content, 'html.parser')
+    for i, df in enumerate(dfs):
+        if any('RIEPILOGO' in cell for cell in df.values):
+            riepilogo_index = i
 
-    # Find all tables with class 'tab_turno'
-    tables = soup.find_all('table', class_='tab_turno')
+    if riepilogo_index is not None:
+        dfs = [df for i, df in enumerate(dfs) if i not in [riepilogo_index, riepilogo_index+1]]
 
-    # Open a CSV file in write mode
-    with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
-        # Create a CSV writer object
-        writer = csv.writer(csvfile)
-        
-        # Write the header row
-        writer.writerow(['Athlete', 'Year', 'Category', 'Club', 'Performance', 'Points'])
+    # Extract only the tables containing the actual results data. We find them by looking for the word 'Prestazione'
+    res_dfs = [df for df in dfs if df.shape[1] > 1 and 'Prestazione' in df.columns]
 
-        # Iterate over each table (each representing a round)
-        for table in tables:
-            # Find all rows in the table
-            rows = table.find_all('tr')
+    # Concatenate the results tables into a single DataFrame
+    res_df = pd.concat(res_dfs)
 
-            # Iterate over each row in the table, skipping the header row
-            for row in rows[1:]:
-                # Extract text from each cell in the row
-                cells = row.find_all('td')
-                
-                # Check if the cells list has enough elements
-                if len(cells) >= 9:
-                    # Extract only the required fields
-                    athlete = cells[3].text.strip()
-                    year = cells[4].text.strip()
-                    category = cells[5].text.strip()
-                    club = cells[6].text.strip()
-                    performance_text = cells[7].text.strip()
-                    performance = ''.join(char for char in performance_text if char.isdigit() or char in ['.', ','])
-                    performance = performance.replace(',', '.')  # Replace comma with dot for decimal point
-                    performance = float(performance) if performance else None
-                    points = cells[8].text.strip()
+    # Drop rows with NaN values in the "Atleta" column
+    res_df = res_df.dropna(subset=['Atleta'])
+    
+    # Select the desired columns
+    res_df = res_df[['Atleta', 'Anno', 'Cat.', 'Società', 'Prestazione']]
 
-                    # Write the data to the CSV file
-                    writer.writerow([athlete, year, category, club, performance, points])
+    # Remove the Q, q from heats, remove useless spaces, reset indices
+    res_df['Prestazione'] = res_df['Prestazione'].astype(str).str.replace(r'[qQ()\s]', '', regex=True) # tolgo cose inutili
+    res_df = res_df.astype(str)
+    res_df  = res_df.applymap(lambda x: x.strip())    
+    res_df = res_df.reset_index(drop=True)
+    
+    # Add a nice link from to the competition results page
+    res_df['Gara'] = url
 
-            
+    return(res_df)
 
-# URL of the page containing the results
-url = 'https://www.fidal.it/risultati/2024/REG33677/Gara120.htm'
 
-# Output file path
-output_file = 'results.csv'
+def results_NEW_sigma(url):
 
-# Call the function to extract and write results to CSV
-extract_results_from_html(url, output_file)
+    # Carica tutte le tabelle dalla pagina HTML
+    dfs = pd.read_html(url)
+
+    selected_dfs = []
+    for df in dfs:
+            selected_df = df[['Atleta', 'Anno', 'Cat.', 'Società', 'Prestazione']] #prendo solo le colonne che voglio
+            selected_df = selected_df[selected_df.apply(lambda row: 'Regole di qualificazione' not in str(row.values), axis=1)] #tolgo righe inutili
+            selected_df['Prestazione'] = selected_df['Prestazione'].astype(str).str.replace(r'[qQ()\s]', '', regex=True) # tolgo cose inutili
+            selected_dfs.append(selected_df)
+
+    # Unisco tutte le tabelle, le converto in stringhe, rimuovo gli spazi inutili, rimuovo i duplicati
+    res_df = pd.concat(selected_dfs)
+    res_df = res_df.astype(str)
+    res_df  = res_df.applymap(lambda x: x.strip())
+    res_df = res_df.drop_duplicates() # QUESTO BUGGA UN PO' LE COSE, 2 PRESTAZIONI UGUALI LO STESSO GIORNO DIVENTANO 1
+    res_df = res_df.reset_index(drop=True)
+    
+    # Aggiungo il link alla gara
+    res_df['Gara'] = url
+
+    return(res_df)
+    
+
+"""
+# Test
+
+url_new = 'https://www.fidal.it/risultati/2024/REG33873/Risultati/Gara420.html#g5'
+data_new = results_NEW_sigma(url_new)
+
+url_old = 'https://www.fidal.it/risultati/2024/REG34208/Gara122.htm'
+data_old = results_OLD_sigma(url_old)
+
+data = pd.concat([data_new, data_old])
+
+# Save to CSV
+data.to_csv('results_old.csv', index=False)
+"""
+
 
