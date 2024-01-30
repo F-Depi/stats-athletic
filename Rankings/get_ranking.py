@@ -8,11 +8,12 @@ from manage_file import write_file, read_file
 
 
 anno = '2024';      regione = '';       categoria = 'PRO'      
-mese = '';          tipo = '3';         Disciplina = '60Hs H106'
+mese = '';          tipo = '3';         Disciplina = '200m' #'60Hs H106'
 
 file_codici = Disciplina + '/' + 'codici_gare'
 file_link = Disciplina + '/' + 'link_2024_01_' + Disciplina
-file_resulst = Disciplina + '/' + 'results_2024_01_' + Disciplina + '.csv'
+file_results = Disciplina + '/' + 'results_2024_01_' + Disciplina + '.csv'
+file_rankings = Disciplina + '/' + 'rankings_2024_01_' + Disciplina + '.csv'
 
 ################# Codici gare (anno, mese, livello, regione, tipo, categoria) ###################
 ## NOTA: per ora extract_link_of_discipline_results() funziona solo per il 2024
@@ -20,7 +21,6 @@ file_resulst = Disciplina + '/' + 'results_2024_01_' + Disciplina + '.csv'
 """ codici_regionali = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
 codici_nazionali = extract_meet_codes_from_calendar(anno,mese,'COD',regione,tipo,categoria)
 codici = codici_regionali + codici_nazionali
-print(codici)
 write_file(file_codici, codici) """
 ##################################################################################################
 
@@ -45,15 +45,27 @@ write_file(file_link, links) """
 ## Questa è la parte più ostica. Ogni link potrebbe avere typo, colonne con nomi diversi. etc.
 ## Di solito bisogna runnare il codice più volte e modificare le funzioni in scraping_risultati.py
 ## in base agli errori che saltano fuori.
-""" links = read_file(file_link)
+""" links = read_file(file_link); l=len(links)
 header_written = False # we need to write the header once
-for link in links:
-    print('\n'+link)
+for i, link in enumerate(links):
+    print('\nLink '+str(i+1)+'/'+str(l)+': '+link)
     data = results_from_sigma(link)
+    data['Disciplina'] = Disciplina
+    data = data[['Prestazione', 'Atleta', 'Cat.', 'Anno', 'Società', 'Disciplina', 'Gara']]
     mode = 'a' if header_written else 'w'
-    data.to_csv(file_resulst, mode=mode, index=False, header=not header_written)
+    data.to_csv(file_results, mode=mode, index=False, header=not header_written)
     header_written = True  # Set to True after writing the header once """
 ##################################################################################################
+
+
+
+################# Prendiamo i dati dal csv e tiriamo fuori i ranking    ##########################
+data = pd.read_csv(file_results)
+    
+data = data.sort_values(by='Prestazione') # Sort the DataFrame based on the 'Prestazione' column
+data = data.drop_duplicates(subset='Atleta', keep='first') # only keeps the best result for each athlete
+data.to_csv(file_rankings, index=False)
+
 
 
 """ 

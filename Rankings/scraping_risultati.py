@@ -2,7 +2,6 @@ import pandas as pd
 
 def results_OLD_sigma(url):
     dfs = pd.read_html(url)
-
     # Sort out to only take the tables that contains the heat and not the 'RIEPILOGO', to avoid duplicate results
     riepilogo_index = None
 
@@ -25,20 +24,20 @@ def results_OLD_sigma(url):
     # Select the desired columns
     societa_column = None
     for col in res_df.columns:                                           # holy fucking shit imma go crazy 1
-        if col.lower() == 'società' or col.lower() == 'club' or col.lower() == 'società stato estero':
+        if col.lower() == 'società' or col.lower() == 'club' or col.lower() == 'società stato estero': # fare lista in file a parte
             societa_column = col
             break
     if societa_column is None:
-        raise ValueError("Unable to find column for 'Società' or 'CLUB'")
+        print("Unable to find column for 'Società' in " + url)
+        res_df['Società'] = 'Società non trovata'
+        societa_column = 'Società'
+    
     res_df = res_df[['Atleta', 'Anno', 'Cat.', societa_column, 'Prestazione']]
 
     # Remove the Q, q from heats, remove useless spaces, reset indices
-    res_df['Prestazione'] = res_df['Prestazione'].astype(str).str.replace(r'[a-zA-Z]', '', regex=True) # tolgo cose inutili
-    res_df['Prestazione'] = pd.to_numeric(res_df['Prestazione'], errors='coerce') # convert to numeric, errors to NaN
-    res_df = res_df.dropna(subset=['Prestazione']) # deletes NaN rows
-    res_df = res_df.astype(str)
-    res_df  = res_df.applymap(lambda x: x.strip())
-    res_df = res_df.reset_index(drop=True)
+    df = df.astype(str)
+    df = df[df['Prestazione'].str.contains(r'\d')]  # Keep rows with at least one digit
+    df['Prestazione'] = df['Prestazione'].str.extract(r'(\d[\d.:]*\d)')
     
     if societa_column.lower() is not None:
         res_df = res_df.rename(columns={societa_column: 'Società'}) # holy fucking shit imma go crazy 2
@@ -57,41 +56,33 @@ def results_NEW_sigma(url):
     
     selected_dfs = []
     for df in dfs:
- 
+        
+        # Prima sistemiamo i problemi con il nome della colonna Società... che è sempre diverso...
         societa_column = None
-        for col in df.columns:                                           # holy fucking shit imma go crazy 1
-            if col.lower() == 'società' or col.lower() == 'club' or col.lower() == 'società stato estero':
-                societa_column = col
+        for col in df.columns:
+            if col.lower() == 'società' or col.lower() == 'club' or col.lower() == 'società stato estero' or col.lower() == 'societa' or col.lower() == 'societa\'':
+                df.rename(columns={col: 'Società'}, inplace=True)
+                societa_column = 'Found'
                 break
         if societa_column is None:
-            raise ValueError("Unable to find column for 'Società' or 'CLUB'")
-        df = df[['Atleta', 'Anno', 'Cat.', societa_column, 'Prestazione']] #prendo solo le colonne che voglio
-        df = df[df['Prestazione'] != df['Atleta']]
-        df['Prestazione'] = df['Prestazione'].astype(str)
+            raise ValueError("Unable to find column Società...")
+        
+        df = df[['Prestazione', 'Atleta', 'Anno', 'Cat.', 'Società']] #prendo solo le colonne che voglio
+        df = df[df['Prestazione'] != df['Atleta']].copy()
+        df = df.astype(str)
         df = df[df['Prestazione'].str.contains(r'\d')]  # Keep rows with at least one digit
         df['Prestazione'] = df['Prestazione'].str.extract(r'(\d[\d.:]*\d)')
-        #df['Prestazione'] = df['Prestazione'].astype(str).str.replace(r'[a-zA-Z()]', '', regex=True) #removes letters from results
-        #df = df.dropna(subset=['Prestazione']) # deletes NaN rows
-        #df['Prestazione'] = df['Prestazione'].apply(lambda x: ''.join(filter(lambda char: char.isdigit() or char in '.:', str(x))))
-        #df = df[df.apply(lambda row: 'Regole di qualificazione' not in str(row.values), axis=1)] #tolgo righe inutili
-        #df['Prestazione'] = pd.to_numeric(df['Prestazione'], errors='coerce') # convert to numeric, errors to NaN
-        #selected_df = selected_df[selected_df.apply(lambda row: 'DQ: Pett.' not in str(row.values), axis=1)] #tolgo righe inutili
-        #selected_df['Prestazione'] = selected_df['Prestazione'].astype(str).str.replace(r'(PB|SB)(?=\s+|$)', '', regex=True) # tolgo cose inutili
-        #selected_df['Prestazione'] = selected_df['Prestazione'].astype(str).str.replace(r'[qQ()\s]', '', regex=True) # tolgo cose inutili
-        if societa_column.lower() == 'club':
-            df = df.rename(columns={societa_column: 'Società'}) # holy fucking shit imma go crazy 2
+        
         selected_dfs.append(df)
 
     # Unisco tutte le tabelle, le converto in stringhe, rimuovo gli spazi inutili, rimuovo i duplicati
     res_df = pd.concat(selected_dfs)
-    res_df = res_df.astype(str)
     res_df  = res_df.applymap(lambda x: x.strip())
     res_df = res_df.drop_duplicates() # QUESTO BUGGA UN PO' LE COSE, 2 PRESTAZIONI UGUALI LO STESSO GIORNO DIVENTANO 1
     res_df = res_df.reset_index(drop=True)
     
-    # Aggiungo il link alla gara e riordino
+    # Aggiungo il link alla gara
     res_df['Gara'] = url
-    res_df = res_df[['Prestazione', 'Atleta', 'Cat.', 'Anno', 'Società', 'Gara']]
     return(res_df)
     
 
