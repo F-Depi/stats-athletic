@@ -59,3 +59,7 @@ NOTA: per motivi tecnici due risultati uguali fatti nello steso giorno e caricat
 duplicati ed eliminati, non sapevo come altro fare.
 
 get_ranking.py si occuperà ora di ottenere i ranking 
+
+To do: ottenere ogni link risultati di ogni gara con a fianco il nome dell'evento che viene utilizzato
+prendere data e luogo dalla pagina dei risultati e aggiungerla alla risultati_gara
+aggiungere il codice gara/nome della gara

@@ -35,9 +35,9 @@ def results_OLD_sigma(url):
     res_df = res_df[['Atleta', 'Anno', 'Cat.', societa_column, 'Prestazione']]
 
     # Remove the Q, q from heats, remove useless spaces, reset indices
-    df = df.astype(str)
-    df = df[df['Prestazione'].str.contains(r'\d')]  # Keep rows with at least one digit
-    df['Prestazione'] = df['Prestazione'].str.extract(r'(\d[\d.:]*\d)')
+    res_df = res_df.astype(str)
+    res_df = res_df[res_df['Prestazione'].str.contains(r'\d')]  # Keep rows with at least one digit
+    res_df['Prestazione'] = res_df['Prestazione'].str.extract(r'(\d[\d.:]*\d)')
     
     if societa_column.lower() is not None:
         res_df = res_df.rename(columns={societa_column: 'Società'}) # holy fucking shit imma go crazy 2

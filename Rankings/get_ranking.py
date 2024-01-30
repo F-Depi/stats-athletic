@@ -8,7 +8,7 @@ from manage_file import write_file, read_file
 
 
 anno = '2024';      regione = '';       categoria = 'PRO'      
-mese = '';          tipo = '3';         Disciplina = '200m' #'60Hs H106'
+mese = '';          tipo = '3';         Disciplina = '50m' #'60Hs H106'
 
 file_codici = Disciplina + '/' + 'codici_gare'
 file_link = Disciplina + '/' + 'link_2024_01_' + Disciplina
@@ -45,7 +45,7 @@ write_file(file_link, links) """
 ## Questa è la parte più ostica. Ogni link potrebbe avere typo, colonne con nomi diversi. etc.
 ## Di solito bisogna runnare il codice più volte e modificare le funzioni in scraping_risultati.py
 ## in base agli errori che saltano fuori.
-""" links = read_file(file_link); l=len(links)
+links = read_file(file_link); l=len(links)
 header_written = False # we need to write the header once
 for i, link in enumerate(links):
     print('\nLink '+str(i+1)+'/'+str(l)+': '+link)
@@ -54,7 +54,7 @@ for i, link in enumerate(links):
     data = data[['Prestazione', 'Atleta', 'Cat.', 'Anno', 'Società', 'Disciplina', 'Gara']]
     mode = 'a' if header_written else 'w'
     data.to_csv(file_results, mode=mode, index=False, header=not header_written)
-    header_written = True  # Set to True after writing the header once """
+    header_written = True  # Set to True after writing the header once
 ##################################################################################################
 
 
