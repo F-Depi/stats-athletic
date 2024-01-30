@@ -8,6 +8,6 @@ A website with the best performances of the club athlets from 2005 is under deve
 Now working on making the season ranking by scraping directly from every italian competition result page.
 A picture of the italian U23 60Hs rankign as of 30/01/2024. Fidal.it has still to update their website.
 
-![image](https://github.com/F-Depi/stats-athletic/assets/120582465/472c8a6b-bd36-4edb-b1b8-9f39a344e310)
+![image_2024-01-30_16-14-47](https://github.com/F-Depi/stats-athletic/assets/120582465/dd1a133f-50f3-4d0b-994f-eaea82077760)
 
-Feturing me, 13th 🙂
+Feturing me, 14th 🙂
