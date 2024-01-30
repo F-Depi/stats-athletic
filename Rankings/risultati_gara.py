@@ -42,19 +42,20 @@ def norm_text(text):                                         # questa serve perc
     return re.sub(r'\s+', '', text.strip().lower())
 
 
-
+"""
+# Test
 disciplina = '60hs H106'
 links = []
 with open('codici_gare', 'r') as file1:
     for code in file1:
         code = code.strip()
         link = extract_link_of_discipline_results(code,disciplina)
-        #print(extract_link_of_discipline_results(code,disciplina))
+        print(link)
         if link:
             links.extend(link)
 
 with open('link_risultati', 'w') as file2:
     for link in links:
         file2.write(link + '\n')
-
+"""
 

@@ -42,13 +42,26 @@ def results_NEW_sigma(url):
 
     # Carica tutte le tabelle dalla pagina HTML
     dfs = pd.read_html(url)
-
+    dfs = [df for df in dfs if df.shape[1] > 1 and 'Prestazione' in df.columns] # prima scrematura
+    
     selected_dfs = []
     for df in dfs:
-            selected_df = df[['Atleta', 'Anno', 'Cat.', 'Società', 'Prestazione']] #prendo solo le colonne che voglio
-            selected_df = selected_df[selected_df.apply(lambda row: 'Regole di qualificazione' not in str(row.values), axis=1)] #tolgo righe inutili
-            selected_df['Prestazione'] = selected_df['Prestazione'].astype(str).str.replace(r'[qQ()\s]', '', regex=True) # tolgo cose inutili
-            selected_dfs.append(selected_df)
+ 
+        societa_column = None
+        for col in df.columns:                                           # holy fucking shit imma go crazy 1
+            if col.lower() == 'società' or col.lower() == 'club':
+                societa_column = col
+                break
+        if societa_column is None:
+            raise ValueError("Unable to find column for 'Società' or 'CLUB'")
+        selected_df = df[['Atleta', 'Anno', 'Cat.', societa_column, 'Prestazione']] #prendo solo le colonne che voglio
+        selected_df = selected_df[selected_df.apply(lambda row: 'Regole di qualificazione' not in str(row.values), axis=1)] #tolgo righe inutili
+        selected_df = selected_df[selected_df.apply(lambda row: 'DQ: Pett.' not in str(row.values), axis=1)] #tolgo righe inutili
+        selected_df['Prestazione'] = selected_df['Prestazione'].astype(str).str.replace(r'(PB|SB)(?=\s+|$)', '', regex=True) # tolgo cose inutili
+        selected_df['Prestazione'] = selected_df['Prestazione'].astype(str).str.replace(r'[qQ()\s]', '', regex=True) # tolgo cose inutili
+        if societa_column.lower() == 'club':
+            selected_df = selected_df.rename(columns={societa_column: 'Società'}) # holy fucking shit imma go crazy 2
+        selected_dfs.append(selected_df)
 
     # Unisco tutte le tabelle, le converto in stringhe, rimuovo gli spazi inutili, rimuovo i duplicati
     res_df = pd.concat(selected_dfs)
@@ -63,6 +76,21 @@ def results_NEW_sigma(url):
     return(res_df)
     
 
+
+def results_from_sigma(url):
+    
+    if url[-2] == 'l':
+        return(results_NEW_sigma(url))
+    elif url[-2] == 'm':
+        return(results_OLD_sigma(url))
+    else: print('There is something wrong with the link ' + url)
+    
+    return
+    
+    
+    
+    
+    
 """
 # Test
 
