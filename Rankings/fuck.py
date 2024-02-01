@@ -1,10 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import pandas as pd
 
-def norm_text(text):                                         # questa serve perché ognuno scrive le cose un po'
+""" ef norm_text(text):                                         # questa serve perché ognuno scrive le cose un po'
     # Rimuove gli spazi extra e converte in minuscolo                 come cazzo gli pare
-    return re.sub(r'\s+', '', text.strip().lower())
+    return re.sub(r's+', '', text.strip().lower())
 
 
 meet_code = 'REG33752'
@@ -24,12 +25,14 @@ td_elements = soup.find_all('td', {'id': 'idx_colonna2'}, string=lambda text: di
 links = [td.find('a')['href'] for td in td_elements]
 
 # Print the links
-print(links)
+print(links) """
 
 
 
 
 
+temp_df = pd.DataFrame(columns=['Codice', 'Home', 'Risultati', 'Versione Sigma', 'Status'])
+temp_df.loc[0] = ['', '', '', '', '']
 
 
 
