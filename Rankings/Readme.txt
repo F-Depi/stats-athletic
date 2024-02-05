@@ -3,6 +3,11 @@ calendario.py -> codici_gare -> risultati_gara.py -> link_risultati -> scraping_
 Calendario
 https://www.fidal.it/calendario.php?anno=2024&mese=1&livello=REG&new_regione=VENETO&new_tipo=3&new_categoria=PRO&submit=Invia
 
+mese
+    gennatio = 1
+    febbraio = 2
+    ...
+
 livello
     nessuno = 
     regionale = REG

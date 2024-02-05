@@ -3,39 +3,26 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 
-""" ef norm_text(text):                                         # questa serve perché ognuno scrive le cose un po'
-    # Rimuove gli spazi extra e converte in minuscolo                 come cazzo gli pare
-    return re.sub(r's+', '', text.strip().lower())
+data = pd.read_csv('Generale/link_risultati_gare_key.csv')
 
+data = data[data['Versione Sigma'] == 'Vecchio']
+for url in data.loc[:10]['Link']:
+    
+    print(url)
 
-meet_code = 'REG33752'
-url = 'https://www.fidal.it/risultati/2024/' + meet_code + '/'
-url3 = url + 'Index.htm'
-disciplina = '60hsh106'
-
-html_content3 = requests.get(url3).text
-
-# Parse the HTML content
-soup = BeautifulSoup(html_content3, 'html.parser')
-
-# Find all <td> elements with id='idx_colonna2' containing the specified text
-td_elements = soup.find_all('td', {'id': 'idx_colonna2'}, string=lambda text: disciplina.replace(" ", "").lower() in text.replace(" ", "").lower())
-
-# Extract the href attribute from each <a> element
-links = [td.find('a')['href'] for td in td_elements]
-
-# Print the links
-print(links) """
-
-
-
-
-
-temp_df = pd.DataFrame(columns=['Codice', 'Home', 'Risultati', 'Versione Sigma', 'Status'])
-temp_df.loc[0] = ['', '', '', '', '']
-
-
-
+    r = requests.get(url).text
+    soup = BeautifulSoup(r, 'html.parser')
+    element = soup.find_all('td', class_='tab_turno_dataora')
+    for el in element:
+        print(el)
+        test = el.get_text(strip=True)
+        luogo = test.split('-')[0]
+        data = test.split('-')[1].lower()
+        data = data.split('ora')[0].strip()
+        print(luogo)
+        print(data)
+        print(test)
+    print('------------------')
 
 
 
