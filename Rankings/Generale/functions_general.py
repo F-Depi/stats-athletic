@@ -1,9 +1,57 @@
 from manage_file import read_file
 import pandas as pd
+from bs4 import BeautifulSoup
 import requests
-
+import re
 
 ## Function used by run_me.py to scrape the results meets
+
+def extract_meet_codes_from_calendar(anno, mese, livello, regione, tipo, categoria):
+    
+    # Componiamo il link con i parametri del filtro
+    url = 'https://www.fidal.it/calendario.php?anno='+anno+'&mese='+mese+'&livello='+livello+'&new_regione='+regione+'&new_tipo='+tipo+'&new_categoria='+categoria+'&submit=Invia'
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+        div = soup.find('div', class_='table_btm')
+        
+        dates = []
+        meet_code = []
+        
+        # These have text with the date of the meet
+        b_elements = div.find_all('b')
+        for b in b_elements:
+            if 'title' in b.attrs:
+                date = b.get_text(strip=True)
+                date = date + '/' + anno
+                dates.append(date)
+        
+        # These have the link with the meet code
+        a_elements = div.find_all('a', href=True)
+        for a in a_elements:
+            href = a['href']
+            match = re.search(fr'{livello}(\d+)', href)
+            if match:
+                meet_code.append(match.group(0))
+            
+        df = pd.DataFrame({'Data': dates, 'Codice': meet_code})
+        
+        return df
+    
+    else:
+        print("Failed to fetch the webpage. Status code:", response.status_code)
+        return []
+
+
+def custom_sort(date_str):
+    # custum sort filter for dates in the format 30-31/12/1999
+    parts = date_str.split('/')
+    last_day = int(parts[0].split('-')[-1])  # Convert last_day to integer
+    month = int(parts[1])
+    year = int(parts[2])
+    return pd.Timestamp(year, month, last_day)
 
 
 def get_meet_info(df_gare):
@@ -64,7 +112,7 @@ def get_meet_info(df_gare):
                 r2_0_2 = requests.get(url2_0_2).status_code
                 if r2_0_2 == 200:
                     
-                    new_row = pd.DataFrame({'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_2],'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
+                    new_row = pd.DataFrame({'Data': [df_gare.loc[ii,'Data']], 'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_2],'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
                     df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
                     
                     kk = kk + 1 # shifto tutti gli indici perché aggiungerò una riga
@@ -78,7 +126,7 @@ def get_meet_info(df_gare):
                         
                         kk = kk + 1 # shifto tutti gli indici perché aggiungerò una riga
                         
-                        new_row = pd.DataFrame({'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_3], 'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
+                        new_row = pd.DataFrame({'Data': [df_gare.loc[ii,'Data']], 'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_3], 'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
                         df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
                         print(ii)                        
                         
@@ -105,4 +153,3 @@ def get_meet_info(df_gare):
         else: print('La risposta della pagina è '+r3+'... e mo\'?')
         
     return(df_gare)
-

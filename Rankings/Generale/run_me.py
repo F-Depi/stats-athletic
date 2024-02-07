@@ -1,25 +1,23 @@
 import pandas as pd
 import csv
 import os
-from Generale.calendario import extract_meet_codes_from_calendar
-from functions_general import get_meet_info
+from functions_general import extract_meet_codes_from_calendar, custom_sort, get_meet_info
 from scraping_risultati import results_from_sigma
-from manage_file import write_file, read_file
-
 
 
 anno = '2024';      regione = '';       categoria = ''      
-mese = '3';          tipo = '3'
+mese = '';          tipo = '3'
 
 file_gare = 'Generale/link_gare.csv'
 file_risultati = 'Generale/link_risultati_gare_key.csv'
 
 ################# Codici gare (anno, mese, livello, regione, tipo, categoria) ###################
 ## Se file_gare è già presente viene solo aggiornato con i nuovi codici gara
+## la funzione usata restituisce un DataFrame con 'Data' e 'Codice' delle varie gare
 
-codici_regionali = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
-codici_nazionali = extract_meet_codes_from_calendar(anno,mese,'COD',regione,tipo,categoria)
-df_gare = pd.DataFrame(codici_regionali + codici_nazionali, columns=['Codice'])
+df_REG_gare = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
+df_COD_gare = extract_meet_codes_from_calendar(anno,mese,'COD',regione,tipo,categoria)
+df_gare = pd.concat([df_REG_gare, df_COD_gare], ignore_index=True)
 df_gare[['Home','Risultati','Versione Sigma','Status']] = ''
 
 if os.path.exists(file_gare):
@@ -28,7 +26,9 @@ if os.path.exists(file_gare):
     df_gare = pd.concat([df_gare_old, df_gare_new], ignore_index=True)
     print('\nSono stati aggiunti i df_gare\n')
     print(df_gare_new['Codice'])
-    
+
+## Mettiamo le gare in ordine cronologico
+df_gare = df_gare.sort_values(by='Data', key=lambda x: x.apply(custom_sort))
 #################################################################################################
 
 
@@ -38,7 +38,7 @@ if os.path.exists(file_gare):
 ## con status diverso da 'ok'.
 ## Controlla anche di nuovo tutte le gare con il sigma vecchio, perché in quel caso il numero di
 ## link potrebbe aumentare
-## Il DataFrame deve essere già del tipo ['Home','Risultati','Versione Sigma','Status']
+## Il DataFrame deve essere già del tipo [Data','Codice','Home','Risultati','Versione Sigma','Status']
 df_gare = get_meet_info(df_gare)
 df_gare.to_csv(file_gare, sep='\t', index=False)
 ##################################################################################################
