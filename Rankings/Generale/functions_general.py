@@ -3,6 +3,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import requests
 import re
+from datetime import date, datetime
 
 ## Function used by run_me.py to scrape the results meets
 
@@ -25,7 +26,9 @@ def extract_meet_codes_from_calendar(anno, mese, livello, regione, tipo, categor
         for b in b_elements:
             if 'title' in b.attrs:
                 date = b.get_text(strip=True)
-                date = date + '/' + anno
+                date = date.split('/')[1] + '/' + date.split('/')[0]
+                date = date.replace('-','+').replace('/','-').replace('+','/')
+                date = anno + '-' + date
                 dates.append(date)
         
         # These have the link with the meet code
@@ -46,30 +49,72 @@ def extract_meet_codes_from_calendar(anno, mese, livello, regione, tipo, categor
 
 
 def custom_sort(date_str):
-    # custum sort filter for dates in the format 30-31/12/1999
-    parts = date_str.split('/')
-    last_day = int(parts[0].split('-')[-1])  # Convert last_day to integer
+    # custum sort filter for dates in the format '', NaN, '1999-12-31' and '1999-12-30/31'
+    
+    if date_str == '' or pd.isna(date_str):
+        return date(1896, 3, 31) # first modern olympics date ;-)
+    
+    parts = date_str.split('-')
+    
+    if '/' in date_str: # in case of 30/31
+        last_day = int(parts[-1].split('/')[-1])
+    else: last_day = int(parts[-1])
+    
     month = int(parts[1])
-    year = int(parts[2])
-    return pd.Timestamp(year, month, last_day)
-
-
-def get_meet_info(df_gare):
-    ## This function takes a pandas DataFrame with columns=['Codice', 'Home', 'Risultati', 'Versione Sigma', 'Status']
-    ## and for each meet code that doesn't have an 'ok' status looks for the existance of the home link
-    ## 'https://www.fidal.it/risultati/2024/' + cod + '/Index.htm' and, if it exists, goes on looking for the result
-    ## page and the version of sigma used at that competition
-    ## For stupid reasons it also recheck all the link of sigma vecchio
+    year = int(parts[0])
     
-    df_gare = df_gare.loc[(df_gare['Codice'] != df_gare['Codice'].shift(-1)) | (df_gare.index == len(df_gare) - 1)]
-    df_gare = df_gare.reset_index(drop=True)
+    return date(year, month, last_day)
 
-    indices = df_gare.index[(df_gare['Status'] != 'ok') | (df_gare['Versione Sigma'] == 'Vecchio')].tolist()
-    kk = 0
+
+
+def get_meet_info(df_gare, update_criteria):
+    ## This function takes a pandas DataFrame with
+    ## columns=[Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
+    ## and updates the links based on the selected criteria
+    ## Starts checking the response of 'https://www.fidal.it/risultati/2024/' + cod + '/Index.htm'
+    ## and, if it exists, goes on looking for the resultspage and the version of sigma used at that
+    ## competition
     
+    ## uses custum_date_sort()
+    
+    today = datetime.today().date() #date of dotay
+    
+    if update_criteria == 'date':
+
+        time_span = 5 # days around the meet I'm looking for updates
+        
+        # Rows I want to check: if today is 7 days from/prior to the meet, or if it wasn't updated 7 days after the meet
+        diff_update = (df_gare['Ultimo Aggiornamento'].apply(custom_sort) - df_gare['Data'].apply(custom_sort)).dt.days
+        diff_today_data = (today - df_gare['Data'].apply(custom_sort)).dt.days
+        date_contition = (abs(diff_today_data) < time_span) | ( (diff_update < time_span) & (diff_today_data > 0) )
+        
+        indices = df_gare.index[date_contition].tolist()
+    
+    elif update_criteria == 'status':
+        
+        # used to remove duplicates rows from sigma vecchio. Not using multiple rows for it as of now
+        #df_gare = df_gare.loc[(df_gare['Codice'] != df_gare['Codice'].shift(-1)) | (df_gare.index == len(df_gare) - 1)]
+        #df_gare = df_gare.reset_index(drop=True)
+
+        indices = df_gare.index[(df_gare['Status'] != 'ok') | (df_gare['Versione Sigma'] == 'Vecchio #1') | (df_gare['Versione Sigma'] == 'Vecchio #2')].tolist()
+    
+    elif update_criteria == 'all':
+        
+        # same here. Only one row for each meet code now.
+        #df_gare = df_gare.loc[(df_gare['Codice'] != df_gare['Codice'].shift(-1)) | (df_gare.index == len(df_gare) - 1)]
+        #df_gare = df_gare.reset_index(drop=True)
+        indices = df_gare.index.tolist()
+
+        
+    else: print('Update criteria not valid. Valid update criteria are:\n\'date\', \'status\' and \'all\'')
+    
+    #kk = 0
+    print('Aggiorno i link da '+str(indices[0]+1)+' a '+str(indices[-1]+1)+':\n')
+    tot = len(df_gare)
     for ii in indices:
         
-        ii = ii + kk # righe aggiunte
+        print('\t' + str(ii+1) + '/' + str(tot), end="\r")
+        #ii = ii + kk # righe aggiunte
         cod = df_gare.loc[ii, 'Codice']
         
         url3 = 'https://www.fidal.it/risultati/2024/' + cod + '/Index.htm' # link della home
@@ -104,7 +149,7 @@ def get_meet_info(df_gare):
             r2 = requests.get(url2).status_code
             if r2 == 200:
                 df_gare.loc[ii,'Risultati'] = url2
-                df_gare.loc[ii,'Versione Sigma'] = 'Vecchio'
+                df_gare.loc[ii,'Versione Sigma'] = 'Vecchio #1'
                 df_gare.loc[ii,'Status'] = 'ok'
                 
                 # Può esistere anche /RESULTSBYEVENT2.htm
@@ -112,23 +157,26 @@ def get_meet_info(df_gare):
                 r2_0_2 = requests.get(url2_0_2).status_code
                 if r2_0_2 == 200:
                     
-                    new_row = pd.DataFrame({'Data': [df_gare.loc[ii,'Data']], 'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_2],'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
-                    df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
+                    df_gare.loc[ii,'Versione Sigma'] = 'Vecchio #2'
                     
-                    kk = kk + 1 # shifto tutti gli indici perché aggiungerò una riga
-                    ii = ii + 1
-                    print(ii)
+                    # not adding rows for now, it drammatically complicated things
+                    #new_row = pd.DataFrame({'Data': [df_gare.loc[ii,'Data']], 'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_2],'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
+                    #df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
+                    #
+                    #kk = kk + 1 # shifto tutti gli indici perché aggiungerò una riga
+                    #ii = ii + 1
                     
                     # Può esistere anche /RESULTSBYEVENT3.htm
                     url2_0_3 = 'https://www.fidal.it/risultati/2024/' + cod + '/RESULTSBYEVENT3.htm'
                     r2_0_3 = requests.get(url2_0_3).status_code
                     if r2_0_3 == 200:
                         
-                        kk = kk + 1 # shifto tutti gli indici perché aggiungerò una riga
+                        df_gare.loc[ii,'Versione Sigma'] = 'Vecchio #3'
                         
-                        new_row = pd.DataFrame({'Data': [df_gare.loc[ii,'Data']], 'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_3], 'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
-                        df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
-                        print(ii)                        
+                        #kk = kk + 1 # shifto tutti gli indici perché aggiungerò una riga
+                        #
+                        #new_row = pd.DataFrame({'Data': [df_gare.loc[ii,'Data']], 'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_3], 'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
+                        #df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
                         
                         # Non dovrebbe esistere anche /RESULTSBYEVENT4.htm
                         url2_0_4 = 'https://www.fidal.it/risultati/2024/' + cod + '/RESULTSBYEVENT4.htm'
@@ -151,5 +199,6 @@ def get_meet_info(df_gare):
             
                 
         else: print('La risposta della pagina è '+r3+'... e mo\'?')
-        
+    
+    df_gare.loc[indices, 'Ultimo Aggiornamento'] = today
     return(df_gare)

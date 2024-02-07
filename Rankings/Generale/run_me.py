@@ -18,29 +18,39 @@ file_risultati = 'Generale/link_risultati_gare_key.csv'
 df_REG_gare = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
 df_COD_gare = extract_meet_codes_from_calendar(anno,mese,'COD',regione,tipo,categoria)
 df_gare = pd.concat([df_REG_gare, df_COD_gare], ignore_index=True)
-df_gare[['Home','Risultati','Versione Sigma','Status']] = ''
+df_gare[['Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']] = ''
 
 if os.path.exists(file_gare):
+    
+    print('\nE\' stato trovato il file ' + file_gare)
+    
     df_gare_old = pd.read_csv(file_gare, sep='\t')
     df_gare_new = df_gare[~df_gare['Codice'].isin(df_gare_old['Codice'])]
     df_gare = pd.concat([df_gare_old, df_gare_new], ignore_index=True)
-    print('\nSono stati aggiunti i df_gare\n')
-    print(df_gare_new['Codice'])
-
+    
+    if len(df_gare_new) > 0:
+        print('\nSono stati aggiunti i codici gare:\n')
+        for cod in df_gare_new['Codice']: print(cod + '\n')
+    else: print('\nNon sono stati aggiunti codici gare\n')
+else: print('\nNon ho trovato il file ' + file_gare + '. Lo creo')
 ## Mettiamo le gare in ordine cronologico
 df_gare = df_gare.sort_values(by='Data', key=lambda x: x.apply(custom_sort))
+df_gare = df_gare.reset_index(drop=True)
+
 #################################################################################################
 
 
 
 ################# Link ai risultati (Codici delle gare, Disciplina scelta)   ####################
 ## aggiorna il DataFrame delle gare controllando se sono disponibili nuovi link nelle gare
-## con status diverso da 'ok'.
-## Controlla anche di nuovo tutte le gare con il sigma vecchio, perché in quel caso il numero di
-## link potrebbe aumentare
-## Il DataFrame deve essere già del tipo [Data','Codice','Home','Risultati','Versione Sigma','Status']
-df_gare = get_meet_info(df_gare)
+## che hanno (data_ultimo_aggiornamento - data_gara) < 7 giorni
+## o |data_gara - data_oggi| < 7 giorni
+## Il DataFrame deve essere già del tipo:
+## [Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
+
+df_gare = get_meet_info(df_gare, 'date')
 df_gare.to_csv(file_gare, sep='\t', index=False)
+
 ##################################################################################################
 
 
