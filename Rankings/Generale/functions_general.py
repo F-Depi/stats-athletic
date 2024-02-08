@@ -74,6 +74,9 @@ def get_meet_info(df_gare, update_criteria):
     ## Starts checking the response of 'https://www.fidal.it/risultati/2024/' + cod + '/Index.htm'
     ## and, if it exists, goes on looking for the resultspage and the version of sigma used at that
     ## competition
+    ## update_criteria: 'all' to check updates for every meet code
+    ##                  'date' to check update 7 days before/after the meet date
+    ##                  'status' to check updates for row with non 'ok' status and not al 3 pages of sigma vechio
     
     ## uses custum_date_sort()
     
@@ -202,3 +205,98 @@ def get_meet_info(df_gare, update_criteria):
     
     df_gare.loc[indices, 'Ultimo Aggiornamento'] = today
     return(df_gare)
+
+
+def get_events_link(df_gare):
+    
+    df_risultati = pd.DataFrame(columns=['Codice', 'Versione Sigma', 'Disciplina', 'Nome', 'Link'])
+    df_risultati['Disciplina'] = ''
+    
+    
+    # Link al sigma NUOVO
+    print('\nAnalizzo i link al sigma nuovo:\n')
+    df_links_nuovi = df_gare[(df_gare['Versione Sigma'] == 'Nuovo') & (df_gare['Status'] == 'ok')]
+    tot = str(len(df_links_nuovi))
+    
+    for ii, url in enumerate(df_links_nuovi['Risultati']):
+        
+        print('\t' + str(ii+1) + '/' + tot, end="\r")
+        
+        r = requests.get(url).text
+        soup = BeautifulSoup(r, 'html.parser')
+        elements = soup.find_all('div', class_='col-md-6')  # classe della div dove ci sono i link ai risultati
+        
+        for element in elements:
+            anchor = element.find('a')
+            
+            if anchor:  # non ho idea di cosa sia anchor, ma a quanto pare ogni tanto è vuoto
+                link = anchor['href']
+                link = url[:-26] + link
+                text = anchor.text.strip()
+                data = pd.DataFrame([{'Versione Sigma':'Nuovo', 'Nome':text, 'Link':link}])
+                df_risultati = pd.concat([df_risultati, data])
+                #df_links_results = df_links_results.append(, ignore_index=True)
+
+
+    # Link al sigma VECCHIO #1, #2, #3 (ovvero con 1 link risultati, 2 o 3)
+    print('\n\nAnalizzo i link al sigma vecchio:\n')
+    cond_1 = (df_gare['Versione Sigma'] == 'Vecchio #1')
+    cond_2 = (df_gare['Versione Sigma'] == 'Vecchio #2')
+    cond_3 = (df_gare['Versione Sigma'] == 'Vecchio #3')
+    cond_ok = (df_gare['Status'] == 'ok')
+
+    df_vecchio_1 = df_gare[(cond_1 | cond_2 | cond_3) & cond_ok]
+    url1 = df_vecchio_1['Risultati'].tolist()
+
+    df_vecchio_2 = df_gare[(cond_2 | cond_3) & cond_ok]
+    url2 = df_vecchio_2['Risultati'].tolist()
+    url2 = [s[:-5] + '2' + s[-4:] for s in url2]  # Replace 5th to last character with '2'
+
+    df_vecchio_3 = df_gare[cond_3 & cond_ok]
+    url3 = df_vecchio_3['Risultati'].tolist()
+    url3 = [s[:-5] + '3' + s[-4:] for s in url3]  # Replace 5th to last character with '3'
+
+    urls = url1 + url2 + url3
+    
+    for ii, url in enumerate(urls):
+        
+        print('\t' + str(ii+1) + '/' + tot, end="\r")
+        
+        r = requests.get(url).text
+        soup = BeautifulSoup(r, 'html.parser')
+        elements = soup.find_all('td', id='idx_colonna1')
+
+        for element in elements:
+            a_tag = element.find('a')
+            if a_tag:
+                link = a_tag['href']
+                link = url[:-19] + link
+                text = a_tag.get_text(strip=True)
+                data = pd.DataFrame([{'Versione Sigma':'Vecchio', 'Nome':text, 'Link':link}])
+                df_risultati = pd.concat([df_risultati, data])
+
+
+    # Link al sigma VECCHISSIMO
+    print('\n\nAnalizzo i link al sigma vecchissimo:\n')
+
+    df_links_vecchissimi = df_gare[(df_gare['Versione Sigma'] == 'Vecchissimo') & (df_gare['Status'] == 'ok')]
+    for ii, url in enumerate(df_links_vecchissimi['Risultati']):
+        
+        print('\t' + str(ii+1) + '/' + tot, end="\r")
+        
+        r = requests.get(url).text
+        soup = BeautifulSoup(r, 'html.parser')
+        elements = soup.find_all('td', id='idx_colonna2')
+        
+        for element in elements:
+            a_tag = element.find('a')
+            if a_tag:
+                link = a_tag['href']
+                link = url[:-9] + link
+                text = a_tag.get_text(strip=True)
+                data = pd.DataFrame([{'Versione Sigma':'Vecchissimo', 'Nome':text, 'Link':link}])
+                df_risultati = pd.concat([df_risultati, data])
+    
+    print('\n')
+    
+    return df_risultati
