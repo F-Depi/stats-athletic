@@ -75,16 +75,16 @@ def get_meet_info(df_gare, update_criteria):
     ## and, if it exists, goes on looking for the resultspage and the version of sigma used at that
     ## competition
     ## update_criteria: 'all' to check updates for every meet code
-    ##                  'date' to check update 7 days before/after the meet date
+    ##                  'date_N' to check update N days before/after the meet date
     ##                  'status' to check updates for row with non 'ok' status and not al 3 pages of sigma vechio
     
     ## uses custum_date_sort()
     
     today = datetime.today().date() #date of dotay
     
-    if update_criteria == 'date':
+    if update_criteria.startswith('date_'):
 
-        time_span = 5 # days around the meet I'm looking for updates
+        time_span = int(update_criteria[-1]) # days around the meet I'm looking for updates
         
         # Rows I want to check: if today is 7 days from/prior to the meet, or if it wasn't updated 7 days after the meet
         diff_update = (df_gare['Ultimo Aggiornamento'].apply(custom_sort) - df_gare['Data'].apply(custom_sort)).dt.days
@@ -109,7 +109,7 @@ def get_meet_info(df_gare, update_criteria):
         indices = df_gare.index.tolist()
 
         
-    else: print('Update criteria not valid. Valid update criteria are:\n\'date\', \'status\' and \'all\'')
+    else: print('Update criteria not valid. Valid update criteria are:\n\'date_N\', \'status\' and \'all\'');
     
     #kk = 0
     print('Aggiorno i link da '+str(indices[0]+1)+' a '+str(indices[-1]+1)+':\n')
@@ -208,20 +208,21 @@ def get_meet_info(df_gare, update_criteria):
 
 
 def get_events_link(df_gare):
-    
+    # the input must be a DataFrame with columns=['Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
     df_risultati = pd.DataFrame(columns=['Codice', 'Versione Sigma', 'Disciplina', 'Nome', 'Link'])
     df_risultati['Disciplina'] = ''
     
+    cond_ok = (df_gare['Status'] == 'ok')
     
     # Link al sigma NUOVO
     print('\nAnalizzo i link al sigma nuovo:\n')
-    df_links_nuovi = df_gare[(df_gare['Versione Sigma'] == 'Nuovo') & (df_gare['Status'] == 'ok')]
+    df_links_nuovi = df_gare[(df_gare['Versione Sigma'] == 'Nuovo') & cond_ok].reset_index(drop=True)
     tot = str(len(df_links_nuovi))
     
-    for ii, url in enumerate(df_links_nuovi['Risultati']):
-        
+    for ii, row in df_links_nuovi.iterrows():
         print('\t' + str(ii+1) + '/' + tot, end="\r")
-        
+        cod = row['Codice']
+        url = row['Risultati']
         r = requests.get(url).text
         soup = BeautifulSoup(r, 'html.parser')
         elements = soup.find_all('div', class_='col-md-6')  # classe della div dove ci sono i link ai risultati
@@ -233,32 +234,33 @@ def get_events_link(df_gare):
                 link = anchor['href']
                 link = url[:-26] + link
                 text = anchor.text.strip()
-                data = pd.DataFrame([{'Versione Sigma':'Nuovo', 'Nome':text, 'Link':link}])
+                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Nuovo', 'Nome':text, 'Link':link}])
                 df_risultati = pd.concat([df_risultati, data])
                 #df_links_results = df_links_results.append(, ignore_index=True)
 
-
-    # Link al sigma VECCHIO #1, #2, #3 (ovvero con 1 link risultati, 2 o 3)
+    # Link al sigma VECCHIO #1, VECCHIO #2, VECCHIO #3 (ovvero con 1, 2 o 3 link risultati)
     print('\n\nAnalizzo i link al sigma vecchio:\n')
     cond_1 = (df_gare['Versione Sigma'] == 'Vecchio #1')
     cond_2 = (df_gare['Versione Sigma'] == 'Vecchio #2')
     cond_3 = (df_gare['Versione Sigma'] == 'Vecchio #3')
-    cond_ok = (df_gare['Status'] == 'ok')
-
-    df_vecchio_1 = df_gare[(cond_1 | cond_2 | cond_3) & cond_ok]
-    url1 = df_vecchio_1['Risultati'].tolist()
-
-    df_vecchio_2 = df_gare[(cond_2 | cond_3) & cond_ok]
-    url2 = df_vecchio_2['Risultati'].tolist()
-    url2 = [s[:-5] + '2' + s[-4:] for s in url2]  # Replace 5th to last character with '2'
-
-    df_vecchio_3 = df_gare[cond_3 & cond_ok]
-    url3 = df_vecchio_3['Risultati'].tolist()
-    url3 = [s[:-5] + '3' + s[-4:] for s in url3]  # Replace 5th to last character with '3'
-
-    urls = url1 + url2 + url3
     
-    for ii, url in enumerate(urls):
+    df_vecchio = df_gare[(cond_1 | cond_2 | cond_3) & cond_ok]
+    urls = []
+    for i, row in df_vecchio.iterrows():
+        cod = row['Codice']
+        link = row['Risultati']
+        urls.append([cod, link])
+        if row['Versione Sigma'] == 'Vecchio #2':
+                link = link[:-5]+'2'+link[-4:]
+                urls.append([cod, link])
+        if row['Versione Sigma'] == 'Vecchio #3':
+                link = link[:-5]+'3'+link[-4:]
+                urls.append([cod, link])
+
+    tot = str(len(urls))
+    for ii, row in enumerate(urls):
+        cod = row[0]
+        url = row[1]
         
         print('\t' + str(ii+1) + '/' + tot, end="\r")
         
@@ -272,18 +274,20 @@ def get_events_link(df_gare):
                 link = a_tag['href']
                 link = url[:-19] + link
                 text = a_tag.get_text(strip=True)
-                data = pd.DataFrame([{'Versione Sigma':'Vecchio', 'Nome':text, 'Link':link}])
+                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Vecchio', 'Nome':text, 'Link':link}])
                 df_risultati = pd.concat([df_risultati, data])
 
 
     # Link al sigma VECCHISSIMO
     print('\n\nAnalizzo i link al sigma vecchissimo:\n')
 
-    df_links_vecchissimi = df_gare[(df_gare['Versione Sigma'] == 'Vecchissimo') & (df_gare['Status'] == 'ok')]
-    for ii, url in enumerate(df_links_vecchissimi['Risultati']):
-        
+    df_links_vecchissimi = df_gare[(df_gare['Versione Sigma'] == 'Vecchissimo') & cond_ok].reset_index(drop=True)
+    tot = str(len(df_links_vecchissimi))
+    for ii, row in df_links_vecchissimi.iterrows():
         print('\t' + str(ii+1) + '/' + tot, end="\r")
-        
+        cod = row['Codice']
+        url = row['Risultati']
+
         r = requests.get(url).text
         soup = BeautifulSoup(r, 'html.parser')
         elements = soup.find_all('td', id='idx_colonna2')
@@ -294,7 +298,7 @@ def get_events_link(df_gare):
                 link = a_tag['href']
                 link = url[:-9] + link
                 text = a_tag.get_text(strip=True)
-                data = pd.DataFrame([{'Versione Sigma':'Vecchissimo', 'Nome':text, 'Link':link}])
+                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Vecchissimo', 'Nome':text, 'Link':link}])
                 df_risultati = pd.concat([df_risultati, data])
     
     print('\n')

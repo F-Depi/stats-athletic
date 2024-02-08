@@ -15,7 +15,7 @@ file_risultati = 'Generale/link_risultati_gare1.csv'
 ## Se file_gare è già presente viene solo aggiornato con i nuovi codici gara
 ## la funzione usata restituisce un DataFrame con 'Data' e 'Codice' delle varie gare
 
-""" df_REG_gare = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
+df_REG_gare = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
 df_COD_gare = extract_meet_codes_from_calendar(anno,mese,'COD',regione,tipo,categoria)
 df_gare = pd.concat([df_REG_gare, df_COD_gare], ignore_index=True)
 df_gare[['Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']] = ''
@@ -35,7 +35,7 @@ if os.path.exists(file_gare):
 else: print('\nNon ho trovato il file ' + file_gare + '. Lo creo')
 ## Mettiamo le gare in ordine cronologico
 df_gare = df_gare.sort_values(by='Data', key=lambda x: x.apply(custom_sort))
-df_gare = df_gare.reset_index(drop=True) """
+df_gare = df_gare.reset_index(drop=True)
 
 #################################################################################################
 
@@ -48,8 +48,8 @@ df_gare = df_gare.reset_index(drop=True) """
 ## Il DataFrame deve essere già del tipo:
 ## [Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
 
-""" df_gare = get_meet_info(df_gare, 'date')
-df_gare.to_csv(file_gare, sep='\t', index=False) """
+df_gare = get_meet_info(df_gare, 'date_2')
+df_gare.to_csv(file_gare, sep='\t', index=False)
 
 ##################################################################################################
 
