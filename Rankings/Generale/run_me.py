@@ -7,7 +7,7 @@ import time
 start_time = time.time()
 
 
-anno = '2021';      regione = '';       categoria = ''      
+anno = '2024';      regione = '';       categoria = ''      
 mese = '';          tipo = '3'
 
 folder = 'indoor_'+anno+'/'
@@ -56,7 +56,7 @@ df_gare = df_gare.reset_index(drop=True)
 ## Il DataFrame deve essere già del tipo:
 ## [Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
 
-df_gare = get_meet_info(df_gare, 'date_2')
+df_gare = get_meet_info(df_gare, 'date_5')
 df_gare.to_csv(file_gare, sep='\t', index=False)
 
 ##################################################################################################
@@ -78,7 +78,7 @@ df_risultati.to_csv(file_risultati, index=False)
 
 ################# Identifichiamo la disciplina corretta con il dizionari dei nomi #################
 
-#df_risultati = pd.read_csv(file_risultati)
+df_risultati = pd.read_csv(file_risultati)
 
 print('\nApplico il dizionario per dare il nome corretto agli eventi')
 event_dict = {}

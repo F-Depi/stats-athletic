@@ -160,37 +160,18 @@ def get_meet_info(df_gare, update_criteria):
                 df_gare.loc[ii,'Versione Sigma'] = 'Vecchio #1'
                 df_gare.loc[ii,'Status'] = 'ok'
                 
-                # Può esistere anche /RESULTSBYEVENT2.htm
-                url2_0_2 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT2.htm'
-                r2_0_2 = requests.get(url2_0_2).status_code
-                if r2_0_2 == 200:
+                # Possono esistere anche /RESULTSBYEVENT2.htm, /RESULTSBYEVENT3.htm, ..., /RESULTSBYEVENTN.htm
+                for jj in range(2, 30):
                     
-                    df_gare.loc[ii,'Versione Sigma'] = 'Vecchio #2'
+                    url2_jj = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT'+str(jj)+'.htm'
+                    r2_jj = requests.get(url2_jj).status_code
                     
-                    # not adding rows for now, it drammatically complicated things
-                    #new_row = pd.DataFrame({'Data': [df_gare.loc[ii,'Data']], 'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_2],'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
-                    #df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
-                    #
-                    #kk = kk + 1 # shifto tutti gli indici perché aggiungerò una riga
-                    #ii = ii + 1
+                    if r2_jj == 200:
+                        if jj == 4: print('Attenzione questa gara ha più di 3 link:'+url2_jj)
+                        if jj == 21: print('ATTENZIONE questa gara ha più di 20 link:'+url2_jj)
+                        df_gare.loc[ii,'Versione Sigma'] = 'Vecchio #'+str(jj)
+                    else: continue
                     
-                    # Può esistere anche /RESULTSBYEVENT3.htm
-                    url2_0_3 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT3.htm'
-                    r2_0_3 = requests.get(url2_0_3).status_code
-                    if r2_0_3 == 200:
-                        
-                        df_gare.loc[ii,'Versione Sigma'] = 'Vecchio #3'
-                        
-                        #kk = kk + 1 # shifto tutti gli indici perché aggiungerò una riga
-                        #
-                        #new_row = pd.DataFrame({'Data': [df_gare.loc[ii,'Data']], 'Codice': [cod], 'Home': [url3], 'Risultati': [url2_0_3], 'Versione Sigma': ['Vecchio'], 'Status': ['ok']})
-                        #df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
-                        
-                        # Non dovrebbe esistere anche /RESULTSBYEVENT4.htm
-                        url2_0_4 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT4.htm'
-                        r2_0_4 = requests.get(url2_0_4).status_code
-                        if r2_0_4 == 200:
-                            print('WHAT! Questa pagina ha 4 pagine di risultati: ' + url2_0_4)
                 continue
             
             url2_1 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/ENTRYLISTBYEVENT1.htm'            # trovato vecchio senza risultati
@@ -245,21 +226,15 @@ def get_events_link(df_gare):
 
     # Link al sigma VECCHIO #1, VECCHIO #2, VECCHIO #3 (ovvero con 1, 2 o 3 link risultati)
     print('\n\nAnalizzo i link al sigma vecchio:\n')
-    cond_1 = (df_gare['Versione Sigma'] == 'Vecchio #1')
-    cond_2 = (df_gare['Versione Sigma'] == 'Vecchio #2')
-    cond_3 = (df_gare['Versione Sigma'] == 'Vecchio #3')
-    
-    df_vecchio = df_gare[(cond_1 | cond_2 | cond_3) & cond_ok]
+    df_vecchio = df_gare[df_gare['Versione Sigma'].str.contains('#') & cond_ok]
     urls = []
     for i, row in df_vecchio.iterrows():
         cod = row['Codice']
         link = row['Risultati']
         urls.append([cod, link])
-        if row['Versione Sigma'] == 'Vecchio #2':
-                link = link[:-5]+'2'+link[-4:]
-                urls.append([cod, link])
-        if row['Versione Sigma'] == 'Vecchio #3':
-                link = link[:-5]+'3'+link[-4:]
+        deg = int(row['Versione Sigma'].split('#')[1])
+        for jj in range(1, deg):
+                link = link[:-5]+str(jj)+link[-4:]
                 urls.append([cod, link])
 
     tot = str(len(urls))
