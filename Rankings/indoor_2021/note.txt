@@ -1,0 +1,5 @@
+la gara
+
+2021-03-18/21	COD8652	https://www.fidal.it/risultati/2021/COD8652/Index.htm	https://www.fidal.it/risultati/2021/COD8652/RESULTSBYEVENT1.htm	Vecchio #3	ok	2024-02-09
+
+ha 22 pagine di risultati. E' il campionato italiano master. Sarà sempre così quindi devo trovare un modo migliore per implementare la questione
