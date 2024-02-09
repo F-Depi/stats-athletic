@@ -939,11 +939,11 @@ REG33939,Nuovo,Salto in alto,Alto PENTATHLON ALLIEVI U18,https://www.fidal.it/ri
 REG33939,Nuovo,Salto in alto,Alto MASTER DONNE (EXTRA),https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara126.html
 REG33939,Nuovo,Salto in lungo,Lungo MASTER DONNE (EXTRA),https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara128.html
 REG33939,Nuovo,Salto in lungo,Lungo MASTER UOMINI (EXTRA),https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara228.html
-REG33939,Nuovo,not yet,Peso kg 7.260 EPTATHLON UOMINI,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara013.html
-REG33939,Nuovo,not yet,Peso kg 6 EPTATHLON JUNIOR UOMINI U20,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara023.html
-REG33939,Nuovo,not yet,Peso kg 4 PENTATHLON DONNE,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara033.html
-REG33939,Nuovo,not yet,Peso kg 3 PENTATHLON ALLIEVE U18,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara043.html
-REG33939,Nuovo,not yet,Peso kg 5 PENTATHLON ALLIEVI U18,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara053.html
+REG33939,Nuovo,Peso Kg 7.260,Peso kg 7.260 EPTATHLON UOMINI,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara013.html
+REG33939,Nuovo,Peso Kg 6.000,Peso kg 6 EPTATHLON JUNIOR UOMINI U20,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara023.html
+REG33939,Nuovo,Peso Kg 4.000,Peso kg 4 PENTATHLON DONNE,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara033.html
+REG33939,Nuovo,Peso Kg 3.000,Peso kg 3 PENTATHLON ALLIEVE U18,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara043.html
+REG33939,Nuovo,Peso Kg 5.000,Peso kg 5 PENTATHLON ALLIEVI U18,https://www.fidal.it/risultati/2024/REG33939/Risultati/Gara053.html
 REG33939,Nuovo,Pentathlon indoor AF,PENTATHLON INDOOR ALLIEVE,https://www.fidal.it/risultati/2024/REG33939/Risultati/RisPM941.html
 REG33939,Nuovo,Pentathlon indoor AM,PENTATHLON INDOOR ALLIEVI,https://www.fidal.it/risultati/2024/REG33939/Risultati/RisPM942.html
 REG33939,Nuovo,Pentathlon indoor F,PENTATHLON INDOOR DONNE,https://www.fidal.it/risultati/2024/REG33939/Risultati/RisPM944.html
@@ -1021,10 +1021,10 @@ COD11507,Nuovo,Salto in alto,Salto in alto Promesse Donne,https://www.fidal.it/r
 COD11507,Nuovo,Salto con l’asta,Salto con l'asta Promesse Donne,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara427.html
 COD11507,Nuovo,Salto in lungo,Salto in lungo Promesse Donne,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara428.html
 COD11507,Nuovo,Salto triplo,Salto triplo Promesse Donne,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara429.html
-COD11507,Nuovo,not yet,Peso Juniores Uomini,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara131.html
-COD11507,Nuovo,not yet,Peso Juniores Donne,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara231.html
-COD11507,Nuovo,not yet,Peso Promesse Uomini,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara331.html
-COD11507,Nuovo,not yet,Peso Promesse Donne,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara431.html
+COD11507,Nuovo,Peso Kg 6.000,Peso Juniores Uomini,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara131.html
+COD11507,Nuovo,Peso Kg 4.000,Peso Juniores Donne,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara231.html
+COD11507,Nuovo,Peso Kg 7.260,Peso Promesse Uomini,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara331.html
+COD11507,Nuovo,Peso Kg 4.000,Peso Promesse Donne,https://www.fidal.it/risultati/2024/COD11507/Risultati/Gara431.html
 COD11292,Nuovo,Salto in alto,High Jump MEN,https://www.fidal.it/risultati/2024/COD11292/Risultati/Gara026.html
 COD11292,Nuovo,Salto in alto,High Jump WOMEN,https://www.fidal.it/risultati/2024/COD11292/Risultati/Gara126.html
 REG34441,Nuovo,60m,60 metri CADETTI,https://www.fidal.it/risultati/2024/REG34441/Risultati/Gara201.html
@@ -1042,7 +1042,47 @@ REG34441,Nuovo,Salto con l’asta,Salto con l'asta CADETTE,https://www.fidal.it/
 REG34441,Nuovo,Salto in lungo,Salto in lungo CADETTE,https://www.fidal.it/risultati/2024/REG34441/Risultati/Gara328.html
 REG34441,Nuovo,Salto triplo,Salto triplo/TJ CADETTE,https://www.fidal.it/risultati/2024/REG34441/Risultati/Gara329.html
 REG34441,Nuovo,Peso Kg 4.000,Peso/SP Kg 4.000 CADETTI,https://www.fidal.it/risultati/2024/REG34441/Risultati/Gara231.html
-REG34441,Nuovo,not yet,Peso 3 kg CADETTE,https://www.fidal.it/risultati/2024/REG34441/Risultati/Gara331.html
+REG34441,Nuovo,Peso Kg 3.000,Peso 3 kg CADETTE,https://www.fidal.it/risultati/2024/REG34441/Risultati/Gara331.html
+COD11508,Nuovo,60m,60 metri Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara001.html
+COD11508,Nuovo,200m,200 metri Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara004.html
+COD11508,Nuovo,400m,400 metri Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara006.html
+COD11508,Nuovo,800m,800 metri Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara008.html
+COD11508,Nuovo,1500m,1500 metri Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara011.html
+COD11508,Nuovo,60 Hs h91-9.14,60 metri Hs Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara020.html
+COD11508,Nuovo,Marcia 5000m,Marcia 5000 metri Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara045.html
+COD11508,Nuovo,60m,60 metri Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara101.html
+COD11508,Nuovo,200m,200 metri Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara104.html
+COD11508,Nuovo,400m,400 metri Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara106.html
+COD11508,Nuovo,800m,800 metri Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara108.html
+COD11508,Nuovo,1500m,1500 metri Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara111.html
+COD11508,Nuovo,60 Hs h84-8.50,60 metri Hs Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara120.html
+COD11508,Nuovo,Marcia 3000m,Marcia 3000 metri Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara143.html
+COD11508,Nuovo,Salto in alto,Salto in alto Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara026.html
+COD11508,Nuovo,Salto con l’asta,Salto con l'asta Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara027.html
+COD11508,Nuovo,Salto in lungo,Salto in lungo Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara028.html
+COD11508,Nuovo,Salto triplo,Salto triplo Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara029.html
+COD11508,Nuovo,Salto in alto,Salto in alto Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara126.html
+COD11508,Nuovo,Salto con l’asta,Salto con l'asta Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara127.html
+COD11508,Nuovo,Salto in lungo,Salto in lungo Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara128.html
+COD11508,Nuovo,Salto triplo,Salto triplo Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara129.html
+COD11508,Nuovo,Peso Kg 5.000,Peso Allievi,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara031.html
+COD11508,Nuovo,Peso Kg 3.000,Peso Allieve,https://www.fidal.it/risultati/2024/COD11508/Risultati/Gara131.html
+REG33923,Nuovo,60m,60m DONNE,https://www.fidal.it/risultati/2024/REG33923/Risultati/Gara101.html
+REG33923,Nuovo,60 Hs h84-8.50,60Hs H84-8.50 DONNE,https://www.fidal.it/risultati/2024/REG33923/Risultati/Gara102.html
+REG33923,Nuovo,60m,60m UOMINI,https://www.fidal.it/risultati/2024/REG33923/Risultati/Gara201.html
+REG33923,Nuovo,60 Hs h106-9.14,60Hs H106 UOMINI,https://www.fidal.it/risultati/2024/REG33923/Risultati/Gara202.html
+REG33923,Nuovo,60 Hs h76-8.50,60Hs H76-8.50 ALLIEVE,https://www.fidal.it/risultati/2024/REG33923/Risultati/Gara301.html
+REG33923,Nuovo,60 Hs h91-9.14,60Hs H91-9.14 ALLIEVI,https://www.fidal.it/risultati/2024/REG33923/Risultati/Gara401.html
+REG33923,Nuovo,60 Hs h100-9.14,60Hs H100 JUNIOR UOMINI,https://www.fidal.it/risultati/2024/REG33923/Risultati/Gara501.html
+REG34278,Nuovo,Salto in lungo,Salto in lungo CADETTE,https://www.fidal.it/risultati/2024/REG34278/Risultati/Gara101.html
+REG34278,Nuovo,Salto triplo,Salto triplo CADETTE,https://www.fidal.it/risultati/2024/REG34278/Risultati/Gara102.html
+REG34278,Nuovo,Salto in lungo,Salto in lungo CADETTI,https://www.fidal.it/risultati/2024/REG34278/Risultati/Gara201.html
+REG34278,Nuovo,Salto triplo,Salto triplo CADETTI,https://www.fidal.it/risultati/2024/REG34278/Risultati/Gara202.html
+REG33924,Nuovo,Salto in lungo,Salto in lungo Uomini,https://www.fidal.it/risultati/2024/REG33924/Risultati/Gara001.html
+REG34036,Nuovo,60m,60 piani Cadette,https://www.fidal.it/risultati/2024/REG34036/Risultati/Gara101.html
+REG34036,Nuovo,60 Hs h76-8.00,60Hs H76-8.00 CADETTE,https://www.fidal.it/risultati/2024/REG34036/Risultati/Gara120.html
+REG34036,Nuovo,60m,60 piani Cadetti,https://www.fidal.it/risultati/2024/REG34036/Risultati/Gara201.html
+REG34036,Nuovo,60 Hs h84-8.50,60Hs H84-8.50 CADETTI,https://www.fidal.it/risultati/2024/REG34036/Risultati/Gara220.html
 REG34024,Vecchio,1500m,1500m Uomini,https://www.fidal.it/risultati/2024/REG34024/Gara111.htm
 REG34024,Vecchio,50m,50m Uomini,https://www.fidal.it/risultati/2024/REG34024/Gara156.htm
 REG34024,Vecchio,60 Hs h91-9.14,50 Hs H91 Allievi,https://www.fidal.it/risultati/2024/REG34024/Gara158.htm
@@ -1057,8 +1097,20 @@ REG34024,Vecchio,50 Hs Master,50 Hs H84 SM60-65,https://www.fidal.it/risultati/2
 REG34024,Vecchio,50m,50m Master Donne,https://www.fidal.it/risultati/2024/REG34024/Gara456.htm
 REG34024,Vecchio,50 Hs Master,50 Hs H76 SF40-45,https://www.fidal.it/risultati/2024/REG34024/Gara458.htm
 REG34024,Vecchio,50 Hs Master,50 Hs H76 SF50-55,https://www.fidal.it/risultati/2024/REG34024/Gara460.htm
-REG34024,Vecchio,Peso Master,Peso Master Uomini,https://www.fidal.it/risultati/2024/REG34024/Gara331.htm
-REG34024,Vecchio,Peso Master,Peso Master Donne,https://www.fidal.it/risultati/2024/REG34024/Gara431.htm
+REG34024,Vecchio,1500m,1500m Uomini,https://www.fidal.it/risultati/2024/REG34024/Gara111.htm
+REG34024,Vecchio,50m,50m Uomini,https://www.fidal.it/risultati/2024/REG34024/Gara156.htm
+REG34024,Vecchio,60 Hs h91-9.14,50 Hs H91 Allievi,https://www.fidal.it/risultati/2024/REG34024/Gara158.htm
+REG34024,Vecchio,50 Hs h100-9.14,50 Hs H100 Juniores Uomini,https://www.fidal.it/risultati/2024/REG34024/Gara159.htm
+REG34024,Vecchio,50 Hs h106-9.14,50 Hs H106 Uomini,https://www.fidal.it/risultati/2024/REG34024/Gara160.htm
+REG34024,Vecchio,1500m,1500m Donne,https://www.fidal.it/risultati/2024/REG34024/Gara211.htm
+REG34024,Vecchio,50m,50m Donne,https://www.fidal.it/risultati/2024/REG34024/Gara256.htm
+REG34024,Vecchio,50 Hs h76-8.50,50 Hs H76 Allieve,https://www.fidal.it/risultati/2024/REG34024/Gara258.htm
+REG34024,Vecchio,50 Hs h84-8.50,50 Hs H84 Donne,https://www.fidal.it/risultati/2024/REG34024/Gara259.htm
+REG34024,Vecchio,50m,50m Master Uomini,https://www.fidal.it/risultati/2024/REG34024/Gara356.htm
+REG34024,Vecchio,50 Hs Master,50 Hs H84 SM60-65,https://www.fidal.it/risultati/2024/REG34024/Gara358.htm
+REG34024,Vecchio,50m,50m Master Donne,https://www.fidal.it/risultati/2024/REG34024/Gara456.htm
+REG34024,Vecchio,50 Hs Master,50 Hs H76 SF40-45,https://www.fidal.it/risultati/2024/REG34024/Gara458.htm
+REG34024,Vecchio,50 Hs Master,50 Hs H76 SF50-55,https://www.fidal.it/risultati/2024/REG34024/Gara460.htm
 REG34025,Vecchio,200m,200m Uomini,https://www.fidal.it/risultati/2024/REG34025/Gara104.htm
 REG34025,Vecchio,400m,400m Uomini,https://www.fidal.it/risultati/2024/REG34025/Gara106.htm
 REG34025,Vecchio,800m,800m Uomini,https://www.fidal.it/risultati/2024/REG34025/Gara108.htm
@@ -1067,10 +1119,14 @@ REG34025,Vecchio,200m,200m Donne,https://www.fidal.it/risultati/2024/REG34025/Ga
 REG34025,Vecchio,400m,400m Donne,https://www.fidal.it/risultati/2024/REG34025/Gara206.htm
 REG34025,Vecchio,800m,800m Donne,https://www.fidal.it/risultati/2024/REG34025/Gara208.htm
 REG34025,Vecchio,3000m,3000m Donne,https://www.fidal.it/risultati/2024/REG34025/Gara213.htm
-REG34025,Vecchio,Peso Kg 5.000,Peso Kg 5.000 Allievi,https://www.fidal.it/risultati/2024/REG34025/Gara131.htm
-REG34025,Vecchio,Peso Kg 7.260,Peso Kg 7.260 Uomini,https://www.fidal.it/risultati/2024/REG34025/Gara133.htm
-REG34025,Vecchio,Peso Kg 3.000,Peso Kg 3.000 Allieve,https://www.fidal.it/risultati/2024/REG34025/Gara231.htm
-REG34025,Vecchio,Peso Kg 4.000,Peso Kg 4.000 Donne,https://www.fidal.it/risultati/2024/REG34025/Gara232.htm
+REG34025,Vecchio,200m,200m Uomini,https://www.fidal.it/risultati/2024/REG34025/Gara104.htm
+REG34025,Vecchio,400m,400m Uomini,https://www.fidal.it/risultati/2024/REG34025/Gara106.htm
+REG34025,Vecchio,800m,800m Uomini,https://www.fidal.it/risultati/2024/REG34025/Gara108.htm
+REG34025,Vecchio,3000m,3000m Uomini,https://www.fidal.it/risultati/2024/REG34025/Gara113.htm
+REG34025,Vecchio,200m,200m Donne,https://www.fidal.it/risultati/2024/REG34025/Gara204.htm
+REG34025,Vecchio,400m,400m Donne,https://www.fidal.it/risultati/2024/REG34025/Gara206.htm
+REG34025,Vecchio,800m,800m Donne,https://www.fidal.it/risultati/2024/REG34025/Gara208.htm
+REG34025,Vecchio,3000m,3000m Donne,https://www.fidal.it/risultati/2024/REG34025/Gara213.htm
 REG34053,Vecchio,50m,50m Cadetti,https://www.fidal.it/risultati/2024/REG34053/Gara156.htm
 REG34053,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34053/Gara158.htm
 REG34053,Vecchio,50m,50m Cadette,https://www.fidal.it/risultati/2024/REG34053/Gara256.htm
@@ -1079,9 +1135,14 @@ REG34053,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34053/Ga
 REG34053,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34053/Gara358.htm
 REG34053,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34053/Gara456.htm
 REG34053,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34053/Gara458.htm
-REG34053,Vecchio,Salto in lungo,Salto in lungo Cadette,https://www.fidal.it/risultati/2024/REG34053/Gara228.htm
-REG34053,Vecchio,Salto triplo,Salto triplo Cadette,https://www.fidal.it/risultati/2024/REG34053/Gara229.htm
-REG34053,Vecchio,Salto in alto,Salto in alto Ragazzi,https://www.fidal.it/risultati/2024/REG34053/Gara326.htm
+REG34053,Vecchio,50m,50m Cadetti,https://www.fidal.it/risultati/2024/REG34053/Gara156.htm
+REG34053,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34053/Gara158.htm
+REG34053,Vecchio,50m,50m Cadette,https://www.fidal.it/risultati/2024/REG34053/Gara256.htm
+REG34053,Vecchio,50 Hs h76-8.00,50 Hs H76 Cadette,https://www.fidal.it/risultati/2024/REG34053/Gara258.htm
+REG34053,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34053/Gara356.htm
+REG34053,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34053/Gara358.htm
+REG34053,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34053/Gara456.htm
+REG34053,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34053/Gara458.htm
 REG34127,Vecchio,60m,60 piani Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara001.htm
 REG34127,Vecchio,60m,60m Finale Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara002.htm
 REG34127,Vecchio,400m,400 metri Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara006.htm
@@ -1101,10 +1162,25 @@ REG34127,Vecchio,200m,200 metri Ragazzi,https://www.fidal.it/risultati/2024/REG3
 REG34127,Vecchio,200m,200 metri Ragazze,https://www.fidal.it/risultati/2024/REG34127/Gara504.htm
 REG34127,Vecchio,60m,60 piani Esordienti M 10,https://www.fidal.it/risultati/2024/REG34127/Gara601.htm
 REG34127,Vecchio,60m,60 piani Esordienti F 10,https://www.fidal.it/risultati/2024/REG34127/Gara701.htm
-REG34127,Vecchio,Salto in alto,Salto in alto Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara026.htm
-REG34127,Vecchio,Salto in lungo,Salto in lungo Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara028.htm
-REG34127,Vecchio,Salto in lungo,Salto in lungo Donne,https://www.fidal.it/risultati/2024/REG34127/Gara128.htm
-REG34127,Vecchio,Salto triplo,Salto triplo Donne,https://www.fidal.it/risultati/2024/REG34127/Gara129.htm
+REG34127,Vecchio,60m,60 piani Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara001.htm
+REG34127,Vecchio,60m,60m Finale Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara002.htm
+REG34127,Vecchio,400m,400 metri Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara006.htm
+REG34127,Vecchio,1000m,1000 metri Master Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara009.htm
+REG34127,Vecchio,60 Hs h91-9.14,60 Hs H 91 Allievi,https://www.fidal.it/risultati/2024/REG34127/Gara017.htm
+REG34127,Vecchio,60 Hs h106-9.14,60 Hs H 106 Uomini,https://www.fidal.it/risultati/2024/REG34127/Gara020.htm
+REG34127,Vecchio,60m,60 piani Donne,https://www.fidal.it/risultati/2024/REG34127/Gara101.htm
+REG34127,Vecchio,60m,60m Finale Donne,https://www.fidal.it/risultati/2024/REG34127/Gara102.htm
+REG34127,Vecchio,400m,400 metri Donne,https://www.fidal.it/risultati/2024/REG34127/Gara106.htm
+REG34127,Vecchio,1000m,1000 metri Master Donne,https://www.fidal.it/risultati/2024/REG34127/Gara109.htm
+REG34127,Vecchio,1500m,1500 metri Donne,https://www.fidal.it/risultati/2024/REG34127/Gara111.htm
+REG34127,Vecchio,60 Hs h76-8.50,60 Hs H 76 Allieve,https://www.fidal.it/risultati/2024/REG34127/Gara119.htm
+REG34127,Vecchio,60 Hs h84-8.50,60 Hs H 84 Donne,https://www.fidal.it/risultati/2024/REG34127/Gara120.htm
+REG34127,Vecchio,60m,60 piani Cadetti,https://www.fidal.it/risultati/2024/REG34127/Gara201.htm
+REG34127,Vecchio,60m,60 piani Cadette,https://www.fidal.it/risultati/2024/REG34127/Gara301.htm
+REG34127,Vecchio,200m,200 metri Ragazzi,https://www.fidal.it/risultati/2024/REG34127/Gara404.htm
+REG34127,Vecchio,200m,200 metri Ragazze,https://www.fidal.it/risultati/2024/REG34127/Gara504.htm
+REG34127,Vecchio,60m,60 piani Esordienti M 10,https://www.fidal.it/risultati/2024/REG34127/Gara601.htm
+REG34127,Vecchio,60m,60 piani Esordienti F 10,https://www.fidal.it/risultati/2024/REG34127/Gara701.htm
 REG34028,Vecchio,1500m,1500m Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara111.htm
 REG34028,Vecchio,50m,50m P/S Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara156.htm
 REG34028,Vecchio,50 Hs h106-9.14,50 Hs H106 P/S Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara158.htm
@@ -1119,11 +1195,20 @@ REG34028,Vecchio,50m,50m Allievi,https://www.fidal.it/risultati/2024/REG34028/Ga
 REG34028,Vecchio,60 Hs h91-9.14,50 Hs H91 Allievi,https://www.fidal.it/risultati/2024/REG34028/Gara558.htm
 REG34028,Vecchio,50m,50m Allieve,https://www.fidal.it/risultati/2024/REG34028/Gara656.htm
 REG34028,Vecchio,50 Hs h76-8.50,50 Hs H76 Allieve,https://www.fidal.it/risultati/2024/REG34028/Gara658.htm
-REG34028,Vecchio,Peso Kg 7.260,Peso Kg 7.260 Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara131.htm
-REG34028,Vecchio,Peso Kg 4.000,Peso Kg 4.000 Donne,https://www.fidal.it/risultati/2024/REG34028/Gara231.htm
-REG34028,Vecchio,Peso Kg 6.000,Peso Kg 6.000 Juniores Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara331.htm
-REG34028,Vecchio,Peso Kg 5.000,Peso Kg 5.000 Allievi,https://www.fidal.it/risultati/2024/REG34028/Gara531.htm
-REG34028,Vecchio,Peso Kg 3.000,Peso Kg 3.000 Allieve,https://www.fidal.it/risultati/2024/REG34028/Gara631.htm
+REG34028,Vecchio,1500m,1500m Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara111.htm
+REG34028,Vecchio,50m,50m P/S Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara156.htm
+REG34028,Vecchio,50 Hs h106-9.14,50 Hs H106 P/S Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara158.htm
+REG34028,Vecchio,1500m,1500m Donne,https://www.fidal.it/risultati/2024/REG34028/Gara211.htm
+REG34028,Vecchio,50m,50m P/S Donne,https://www.fidal.it/risultati/2024/REG34028/Gara256.htm
+REG34028,Vecchio,60 Hs h84-8.50,50 Hs H84 P/S Donne,https://www.fidal.it/risultati/2024/REG34028/Gara258.htm
+REG34028,Vecchio,50m,50m Juniores Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara356.htm
+REG34028,Vecchio,50 Hs h100-9.14,50 Hs H100 Juniores Uomini,https://www.fidal.it/risultati/2024/REG34028/Gara358.htm
+REG34028,Vecchio,50m,50m Juniores Donne,https://www.fidal.it/risultati/2024/REG34028/Gara456.htm
+REG34028,Vecchio,50 Hs h84-8.50,50 Hs H84 Juniores Donne,https://www.fidal.it/risultati/2024/REG34028/Gara458.htm
+REG34028,Vecchio,50m,50m Allievi,https://www.fidal.it/risultati/2024/REG34028/Gara556.htm
+REG34028,Vecchio,60 Hs h91-9.14,50 Hs H91 Allievi,https://www.fidal.it/risultati/2024/REG34028/Gara558.htm
+REG34028,Vecchio,50m,50m Allieve,https://www.fidal.it/risultati/2024/REG34028/Gara656.htm
+REG34028,Vecchio,50 Hs h76-8.50,50 Hs H76 Allieve,https://www.fidal.it/risultati/2024/REG34028/Gara658.htm
 REG33676,Vecchio,Salto con l’asta,Salto con l'asta/PV DONNE,https://www.fidal.it/risultati/2024/REG33676/Gara027.htm
 REG33676,Vecchio,Salto in lungo,Salto in lungo/LJ ALLIEVE,https://www.fidal.it/risultati/2024/REG33676/Gara028.htm
 REG33676,Vecchio,Salto in lungo,Salto in lungo J/P/S DONNE,https://www.fidal.it/risultati/2024/REG33676/Gara030.htm
@@ -1140,9 +1225,13 @@ REG33677,Vecchio,60m,60 piani UOMINI,https://www.fidal.it/risultati/2024/REG3367
 REG33677,Vecchio,60 Hs h106-9.14,60 Hs H 106  Uomini,https://www.fidal.it/risultati/2024/REG33677/Gara120.htm
 REG33677,Vecchio,60 Hs h91-9.14,60 Hs H 91-9.14 ALLIEVI,https://www.fidal.it/risultati/2024/REG33677/Gara121.htm
 REG33677,Vecchio,60 Hs h100-9.14,60 Hs H 100 JUNIOR UOMINI,https://www.fidal.it/risultati/2024/REG33677/Gara122.htm
-REG33677,Vecchio,Salto con l’asta,Salto con l'asta/PV UOMINI,https://www.fidal.it/risultati/2024/REG33677/Gara127.htm
-REG33677,Vecchio,Salto in lungo,Salto in lungo/LJ ALLIEVI,https://www.fidal.it/risultati/2024/REG33677/Gara128.htm
-REG33677,Vecchio,Salto in lungo,Salto in lungo J/P/S UOMINI,https://www.fidal.it/risultati/2024/REG33677/Gara129.htm
+REG33677,Vecchio,60m,60 piani DONNE,https://www.fidal.it/risultati/2024/REG33677/Gara001.htm
+REG33677,Vecchio,60 Hs h84-8.50,60 Hs H 84-8.50 Donne,https://www.fidal.it/risultati/2024/REG33677/Gara020.htm
+REG33677,Vecchio,60 Hs h76-8.50,60 Hs H 76-8.50 ALLIEVE,https://www.fidal.it/risultati/2024/REG33677/Gara021.htm
+REG33677,Vecchio,60m,60 piani UOMINI,https://www.fidal.it/risultati/2024/REG33677/Gara101.htm
+REG33677,Vecchio,60 Hs h106-9.14,60 Hs H 106  Uomini,https://www.fidal.it/risultati/2024/REG33677/Gara120.htm
+REG33677,Vecchio,60 Hs h91-9.14,60 Hs H 91-9.14 ALLIEVI,https://www.fidal.it/risultati/2024/REG33677/Gara121.htm
+REG33677,Vecchio,60 Hs h100-9.14,60 Hs H 100 JUNIOR UOMINI,https://www.fidal.it/risultati/2024/REG33677/Gara122.htm
 REG34128,Vecchio,200m,200 metri Uomini,https://www.fidal.it/risultati/2024/REG34128/Gara004.htm
 REG34128,Vecchio,Marcia 5000m,Marcia 5000m Uomini,https://www.fidal.it/risultati/2024/REG34128/Gara045.htm
 REG34128,Vecchio,200m,200 metri Donne,https://www.fidal.it/risultati/2024/REG34128/Gara104.htm
@@ -1159,11 +1248,22 @@ REG34128,Vecchio,200m,200 metri Esordienti M 10,https://www.fidal.it/risultati/2
 REG34128,Vecchio,50 Hs h50-7.00,50 Hs H50 Esordienti M 10,https://www.fidal.it/risultati/2024/REG34128/Gara684.htm
 REG34128,Vecchio,200m,200 metri Esordienti F 10,https://www.fidal.it/risultati/2024/REG34128/Gara704.htm
 REG34128,Vecchio,50 Hs h50-7.00,50 Hs H50 Esordienti F 10,https://www.fidal.it/risultati/2024/REG34128/Gara784.htm
-REG34128,Vecchio,Salto in lungo,Salto in lungo Cadetti,https://www.fidal.it/risultati/2024/REG34128/Gara228.htm
-REG34128,Vecchio,Salto in alto,Salto in alto Cadette,https://www.fidal.it/risultati/2024/REG34128/Gara326.htm
-REG34128,Vecchio,Salto in lungo,Salto in lungo Cadette,https://www.fidal.it/risultati/2024/REG34128/Gara328.htm
-REG34128,Vecchio,Salto in lungo,Salto in lungo Ragazzi,https://www.fidal.it/risultati/2024/REG34128/Gara428.htm
-REG34128,Vecchio,Salto in alto,Salto in alto Ragazze,https://www.fidal.it/risultati/2024/REG34128/Gara526.htm
+REG34128,Vecchio,200m,200 metri Uomini,https://www.fidal.it/risultati/2024/REG34128/Gara004.htm
+REG34128,Vecchio,Marcia 5000m,Marcia 5000m Uomini,https://www.fidal.it/risultati/2024/REG34128/Gara045.htm
+REG34128,Vecchio,200m,200 metri Donne,https://www.fidal.it/risultati/2024/REG34128/Gara104.htm
+REG34128,Vecchio,Marcia 3000m,Marcia 3000m Donne,https://www.fidal.it/risultati/2024/REG34128/Gara143.htm
+REG34128,Vecchio,1000m,1000 metri Cadetti,https://www.fidal.it/risultati/2024/REG34128/Gara209.htm
+REG34128,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34128/Gara283.htm
+REG34128,Vecchio,1000m,1000 metri Cadette,https://www.fidal.it/risultati/2024/REG34128/Gara309.htm
+REG34128,Vecchio,50 Hs h76-8.00,50 Hs H76 Cadette,https://www.fidal.it/risultati/2024/REG34128/Gara383.htm
+REG34128,Vecchio,800m,800 metri Ragazzi,https://www.fidal.it/risultati/2024/REG34128/Gara408.htm
+REG34128,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34128/Gara483.htm
+REG34128,Vecchio,800m,800 metri Ragazze,https://www.fidal.it/risultati/2024/REG34128/Gara508.htm
+REG34128,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34128/Gara583.htm
+REG34128,Vecchio,200m,200 metri Esordienti M 10,https://www.fidal.it/risultati/2024/REG34128/Gara604.htm
+REG34128,Vecchio,50 Hs h50-7.00,50 Hs H50 Esordienti M 10,https://www.fidal.it/risultati/2024/REG34128/Gara684.htm
+REG34128,Vecchio,200m,200 metri Esordienti F 10,https://www.fidal.it/risultati/2024/REG34128/Gara704.htm
+REG34128,Vecchio,50 Hs h50-7.00,50 Hs H50 Esordienti F 10,https://www.fidal.it/risultati/2024/REG34128/Gara784.htm
 REG34029,Vecchio,200m,200m Uomini,https://www.fidal.it/risultati/2024/REG34029/Gara104.htm
 REG34029,Vecchio,400m,400m Uomini,https://www.fidal.it/risultati/2024/REG34029/Gara106.htm
 REG34029,Vecchio,800m,800m Uomini,https://www.fidal.it/risultati/2024/REG34029/Gara108.htm
@@ -1176,8 +1276,18 @@ REG34029,Vecchio,Marcia 2000m,Marcia 2000m Cadetti,https://www.fidal.it/risultat
 REG34029,Vecchio,Marcia 2000m,Marcia 2000m Cadette,https://www.fidal.it/risultati/2024/REG34029/Gara442.htm
 REG34029,Vecchio,Marcia 1000m,Marcia 1000m Ragazzi,https://www.fidal.it/risultati/2024/REG34029/Gara550.htm
 REG34029,Vecchio,Marcia 1000m,Marcia 1000m Ragazze,https://www.fidal.it/risultati/2024/REG34029/Gara650.htm
-REG34029,Vecchio,Salto in alto,Salto in alto Cadetti,https://www.fidal.it/risultati/2024/REG34029/Gara326.htm
-REG34029,Vecchio,Salto in alto,Salto in alto Cadette,https://www.fidal.it/risultati/2024/REG34029/Gara426.htm
+REG34029,Vecchio,200m,200m Uomini,https://www.fidal.it/risultati/2024/REG34029/Gara104.htm
+REG34029,Vecchio,400m,400m Uomini,https://www.fidal.it/risultati/2024/REG34029/Gara106.htm
+REG34029,Vecchio,800m,800m Uomini,https://www.fidal.it/risultati/2024/REG34029/Gara108.htm
+REG34029,Vecchio,Marcia 5000m,Marcia 5000m Uomini,https://www.fidal.it/risultati/2024/REG34029/Gara145.htm
+REG34029,Vecchio,200m,200m Donne,https://www.fidal.it/risultati/2024/REG34029/Gara204.htm
+REG34029,Vecchio,400m,400m Donne,https://www.fidal.it/risultati/2024/REG34029/Gara206.htm
+REG34029,Vecchio,800m,800m Donne,https://www.fidal.it/risultati/2024/REG34029/Gara208.htm
+REG34029,Vecchio,Marcia 3000m,Marcia 3000m Donne,https://www.fidal.it/risultati/2024/REG34029/Gara243.htm
+REG34029,Vecchio,Marcia 2000m,Marcia 2000m Cadetti,https://www.fidal.it/risultati/2024/REG34029/Gara342.htm
+REG34029,Vecchio,Marcia 2000m,Marcia 2000m Cadette,https://www.fidal.it/risultati/2024/REG34029/Gara442.htm
+REG34029,Vecchio,Marcia 1000m,Marcia 1000m Ragazzi,https://www.fidal.it/risultati/2024/REG34029/Gara550.htm
+REG34029,Vecchio,Marcia 1000m,Marcia 1000m Ragazze,https://www.fidal.it/risultati/2024/REG34029/Gara650.htm
 REG34054,Vecchio,50m,50m Cadetti,https://www.fidal.it/risultati/2024/REG34054/Gara156.htm
 REG34054,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34054/Gara158.htm
 REG34054,Vecchio,50m,50m Cadette,https://www.fidal.it/risultati/2024/REG34054/Gara256.htm
@@ -1186,9 +1296,14 @@ REG34054,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34054/Ga
 REG34054,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34054/Gara358.htm
 REG34054,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34054/Gara456.htm
 REG34054,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34054/Gara458.htm
-REG34054,Vecchio,Salto in lungo,Salto in lungo Cadetti,https://www.fidal.it/risultati/2024/REG34054/Gara128.htm
-REG34054,Vecchio,Salto triplo,Salto triplo Cadetti,https://www.fidal.it/risultati/2024/REG34054/Gara129.htm
-REG34054,Vecchio,Salto in alto,Salto in alto Ragazze,https://www.fidal.it/risultati/2024/REG34054/Gara426.htm
+REG34054,Vecchio,50m,50m Cadetti,https://www.fidal.it/risultati/2024/REG34054/Gara156.htm
+REG34054,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34054/Gara158.htm
+REG34054,Vecchio,50m,50m Cadette,https://www.fidal.it/risultati/2024/REG34054/Gara256.htm
+REG34054,Vecchio,50 Hs h76-8.00,50 Hs H76 Cadette,https://www.fidal.it/risultati/2024/REG34054/Gara258.htm
+REG34054,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34054/Gara356.htm
+REG34054,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34054/Gara358.htm
+REG34054,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34054/Gara456.htm
+REG34054,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34054/Gara458.htm
 REG34115,Vecchio,Salto in lungo,Salto in lungo/LJ DONNE,https://www.fidal.it/risultati/2024/REG34115/Gara028.htm
 REG34115,Vecchio,Salto in lungo,Salto in lungo/LJ UOMINI,https://www.fidal.it/risultati/2024/REG34115/Gara128.htm
 REG34212,Vecchio,50m,50m Uomini,https://www.fidal.it/risultati/2024/REG34212/Gara156.htm
@@ -1198,17 +1313,19 @@ REG34212,Vecchio,50 Hs h106-9.14,50 Hs H106 Uomini,https://www.fidal.it/risultat
 REG34212,Vecchio,50m,50m Donne,https://www.fidal.it/risultati/2024/REG34212/Gara256.htm
 REG34212,Vecchio,50 Hs h76-8.50,50 Hs H76 Allieve,https://www.fidal.it/risultati/2024/REG34212/Gara258.htm
 REG34212,Vecchio,50 Hs h84-8.50,50 Hs H84 Donne,https://www.fidal.it/risultati/2024/REG34212/Gara259.htm
-REG34212,Vecchio,Peso Kg 5.000,Peso Kg 5.000 Allievi,https://www.fidal.it/risultati/2024/REG34212/Gara131.htm
-REG34212,Vecchio,Peso Kg 6.000,Peso Kg 6.000 Juniores Uomini,https://www.fidal.it/risultati/2024/REG34212/Gara132.htm
-REG34212,Vecchio,Peso Kg 7.260,Peso Kg 7.260 Uomini,https://www.fidal.it/risultati/2024/REG34212/Gara133.htm
-REG34212,Vecchio,Peso Kg 3.000,Peso Kg 3.000 Allieve,https://www.fidal.it/risultati/2024/REG34212/Gara231.htm
-REG34212,Vecchio,Peso Kg 4.000,Peso Kg 4.000 Donne,https://www.fidal.it/risultati/2024/REG34212/Gara232.htm
+REG34212,Vecchio,50m,50m Uomini,https://www.fidal.it/risultati/2024/REG34212/Gara156.htm
+REG34212,Vecchio,60 Hs h91-9.14,50 Hs H91 Allievi,https://www.fidal.it/risultati/2024/REG34212/Gara158.htm
+REG34212,Vecchio,50 Hs h100-9.14,50 Hs H100 Juniores Uomini,https://www.fidal.it/risultati/2024/REG34212/Gara159.htm
+REG34212,Vecchio,50 Hs h106-9.14,50 Hs H106 Uomini,https://www.fidal.it/risultati/2024/REG34212/Gara160.htm
+REG34212,Vecchio,50m,50m Donne,https://www.fidal.it/risultati/2024/REG34212/Gara256.htm
+REG34212,Vecchio,50 Hs h76-8.50,50 Hs H76 Allieve,https://www.fidal.it/risultati/2024/REG34212/Gara258.htm
+REG34212,Vecchio,50 Hs h84-8.50,50 Hs H84 Donne,https://www.fidal.it/risultati/2024/REG34212/Gara259.htm
 REG34204,Vecchio,Salto con l’asta,Salto con l'asta MASCHILE,https://www.fidal.it/risultati/2024/REG34204/Gara127.htm
 REG34204,Vecchio,Salto in lungo,Salto in lungo MASCHILE,https://www.fidal.it/risultati/2024/REG34204/Gara128.htm
 REG34204,Vecchio,Salto in lungo,Salto in lungo FEMMINILE,https://www.fidal.it/risultati/2024/REG34204/Gara228.htm
-REG34204,Vecchio,Disco Kg 1.750,"Disco Kg 1,750 A/M - J/M",https://www.fidal.it/risultati/2024/REG34204/Gara132.htm
-REG34204,Vecchio,Disco Kg 2.000,Disco Kg 2 P/S MASCHILI,https://www.fidal.it/risultati/2024/REG34204/Gara133.htm
-REG34204,Vecchio,Disco Kg 1.000,"Disco Kg 1,000 FEMMINILE",https://www.fidal.it/risultati/2024/REG34204/Gara232.htm
+REG34204,Vecchio,Salto con l’asta,Salto con l'asta MASCHILE,https://www.fidal.it/risultati/2024/REG34204/Gara127.htm
+REG34204,Vecchio,Salto in lungo,Salto in lungo MASCHILE,https://www.fidal.it/risultati/2024/REG34204/Gara128.htm
+REG34204,Vecchio,Salto in lungo,Salto in lungo FEMMINILE,https://www.fidal.it/risultati/2024/REG34204/Gara228.htm
 REG33689,Vecchio,60m,60 piani ASSOLUTI FEMMINILI,https://www.fidal.it/risultati/2024/REG33689/Gara001.htm
 REG33689,Vecchio,60 Hs h76-8.50,60 Hs H 76-8.50 ALLIEVE,https://www.fidal.it/risultati/2024/REG33689/Gara015.htm
 REG33689,Vecchio,60m,60 piani ASSOLUTI MASCHILI,https://www.fidal.it/risultati/2024/REG33689/Gara101.htm
@@ -1217,13 +1334,14 @@ REG33689,Vecchio,60m,60 piani CADETTE,https://www.fidal.it/risultati/2024/REG336
 REG33689,Vecchio,60 Hs h76-8.00,60 Hs H 76-8.00 CADETTE,https://www.fidal.it/risultati/2024/REG33689/Gara220.htm
 REG33689,Vecchio,60m,60 piani CADETTI,https://www.fidal.it/risultati/2024/REG33689/Gara301.htm
 REG33689,Vecchio,60 Hs h84-8.50,60 Hs H 84-8.50 CADETTI,https://www.fidal.it/risultati/2024/REG33689/Gara320.htm
-REG33689,Vecchio,Peso Kg 3.000,Peso/SP Kg 3.000 ALLIEVE,https://www.fidal.it/risultati/2024/REG33689/Gara031.htm
-REG33689,Vecchio,Peso Kg 4.000,Peso/SP Kg 4.000 JUN-PRO-SEN FEMMINILI,https://www.fidal.it/risultati/2024/REG33689/Gara032.htm
-REG33689,Vecchio,Peso Kg 5.000,Peso/SP Kg 5.000 ALLIEVI,https://www.fidal.it/risultati/2024/REG33689/Gara131.htm
-REG33689,Vecchio,Peso Kg 6.000,Peso Kg 6.000 JUNIORS MASCHILI,https://www.fidal.it/risultati/2024/REG33689/Gara132.htm
-REG33689,Vecchio,Peso Kg 7.260,Peso Kg 7.260 PRO-SEN MASCHILI,https://www.fidal.it/risultati/2024/REG33689/Gara133.htm
-REG33689,Vecchio,Peso Kg 3.000,Peso/SP Kg 3.000 CADETTE,https://www.fidal.it/risultati/2024/REG33689/Gara231.htm
-REG33689,Vecchio,Peso Kg 4.000,Peso/SP Kg 4.000 CADETTI,https://www.fidal.it/risultati/2024/REG33689/Gara331.htm
+REG33689,Vecchio,60m,60 piani ASSOLUTI FEMMINILI,https://www.fidal.it/risultati/2024/REG33689/Gara001.htm
+REG33689,Vecchio,60 Hs h76-8.50,60 Hs H 76-8.50 ALLIEVE,https://www.fidal.it/risultati/2024/REG33689/Gara015.htm
+REG33689,Vecchio,60m,60 piani ASSOLUTI MASCHILI,https://www.fidal.it/risultati/2024/REG33689/Gara101.htm
+REG33689,Vecchio,60 Hs h100-9.14,60 Hs H 100 JUNIORES MASCHILI,https://www.fidal.it/risultati/2024/REG33689/Gara115.htm
+REG33689,Vecchio,60m,60 piani CADETTE,https://www.fidal.it/risultati/2024/REG33689/Gara201.htm
+REG33689,Vecchio,60 Hs h76-8.00,60 Hs H 76-8.00 CADETTE,https://www.fidal.it/risultati/2024/REG33689/Gara220.htm
+REG33689,Vecchio,60m,60 piani CADETTI,https://www.fidal.it/risultati/2024/REG33689/Gara301.htm
+REG33689,Vecchio,60 Hs h84-8.50,60 Hs H 84-8.50 CADETTI,https://www.fidal.it/risultati/2024/REG33689/Gara320.htm
 REG34213,Vecchio,50m,50m Cadetti,https://www.fidal.it/risultati/2024/REG34213/Gara156.htm
 REG34213,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34213/Gara158.htm
 REG34213,Vecchio,50m,50m Cadette,https://www.fidal.it/risultati/2024/REG34213/Gara256.htm
@@ -1232,10 +1350,16 @@ REG34213,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34213/Ga
 REG34213,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34213/Gara358.htm
 REG34213,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34213/Gara456.htm
 REG34213,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34213/Gara458.htm
-REG34213,Vecchio,Peso Kg 4.000,Peso Kg 4.000 Cadetti,https://www.fidal.it/risultati/2024/REG34213/Gara131.htm
-REG34213,Vecchio,Peso Kg 3.000,Peso Kg 3.000 Cadette,https://www.fidal.it/risultati/2024/REG34213/Gara231.htm
-REG34213,Vecchio,Peso Kg 2.000,Peso Kg 2.000 Ragazzi,https://www.fidal.it/risultati/2024/REG34213/Gara331.htm
-REG34213,Vecchio,Peso Kg 2.000,Peso Kg 2.000 Ragazze,https://www.fidal.it/risultati/2024/REG34213/Gara431.htm
+REG34213,Vecchio,50m,50m Cadetti,https://www.fidal.it/risultati/2024/REG34213/Gara156.htm
+REG34213,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34213/Gara158.htm
+REG34213,Vecchio,50m,50m Cadette,https://www.fidal.it/risultati/2024/REG34213/Gara256.htm
+REG34213,Vecchio,50 Hs h76-8.00,50 Hs H76 Cadette,https://www.fidal.it/risultati/2024/REG34213/Gara258.htm
+REG34213,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34213/Gara356.htm
+REG34213,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34213/Gara358.htm
+REG34213,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34213/Gara456.htm
+REG34213,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34213/Gara458.htm
+REG34213,Vecchio,Salto in alto,Salto in alto Cadetti,https://www.fidal.it/risultati/2024/REG34213/Gara126.htm
+REG34213,Vecchio,Salto in alto,Salto in alto Cadette,https://www.fidal.it/risultati/2024/REG34213/Gara226.htm
 REG33688,Vecchio,60m,60 piani DONNE,https://www.fidal.it/risultati/2024/REG33688/Gara001.htm
 REG33688,Vecchio,60 Hs h84-8.50,60 Hs H 84-8.50  Donne,https://www.fidal.it/risultati/2024/REG33688/Gara020.htm
 REG33688,Vecchio,60 Hs h76-8.50,60 Hs H 76-8.50 ALLIEVE,https://www.fidal.it/risultati/2024/REG33688/Gara021.htm
@@ -1243,17 +1367,23 @@ REG33688,Vecchio,60m,60 piani UOMINI,https://www.fidal.it/risultati/2024/REG3368
 REG33688,Vecchio,60 Hs h106-9.14,60 Hs H 106  Uomini,https://www.fidal.it/risultati/2024/REG33688/Gara120.htm
 REG33688,Vecchio,60 Hs h91-9.14,60 Hs H 91-9.14 ALLIEVI,https://www.fidal.it/risultati/2024/REG33688/Gara121.htm
 REG33688,Vecchio,60 Hs h100-9.14,60 Hs H 100 JUNIOR UOMINI,https://www.fidal.it/risultati/2024/REG33688/Gara122.htm
-REG33688,Vecchio,Salto in alto,Salto in alto/HJ DONNE,https://www.fidal.it/risultati/2024/REG33688/Gara026.htm
-REG33688,Vecchio,Salto in alto,Salto in alto ALLIEVE,https://www.fidal.it/risultati/2024/REG33688/Gara027.htm
-REG33688,Vecchio,Salto in alto,Salto in alto/HJ UOMINI,https://www.fidal.it/risultati/2024/REG33688/Gara126.htm
-REG33688,Vecchio,Salto in alto,Salto in alto ALLIEVI,https://www.fidal.it/risultati/2024/REG33688/Gara127.htm
+REG33688,Vecchio,60m,60 piani DONNE,https://www.fidal.it/risultati/2024/REG33688/Gara001.htm
+REG33688,Vecchio,60 Hs h84-8.50,60 Hs H 84-8.50  Donne,https://www.fidal.it/risultati/2024/REG33688/Gara020.htm
+REG33688,Vecchio,60 Hs h76-8.50,60 Hs H 76-8.50 ALLIEVE,https://www.fidal.it/risultati/2024/REG33688/Gara021.htm
+REG33688,Vecchio,60m,60 piani UOMINI,https://www.fidal.it/risultati/2024/REG33688/Gara101.htm
+REG33688,Vecchio,60 Hs h106-9.14,60 Hs H 106  Uomini,https://www.fidal.it/risultati/2024/REG33688/Gara120.htm
+REG33688,Vecchio,60 Hs h91-9.14,60 Hs H 91-9.14 ALLIEVI,https://www.fidal.it/risultati/2024/REG33688/Gara121.htm
+REG33688,Vecchio,60 Hs h100-9.14,60 Hs H 100 JUNIOR UOMINI,https://www.fidal.it/risultati/2024/REG33688/Gara122.htm
 REG34205,Vecchio,Salto in alto,Salto in alto MASCHILE,https://www.fidal.it/risultati/2024/REG34205/Gara126.htm
 REG34205,Vecchio,Salto triplo,Salto triplo MASCHILE,https://www.fidal.it/risultati/2024/REG34205/Gara129.htm
 REG34205,Vecchio,Salto in alto,Salto in alto FEMMINILE,https://www.fidal.it/risultati/2024/REG34205/Gara226.htm
 REG34205,Vecchio,Salto con l’asta,Salto con l'asta FEMMINILE,https://www.fidal.it/risultati/2024/REG34205/Gara227.htm
 REG34205,Vecchio,Salto triplo,Salto triplo FEMMINILE,https://www.fidal.it/risultati/2024/REG34205/Gara229.htm
-REG34205,Vecchio,Disco Kg 1.500,"Disco Kg 1,500 CADETTI",https://www.fidal.it/risultati/2024/REG34205/Gara332.htm
-REG34205,Vecchio,Disco Kg 1.000,"Disco Kg 1,000 CADETTE",https://www.fidal.it/risultati/2024/REG34205/Gara432.htm
+REG34205,Vecchio,Salto in alto,Salto in alto MASCHILE,https://www.fidal.it/risultati/2024/REG34205/Gara126.htm
+REG34205,Vecchio,Salto triplo,Salto triplo MASCHILE,https://www.fidal.it/risultati/2024/REG34205/Gara129.htm
+REG34205,Vecchio,Salto in alto,Salto in alto FEMMINILE,https://www.fidal.it/risultati/2024/REG34205/Gara226.htm
+REG34205,Vecchio,Salto con l’asta,Salto con l'asta FEMMINILE,https://www.fidal.it/risultati/2024/REG34205/Gara227.htm
+REG34205,Vecchio,Salto triplo,Salto triplo FEMMINILE,https://www.fidal.it/risultati/2024/REG34205/Gara229.htm
 REG34214,Vecchio,800m,800m Cadette,https://www.fidal.it/risultati/2024/REG34214/Gara108.htm
 REG34214,Vecchio,50m,50m Cadette,https://www.fidal.it/risultati/2024/REG34214/Gara156.htm
 REG34214,Vecchio,50 Hs h76-8.00,50 Hs H76 Cadette,https://www.fidal.it/risultati/2024/REG34214/Gara158.htm
@@ -1262,8 +1392,15 @@ REG34214,Vecchio,800m,800m Ragazze,https://www.fidal.it/risultati/2024/REG34214/
 REG34214,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara256.htm
 REG34214,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara258.htm
 REG34214,Vecchio,4x160m,Staff. 4X160 Indoor Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara296.htm
-REG34214,Vecchio,Peso Kg 3.000,Peso Kg 3.000 Cadette,https://www.fidal.it/risultati/2024/REG34214/Gara131.htm
-REG34214,Vecchio,Peso Kg 2.000,Peso Kg 2.000 Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara231.htm
+REG34214,Vecchio,800m,800m Cadette,https://www.fidal.it/risultati/2024/REG34214/Gara108.htm
+REG34214,Vecchio,50m,50m Cadette,https://www.fidal.it/risultati/2024/REG34214/Gara156.htm
+REG34214,Vecchio,50 Hs h76-8.00,50 Hs H76 Cadette,https://www.fidal.it/risultati/2024/REG34214/Gara158.htm
+REG34214,Vecchio,3x400m,Staffetta 3x2 Giri Cadette,https://www.fidal.it/risultati/2024/REG34214/Gara167.htm
+REG34214,Vecchio,800m,800m Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara208.htm
+REG34214,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara256.htm
+REG34214,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara258.htm
+REG34214,Vecchio,4x160m,Staff. 4X160 Indoor Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara296.htm
+REG34214,Vecchio,Salto in alto,Salto in alto Ragazze,https://www.fidal.it/risultati/2024/REG34214/Gara226.htm
 REG34208,Vecchio,60m,60m A/J/P/S M,https://www.fidal.it/risultati/2024/REG34208/Gara101.htm
 REG34208,Vecchio,60 Hs h91-9.14,60 Hs H91 Allievi,https://www.fidal.it/risultati/2024/REG34208/Gara120.htm
 REG34208,Vecchio,60 Hs h100-9.14,60 Hs H100 Juniores M,https://www.fidal.it/risultati/2024/REG34208/Gara121.htm
@@ -1280,12 +1417,15 @@ REG33698,Vecchio,60 Hs Master,60 Hs H 100 SM35/45,https://www.fidal.it/risultati
 REG33698,Vecchio,60 Hs Master,60 Hs H 84-8.00 SM60/65,https://www.fidal.it/risultati/2024/REG33698/Gara121.htm
 REG33698,Vecchio,60 Hs Master,60 Hs H 91-8.50 SM50/55,https://www.fidal.it/risultati/2024/REG33698/Gara122.htm
 REG33698,Vecchio,60 Hs Master,60 Hs H 76-7.00 SM70/75,https://www.fidal.it/risultati/2024/REG33698/Gara123.htm
-REG33698,Vecchio,Salto in alto,Salto in alto/HJ MASTER DONNE,https://www.fidal.it/risultati/2024/REG33698/Gara026.htm
-REG33698,Vecchio,Salto in lungo,Salto in lungo MASTER DONNE,https://www.fidal.it/risultati/2024/REG33698/Gara028.htm
-REG33698,Vecchio,Salto in alto,Salto in alto MASTER UOMINI,https://www.fidal.it/risultati/2024/REG33698/Gara126.htm
-REG33698,Vecchio,Salto con l’asta,Salto con l'asta MASTER UOMINI,https://www.fidal.it/risultati/2024/REG33698/Gara127.htm
-REG33698,Vecchio,Salto in lungo,Salto in lungo MASTER UOMINI,https://www.fidal.it/risultati/2024/REG33698/Gara128.htm
-REG33698,Vecchio,Salto triplo,Salto triplo MASTER UOMINI,https://www.fidal.it/risultati/2024/REG33698/Gara129.htm
+REG33698,Vecchio,60m,60 piani MASTER DONNE,https://www.fidal.it/risultati/2024/REG33698/Gara001.htm
+REG33698,Vecchio,60 Hs Master,60 Hs H 76-8.00 SF40/SF45,https://www.fidal.it/risultati/2024/REG33698/Gara020.htm
+REG33698,Vecchio,60 Hs Master,60 Hs H 76-7.00 SF50/55,https://www.fidal.it/risultati/2024/REG33698/Gara021.htm
+REG33698,Vecchio,60 Hs Master,60 Hs Master F,https://www.fidal.it/risultati/2024/REG33698/Gara023.htm
+REG33698,Vecchio,60m,60 piani MASTER UOMINI,https://www.fidal.it/risultati/2024/REG33698/Gara101.htm
+REG33698,Vecchio,60 Hs Master,60 Hs H 100 SM35/45,https://www.fidal.it/risultati/2024/REG33698/Gara120.htm
+REG33698,Vecchio,60 Hs Master,60 Hs H 84-8.00 SM60/65,https://www.fidal.it/risultati/2024/REG33698/Gara121.htm
+REG33698,Vecchio,60 Hs Master,60 Hs H 91-8.50 SM50/55,https://www.fidal.it/risultati/2024/REG33698/Gara122.htm
+REG33698,Vecchio,60 Hs Master,60 Hs H 76-7.00 SM70/75,https://www.fidal.it/risultati/2024/REG33698/Gara123.htm
 REG34215,Vecchio,800m,800m Cadetti,https://www.fidal.it/risultati/2024/REG34215/Gara108.htm
 REG34215,Vecchio,50m,50m Cadetti,https://www.fidal.it/risultati/2024/REG34215/Gara156.htm
 REG34215,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34215/Gara158.htm
@@ -1294,8 +1434,15 @@ REG34215,Vecchio,800m,800m Ragazzi,https://www.fidal.it/risultati/2024/REG34215/
 REG34215,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara256.htm
 REG34215,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara258.htm
 REG34215,Vecchio,4x160m,Staff. 4X160 Indoor Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara296.htm
-REG34215,Vecchio,Peso Kg 4.000,Peso Kg 4.000 Cadetti,https://www.fidal.it/risultati/2024/REG34215/Gara131.htm
-REG34215,Vecchio,Peso Kg 2.000,Peso Kg 2.000 Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara231.htm
+REG34215,Vecchio,800m,800m Cadetti,https://www.fidal.it/risultati/2024/REG34215/Gara108.htm
+REG34215,Vecchio,50m,50m Cadetti,https://www.fidal.it/risultati/2024/REG34215/Gara156.htm
+REG34215,Vecchio,50 Hs h84-8.50,50 Hs H84 Cadetti,https://www.fidal.it/risultati/2024/REG34215/Gara158.htm
+REG34215,Vecchio,3x400m,Staffetta 3x2 Giri Cadetti,https://www.fidal.it/risultati/2024/REG34215/Gara167.htm
+REG34215,Vecchio,800m,800m Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara208.htm
+REG34215,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara256.htm
+REG34215,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara258.htm
+REG34215,Vecchio,4x160m,Staff. 4X160 Indoor Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara296.htm
+REG34215,Vecchio,Salto in alto,Salto in alto Ragazzi,https://www.fidal.it/risultati/2024/REG34215/Gara226.htm
 REG34237,Vecchio,600m,600m Tetrathlon Cadetti,https://www.fidal.it/risultati/2024/REG34237/Gara001.htm
 REG34237,Vecchio,50 Hs h84-8.50,50 Hs H84 Tetrathlon Cadetti,https://www.fidal.it/risultati/2024/REG34237/Gara004.htm
 REG34237,Vecchio,600m,600m Tetrathlon Cadette,https://www.fidal.it/risultati/2024/REG34237/Gara005.htm
@@ -1308,8 +1455,20 @@ REG34237,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati
 REG34237,Vecchio,600m,600m Ragazze,https://www.fidal.it/risultati/2024/REG34237/Gara407.htm
 REG34237,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34237/Gara456.htm
 REG34237,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34237/Gara458.htm
-REG34237,Vecchio,not yet,Peso Kg 4.000 Tetrathlon Cadetti,https://www.fidal.it/risultati/2024/REG34237/Gara003.htm
-REG34237,Vecchio,not yet,Peso Kg 3.000 Tetrathlon Cadette,https://www.fidal.it/risultati/2024/REG34237/Gara007.htm
+REG34237,Vecchio,600m,600m Tetrathlon Cadetti,https://www.fidal.it/risultati/2024/REG34237/Gara001.htm
+REG34237,Vecchio,50 Hs h84-8.50,50 Hs H84 Tetrathlon Cadetti,https://www.fidal.it/risultati/2024/REG34237/Gara004.htm
+REG34237,Vecchio,600m,600m Tetrathlon Cadette,https://www.fidal.it/risultati/2024/REG34237/Gara005.htm
+REG34237,Vecchio,50 Hs h76-8.00,50 Hs H76 Tetrathlon Cadette,https://www.fidal.it/risultati/2024/REG34237/Gara008.htm
+REG34237,Vecchio,600m,600m Cadetti,https://www.fidal.it/risultati/2024/REG34237/Gara107.htm
+REG34237,Vecchio,600m,600m Cadette,https://www.fidal.it/risultati/2024/REG34237/Gara207.htm
+REG34237,Vecchio,600m,600m Ragazzi,https://www.fidal.it/risultati/2024/REG34237/Gara307.htm
+REG34237,Vecchio,50m,50m Ragazzi,https://www.fidal.it/risultati/2024/REG34237/Gara356.htm
+REG34237,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazzi,https://www.fidal.it/risultati/2024/REG34237/Gara358.htm
+REG34237,Vecchio,600m,600m Ragazze,https://www.fidal.it/risultati/2024/REG34237/Gara407.htm
+REG34237,Vecchio,50m,50m Ragazze,https://www.fidal.it/risultati/2024/REG34237/Gara456.htm
+REG34237,Vecchio,50 Hs h60-7.50,50 Hs H60 Ragazze,https://www.fidal.it/risultati/2024/REG34237/Gara458.htm
+REG34237,Vecchio,Salto in alto,Salto in alto Tetrathlon Cadetti,https://www.fidal.it/risultati/2024/REG34237/Gara002.htm
+REG34237,Vecchio,Salto in alto,Salto in alto Tetrathlon Cadette,https://www.fidal.it/risultati/2024/REG34237/Gara006.htm
 REG34239,Vecchio,Salto in alto,Salto in alto ALLIEVI,https://www.fidal.it/risultati/2024/REG34239/Gara126.htm
 REG34239,Vecchio,Salto con l’asta,Salto con l'asta ALLIEVI,https://www.fidal.it/risultati/2024/REG34239/Gara127.htm
 REG34239,Vecchio,Salto in lungo,Salto in lungo ALLIEVI,https://www.fidal.it/risultati/2024/REG34239/Gara128.htm
@@ -1318,8 +1477,14 @@ REG34239,Vecchio,Salto in alto,Salto in alto ALLIEVE,https://www.fidal.it/risult
 REG34239,Vecchio,Salto con l’asta,Salto con l'asta ALLIEVE,https://www.fidal.it/risultati/2024/REG34239/Gara227.htm
 REG34239,Vecchio,Salto in lungo,Salto in lungo ALLIEVE,https://www.fidal.it/risultati/2024/REG34239/Gara228.htm
 REG34239,Vecchio,Salto triplo,Salto triplo ALLIEVE,https://www.fidal.it/risultati/2024/REG34239/Gara229.htm
-REG34239,Vecchio,Martello Kg 4.000,Martello Kg 4.000 CADETTI,https://www.fidal.it/risultati/2024/REG34239/Gara333.htm
-REG34239,Vecchio,Martello Kg 3.000,Martello Kg 3.000 CADETTE,https://www.fidal.it/risultati/2024/REG34239/Gara433.htm
+REG34239,Vecchio,Salto in alto,Salto in alto ALLIEVI,https://www.fidal.it/risultati/2024/REG34239/Gara126.htm
+REG34239,Vecchio,Salto con l’asta,Salto con l'asta ALLIEVI,https://www.fidal.it/risultati/2024/REG34239/Gara127.htm
+REG34239,Vecchio,Salto in lungo,Salto in lungo ALLIEVI,https://www.fidal.it/risultati/2024/REG34239/Gara128.htm
+REG34239,Vecchio,Salto triplo,Salto triplo ALLIEVI,https://www.fidal.it/risultati/2024/REG34239/Gara129.htm
+REG34239,Vecchio,Salto in alto,Salto in alto ALLIEVE,https://www.fidal.it/risultati/2024/REG34239/Gara226.htm
+REG34239,Vecchio,Salto con l’asta,Salto con l'asta ALLIEVE,https://www.fidal.it/risultati/2024/REG34239/Gara227.htm
+REG34239,Vecchio,Salto in lungo,Salto in lungo ALLIEVE,https://www.fidal.it/risultati/2024/REG34239/Gara228.htm
+REG34239,Vecchio,Salto triplo,Salto triplo ALLIEVE,https://www.fidal.it/risultati/2024/REG34239/Gara229.htm
 REG34238,Vecchio,50m,50m Uomini,https://www.fidal.it/risultati/2024/REG34238/Gara156.htm
 REG34238,Vecchio,60 Hs h91-9.14,50 Hs H91 Allievi,https://www.fidal.it/risultati/2024/REG34238/Gara158.htm
 REG34238,Vecchio,50 Hs h100-9.14,50 Hs H100 Juniores Uomini,https://www.fidal.it/risultati/2024/REG34238/Gara159.htm
@@ -1330,11 +1495,16 @@ REG34238,Vecchio,50m,50m Master Uomini,https://www.fidal.it/risultati/2024/REG34
 REG34238,Vecchio,50m,50m Master Donne,https://www.fidal.it/risultati/2024/REG34238/Gara456.htm
 REG34238,Vecchio,50 Hs Master,50 Hs H76 SF40-45,https://www.fidal.it/risultati/2024/REG34238/Gara458.htm
 REG34238,Vecchio,50 Hs Master,50 Hs H76 SF50-55,https://www.fidal.it/risultati/2024/REG34238/Gara460.htm
-REG34238,Vecchio,Peso Kg 5.000,Peso Kg 5.000 Allievi,https://www.fidal.it/risultati/2024/REG34238/Gara131.htm
-REG34238,Vecchio,Peso Kg 6.000,Peso Kg 6.000 Juniores Uomini,https://www.fidal.it/risultati/2024/REG34238/Gara132.htm
-REG34238,Vecchio,Peso Kg 3.000,Peso Kg 3.000 Allieve,https://www.fidal.it/risultati/2024/REG34238/Gara231.htm
-REG34238,Vecchio,Peso Master,Peso Master Uomini,https://www.fidal.it/risultati/2024/REG34238/Gara331.htm
-REG34238,Vecchio,Peso Master,Peso Master Donne,https://www.fidal.it/risultati/2024/REG34238/Gara431.htm
+REG34238,Vecchio,50m,50m Uomini,https://www.fidal.it/risultati/2024/REG34238/Gara156.htm
+REG34238,Vecchio,60 Hs h91-9.14,50 Hs H91 Allievi,https://www.fidal.it/risultati/2024/REG34238/Gara158.htm
+REG34238,Vecchio,50 Hs h100-9.14,50 Hs H100 Juniores Uomini,https://www.fidal.it/risultati/2024/REG34238/Gara159.htm
+REG34238,Vecchio,50 Hs h106-9.14,50 Hs H106 Uomini,https://www.fidal.it/risultati/2024/REG34238/Gara160.htm
+REG34238,Vecchio,50m,50m Donne,https://www.fidal.it/risultati/2024/REG34238/Gara256.htm
+REG34238,Vecchio,50 Hs h76-8.50,50 Hs H76 Allieve,https://www.fidal.it/risultati/2024/REG34238/Gara258.htm
+REG34238,Vecchio,50m,50m Master Uomini,https://www.fidal.it/risultati/2024/REG34238/Gara356.htm
+REG34238,Vecchio,50m,50m Master Donne,https://www.fidal.it/risultati/2024/REG34238/Gara456.htm
+REG34238,Vecchio,50 Hs Master,50 Hs H76 SF40-45,https://www.fidal.it/risultati/2024/REG34238/Gara458.htm
+REG34238,Vecchio,50 Hs Master,50 Hs H76 SF50-55,https://www.fidal.it/risultati/2024/REG34238/Gara460.htm
 REG33593,Vecchissimo,60m,60m Uomini,https://www.fidal.it/risultati/2024/REG33593/Gara001.htm
 REG33593,Vecchissimo,60 Hs h106-9.14,60 Hs H 106 Uomini,https://www.fidal.it/risultati/2024/REG33593/Gara020.htm
 REG33593,Vecchissimo,60 Hs h100-9.14,60 Hs H 100 Juniores Uomini,https://www.fidal.it/risultati/2024/REG33593/Gara021.htm

@@ -25,11 +25,10 @@ def extract_meet_codes_from_calendar(anno, mese, livello, regione, tipo, categor
         b_elements = div.find_all('b')
         for b in b_elements:
             if 'title' in b.attrs:
-                date = b.get_text(strip=True)
-                date = date.split('/')[1] + '/' + date.split('/')[0]
-                date = date.replace('-','+').replace('/','-').replace('+','/')
-                date = anno + '-' + date
-                dates.append(date)
+                meet_date = b.get_text(strip=True) ## il format è 31/12 oppure 30-31/12 oppure 31/12-01/01. Quindi mi basta prendere gli ultimi 5 caratteri
+                last_day = int(meet_date[-5:-3])
+                month = int(meet_date[-2:])
+                dates.append(date(int(anno), month, last_day))
         
         # These have the link with the meet code
         a_elements = div.find_all('a', href=True)
@@ -39,31 +38,13 @@ def extract_meet_codes_from_calendar(anno, mese, livello, regione, tipo, categor
             if match:
                 meet_code.append(match.group(0))
             
-        df = pd.DataFrame({'Data': dates, 'Codice': meet_code})
+        df = pd.DataFrame({'Data': dates, 'Codice': meet_code, 'Ultimo Aggiornamento':date(1896, 3, 31)}) # first modern olympics date
         
         return df
     
     else:
         print("Failed to fetch the webpage. Status code:", response.status_code)
         return []
-
-
-def custom_sort(date_str):
-    # custum sort filter for dates in the format '', NaN, '1999-12-31' and '1999-12-30/31'
-    
-    if date_str == '' or pd.isna(date_str):
-        return date(1896, 3, 31) # first modern olympics date ;-)
-    
-    parts = date_str.split('-')
-    
-    if '/' in date_str: # in case of 30/31
-        last_day = int(parts[-1].split('/')[-1])
-    else: last_day = int(parts[-1])
-    
-    month = int(parts[1])
-    year = int(parts[0])
-    
-    return date(year, month, last_day)
 
 
 
@@ -78,7 +59,6 @@ def get_meet_info(df_gare, update_criteria):
     ##                  'date_N' to check update N days before/after the meet date
     ##                  'status' to check updates for row with non 'ok' status and not al 3 pages of sigma vechio
     
-    ## uses custum_date_sort()
     
     today = datetime.today().date() #date of today
     
@@ -87,8 +67,8 @@ def get_meet_info(df_gare, update_criteria):
         time_span = int(update_criteria[-1]) # days around the meet I'm looking for updates
         
         # Rows I want to check: if today is 7 days from/prior to the meet, or if it wasn't updated 7 days after the meet
-        diff_update = (df_gare['Ultimo Aggiornamento'].apply(custom_sort) - df_gare['Data'].apply(custom_sort)).dt.days
-        diff_today_data = (today - df_gare['Data'].apply(custom_sort)).dt.days
+        diff_update = (df_gare['Ultimo Aggiornamento'] - df_gare['Data']).dt.days
+        diff_today_data = (today - df_gare['Data']).dt.days
         date_contition = (abs(diff_today_data) < time_span) | ( (diff_update < time_span) & (diff_today_data > 0) )
         
         indices = df_gare.index[date_contition].tolist()
@@ -124,8 +104,8 @@ def get_meet_info(df_gare, update_criteria):
         #ii = ii + kk # righe aggiunte
         cod = df_gare.loc[ii, 'Codice']
         
-        year = df_gare.loc[ii, 'Data'].split('-')[0]
-        url3 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/Index.htm' # link della home
+        meet_year = str(df_gare.loc[ii, 'Data'].year)
+        url3 = 'https://www.fidal.it/risultati/'+meet_year+'/' + cod + '/Index.htm' # link della home
         r3 = requests.get(url3).status_code
         
         if r3 == 404: # la home è comune a tutti, quindi deve esistere se esiste una pagina della gara
@@ -137,7 +117,7 @@ def get_meet_info(df_gare, update_criteria):
         elif r3 == 200: # C'è la home. Ora devo solo capire che versione di sigma c'è. Arrivato a questo punto coinsidero possibile solo che le richieste abbiamo come risposta 200 o 404.
             df_gare.loc[ii,'Home'] = url3
 
-            url1 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/Risultati/IndexRisultatiPerGara.html'
+            url1 = 'https://www.fidal.it/risultati/'+meet_year+'/' + cod + '/Risultati/IndexRisultatiPerGara.html'
             r1 = requests.get(url1).status_code
             if r1 == 200:                                                                               # trovato nuovo con risultati
                 df_gare.loc[ii,'Risultati'] = url1
@@ -145,7 +125,7 @@ def get_meet_info(df_gare, update_criteria):
                 df_gare.loc[ii,'Status'] = 'ok'
                 continue
             
-            url1_1 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/Iscrizioni/IndexPerGara.html'     # trovato nuovo ma senza risultati
+            url1_1 = 'https://www.fidal.it/risultati/'+meet_year+'/' + cod + '/Iscrizioni/IndexPerGara.html'     # trovato nuovo ma senza risultati
             r1_1 = requests.get(url1_1).status_code
             if r1_1 == 200:
                 df_gare.loc[ii,'Risultati'] = ''
@@ -153,7 +133,7 @@ def get_meet_info(df_gare, update_criteria):
                 df_gare.loc[ii,'Status'] = 'Risultati non ancora disponibili'
                 continue
             
-            url2 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT1.htm'                # trovato vecchio con risultati
+            url2 = 'https://www.fidal.it/risultati/'+meet_year+'/' + cod + '/RESULTSBYEVENT1.htm'                # trovato vecchio con risultati
             r2 = requests.get(url2).status_code
             if r2 == 200:
                 df_gare.loc[ii,'Risultati'] = url2
@@ -163,7 +143,7 @@ def get_meet_info(df_gare, update_criteria):
                 # Possono esistere anche /RESULTSBYEVENT2.htm, /RESULTSBYEVENT3.htm, ..., /RESULTSBYEVENTN.htm
                 for jj in range(2, 30):
                     
-                    url2_jj = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT'+str(jj)+'.htm'
+                    url2_jj = 'https://www.fidal.it/risultati/'+meet_year+'/' + cod + '/RESULTSBYEVENT'+str(jj)+'.htm'
                     r2_jj = requests.get(url2_jj).status_code
                     
                     if r2_jj == 200:
@@ -174,7 +154,7 @@ def get_meet_info(df_gare, update_criteria):
                     
                 continue
             
-            url2_1 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/ENTRYLISTBYEVENT1.htm'            # trovato vecchio senza risultati
+            url2_1 = 'https://www.fidal.it/risultati/'+meet_year+'/' + cod + '/ENTRYLISTBYEVENT1.htm'            # trovato vecchio senza risultati
             r2_1 = requests.get(url2_1).status_code
             if r2_1 == 200:
                 df_gare.loc[ii,'Risultati'] = 'Non ancora disponibili'
