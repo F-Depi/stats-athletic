@@ -1,24 +1,30 @@
 import pandas as pd
 import csv
+import json
 import os
 from functions_general import extract_meet_codes_from_calendar, custom_sort, get_meet_info, get_events_link
 from scraping_risultati import results_from_sigma
 
 
-anno = '2024';      regione = '';       categoria = ''      
+anno = '2023';      regione = '';       categoria = ''      
 mese = '';          tipo = '3'
 
-file_gare = 'Generale/link_gare.csv'
-file_risultati = 'Generale/link_risultati_gare1.csv'
+folder = 'indoor_'+anno+'/'
+file_gare = folder + 'link_gare.csv'
+file_risultati = folder + 'link_risultati.csv'
+file_risultati_key = folder + 'link_risultati_key.csv'
+file_dizionario = 'Generale/event_dict.csv'
 
 ################# Codici gare (anno, mese, livello, regione, tipo, categoria) ###################
 ## Se file_gare è già presente viene solo aggiornato con i nuovi codici gara
 ## la funzione usata restituisce un DataFrame con 'Data' e 'Codice' delle varie gare
 
-df_REG_gare = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
+""" df_REG_gare = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
 df_COD_gare = extract_meet_codes_from_calendar(anno,mese,'COD',regione,tipo,categoria)
 df_gare = pd.concat([df_REG_gare, df_COD_gare], ignore_index=True)
 df_gare[['Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']] = ''
+
+if not os.path.exists(folder): os.makedirs(folder)
 
 if os.path.exists(file_gare):
     
@@ -32,10 +38,11 @@ if os.path.exists(file_gare):
         print('\nSono stati aggiunti i codici gare:\n')
         for cod in df_gare_new['Codice']: print(cod + '\n')
     else: print('\nNon sono stati aggiunti codici gare\n')
-else: print('\nNon ho trovato il file ' + file_gare + '. Lo creo')
+else: print('\nNon ho trovato il file ' + file_gare + '. Lo creo.')
+
 ## Mettiamo le gare in ordine cronologico
 df_gare = df_gare.sort_values(by='Data', key=lambda x: x.apply(custom_sort))
-df_gare = df_gare.reset_index(drop=True)
+df_gare = df_gare.reset_index(drop=True) """
 
 #################################################################################################
 
@@ -48,8 +55,8 @@ df_gare = df_gare.reset_index(drop=True)
 ## Il DataFrame deve essere già del tipo:
 ## [Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
 
-df_gare = get_meet_info(df_gare, 'date_2')
-df_gare.to_csv(file_gare, sep='\t', index=False)
+""" df_gare = get_meet_info(df_gare, 'date_2')
+df_gare.to_csv(file_gare, sep='\t', index=False) """
 
 ##################################################################################################
 
@@ -58,27 +65,41 @@ df_gare.to_csv(file_gare, sep='\t', index=False)
 ################# Otteniamo i link a ogni risultato di ogni disciplina per ogni gara #############
 ## usiamo come DataFrame ['Codice', 'Versione Sigma', 'Disciplina', 'Nome', 'Link']
 ## per ora ci occupiamo solo di trovare 'Nome' e 'Link'
-print('\nOra lavoro per cercare i link agli eventi di ogni gara')
-df_gare = pd.read_csv(file_gare, sep='\t')
+
+""" print('\n\nOra cerco i link agli eventi di ogni gara')
 df_risultati = get_events_link(df_gare)
-df_risultati.to_csv(file_risultati, index=False)
+df_risultati.to_csv(file_risultati, index=False) """
 
-""" # Prendo solo quelli con status ok
-df_gare_ok = df_gare[df_gare['status'] == 'ok']
-df_risultati = pd.DataFrame(columns=['Codice', 'Versione Sigma', 'Disciplina', 'Nome', 'Link'])
-df_risultati['Codice', 'Versione Sigma'] = df_gare_ok['Codice', 'Risultati']
-if os.path.exists(file_risultati):
-    
-    print('\nE\' stato trovato il file ' + file_risultati)
-    
-    df_risultati_old = pd.read_csv(file_risultati)
-    df_risultati_new = df_risultati[~df_risultati['Codice'].isin(df_risultati_old['Codice'])]
-    df_risultati = pd.concat([df_risultati_old, df_risultati_new], ignore_index=True)
-    
-    if len(df_risultati_new) > 0:
-        print('\nSono stati aggiunti i codici gare:\n')
-        for cod in df_risultati_new['Codice']: print(cod + '\n')
-    else: print('\nNon sono stati aggiunti codici gare\n')
-else: print('\nNon ho trovato il file ' + file_risultati + '. Lo creo') """
+## Per ora basta così. Lo so. Devo trovare un modo per aggiornare solo i link ai risultati delle
+## e non ricercarli tutti ogni volta. Ma è troppo complicato e per ora non riesco a farlo
 
 
+
+################# Identifichiamo la disciplina corretta con il dizionari dei nomi #################
+
+df_risultati = pd.read_csv(file_risultati)
+
+event_dict = {}
+with open(file_dizionario, 'r', newline='') as csv_file: #apro il dizionario
+    reader = csv.reader(csv_file)
+    for row in reader:
+        disciplina = row[0]
+        nomi = row[1:]
+        event_dict[disciplina] = nomi
+   
+for ii, row in df_risultati.iterrows():
+    nome = row['Nome']
+    if nome in event_dict:
+        print(event_dict[nome])
+        print(nome)
+        df_risultati.loc[ii, 'Disciplina'] = event_dict[nome]
+    else:
+        #print('Non conosco ' + nome)
+        event_dict[nome] = ['boh']
+
+df_risultati.to_csv(file_risultati_key, index=False)
+
+with open(file_dizionario, 'w', newline='') as csv_file: # salvo il dizionario con i cambiamenti
+    writer = csv.writer(csv_file)
+    for disciplina, nome in event_dict.items():
+        writer.writerow([disciplina] + nome)

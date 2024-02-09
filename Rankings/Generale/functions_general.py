@@ -80,7 +80,7 @@ def get_meet_info(df_gare, update_criteria):
     
     ## uses custum_date_sort()
     
-    today = datetime.today().date() #date of dotay
+    today = datetime.today().date() #date of today
     
     if update_criteria.startswith('date_'):
 
@@ -112,6 +112,10 @@ def get_meet_info(df_gare, update_criteria):
     else: print('Update criteria not valid. Valid update criteria are:\n\'date_N\', \'status\' and \'all\'');
     
     #kk = 0
+    if indices == []:
+        print('Non c\'è nulla da aggiornare')
+        return df_gare
+    
     print('Aggiorno i link da '+str(indices[0]+1)+' a '+str(indices[-1]+1)+':\n')
     tot = len(df_gare)
     for ii in indices:
@@ -120,7 +124,8 @@ def get_meet_info(df_gare, update_criteria):
         #ii = ii + kk # righe aggiunte
         cod = df_gare.loc[ii, 'Codice']
         
-        url3 = 'https://www.fidal.it/risultati/2024/' + cod + '/Index.htm' # link della home
+        year = df_gare.loc[ii, 'Data'].split('-')[0]
+        url3 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/Index.htm' # link della home
         r3 = requests.get(url3).status_code
         
         if r3 == 404: # la home è comune a tutti, quindi deve esistere se esiste una pagina della gara
@@ -132,7 +137,7 @@ def get_meet_info(df_gare, update_criteria):
         elif r3 == 200: # C'è la home. Ora devo solo capire che versione di sigma c'è. Arrivato a questo punto coinsidero possibile solo che le richieste abbiamo come risposta 200 o 404.
             df_gare.loc[ii,'Home'] = url3
 
-            url1 = 'https://www.fidal.it/risultati/2024/' + cod + '/Risultati/IndexRisultatiPerGara.html'
+            url1 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/Risultati/IndexRisultatiPerGara.html'
             r1 = requests.get(url1).status_code
             if r1 == 200:                                                                               # trovato nuovo con risultati
                 df_gare.loc[ii,'Risultati'] = url1
@@ -140,7 +145,7 @@ def get_meet_info(df_gare, update_criteria):
                 df_gare.loc[ii,'Status'] = 'ok'
                 continue
             
-            url1_1 = 'https://www.fidal.it/risultati/2024/' + cod + '/Iscrizioni/IndexPerGara.html'     # trovato nuovo ma senza risultati
+            url1_1 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/Iscrizioni/IndexPerGara.html'     # trovato nuovo ma senza risultati
             r1_1 = requests.get(url1_1).status_code
             if r1_1 == 200:
                 df_gare.loc[ii,'Risultati'] = ''
@@ -148,7 +153,7 @@ def get_meet_info(df_gare, update_criteria):
                 df_gare.loc[ii,'Status'] = 'Risultati non ancora disponibili'
                 continue
             
-            url2 = 'https://www.fidal.it/risultati/2024/' + cod + '/RESULTSBYEVENT1.htm'                # trovato vecchio con risultati
+            url2 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT1.htm'                # trovato vecchio con risultati
             r2 = requests.get(url2).status_code
             if r2 == 200:
                 df_gare.loc[ii,'Risultati'] = url2
@@ -156,7 +161,7 @@ def get_meet_info(df_gare, update_criteria):
                 df_gare.loc[ii,'Status'] = 'ok'
                 
                 # Può esistere anche /RESULTSBYEVENT2.htm
-                url2_0_2 = 'https://www.fidal.it/risultati/2024/' + cod + '/RESULTSBYEVENT2.htm'
+                url2_0_2 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT2.htm'
                 r2_0_2 = requests.get(url2_0_2).status_code
                 if r2_0_2 == 200:
                     
@@ -170,7 +175,7 @@ def get_meet_info(df_gare, update_criteria):
                     #ii = ii + 1
                     
                     # Può esistere anche /RESULTSBYEVENT3.htm
-                    url2_0_3 = 'https://www.fidal.it/risultati/2024/' + cod + '/RESULTSBYEVENT3.htm'
+                    url2_0_3 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT3.htm'
                     r2_0_3 = requests.get(url2_0_3).status_code
                     if r2_0_3 == 200:
                         
@@ -182,13 +187,13 @@ def get_meet_info(df_gare, update_criteria):
                         #df_gare = pd.concat([df_gare.loc[:ii], new_row, df_gare.loc[ii+1:]], ignore_index=True)
                         
                         # Non dovrebbe esistere anche /RESULTSBYEVENT4.htm
-                        url2_0_4 = 'https://www.fidal.it/risultati/2024/' + cod + '/RESULTSBYEVENT4.htm'
+                        url2_0_4 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/RESULTSBYEVENT4.htm'
                         r2_0_4 = requests.get(url2_0_4).status_code
                         if r2_0_4 == 200:
                             print('WHAT! Questa pagina ha 4 pagine di risultati: ' + url2_0_4)
                 continue
             
-            url2_1 = 'https://www.fidal.it/risultati/2024/' + cod + '/ENTRYLISTBYEVENT1.htm'            # trovato vecchio senza risultati
+            url2_1 = 'https://www.fidal.it/risultati/'+year+'/' + cod + '/ENTRYLISTBYEVENT1.htm'            # trovato vecchio senza risultati
             r2_1 = requests.get(url2_1).status_code
             if r2_1 == 200:
                 df_gare.loc[ii,'Risultati'] = 'Non ancora disponibili'
