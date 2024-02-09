@@ -6,10 +6,20 @@
 1-sta19novembre2021,altro
 1-sta23/01/2021,altro
 1-sta24/01/2021,altro
+1/sta-01/02/2020,altro
+1/sta-02/02/2020,altro
+1/sta-18/01/2020,altro
+1/sta-19/01/2020,altro
+1/sta-22-02-2020,altro
+1/sta-25/01/2020,altro
+1/sta-26/01/2020,altro
 1/sta-modena-domenica28/01/2024,altro
 1/sta-modena-sabato27/01/2024,altro
 1/sta06/02/2021,altro
 1/sta07/02/2021,altro
+1/sta11-01-2020,altro
+1/sta12-01-2020,altro
+1/sta16-02-2020,altro
 1/sta16/01/2021,altro
 1/sta17/01/2021,altro
 1/sta19gennaio2022,altro
@@ -20,6 +30,7 @@
 1/sta30gennaio2022,altro
 1/sta5marzo2022,altro
 1/sta6marzo2022,altro
+1000m-allievi,1000m
 1000m.eptathlonjunioruomini,1000m
 1000m.eptathlonpromesseuomini,1000m
 1000m.pentathlonallievi,1000m
@@ -32,6 +43,7 @@
 1000mcadetti,1000m
 1000mcadetti(open),1000m
 1000mcadetti(u16),1000m
+1000mdonneadinvito,1000m
 1000mept.junioresuomini,1000m
 1000mept.uomini,1000m
 1000meptathlon,1000m
@@ -48,17 +60,27 @@
 1000metricadetti,1000m
 1000metricadetti(u16),1000m
 1000metridonne,1000m
+1000metridonneadinvito,1000m
 1000metrieptathlon,1000m
 1000metrieptathloni/ojm,1000m
 1000metrieptathloni/ojpsm,1000m
+1000metrieptathloni/opsm,1000m
+1000metrieptathloni/opsuomini,1000m
 1000metrieptathlonind.jpsm,1000m
+1000metrieptathlonjm,1000m
 1000metrieptathlonjpsuomini,1000m
+1000metrieptathlonjunioresuomini,1000m
+1000metrieptathlonjunioruomini,1000m
+1000metrieptathlonpsm.,1000m
+1000metrieptathlonuomini,1000m
 1000metrijunioresuominipm,1000m
 1000metrimasterdonne,1000m
 1000metrimasteruomini,1000m
 1000metripentathlonallievi,1000m
+1000metripentathlonam,1000m
 1000metripentathloni/oam,1000m
 1000metripentathlonindooram,1000m
+1000metripentathlonmasteruomini,1000m
 1000metripentathlonsm60,1000m
 1000metriragazze,1000m
 1000metriragazze(u14),1000m
@@ -69,22 +91,26 @@
 1000metrism65pentathlon,1000m
 1000metrism75pentathlon,1000m
 1000metrism80pentathlon,1000m
+1000metritetrathloncadetti,1000m
 1000metriuomini,1000m
 1000mjmp.m.,1000m
 1000mjun.maschilieptathlon,1000m
 1000mjun/maschieptathlon,1000m
 1000mjun/pro/senmaschilieptathlon,1000m
+1000mjuniormaschilieptathlon,1000m
 1000mp/sp.m.,1000m
 1000mpent.allievi,1000m
 1000mpentathlonallievi,1000m
 1000mpentathlonallieviu18,1000m
 1000mpentathlonmasteruomini,1000m
 1000mpenthalonallievi,1000m
+1000mpro/senmaschilieptathlon,1000m
 1000mragazze,1000m
 1000mragazzi,1000m
 1000mtetrathloncadetti,1000m
 1000muomini(adinvito),1000m
 100hsh76-8.50allieve(u18),100 Hs h76-8.50
+100hsh84-8.50donne,100 Hs h84-8.50
 1500madultidonne,1500m
 1500madultidonne+junioresdonne+allieve,1500m
 1500madultiuomini,1500m
@@ -95,24 +121,36 @@
 1500mdonne(adinvito),1500m
 1500mdonne(extra),1500m
 1500metriadultidonne,1500m
+1500metriadultifemmine,1500m
+1500metriadultimaschi,1500m
 1500metriadultiuomini,1500m
 1500metriallieve,1500m
 1500metriallievi,1500m
 1500metriassolutidonne,1500m
 1500metriassolutiuomini,1500m
 1500metriassolutiuomini(adinvito),1500m
+1500metricdsdonne,1500m
+1500metriclassec21m,1500m
+1500metriclasseopenm,1500m
 1500metridonne,1500m
+1500metriextradonne,1500m
+1500metriextrauomini,1500m
 1500metrif50-55,1500m
 1500metrif60+,1500m
 1500metrijunioresdonne,1500m
 1500metrijunioresuomini,1500m
+1500metrimasterdonne,1500m
+1500metrimasteruomini,1500m
 1500metrisf35,1500m
+1500metrisf35-40,1500m
 1500metrisf40,1500m
 1500metrisf45,1500m
 1500metrisf50,1500m
 1500metrisf55,1500m
 1500metrisf60,1500m
+1500metrisf60+,1500m
 1500metrisf65,1500m
+1500metrisf70,1500m
 1500metriuomini,1500m
 1500mjunioresdonne,1500m
 1500mjunioresuomini,1500m
@@ -120,13 +158,21 @@
 1500mmaster/bancaridonne,1500m
 1500mmasterdonne,1500m
 1500mmasteruomini,1500m
+1500mmen,1500m
 1500mpromessedonne,1500m
 1500mpromesseuomini,1500m
 1500muomini,1500m
 1500muomini(adinvito),1500m
 1500muomini(extra),1500m
+1500mwomen,1500m
 150mcadette,1500m
 150mcadetti,1500m
+150mef10,150m
+150mef5,150m
+150mef8,150m
+150mem10,150m
+150mem5,150m
+150mem8,150m
 150mragazze,1500m
 150mragazzi,1500m
 160mesordientif10,160m
@@ -143,6 +189,7 @@
 200mcadette,200m
 200mcadetti,200m
 200mdonne,200m
+200mdonneextra,200m
 200mesof10,200m
 200mesof5,200m
 200mesof5-8,200m
@@ -152,6 +199,8 @@
 200mesom5-8,200m
 200mesom8,200m
 200metriadultidonne,200m
+200metriadultifemmine,200m
+200metriadultimaschi,200m
 200metriadultiuomini,200m
 200metriallieve,200m
 200metriallievi,200m
@@ -161,12 +210,19 @@
 200metriassolutiuomini,200m
 200metricadette,200m
 200metricadetti,200m
+200metricdsdonne,200m
+200metriclassec21f,200m
+200metriclassec21m,200m
+200metriclasseopenf,200m
+200metriclasseopenm,200m
 200metridonne,200m
 200metrief10,200m
 200metrief5,200m
+200metrief6,200m
 200metrief8,200m
 200metriem10,200m
 200metriem5,200m
+200metriem6,200m
 200metriem8,200m
 200metriesordientif10,200m
 200metriesordientim10,200m
@@ -177,13 +233,19 @@
 200metriragazze(u14),200m
 200metriragazzi,200m
 200metriragazzi(u14),200m
+200metriseniormasterdonne,200m
+200metriseniormasteruomini,200m
 200metrisf35,200m
 200metrisf40,200m
 200metrisf45,200m
 200metrisf50,200m
 200metrisf55,200m
 200metrisf60,200m
+200metrisf60+,200m
+200metrisf65,200m
+200metrisf70,200m
 200metrisf75,200m
+200metrisf80,200m
 200metrispecialolympicsuomini,200m
 200metriuomini,200m
 200mjunioresdonne,200m
@@ -191,9 +253,12 @@
 200mjunioresuomini-batteriaextra,200m
 200mmasterdonne,200m
 200mmasteruomini,200m
+200mmen,200m
 200mragazze,200m
 200mragazzi,200m
 200muomini,200m
+200muominiextra,200m
+200mwomen,200m
 3000f60+,3000m
 3000m70+,3000m
 3000madultidonne,3000m
@@ -205,19 +270,25 @@
 3000mdonne,3000m
 3000mdonne(extra),3000m
 3000metriadultidonne,3000m
+3000metriadultimaschi,3000m
 3000metriadultiuomini,3000m
 3000metriallieve,3000m
 3000metriallievi,3000m
 3000metriassolutidonne,3000m
 3000metriassolutiuomini,3000m
+3000metricdsdonne,3000m
 3000metridonne,3000m
 3000metrif50-55,3000m
 3000metrif60+,3000m
 3000metrijunioresuomini,3000m
+3000metriseniormasterdonne,3000m
+3000metriseniormasteruomini,3000m
 3000metrisf35,3000m
+3000metrisf35-40,3000m
 3000metrisf40,3000m
 3000metrisf45,3000m
 3000metrisf50,3000m
+3000metrisf50+,3000m
 3000metrisf55,3000m
 3000metrisf60,3000m
 3000metrisf65,3000m
@@ -249,21 +320,29 @@
 300pianicadetti(u16),300m
 300pianidonne,300m
 300pianiuomini,300m
+30hsragazzef,30 Hs EF
+30hsragazzim,30 Hs EM
 30mcadette,30m
 30mcadetti,30m
 30mesordientif5,30m
 30mesordientif8,30m
 30mesordientim5,30m
 30mesordientim8,30m
+30metriragazze,30m
+30metriragazzi,30m
 30mpianiragazze,30m
 30mpianiragazzi,30m
 30mragazze,30m
 30mragazzi,30m
 30mtriathlonragazze,30m
+30ostacolibiathlonragazze,30 Hs h76-8.00
+30ostacolibiathlonragazzi,30 Hs h76-8.00
 30ostacolicadette,30 Hs h76-8.00
 30ostacolicadetti,30 Hs h84-8.50
 30ostacoliesordientif10,30 Hs EF
 30ostacoliesordientim10,30 Hs EM
+30pianiragazze,30m
+30pianiragazzi,30m
 35metriesordientif10,35m
 35metriesordientif5,35m
 35metriesordientif8,35m
@@ -286,6 +365,7 @@
 400mallievi,400m
 400mdonne,400m
 400mdonne(extra),400m
+400mdonneextra,400m
 400metri1°mediadonne,400m
 400metri1°mediauomini,400m
 400metri2°mediadonne,400m
@@ -293,26 +373,39 @@
 400metri3°mediadonne,400m
 400metri3°mediauomini,400m
 400metriadultidonne,400m
+400metriadultifemmine,400m
+400metriadultimaschi,400m
 400metriadultiuomini,400m
 400metriallieve,400m
 400metriallievi,400m
 400metriassolutidonne,400m
 400metriassolutiuomini,400m
+400metricdsdonne,400m
 400metridonne,400m
+400metridonneadinvito,400m
+400metriextradonne,400m
+400metriextrauomini,400m
 400metrif65+,400m
 400metrijunioresdonne,400m
 400metrijunioresuomini,400m
+400metrimasterdonne,400m
+400metrimasteruomini,400m
+400metripentathlonaf,400m
+400metripentathlonallieve,400m
 400metrisf35,400m
 400metrisf40,400m
 400metrisf45,400m
 400metrisf50,400m
 400metrisf55,400m
 400metrisf60,400m
+400metrisf60+,400m
 400metrisf65,400m
 400metrisf70,400m
+400metrisf80,400m
 400metrisf85,400m
 400metritetrathloncadette,400m
 400metriuomini,400m
+400metriuominiadinvito,400m
 400mjunioresdonne,400m
 400mjunioresdonne+adultidonne,400m
 400mjunioresuomini,400m
@@ -320,6 +413,7 @@
 400mmaster/bancariuomini,400m
 400mmasterdonne,400m
 400mmasteruomini,400m
+400mmen,400m
 400mpmcadette,400m
 400mpromessedonne,400m
 400mpromesseuomini,400m
@@ -327,6 +421,11 @@
 400mragazzi(u14),400m
 400mtetrathloncadette,400m
 400muomini,400m
+400muominiextra,400m
+400mwomen,400m
+40hsesordienti6m/f,40 Hs E
+40hsesordienti8femminili,40 Hs EF
+40hsesordienti8maschili,40 Hs EM
 40mcadette,40m
 40mcadetti,40m
 40mesordientif10,40m
@@ -335,8 +434,33 @@
 40mesordientim10,40m
 40mesordientim5,40m
 40mesordientim8,40m
+40metribiathlonef10,40m
+40metribiathlonef6,40m
+40metribiathlonef8,40m
+40metribiathlonem10,40m
+40metribiathlonem6,40m
+40metribiathlonem8,40m
+40metricadette,40m
+40metricadetti,40m
+40metriesordienti6m/f,40m
+40metriesordienti8femminili,40m
+40metriesordienti8maschili,40m
+40metriesordientifemmine10,40m
+40metriesordientifemmine5,40m
+40metriesordientifemmine6,40m
+40metriesordientifemmine8,40m
+40metriesordientimaschi10,40m
+40metriesordientimaschi5,40m
+40metriesordientimaschi6,40m
+40metriesordientimaschi8,40m
+40metriragazze,40m
+40metriragazzi,40m
+40ostacolicadette,40 Hs h76-8.00
+40ostacolicadetti,40 Hs h84-8.50
 40ostacoliesordientif8,40 Hs EF
+40ostacoliesordientifemmine10,40m
 40ostacoliesordientim8,40 Hs EM
+40ostacoliesordientimaschi10,40m
 40ostacoliragazze,40 Hs h60-7.50
 40ostacoliragazzi,40 Hs h60-7.50
 4x160cadette(u16),4x160m
@@ -345,9 +469,15 @@
 4x160uomini,4x160m
 4x1girocadette,4x200m
 4x1girocadetti,4x200m
+4x1girojunioresdonne,4x200m
+4x1girojunioresuomini,4x200m
+4x1giropromessedonne,4x200m
+4x1giropromesseuomini,4x200m
 500muomini(adinvito),500m
 50hsesordienti10f,50 Hs EF
+50hsesordienti10femminili,50 Hs EF
 50hsesordienti10m,50 Hs EM
+50hsesordienti10maschili,50 Hs EM
 50hsesordienti5f,50 Hs EF
 50hsesordienti5m,50 Hs EM
 50hsesordienti8f,50 Hs EF
@@ -357,9 +487,13 @@
 50hsh100juniorm(u20),50 Hs h100-9.14
 50hsh100juniorm(u20)2^prova,50 Hs h100-9.14
 50hsh100sm35-40-45,50 Hs Master
+50hsh106p/smaschili,50 Hs h106-9.14
 50hsh106p/suomini,50 Hs h106-9.14
+50hsh106promesseuomini,50 Hs h106-9.14
 50hsh106uomini,50 Hs h106-9.14
 50hsh106uomini2^prova,50 Hs h106-9.14
+50hsh50ef10biathlon,50 Hs EF
+50hsh50em10biathlon,50 Hs EM
 50hsh50esordientif10,50 Hs h50-7.00
 50hsh50esordientim10,50 Hs h50-7.00
 50hsh50triathlonbem10convortex,50 Hs h50-7.00
@@ -368,6 +502,7 @@
 50hsh50triathlonem10conalto,50 Hs h50-7.00
 50hsh60ragazze,50 Hs h60-7.50
 50hsh60ragazzi,50 Hs h60-7.50
+50hsh76-8.50allieve,50 Hs h76-8.50
 50hsh76af,50 Hs h76-8.50
 50hsh76allieve,50 Hs h76-8.50
 50hsh76allieve(u18),50 Hs h76-8.50
@@ -378,10 +513,13 @@
 50hsh76sf40-45,50 Hs Master
 50hsh76sf50-55,50 Hs Master
 50hsh76tetrathloncadette,50 Hs h76-8.00
+50hsh84-8.50donne,50 Hs h84-8.50
+50hsh84-8.50junioresdonne,50 Hs h84-8.50
 50hsh84cadetti,50 Hs h84-8.50
 50hsh84cadetti(u16),50 Hs h84-8.50
 50hsh84donne,50 Hs h84-8.50
 50hsh84donne2^prova,50 Hs h84-8.50
+50hsh84j/p/sfemminili,40 Hs h84-8.50
 50hsh84jf,60 Hs h84-8.50
 50hsh84junioresdonne,50 Hs h84-8.50
 50hsh84p/sdonne,60 Hs h84-8.50
@@ -403,7 +541,11 @@
 50mdonnefinalea,50m
 50mdonnefinaleb,50m
 50mef10,50m
+50mef5,50m
+50mef8,50m
 50mem10,50m
+50mem5,50m
+50mem8,50m
 50mesof10,50m
 50mesof5,50m
 50mesof8,50m
@@ -416,21 +558,27 @@
 50mesordienti5m,50m
 50mesordienti8f,50m
 50mesordienti8m,50m
+50mesordientif10,50m
 50mesordientif5,50m
 50mesordientif8,50m
 50mesordientifemmine10,50m
 50mesordientifemmine5,50m
 50mesordientifemmine8,50m
+50mesordientim10,50m
 50mesordientim5,50m
 50mesordientim8,50m
 50mesordientimaschi10,50m
 50mesordientimaschi5,50m
 50mesordientimaschi8,50m
+50metria/j/p/sfemminili,50m
+50metria/j/p/smaschili,50m
 50metriadultidonne,50m
 50metriadultiuomini,50m
 50metriallieve,50m
 50metriallievi,50m
 50metriassolutim,50m
+50metribiathlonef10,50m
+50metribiathlonem10,50m
 50metricadette,50m
 50metricadette(u16),50m
 50metricadetti,50m
@@ -440,21 +588,27 @@
 50metridonne,50m
 50metrief10,50m
 50metrief5,50m
+50metrief6,50m
 50metrief8,50m
 50metriem10,50m
 50metriem5,50m
+50metriem6,50m
 50metriem8,50m
+50metriesordienti10femminili,50m
+50metriesordienti10maschili,50m
 50metriesordientif10,50m
 50metriesordientif5,50m
 50metriesordientif8,50m
 50metriesordientifemmine10,50m
 50metriesordientifemmine5,50m
+50metriesordientifemmine6,50m
 50metriesordientifemmine8,50m
 50metriesordientim10,50m
 50metriesordientim5,50m
 50metriesordientim8,50m
 50metriesordientimaschi10,50m
 50metriesordientimaschi5,50m
+50metriesordientimaschi6,50m
 50metriesordientimaschi8,50m
 50metrijunioresdonne,50m
 50metrijunioresuomini,50m
@@ -487,10 +641,29 @@
 50muominifinalec,50m
 50pianiallieve,50m
 50pianiallievi,50m
+50pianidonne,50m
 50pianijunioresdonne,50m
 50pianijunioresuomini,50m
 50pianipromessedonne,50m
 50pianipromesseuomini,50m
+50pianiuomini,50m
+55hsh76-8.00cadette,55 Hs h76-8.00
+55metriadultifemmine,55m
+55metriadultimaschi,55m
+55metriallieve,55m
+55metriallievi,55m
+55metricadette,55m
+55metricadetti,55m
+55metrief10,55m
+55metrief6,55m
+55metrief8,55m
+55metriem10,55m
+55metriem6,55m
+55metriem8,55m
+55metrijunioresdonne,55m
+55metrijunioresuomini,55m
+55metriragazze,55m
+55metriragazzi,55m
 600mcadette,600m
 600mcadetti,600m
 600mef10,600m
@@ -513,6 +686,8 @@
 600metritetrathlon-cadetti,600m
 600metritetrathloncadette,600m
 600metritetrathloncadetti,600m
+600metritriathlonragazze,600m
+600metritriathlonragazzi,600m
 600metriuomini,600m
 600mpmcadetti,600m
 600mragazze,600m
@@ -527,16 +702,25 @@
 60hsa/j/p/sm,60 Hs h106-9.14
 60hsallieve,60 Hs h76-8.50
 60hsallievi,60 Hs h91-9.14
+60hsaracemen,60 Hs h106-9.14
+60hsaracewomen,60 Hs h84-8.50
+60hsbracemen,60 Hs h106-9.14
+60hsbracewomen,60 Hs h84-8.50
 60hscadette,60 Hs h76-8.00
 60hscadetti,60 Hs h84-8.50
+60hscdsdonne,60 Hs h84-8.50
 60hscf,60 Hs h76-8.00
 60hscm,60 Hs h84-8.50
 60hsdonne,60 Hs h84-8.50
 60hseptathlon,60 Hs h106-9.14
 60hsfemminile,60 Hs h84-8.50
+60hsh100-junioresuomini,60 Hs h100-9.14
+60hsh100am/jm,60 Hs h100-9.14
 60hsh100ept.junioresuomini,60 Hs h100-9.14
 60hsh100eptathloni/ojm,60 Hs h100-9.14
 60hsh100eptathlonind.junioresm,60 Hs h100-9.14
+60hsh100eptathlonjm,60 Hs h100-9.14
+60hsh100eptathlonjunioresuomini,60 Hs h100-9.14
 60hsh100eptathlonjuniorm,60 Hs h100-9.14
 60hsh100eptathlonjunioruomini,60 Hs h100-9.14
 60hsh100eptathlonjunioruominiu20,60 Hs h100-9.14
@@ -548,6 +732,7 @@
 60hsh100jun/maschieptathlon,60 Hs h100-9.14
 60hsh100juniores,60 Hs h100-9.14
 60hsh100junioresm,60 Hs h100-9.14
+60hsh100junioresmaschi,60 Hs h100-9.14
 60hsh100junioresmaschili,60 Hs h100-9.14
 60hsh100junioresu,60 Hs h100-9.14
 60hsh100junioresuomini,60 Hs h100-9.14
@@ -555,6 +740,7 @@
 60hsh100juniorm,60 Hs h100-9.14
 60hsh100juniorm(u20),60 Hs h100-9.14
 60hsh100juniormaschile,60 Hs h100-9.14
+60hsh100juniormaschilieptathlon,60 Hs h100-9.14
 60hsh100junioruomini,60 Hs h100-9.14
 60hsh100junioruomini-1^prova,60 Hs h100-9.14
 60hsh100junioruomini-2^prova,60 Hs h100-9.14
@@ -562,8 +748,11 @@
 60hsh100junuomini,60 Hs h100-9.14
 60hsh100junuomini-1^prova,60 Hs h100-9.14
 60hsh100junuomini-2^prova,60 Hs h100-9.14
+60hsh100junuominifinalediretta,60 Hs h100-9.14
 60hsh100master35-40-45maschile,60 Hs Master
 60hsh100sm35/45,60 Hs Master
+60hsh100sm45,60 Hs Master
+60hsh106-p/suomini,60 Hs h106-9.14
 60hsh106a/j/p/sm,60 Hs h100-9.14
 60hsh106a/j/p/smaschili,60 Hs h106-9.14
 60hsh106assolutiuomini,60 Hs h106-9.14
@@ -571,21 +760,32 @@
 60hsh106assolutomaschieptathlon,60 Hs h106-9.14
 60hsh106ept.uomini,60 Hs h100-9.14
 60hsh106eptathloni/ojpsm,60 Hs h106-9.14
+60hsh106eptathloni/opsm,60 Hs h106-9.14
+60hsh106eptathloni/opsuomini,60 Hs h106-9.14
 60hsh106eptathlonind.psm,60 Hs h106-9.14
 60hsh106eptathlonjpsuomini,60 Hs h106-9.14
 60hsh106eptathlonp/sm,60 Hs h106-9.14
 60hsh106eptathlonpromesseuomini,60 Hs h106-9.14
 60hsh106eptathlonpromesseuominiu23,60 Hs h106-9.14
+60hsh106eptathlonpsm.,60 Hs h106-9.14
 60hsh106eptathlonuomini,60 Hs h106-9.14
 60hsh106finalepromessem,60 Hs h106-9.14
+60hsh106finalesenior,60 Hs h106-9.14
 60hsh106finaleuomini,60 Hs h106-9.14
 60hsh106j/p/sm,60 Hs h106-9.14
+60hsh106j/p/smaschili,60 Hs h106-9.14
 60hsh106j/p/smaschilieptathlon,60 Hs h106-9.14
+60hsh106jpsm,60 Hs h106-9.14
+60hsh106jun/pro/senmaschili,60 Hs h106-9.14
 60hsh106maschile,60 Hs h106-9.14
+60hsh106p/smaschili,60 Hs h106-9.14
 60hsh106p/sp.m.,60 Hs h100-9.14
 60hsh106p/suomini,60 Hs h106-9.14
 60hsh106p/suomini-1^prova,60 Hs h106-9.14
 60hsh106p/suomini-2^prova,60 Hs h106-9.14
+60hsh106p/suominifinale,60 Hs h106-9.14
+60hsh106pro/senmaschilieptathlon,60 Hs h106-9.14
+60hsh106pro/senuomini,60 Hs h106-9.14
 60hsh106promesse-senioresmaschili,60 Hs h100-9.14
 60hsh106promesse-senioresuomini,60 Hs h100-9.14
 60hsh106promesse-senioresuominiextra,60 Hs h100-9.14
@@ -597,10 +797,20 @@
 60hsh106uomini,60 Hs h106-9.14
 60hsh106uomini-1^prova,60 Hs h106-9.14
 60hsh106uomini-2^prova,60 Hs h106-9.14
+60hsh60-ragazze,60 Hs h60-7.50
+60hsh60-ragazzi,60 Hs h60-7.50
+60hsh60+pesoragazze,altro
+60hsh60+pesoragazzi,altro
+60hsh60+quadruploragazze,altro
+60hsh60+quadruploragazzi,altro
+60hsh60biathlonrf,60 Hs h60-7.50
+60hsh60biathlonrm,60 Hs h60-7.50
 60hsh60ragazze,60 Hs h60-7.50
 60hsh60ragazze(u14),60 Hs h60-7.50
 60hsh60ragazze2009,60 Hs h60-7.50
 60hsh60ragazze2010,60 Hs h60-7.50
+60hsh60ragazzeanno2006,60 Hs h60-7.50
+60hsh60ragazzeanno2007,60 Hs h60-7.50
 60hsh60ragazzebiathlon,60 Hs h60-7.50
 60hsh60ragazzecn-at-al,60 Hs h60-7.50
 60hsh60ragazzevco-no-vc-to-bi-fr,60 Hs h60-7.50
@@ -608,27 +818,36 @@
 60hsh60ragazzi(u14),60 Hs h60-7.50
 60hsh60ragazzi2009,60 Hs h60-7.50
 60hsh60ragazzi2010,60 Hs h60-7.50
+60hsh60ragazzianno2006,60 Hs h60-7.50
+60hsh60ragazzianno2007,60 Hs h60-7.50
 60hsh60ragazzibiathlon,60 Hs h60-7.50
 60hsh60ragazzicn-at-al,60 Hs h60-7.50
 60hsh60ragazzivco-no-vc-to-bi-fr,60 Hs h60-7.50
 60hsh68.6-7.00master60+femminile,60 Hs Master
 60hsh68.6-7.00sf60,60 Hs Master
+60hsh68.6-7.00sf60+,60 Hs Master
 60hsh68.6-7.00sf60pentathlon,60 Hs Master
+60hsh68.6-7.00sf65,60 Hs Master
+60hsh68.6-7.00sf70,60 Hs Master
 60hsh68.6-7.00sf75pentathlon,60 Hs Master
 60hsh68.6-7.00sm80pentathlon,60 Hs Master
 60hsh76-7.00f50-55,60 Hs Master
 60hsh76-7.00master50-55femminile,60 Hs Master
 60hsh76-7.00master70-75maschile,60 Hs Master
 60hsh76-7.00sf50,60 Hs Master
+60hsh76-7.00sf50-55,60 Hs Master
 60hsh76-7.00sf50/55,60 Hs Master
 60hsh76-7.00sf55,60 Hs Master
 60hsh76-7.00sm70/75,60 Hs Master
 60hsh76-7.00sm75pentathlon,60 Hs Master
+60hsh76-8.00-biathloncadette,60 Hs h76-8.00
 60hsh76-8.00cadette,60 Hs h76-8.00
 60hsh76-8.00cadette-1^prova,60 Hs h76-8.00
 60hsh76-8.00cadette-2^prova,60 Hs h76-8.00
 60hsh76-8.00cadette(u16),60 Hs h76-8.00
+60hsh76-8.00cadettefinale,60 Hs h76-8.00
 60hsh76-8.00cf,60 Hs h76-8.00
+60hsh76-8.00cf-finale,60 Hs h76-8.00
 60hsh76-8.00cfcadette,60 Hs h76-8.00
 60hsh76-8.00cfcadette-1^prova,60 Hs h76-8.00
 60hsh76-8.00cfcadette-2^prova,60 Hs h76-8.00
@@ -638,11 +857,15 @@
 60hsh76-8.00mf40,60 Hs Master
 60hsh76-8.00pmcadette,60 Hs h76-8.00
 60hsh76-8.00sf40,60 Hs Master
+60hsh76-8.00sf40-45,60 Hs Master
 60hsh76-8.00sf40/45,60 Hs Master
 60hsh76-8.00sf40/sf45,60 Hs Master
 60hsh76-8.00sf45,60 Hs Master
 60hsh76-8.00tetrathlon-cadette,60 Hs h76-8.00
 60hsh76-8.00tetrathloncadette,60 Hs h76-8.00
+60hsh76-8.00triathloncadette,60 Hs h76-8.00
+60hsh76-8.50-allieve,60 Hs h76-8.50
+60hsh76-8.50af,60 Hs h76-8.50
 60hsh76-8.50afp.m.,60 Hs h76-8.50
 60hsh76-8.50allieve,60 Hs h76-8.50
 60hsh76-8.50allieve-1^prova,60 Hs h84-8.50
@@ -658,6 +881,7 @@
 60hsh76-8.50finaleallieve(u18),60 Hs h76-8.50
 60hsh76-8.50nallievepentathlon,60 Hs h76-8.50
 60hsh76-8.50pent.allieve,60 Hs h76-8.50
+60hsh76-8.50pentathlonaf,60 Hs h76-8.50
 60hsh76-8.50pentathlonallieve,60 Hs h76-8.50
 60hsh76-8.50pentathloni/oaf,60 Hs h76-8.50
 60hsh76-8.50pentathlonindooraf,60 Hs h84-8.50
@@ -672,6 +896,9 @@
 60hsh84-8.00sm60/65,60 Hs Master
 60hsh84-8.00sm60pentathlon,60 Hs Master
 60hsh84-8.00sm65pentathlon,60 Hs Master
+60hsh84-8.50-biathloncadetti,60 Hs h84-8.50
+60hsh84-8.50-jpsdonne,60 Hs h84-8.50
+60hsh84-8.50-junioresf,60 Hs h84-8.50
 60hsh84-8.50a/j/p/sf,60 Hs h84-8.50
 60hsh84-8.50a/j/p/sfemminili,60 Hs h84-8.50
 60hsh84-8.50ass/femminilepentathlon,60 Hs h84-8.50
@@ -681,6 +908,8 @@
 60hsh84-8.50cadetti-1^prova,60 Hs h84-8.50
 60hsh84-8.50cadetti-2^prova,60 Hs h84-8.50
 60hsh84-8.50cadetti(u16),60 Hs h84-8.50
+60hsh84-8.50cadettifinale,60 Hs h84-8.50
+60hsh84-8.50cm,60 Hs h84-8.50
 60hsh84-8.50donne,60 Hs h84-8.50
 60hsh84-8.50donne-1^prova,60 Hs h84-8.50
 60hsh84-8.50donne-2^prova,60 Hs h84-8.50
@@ -690,26 +919,39 @@
 60hsh84-8.50finalepf,60 Hs h84-8.50
 60hsh84-8.50j/p/sdonne,60 Hs h84-8.50
 60hsh84-8.50j/p/sf,60 Hs h84-8.50
+60hsh84-8.50j/p/sfemminili,60 Hs h84-8.50
+60hsh84-8.50j/p/sfemminilipentath.,60 Hs h84-8.50
 60hsh84-8.50j/p/sfp.m.,60 Hs h84-8.50
+60hsh84-8.50jf-pf-sf,60 Hs h84-8.50
 60hsh84-8.50jpsdonne,60 Hs h84-8.50
+60hsh84-8.50jpsf,60 Hs h84-8.50
+60hsh84-8.50jundonnefinale,60 Hs h84-8.50
 60hsh84-8.50juniores-promesse-senioresdonne,60 Hs h84-8.50
 60hsh84-8.50juniores-promesse-senioresfemminili,60 Hs h84-8.50
 60hsh84-8.50juniores/promessedonne,60 Hs h84-8.50
 60hsh84-8.50junioresdonne,60 Hs h84-8.50
+60hsh84-8.50junioresfemmine,60 Hs h84-8.50
 60hsh84-8.50master35femminile,60 Hs Master
 60hsh84-8.50p/sdonne,60 Hs h84-8.50
+60hsh84-8.50p/sdonnefinale,60 Hs h84-8.50
 60hsh84-8.50pent.donne,60 Hs h84-8.50
+60hsh84-8.50pentathlondonne,60 Hs h84-8.50
+60hsh84-8.50pentathloni/ojpsdonne,60 Hs h84-8.50
 60hsh84-8.50pentathloni/ojpsf,60 Hs h84-8.50
 60hsh84-8.50pentathlonindjpsf,60 Hs h84-8.50
 60hsh84-8.50pentathlonjpsdonne,60 Hs h84-8.50
+60hsh84-8.50pentathlonjpsf.,60 Hs h84-8.50
 60hsh84-8.50penthalonj/p/sf,60 Hs h84-8.50
 60hsh84-8.50pmcadetti,60 Hs h84-8.50
+60hsh84-8.50pro/sendonne,60 Hs h84-8.50
 60hsh84-8.50promesse,60 Hs h84-8.50
+60hsh84-8.50promesse/seniordonne,60 Hs h84-8.50
 60hsh84-8.50promessedonne,60 Hs h84-8.50
 60hsh84-8.50seniores/sf35,60 Hs h84-8.50
 60hsh84-8.50sf35,60 Hs Master
 60hsh84-8.50tetrathlon-cadetti,60 Hs h84-8.50
 60hsh84-8.50tetrathloncadetti,60 Hs h84-8.50
+60hsh84-8.50triathloncadetti,60 Hs h84-8.50
 60hsh84-8.5j/p/sfemminilipentathon,60 Hs h84-8.50
 60hsh84a/j/p/sf,60 Hs h84-8.50
 60hsh84cadetti,60 Hs h84-8.50
@@ -718,6 +960,7 @@
 60hsh84juniores+promessedonne,60 Hs h84-8.50
 60hsh84junioresdonne,60 Hs h84-8.50
 60hsh84junioresf,60 Hs h84-8.50
+60hsh84p/sdonne,60 Hs h84-8.50
 60hsh84pentathlonass.f,60 Hs h84-8.50
 60hsh84pentathlondonne,60 Hs h84-8.50
 60hsh84pentathlonjun.pro.donne,60 Hs h84-8.50
@@ -730,10 +973,15 @@
 60hsh84promessef,60 Hs h84-8.50
 60hsh84senioresf,60 Hs h84-8.50
 60hsh84tetrathloncadetti,60 Hs h84-8.50
+60hsh91-8.50-seniorm50-55,60 Hs Master
 60hsh91-8.50allievi,errore
 60hsh91-8.50master50-55maschile,60 Hs Master
 60hsh91-8.50sm50,60 Hs Master
+60hsh91-8.50sm50-55,60 Hs Master
+60hsh91-8.50sm50-59,60 Hs Master
 60hsh91-8.50sm50/55,60 Hs Master
+60hsh91-8.50sm50/sm55,60 Hs Master
+60hsh91-9.14-allievi,60 Hs h91-9.14
 60hsh91-9.14-pentathlonindooram,60 Hs h91-9.14
 60hsh91-9.14allievi,60 Hs h91-9.14
 60hsh91-9.14allievi-1^prova,60 Hs h91-9.14
@@ -743,13 +991,16 @@
 60hsh91-9.14allievilombardiafinale,60 Hs h91-9.14
 60hsh91-9.14allievipentathlon,60 Hs h91-9.14
 60hsh91-9.14allievipm,60 Hs h91-9.14
+60hsh91-9.14am,60 Hs h91-9.14
 60hsh91-9.14amp.m.,60 Hs h91-9.14
 60hsh91-9.14extraallievi,60 Hs h91-9.14
 60hsh91-9.14finaleallievi(u18),60 Hs h91-9.14
 60hsh91-9.14pent.allievi,60 Hs h91-9.14
 60hsh91-9.14pentathlonallievi,60 Hs h91-9.14
 60hsh91-9.14pentathlonallieviu18,60 Hs h91-9.14
+60hsh91-9.14pentathlonam,60 Hs h91-9.14
 60hsh91-9.14pentathloni/oam,60 Hs h91-9.14
+60hsh91-9.14pentathlonindooram,60 Hs h91-9.14
 60hsh91-9.14penthalonallievi,60 Hs h91-9.14
 60hsh91allievi,60 Hs h91-9.14
 60hsh91pentathlonallievi,60 Hs h91-9.14
@@ -762,10 +1013,20 @@
 60hsjunioresuomini,60 Hs h100-9.14
 60hsjuniorm(u20),60 Hs h100-9.14
 60hsmasterdonne,60 Hs Master
+60hsmasterdonne(40-45),60 Hs Master
+60hsmasterdonne(50-55),60 Hs Master
+60hsmasterdonne(60>),60 Hs Master
 60hsmasterf,60 Hs Master
+60hsmasterm60,60 Hs Master
 60hsmasteruomini,60 Hs Master
+60hsmasteruomini(35-45),60 Hs Master
+60hsmasteruomini(50-55),60 Hs Master
+60hsmasteruomini(60-65),60 Hs Master
+60hsmasteruomini(70-75),60 Hs Master
+60hsmasteruomini(80>),60 Hs Master
 60hspentathlon,60 Hs h84-8.50
 60hspentathlonmasterdonne,60 Hs Master
+60hspentathlonmasterf,60 Hs Master
 60hspentathlonmasteruomini,60 Hs Master
 60hspromessedonne,60 Hs h84-8.50
 60hspromesseuomini,60 Hs h106-9.14
@@ -776,8 +1037,12 @@
 60hsuomini,60 Hs h106-9.14
 60m-ajpsdonne,60m
 60m-ajpsuomini,60m
+60m-ragazze,60m
+60m-ragazzi,60m
 60ma/j/p/sf,60m
+60ma/j/p/sfemminili,60m
 60ma/j/p/sm,60m
+60ma/j/p/smaschili,60m
 60ma/jdonne,60m
 60ma/juomini,60m
 60madultidonne,60m
@@ -788,13 +1053,21 @@
 60mallievefinale,60m
 60mallievi,60m
 60mallievifinale,60m
+60maracemen,60m
+60maracewomen,60m
 60massolutomaschieptathlon,60m
 60mbancari-donne,60m
 60mbancari-uomini,60m
+60mbracemen,60m
+60mbracewomen,60m
 60mcadette,60m
 60mcadetti,60m
 60mcadetti(u16),60m
 60mdonne,60m
+60mdonnef35,60m
+60mdonnef40,60m
+60mdonnef45,60m
+60mdonnef55,60m
 60mdonnefinale,60m
 60mdonnefinali,60m
 60mept.junioresuomini,60m
@@ -839,8 +1112,16 @@
 60metricadette2009-2010,60m
 60metricadetti,60m
 60metricadetti2009-2010,60m
+60metricdsdonne,60m
+60metriclassec21f,60m
+60metriclassec21m,60m
+60metriclasseopenf,60m
+60metriclasseopenm,60m
 60metridonne,60m
+60metriem8,60m
 60metrieptathlon,60m
+60metrihsallieve,60 Hs h84-8.50
+60metrihsallievi,60 Hs h91-9.14
 60metrihsdonne,60m
 60metrihsuomini,60m
 60metrijunioresdonne,60m
@@ -850,6 +1131,8 @@
 60metrimasteruomini,60m
 60metriostacoliallieve,60m
 60metriostacoliallievi,60m
+60metrip/sdonne,60m
+60metrip/suomini,60m
 60metripromesse/seniordonne,60m
 60metripromesse/senioruomini,60m
 60metriragazze,60m
@@ -861,8 +1144,12 @@
 60metrisf45,60m
 60metrisf50,60m
 60metrisf55,60m
+60metrisf55-60,60m
 60metrisf60,60m
+60metrisf65,60m
+60metrisf65+,60m
 60metrisf75,60m
+60metrisf80,60m
 60metriuomini,60m
 60mfemminili,60m
 60mfinaleacadette,60m
@@ -893,15 +1180,19 @@
 60mj/p/sdonne,60m
 60mj/p/sf1^gruppo,60m
 60mj/p/sf2^gruppo,60m
+60mj/p/sfemminili,60m
 60mj/p/sm1^gruppo,60m
 60mj/p/sm2^gruppo,60m
+60mj/p/smaschili,60m
 60mj/p/suomini,60m
 60mjmp.m.,60m
 60mjun.maschilieptathlon,60m
 60mjun/maschieptathlon,60m
 60mjun/pro/senmaschilieptathlon,60m
 60mjunioresdonne,60m
+60mjunioresmaschi,60m
 60mjunioresuomini,60m
+60mjuniormaschilieptathlon,60m
 60mmaschili,60m
 60mmaster/bancaridonne,60m
 60mmaster/bancariuomini,60m
@@ -914,6 +1205,9 @@
 60mpianicadetti,60m
 60mpianiragazze,60m
 60mpianiragazzi,60m
+60mpro/senmaschilieptathlon,60m
+60mpromesse/seniordonne,60m
+60mpromesse/senioruomini,60m
 60mpromessedonne,60m
 60mpromesseuomini,60m
 60mragazze,60m
@@ -935,17 +1229,41 @@
 60msm70uomini,60m
 60msm75uomini,60m
 60muomini,60m
+60muominiextra,60m
 60muominifinale,60m
 60muominifinali,60m
+60muominifispes,60m
+60muominim35,60m
+60muominim40,60m
+60muominim45,60m
+60muominim50,60m
+60muominim55,60m
+60muominim60,60m
+60muominim65,60m
+60muominim70,60m
+60piani-jpsdonne,60m
+60piani-jpsuomini,60m
+60piani+pesoragazze,60m
+60piani+pesoragazzi,60m
+60piani+quadruploragazze,60m
+60piani+quadruploragazzi,60m
+60piania/j/p/sfemminili,60m
+60piania/j/p/smaschili,60m
+60piania/sdonnefinale,60m
+60piania/suominifinale,60m
 60pianiajpsdonne,60m
+60pianiajpsf,60m
+60pianiajpsm,60m
 60pianiajpsuomini,60m
 60pianiallieve,60m
 60pianiallieve-1^prova,60m
 60pianiallieve-2^prova,60m
+60pianiallievefinale,60m
 60pianiallievelombardiafinale,60m
 60pianiallievi,60m
 60pianiallievi-1^prova,60m
 60pianiallievi-2^prova,60m
+60pianiallievifinale,60m
 60pianiallievilombardiafinale,60m
 60pianiassolutidonne,60m
 60pianiassolutifemminile-1^prova,60m
@@ -955,28 +1273,48 @@
 60pianiassolutimaschile-2^prova,60m
 60pianiassolutimaschili,60m
 60pianiassolutiuomini,60m
+60pianibiathlonrf,60m
+60pianibiathlonrm,60m
 60pianicadette,60m
 60pianicadette-1^prova,60m
 60pianicadette-2^prova,60m
+60pianicadette-serieextra,60m
 60pianicadette(u16),60m
+60pianicadettefinale,60m
 60pianicadetti,60m
 60pianicadetti-1^prova,60m
 60pianicadetti-2^prova,60m
 60pianicadetti(u16),60m
+60pianicadettifinale,60m
 60pianicf,60m
 60pianicm,60m
 60pianidonne,60m
 60pianidonne-1^prova,60m
 60pianidonne-2^prova,60m
 60pianidonnefinale,60m
+60pianidonnefisdir,60m
+60pianief10,60m
+60pianief6,60m
+60pianief8,60m
+60pianiem10,60m
+60pianiem6,60m
+60pianieptathlomp/sm.,60m
 60pianieptathloni/ojm,60m
 60pianieptathloni/ojpsm,60m
+60pianieptathloni/opsm,60m
+60pianieptathloni/opsuomini,60m
 60pianieptathlonind.jpsm,60m
+60pianieptathlonjm,60m
 60pianieptathlonjpsuomini,60m
+60pianieptathlonjunioresuomini,60m
 60pianieptathlonjunioruomini,60m
 60pianieptathlonpromesseuomini,60m
+60pianieptathlonuomini,60m
 60pianiesordientif10,60m
 60pianiesordientim10,60m
+60pianiextracadette,60m
+60pianiextracadetti,60m
+60pianif/mfispes,60m
 60pianif60-75,60m
 60pianifemminile,60m
 60pianifemminilefinalea,60m
@@ -988,10 +1326,18 @@
 60pianifemminilegruppoa,60m
 60pianifemminilegruppob,60m
 60pianifemminili,60m
+60pianij/p/sdonne,60m
+60pianij/p/sf,60m
+60pianij/p/sm,60m
+60pianij/p/suomini,60m
 60pianijpsdonne,60m
 60pianijpsuomini,60m
+60pianijundonnefinale,60m
 60pianijunioresdonne,60m
+60pianijunioresfemmine,60m
+60pianijunioresmaschi,60m
 60pianijunioresuomini,60m
+60pianijunuominifinale,60m
 60pianimaschile,60m
 60pianimaschilefinalea,60m
 60pianimaschilefinaleb,60m
@@ -1010,10 +1356,18 @@
 60pianimasteruomini,60m
 60pianip/sdonne,60m
 60pianip/suomini,60m
+60pianipro/sendonne,60m
+60pianipro/senuomini,60m
+60pianipromessedonne,60m
+60pianipromessedonnefinale,60m
+60pianipromesseuomini,60m
+60pianipromesseuominifinale,60m
 60pianiragazze,60m
 60pianiragazze(u14),60m
 60pianiragazze2009,60m
 60pianiragazze2010,60m
+60pianiragazzeanno2006,60m
+60pianiragazzeanno2007,60m
 60pianiragazzebiathlon,60m
 60pianiragazzecn-at-al,60m
 60pianiragazzevco-no-vc-to-bi-fr,60m
@@ -1021,13 +1375,22 @@
 60pianiragazzi(u14),60m
 60pianiragazzi2009,60m
 60pianiragazzi2010,60m
+60pianiragazzianno2006,60m
+60pianiragazzianno2007,60m
 60pianiragazzibiathlon,60m
 60pianiragazzicn-at-al,60m
 60pianiragazzivco-no-vc-to-bi-fr,60m
+60pianitriathloncadette,60m
+60pianitriathlonragazze,60m
+60pianitriathlonragazzi,60m
 60pianiuomini,60m
 60pianiuomini-1^prova,60m
 60pianiuomini-2^prova,60m
+60pianiuominiadinvito,60m
 60pianiuominifinale,60m
+60pianiuominifisdir,60m
+800m-allieve,800m
+800m-junioresf,800m
 800m.pentathlonallieve,800m
 800m.pentathlonjun.pro.donne,800m
 800madultidonne,800m
@@ -1045,7 +1408,10 @@
 800mdonne,800m
 800mdonne(adinvito),800m
 800mdonne(extra),800m
+800mdonneextra,800m
 800metriadultidonne,800m
+800metriadultifemmine,800m
+800metriadultimaschi,800m
 800metriadultiuomini,800m
 800metriallieve,800m
 800metriallievepm,800m
@@ -1055,23 +1421,36 @@
 800metriassolutif,800m
 800metriassolutim,800m
 800metriassolutiuomini,800m
+800metricdsdonne,800m
+800metriclasseopenf,800m
+800metriclasseopenm,800m
 800metridonne,800m
 800metrif65+,800m
 800metrijunioresdonne,800m
 800metrijunioresuomini,800m
 800metripentathlon,800m
+800metripentathlonallieve,800m
+800metripentathlondonne,800m
 800metripentathloni/oaf,800m
+800metripentathloni/ojpsdonne,800m
 800metripentathloni/ojpsf,800m
 800metripentathlonindjpsf,800m
 800metripentathlonindooraf,800m
+800metripentathlonjpsf.,800m
+800metripentathlonmasterf,800m
 800metriragazze,800m
 800metriragazzi,800m
+800metriseniormasterdonne,800m
+800metriseniormasteruomini,800m
 800metrisf35,800m
+800metrisf35-45,800m
 800metrisf40,800m
 800metrisf45,800m
 800metrisf50,800m
+800metrisf50-55,800m
 800metrisf55,800m
 800metrisf60,800m
+800metrisf60+,800m
 800metrisf60+pentathlon,800m
 800metrisf60pentathlon,800m
 800metrisf65,800m
@@ -1086,6 +1465,7 @@
 800mmasterdonne,800m
 800mmasteruomini,800m
 800mmasteruomini+donne,800m
+800mmen,800m
 800mpent.allieve,800m
 800mpent.donne,800m
 800mpentathlon,800m
@@ -1106,8 +1486,14 @@
 800mragazzi,800m
 800muomini,800m
 800muomini(extra),800m
+800muominiextra,800m
+800mwomen,800m
 altoallieve,Salto in alto
 altoallievi,Salto in alto
+altobancari-donne,Salto in alto
+altobancari-uomini,Salto in alto
+altobancaridonne,Salto in alto
+altobancariuomini,Salto in alto
 altocadette,Salto in alto
 altocadetti,Salto in alto
 altodonne,Salto in alto
@@ -1127,8 +1513,12 @@ altopentathlondonne,Salto in alto
 altopentathlonjun.pro.donne,Salto in alto
 altopentathlonjuniordonne,Salto in alto
 altopentathlonjuniordonneu20,Salto in alto
+altopentathlonmasterdonne,Salto in alto
+altopentathlonmasteruomini,Salto in alto
 altopentathlonpromessedonne,Salto in alto
 altopentathlonpromessedonneu23,Salto in alto
+altoragazze,Salto in alto
+altoragazzi,Salto in alto
 altotetrathloncadette,Salto in alto
 altotetrathloncadetti,Salto in alto
 altouomini,Salto in alto
@@ -1144,6 +1534,8 @@ astadonne,Salto con l’asta
 astadonne-1gruppo,Salto con l’asta
 astadonne-2gruppo,Salto con l’asta
 astadonne-gr.1,Salto con l’asta
+astadonneextra-gr.1,Salto con l’asta
+astadonneextra-gr.2,Salto con l’asta
 astadonnegr.1,Salto con l’asta
 astadonnegr.2,Salto con l’asta
 astadonnetop6,Salto con l’asta
@@ -1171,14 +1563,27 @@ astauomini-gr.2,Salto con l’asta
 astauominigr.1,Salto con l’asta
 astauominigr.2,Salto con l’asta
 astauominitop6,Salto con l’asta
+biathlonef10,Biathlon EF
+biathlonem10,Biathlon EM
+biathlonesordientifemmine10,Biathlon EF
+biathlonesordientifemmine6,Biathlon EF
+biathlonesordientifemmine8,Biathlon EF
+biathlonesordientimaschi10,Biathlon EM
+biathlonesordientimaschi6,Biathlon EM
+biathlonesordientimaschi8,Biathlon EM
+biathlonragazze,Biathlon RF
 biathlonragazzecn-at-al,Biathlon RF
+biathlonragazzi,Biathlon RM
 biathlonragazzicn-at-al,Biathlon RM
 biathlonrfvco-no-vc-to-bi-fr,Biathlon RF
 biathlonrmvco-no-vc-to-bi-fr,Biathlon RM
+cadettesommatempi,altro
+cadettisommatempi,altro
 classifica`trofeodisocieta'`fidal-femminile,altro
 classifica`trofeodisocieta'`fidal-m+f,altro
 classifica`trofeodisocieta'`fidal-maschile,altro
 classificadisocietàfemminile,altro
+classificaperregioni,altro
 "discokg1,000allieve",Disco Kg 1.000
 "discokg1,000cadette",Disco Kg 1.000
 "discokg1,000femminile",Disco Kg 1.000
@@ -1194,9 +1599,14 @@ discokg1.000sm75,Disco Kg 1.000
 discokg1.000sm80,Disco Kg 1.000
 discokg1.000sm85,Disco Kg 1.000
 discokg2p/smaschili,Disco Kg 2.000
+donnesommatempi,altro
 elencorisultati,altro
 elencorisultaticomplessivi,altro
 eptathlonassolutiuomini,Eptathlon indoor M
+eptathloni/ojm,Eptathlon indoor JM
+eptathloni/ojunuomini,Eptathlon indoor JM
+eptathloni/opsm,Eptathlon indoor M
+eptathloni/opsuomini,Eptathlon indoor M
 eptathlonindoorjpsm,Eptathlon indoor M
 eptathlonindoorjunioruomini,Eptathlon indoor JM
 eptathlonindoorjunioruominiu20,Eptathlon indoor JM
@@ -1207,6 +1617,17 @@ eptathlonjunioresuomini,Eptathlon indoor JM
 eptathlonjunioruomini,Eptathlon indoor JM
 eptathlonp/sm,Eptathlon indoor M
 eptathlonuomini,Eptathlon indoor M
+finale60hsjuniorm,60 Hs h100-9.14
+finale60hspromessem,60 Hs h106-9.14
+finale60ostacolipromessef,60 Hs h84-8.50
+finale60pianiassolutaf,60m
+finale60pianiassolutam,60m
+finale60pianijuniorf,60m
+finale60pianijuniorm,60m
+finale60pianipromessef,60m
+finale60pianipromesseu,60m
+finaleassoluta60hf,60 Hs h84-8.50
+finalejuniorf60ostacoli,60 Hs h84-8.50
 giavellotto400grtetrathloncadette,Giavellotto 400g
 giavellotto600grtetrathloncadetti,Giavellotto 600g
 giavellottof70+,Giavellotto Master
@@ -1220,10 +1641,16 @@ giavellottogr400tetrathlon-cadette,Giavellotto 400g
 giavellottogr500allieve,Giavellotto 500g
 giavellottogr600tetrathlon-cadetti,Giavellotto 600g
 giavellottogr700allievi,Giavellotto 700g
+grandprixmarciafemminile(rag+cad)1^prova,altro
+grandprixmarciamaschile(rag+cad)1^prova,altro
 highjumpmen,Salto in alto
 highjumpwomen,Salto in alto
+longjumpmen,Salto in lungo
+longjumpwomen,Salto in lungo
 lungoallieve,Salto in lungo
 lungoallievi,Salto in lungo
+lungobancari-donne,Salto in lungo
+lungobancari-uomini,Salto in lungo
 lungocadette,Salto in lungo
 lungocadetti,Salto in lungo
 lungodonne,Salto in lungo
@@ -1233,10 +1660,14 @@ lungoeptathlonjunioruominiu20,Salto in lungo
 lungoeptathlonpromesseuomini,Salto in lungo
 lungoeptathlonpromesseuominiu23,Salto in lungo
 lungoeptathlonuomini,Salto in lungo
+lungomaster/bancaridonne,Salto in lungo
+lungomaster/bancariuomini,Salto in lungo
 lungomasterdonne,Salto in lungo
 lungomasterdonne(extra),Salto in lungo
 lungomasteruomini,Salto in lungo
+lungomasteruomini(55>)gr.2,Salto in lungo
 lungomasteruomini(extra),Salto in lungo
+lungomasteruominii(35-50)gr.1,Salto in lungo
 lungopentathlonallieve,Salto in lungo
 lungopentathlonallieveu18,Salto in lungo
 lungopentathlonallievi,Salto in lungo
@@ -1245,21 +1676,35 @@ lungopentathlondonne,Salto in lungo
 lungopentathlonjun.pro.donne,Salto in lungo
 lungopentathlonjuniordonne,Salto in lungo
 lungopentathlonjuniordonneu20,Salto in lungo
+lungopentathlonmasterdonne,Salto in lungo
+lungopentathlonmasteruomini,Salto in lungo
 lungopentathlonpromessedonne,Salto in lungo
 lungopentathlonpromessedonneu23,Salto in lungo
+lungotetrathloncadette,Salto in lungo
+lungotetrathloncadetti,Salto in lungo
 lungouomini,Salto in lungo
+marcia1000mesoa+bm,Marcia 1000m
+marcia1000mesordientia+bf,Marcia 1000m
 marcia1000mesordientif10,Marcia 1000m
+marcia1000mesordientifa+b,Marcia 1000m
 marcia1000mesordientim10,Marcia 1000m
+marcia1000mesordientima+b,Marcia 1000m
 marcia1000mragazze,Marcia 1000m
 marcia1000mragazze(u14),Marcia 1000m
 marcia1000mragazzi,Marcia 1000m
+marcia1500metriclassec21f,marcia 1500m
+marcia1500metriclassec21m,marcia 1500m
+marcia1500metriclasseopenf,marcia 1500m
 marcia2000mcadette,Marcia 2000m
 marcia2000mcadette(u16),Marcia 2000m
 marcia2000mcadetti,Marcia 2000m
 marcia2000mcadetti(u16),Marcia 2000m
 marcia2000mragazze,Marcia 2000m
 marcia2000mragazzi,Marcia 2000m
+marcia2000mragazzi+ragazze,Marcia 2000m
 marcia3000madultidonne,Marcia 3000m
+marcia3000madultifemmine,Marcia 3000m
+marcia3000madultimaschi,Marcia 3000m
 marcia3000madultiuomini,Marcia 3000m
 marcia3000mallieve,Marcia 3000m
 marcia3000mallievi,Marcia 3000m
@@ -1271,10 +1716,15 @@ marcia3000mcadetti(open),Marcia 3000m
 marcia3000mcadetti+cadette,Marcia 3000m
 marcia3000mdonne,Marcia 3000m
 marcia3000metriallieve,Marcia 3000m
+marcia3000metricdsdonne,Marcia 3000m
 marcia3000metridonne,Marcia 3000m
+marcia3000metrisf35,Marcia 3000m
+marcia3000metrisf35-45,Marcia 3000m
 marcia3000metrisf40,Marcia 3000m
 marcia3000metrisf45,Marcia 3000m
 marcia3000metrisf50,Marcia 3000m
+marcia3000metrisf50+,Marcia 3000m
+marcia3000metrisf55,Marcia 3000m
 marcia3000metrisf60,Marcia 3000m
 marcia3000metrisf65,Marcia 3000m
 marcia3000metrisf70,Marcia 3000m
@@ -1291,6 +1741,8 @@ marcia3000mjunioresdonne,Marcia 3000m
 marcia3000mmasterdonne,Marcia 3000m
 marcia3000mmasteruomini,Marcia 3000m
 marcia3000mpromessedonne,Marcia 3000m
+marcia3000mseniormasterdonne,Marcia 3000m
+marcia3000mseniormasteruomini,Marcia 3000m
 marcia3000msf80,Marcia 3000m
 marcia3000muomini,Marcia 3000m
 marcia3kmadultiuomini+adultidonne+allieve,Marcia 3000m
@@ -1324,6 +1776,9 @@ martellokg5.000sm60,Martello Master
 martellokg5.000sm65,Martello Master
 martellom70+,Martello Master
 martellosf70+,Martello Master
+mod.1sta,altro
+mod.1sta11/01/2020,altro
+mod.1sta12/01/2020,altro
 modelli1sta,altro
 modello1-sta03/02/2024,altro
 modello1-sta04/02/2024,altro
@@ -1348,6 +1803,10 @@ modello1/sta11-02-2023,altro
 modello1/sta28-01-2023,altro
 modello1/sta5marzo,altro
 modello1sta,altro
+modello1sta15/02/2020,altro
+modello1sta16/02/2020,altro
+modello1sta25/01/2020,altro
+modello1sta26/01/2020,altro
 modello1sta4gennaio,altro
 modello1sta5gennaio,altro
 modello1stadomenica,altro
@@ -1356,11 +1815,19 @@ pallamedicakg2.000ragazze,Palla medica Kg 2
 pallamedicakg2.000ragazzi,Palla medica Kg 2
 pallamedicakg2ragazze,Palla medica Kg 2
 pallamedicakg2ragazzi,Palla medica Kg 2
+pallaragazze,Pallina
+pallaragazzi,Pallina
 pentathlonaf,Pentathlon indoor AF
 pentathlonallieve,Pentathlon indoor AF
 pentathlonallievi,Pentathlon indoor AM
 pentathlonam,Pentathlon indoor AM
 pentathlondonne,Pentathlon indoor F
+pentathloni/oaf,Pentathlon indoor AF
+pentathloni/oallieve,Pentathlon indoor AF
+pentathloni/oallievi,Pentathlon indoor AM
+pentathloni/oam,Pentathlon indoor AM
+pentathloni/ojpsdonne,Pentathlon indoor F
+pentathloni/ojpsf,Pentathlon indoor F
 pentathlonindoorallieve,Pentathlon indoor AF
 pentathlonindoorallieve-800,800m
 pentathlonindoorallieve-800u18,Pentathlon indoor AF
@@ -1379,16 +1846,26 @@ pentathlonsm75,Pentathlon indoor Master
 pentathlonsm80,Pentathlon indoor Master
 peso/spadultidonne,Peso Kg 4.000
 peso/spadultiuomini,Peso Kg 7.260
+peso/spcdsdonne,Peso Kg 4.000
 peso/spf45-55,Peso Master
+peso/spkg1.000esordientifemmine8,peso Kg 1.000
+peso/spkg1.000esordientimaschi8,peso Kg 1.000
+peso/spkg2.000cadette,Peso Kg 2.000
+peso/spkg2.000esordientifemmine10,Peso Kg 2.000
+peso/spkg2.000esordientimaschi10,Peso Kg 2.000
 peso/spkg2.000ragazze,Peso Kg 2.000
 peso/spkg2.000ragazzi,Peso Kg 2.000
 peso/spkg2.000sf75,Peso Master
 peso/spkg2.000sf80,Peso Master
 peso/spkg2.000sf85,Peso Master
+peso/spkg2.000triathlonragazze,Peso Kg 2.000
+peso/spkg2.000triathlonragazzi,Peso Kg 2.000
 peso/spkg3.000allieve,Peso Kg 3.000
 peso/spkg3.000cadette,Peso Kg 3.000
+peso/spkg3.000cadetti,Peso Kg 3.000
 peso/spkg3.000f60-65,Peso Kg 3.000
 peso/spkg3.000f70+,Peso Kg 3.000
+peso/spkg3.000pentathlonallieve,Peso Kg 3.000
 peso/spkg3.000pentathloni/oaf,Peso Kg 3.000
 peso/spkg3.000sf50,Peso Kg 3.000
 peso/spkg3.000sf55,Peso Kg 3.000
@@ -1398,21 +1875,38 @@ peso/spkg3.000sf70,Peso Master
 peso/spkg3.000sm80,Peso Master
 peso/spkg3.000sm85,Peso Master
 peso/spkg3.000sm90,Peso Master
+peso/spkg3.000tetrathloncadette,Peso Kg 3.000
+peso/spkg3allieve,Peso Kg 3.000
 peso/spkg4.000cadetti,Peso Kg 4.000
 peso/spkg4.000jun-pro-senfemminili,Peso Kg 4.000
 peso/spkg4.000junioresdonne,Peso Kg 4.000
+peso/spkg4.000pentath.i/ojpsdonne,Peso Kg 4.000
 peso/spkg4.000pentathloni/ojpsf,Peso Kg 4.000
+peso/spkg4.000sf35,Peso Kg 4.000
+peso/spkg4.000sf40,Peso Kg 4.000
 peso/spkg4.000sf45,Peso Kg 4.000
 peso/spkg4.000sm70,Peso Master
 peso/spkg4.000sm75,Peso Master
+peso/spkg4.000tetrathloncadetti,Peso Kg 4.000
+peso/spkg4donne,Peso Kg 4.000
 peso/spkg5.000allievi,Peso Kg 5.000
+peso/spkg5.000pentathlonallievi,Peso Kg 5.000
 peso/spkg5.000pentathloni/oam,Peso Kg 5.000
+peso/spkg5allievi,Peso Kg 5.000
 peso/spkg6.000eptathloni/ojm,Peso Kg 6.000
 peso/spkg6.000junioresuomini,Peso Kg 6.000
+peso/spkg6juniorm,Peso Kg 6.000
 peso/spkg7.260eptathloni/ojpsm,Peso Kg 7.260
+peso/spkg7.260eptathloni/opsm,Peso Kg 7.260
+peso/spkg7.260eptathloni/opsuomini,Peso Kg 7.260
+peso/spkg7uomnini,Peso Kg 7.260
 peso/spmasterf50,Peso Master
+peso/sppentathlonmasterf,Peso Master
+peso/spsf35-45,Peso Master
+peso/spsf60-65,Peso Master
+peso/spsf70+,Peso Master
 peso2kgtriathlonragazze,Peso Kg 2.000
-peso3kgcadette,not yet
+peso3kgcadette,Peso Kg 3.000
 peso3kgpentathlonallieve,Peso Kg 3.000
 peso3kgtetrathloncadette,Peso Kg 3.000
 peso4kgcadetti,Peso Kg 4.000
@@ -1441,13 +1935,15 @@ pesogommakg2.000ragazzi,Peso gomma 2Kg
 pesogommakg22°mediadonne,Peso gomma 2Kg
 pesogommakg22°mediauomini,Peso gomma 2Kg
 pesogommakg23°mediadonne,Peso gomma 2Kg
+pesogommakg2cadette,Peso gomma 2Kg
 pesogommakg2ragazze,Peso gomma 2Kg
 pesogommakg2ragazze2011,Peso gomma 2Kg
 pesogommakg2ragazzi,Peso gomma 2Kg
 pesogommakg2ragazzi2011,Peso gomma 2Kg
+pesogommakg3cadetti,Peso gomma 3Kg
 pesojm+sm,not yet
-pesojunioresdonne,not yet
-pesojunioresuomini,not yet
+pesojunioresdonne,Peso Kg 4.000
+pesojunioresuomini,Peso Kg 6.000
 pesokg2.000esordienti8f,Peso Kg 2.000
 pesokg2.000esordientif10,Peso Kg 2.000
 pesokg2.000esordientim10,Peso Kg 2.000
@@ -1472,7 +1968,7 @@ pesokg3.000pentathlonallieve,Peso Kg 3.000
 pesokg3.000pentathlonindooraf,Peso Kg 3.000
 pesokg3.000sf50-70,Peso Master
 pesokg3.000sm80edoltre,Peso Master
-pesokg3.000tetrathloncadette,not yet
+pesokg3.000tetrathloncadette,Peso Kg 3.000
 pesokg3afp.m.,Peso Kg 3.000
 pesokg3allieve,Peso Kg 3.000
 pesokg3allievepentathlon,Peso Kg 3.000
@@ -1482,7 +1978,7 @@ pesokg3cadette2009-2010,Peso Kg 3.000
 pesokg3masterdonne50-70,Peso Kg 3.000
 pesokg3pent.allieve,Peso Kg 3.000
 pesokg3pentathlonallieve,Peso Kg 3.000
-pesokg3pentathlonallieveu18,not yet
+pesokg3pentathlonallieveu18,Peso Kg 3.000
 pesokg3pmcadette,Peso Kg 3.000
 pesokg3sf50-sf70,Peso Kg 3.000
 pesokg3sf60pentathlon,Peso Master
@@ -1505,7 +2001,7 @@ pesokg4.000penthalonj/p/sf,Peso Kg 4.000
 pesokg4.000promessedonne,Peso Kg 4.000
 pesokg4.000sf35-40-45,Peso Kg 4.000
 pesokg4.000sm70-75,Peso Kg 4.000
-pesokg4.000tetrathloncadetti,not yet
+pesokg4.000tetrathloncadetti,Peso Kg 4.000
 pesokg4adultidonne,Peso Kg 4.000
 pesokg4assolutedonnepm,Peso Kg 4.000
 pesokg4assolutidonne,Peso Kg 4.000
@@ -1520,7 +2016,7 @@ pesokg4junioresdonne,Peso Kg 4.000
 pesokg4masterdonne35-45,Peso Kg 4.000
 pesokg4masteruomini70-75,Peso Kg 4.000
 pesokg4pent.donne,Peso Kg 4.000
-pesokg4pentathlondonne,not yet
+pesokg4pentathlondonne,Peso Kg 4.000
 pesokg4pentathlonjun.pro.donne,Peso Kg 4.000
 pesokg4pentathlonjuniordonne,Peso Kg 4.000
 pesokg4pentathlonjuniordonneu20,Peso Kg 4.000
@@ -1546,7 +2042,7 @@ pesokg5amp.m.,Peso Kg 5.000
 pesokg5masteruomini60-65,Peso Kg 5.000
 pesokg5pent.allievi,Peso Kg 5.000
 pesokg5pentathlonallievi,Peso Kg 5.000
-pesokg5pentathlonallieviu18,not yet
+pesokg5pentathlonallieviu18,Peso Kg 5.000
 pesokg5sm60-sm65,Peso Kg 5.000
 pesokg5sm60pentathlon,Peso Master
 pesokg5sm65pentathlon,Peso Master
@@ -1560,11 +2056,12 @@ pesokg6.000junioresmaschile,Peso Kg 6.000
 pesokg6.000junioresuomini,Peso Kg 6.000
 pesokg6.000juniorm,Peso Kg 6.000
 pesokg6.000juniorsmaschili,Peso Kg 6.000
+pesokg6.000junioruomini,Peso Kg 6.000
 pesokg6.000junuomini,Peso Kg 6.000
 pesokg6.000sm50-55,Peso Kg 6.000
 pesokg6ept.junioresuomini,Peso Kg 6.000
 pesokg6eptathlonjunioruomini,Peso Kg 6.000
-pesokg6eptathlonjunioruominiu20,not yet
+pesokg6eptathlonjunioruominiu20,Peso Kg 6.000
 pesokg6jmp.m.,Peso Kg 6.000
 pesokg6juniores,Peso Kg 6.000
 pesokg6junioresm,Peso Kg 6.000
@@ -1586,7 +2083,7 @@ pesokg7.260eptathlonp/sm,Peso Kg 7.260
 pesokg7.260eptathlonp/suomini,Peso Kg 7.260
 pesokg7.260eptathlonpromesseuomini,Peso Kg 7.260
 pesokg7.260eptathlonpromesseuominiu23,Peso Kg 7.260
-pesokg7.260eptathlonuomini,not yet
+pesokg7.260eptathlonuomini,Peso Kg 7.260
 pesokg7.260j/p/smaschilieptathlon,Peso Kg 7.260
 pesokg7.260masteruomini35-45,Peso Kg 7.260
 pesokg7.260p/sm,Peso Kg 7.260
@@ -1605,40 +2102,75 @@ pesomasteruomini,Peso Master
 pesopentathlon,Peso Kg 4.000
 pesopentathlonmasterdonne,Peso Master
 pesopentathlonmasteruomini,Peso Master
-pesopromessedonne,not yet
-pesopromesseuomini,not yet
+pesopromessedonne,Peso Kg 4.000
+pesopromesseuomini,Peso Kg 7.260
+pesoragazzi,Peso Kg 2.000
 pesosf60+pentathlon,Peso Master
 pesosm60+pentathlon,Peso Master
 pesouomini,Peso Kg 7.260
+polevaultmen,Salto con l’asta
+polevaultwomen,Salto con l’asta
 pvm/wgr.1,Salto con l’asta
 pvmalesgr.1,Salto con l’asta
 pvmalesgr.2,Salto con l’asta
 pvtopmales,Salto con l’asta
 pvtopwomen,Salto con l’asta
 pvwomengr.1,Salto con l’asta
+racewalking3000mwomen,Marcia 3000m
+racewalking5000mmen,Marcia 5000m
+relay4x200men,4x200m
+relay4x200women,4x200m
+riepilogorisultati,altro
 risultati,altro
+risultati1^giornata,altro
+risultati1ªgiornata,altro
+risultati2ªgiornata,altro
 risultaticomplessivi,altro
 risultaticompleti,altro
 risultatiexcelcon60pianiaggregati,altro
 risultatipergararagazze,altro
 risultatipergararagazzi,altro
+risultatitotali,altro
 risutltaticompleti,altro
+saltoconastaj/p/smaschilieptathlon,Salto con l’asta
 saltoconl'asta,Salto con l’asta
+saltoconl'asta-ajpsdonne,Salto con l’asta
+saltoconl'asta-ajpsuomini,Salto con l’asta
 saltoconl'asta/pv,Salto con l’asta
+saltoconl'asta/pv-cadette,Salto con l’asta
+saltoconl'asta/pv-cadetti,Salto con l’asta
+saltoconl'asta/pv-jpsdonne,Salto con l’asta
+saltoconl'asta/pv-jpsuomini,Salto con l’asta
 saltoconl'asta/pvallieve,Salto con l’asta
+saltoconl'asta/pvallievi,Salto con l’asta
 saltoconl'asta/pvcadette,Salto con l’asta
 saltoconl'asta/pvcadetti,Salto con l’asta
+saltoconl'asta/pvcdsdonne,Salto con l’asta
 saltoconl'asta/pvdonne,Salto con l’asta
 saltoconl'asta/pvdonne-camp.reg.,Salto con l’asta
+saltoconl'asta/pveptath.i/opsuomini,Salto con l’asta
+saltoconl'asta/pveptathloni/ojm,Salto con l’asta
+saltoconl'asta/pveptathloni/ojpsm,Salto con l’asta
+saltoconl'asta/pveptathloni/opsm,Salto con l’asta
+saltoconl'asta/pveptathlonjm,Salto con l’asta
+saltoconl'asta/pveptathlonjunioresm,Salto con l’asta
+saltoconl'asta/pveptathlonpsm.,Salto con l’asta
+saltoconl'asta/pveptathlonuomini,Salto con l’asta
 saltoconl'asta/pvf35-40-45,Salto con l’asta
+saltoconl'asta/pvfemminile,Salto con l’asta
 saltoconl'asta/pvjunioresdonne,Salto con l’asta
 saltoconl'asta/pvjunioresuomini,Salto con l’asta
 saltoconl'asta/pvm70+/f60,Salto con l’asta
+saltoconl'asta/pvmaschile,Salto con l’asta
 saltoconl'asta/pvmasterfemminile,Salto con l’asta
 saltoconl'asta/pvmastermaschile,Salto con l’asta
 saltoconl'asta/pvpromessedonne,Salto con l’asta
+saltoconl'asta/pvpromesseuomini,Salto con l’asta
+saltoconl'asta/pvsf35+,Salto con l’asta
 saltoconl'asta/pvsf40,Salto con l’asta
 saltoconl'asta/pvsf45,Salto con l’asta
+saltoconl'asta/pvsf50,Salto con l’asta
+saltoconl'asta/pvsf55,Salto con l’asta
 saltoconl'asta/pvsf60,Salto con l’asta
 saltoconl'asta/pvuomini,Salto con l’asta
 saltoconl'asta/pvuomini-camp.reg.,Salto con l’asta
@@ -1649,76 +2181,170 @@ saltoconl'astaajpsuomini,Salto con l’asta
 saltoconl'astaallieve,Salto con l’asta
 saltoconl'astaallievi,Salto con l’asta
 saltoconl'astaallievi+senioresuomini,Salto con l’asta
+saltoconl'astaass/maschieptathlon,Salto con l’asta
 saltoconl'astaassolutedonneadininvito,Salto con l’asta
 saltoconl'astaassolutidonne,Salto con l’asta
 saltoconl'astaassolutiuomini,Salto con l’asta
 saltoconl'astaassolutiuominipm,Salto con l’asta
+saltoconl'astaassolutofemminile,Salto con l’asta
+saltoconl'astaassolutomaschile,Salto con l’asta
 saltoconl'astacadette,Salto con l’asta
 saltoconl'astacadetti,Salto con l’asta
 saltoconl'astacf,Salto con l’asta
 saltoconl'astacm,Salto con l’asta
 saltoconl'astacm+cf,Salto con l’asta
 saltoconl'astadonne,Salto con l’asta
+saltoconl'astadonne-1gruppo,Salto con l’asta
+saltoconl'astadonne-2gruppo,Salto con l’asta
+saltoconl'astadonne-gr.1,Salto con l’asta
+saltoconl'astadonne-gr.2,Salto con l’asta
+saltoconl'astadonne-gruppo1,Salto con l’asta
+saltoconl'astadonne-gruppo2,Salto con l’asta
 saltoconl'astadonneadinvito,Salto con l’asta
 saltoconl'astaept.junioresuomini,Salto con l’asta
 saltoconl'astaept.uomini,Salto con l’asta
 saltoconl'astaeptathlon,Salto con l’asta
+saltoconl'astaeptathlonind.jpsm,Salto con l’asta
+saltoconl'astaeptathlonjpsuomini,Salto con l’asta
 saltoconl'astaeptathlonjuniorm,Salto con l’asta
+saltoconl'astaeptathlonjunioruomini,Salto con l’asta
 saltoconl'astaeptathlonp/sm,Salto con l’asta
+saltoconl'astaeptathlonuomini,Salto con l’asta
+saltoconl'astaextraallieve,Salto con l’asta
+saltoconl'astaextraallievi,Salto con l’asta
+saltoconl'astaextradonne,Salto con l’asta
 saltoconl'astafemminile,Salto con l’asta
 saltoconl'astagara1,Salto con l’asta
 saltoconl'astagara2,Salto con l’asta
 saltoconl'astagara3,Salto con l’asta
+saltoconl'astaj/p/sdonne,Salto con l’asta
 saltoconl'astaj/p/sf,Salto con l’asta
 saltoconl'astaj/p/sm,Salto con l’asta
 saltoconl'astaj/p/suomini,Salto con l’asta
 saltoconl'astajmp.m.,Salto con l’asta
 saltoconl'astajpsdonne,Salto con l’asta
+saltoconl'astajpsuomini,Salto con l’asta
+saltoconl'astajun.maschileeptathlon,Salto con l’asta
+saltoconl'astajun/maschieptathlon,Salto con l’asta
 saltoconl'astajunioresdonne,Salto con l’asta
 saltoconl'astajunioresf,Salto con l’asta
 saltoconl'astajunioresm,Salto con l’asta
+saltoconl'astajunioresmaschi,Salto con l’asta
 saltoconl'astajunioresuomini,Salto con l’asta
 saltoconl'astajunioresuominipm,Salto con l’asta
+saltoconl'astajunmaschilieptathlon,Salto con l’asta
 saltoconl'astam+f,Salto con l’asta
 saltoconl'astamaschile,Salto con l’asta
 saltoconl'astamasteruomini,Salto con l’asta
+saltoconl'astap/sdonne,Salto con l’asta
 saltoconl'astap/sp.m.,Salto con l’asta
+saltoconl'astap/suomini,Salto con l’asta
+saltoconl'astapro/sendonne,Salto con l’asta
+saltoconl'astapro/senuomini,Salto con l’asta
+saltoconl'astapromesse/seniordonne,Salto con l’asta
+saltoconl'astapromesse/senioruomini,Salto con l’asta
 saltoconl'astapromessedonne,Salto con l’asta
 saltoconl'astapromessem,Salto con l’asta
 saltoconl'astapromesseuomini,Salto con l’asta
 saltoconl'astasenioresm,Salto con l’asta
+saltoconl'astaseniormasterdonne,Salto con l’asta
 saltoconl'astasm60,Salto con l’asta
 saltoconl'astauomini,Salto con l’asta
+saltoconl'astauomini-1gruppo,Salto con l’asta
+saltoconl'astauomini-2gruppo,Salto con l’asta
+saltoconl'astauomini-gr.1,Salto con l’asta
+saltoconl'astauomini-gr.2,Salto con l’asta
+saltoconl'astauomini-gruppo1,Salto con l’asta
+saltoconl'astauomini-gruppo2,Salto con l’asta
 saltoconl'astauomini+donne+cadetti/e,Salto con l’asta
 saltoconl'astauominiadinvito,Salto con l’asta
+saltoconl'astauominim55,Salto con l’asta
+saltoinalto-ajpsdonne,Salto in alto
+saltoinalto-ajpsuomini,Salto in alto
+saltoinalto-allieve,Salto in alto
+saltoinalto-allievi,Salto in alto
+saltoinalto-junioresf,Salto in alto
+saltoinalto-uominim55,Salto in alto
+saltoinalto/hj-cadette,Salto in alto
+saltoinalto/hj-cadetti,Salto in alto
+saltoinalto/hj-jpsdonne,Salto in alto
+saltoinalto/hj-jpsuomini,Salto in alto
 saltoinalto/hjadultidonne,Salto in alto
+saltoinalto/hjadultimaschi,Salto in alto
 saltoinalto/hjadultiuomini,Salto in alto
 saltoinalto/hjallieve,Salto in alto
 saltoinalto/hjallievi,Salto in alto
 saltoinalto/hjassolutifemminile,Salto in alto
 saltoinalto/hjassolutimaschile,Salto in alto
+saltoinalto/hjbiathlonragazze,Salto in alto
+saltoinalto/hjbiathlonragazzi,Salto in alto
 saltoinalto/hjcadette,Salto in alto
 saltoinalto/hjcadetti,Salto in alto
+saltoinalto/hjcdsdonne,Salto in alto
 saltoinalto/hjdonne,Salto in alto
+saltoinalto/hjef10,Salto in alto
+saltoinalto/hjem10,Salto in alto
+saltoinalto/hjeptathloni/ojm,Salto in alto
+saltoinalto/hjeptathloni/ojpsm,Salto in alto
+saltoinalto/hjeptathloni/opsm,Salto in alto
+saltoinalto/hjeptathloni/opsuomini,Salto in alto
+saltoinalto/hjeptathlonjm,Salto in alto
+saltoinalto/hjeptathlonjunioresjm,Salto in alto
+saltoinalto/hjeptathlonpsm.,Salto in alto
+saltoinalto/hjeptathlonuomini,Salto in alto
+saltoinalto/hjesordientif10,Salto in alto
+saltoinalto/hjesordientifemmine10,Salto in alto
+saltoinalto/hjesordientifemmine8,Salto in alto
+saltoinalto/hjesordientim10,Salto in alto
+saltoinalto/hjesordientimaschi10,Salto in alto
+saltoinalto/hjesordientimaschi8,Salto in alto
 saltoinalto/hjf35-45,Salto in alto
 saltoinalto/hjf50-55,Salto in alto
 saltoinalto/hjf60+,Salto in alto
+saltoinalto/hjfemminile,Salto in alto
 saltoinalto/hjjunioresdonne,Salto in alto
 saltoinalto/hjjunioresuomini,Salto in alto
+saltoinalto/hjmaschile,Salto in alto
 saltoinalto/hjmasterdonne,Salto in alto
 saltoinalto/hjmasterfemminile,Salto in alto
 saltoinalto/hjmastermaschile,Salto in alto
+saltoinalto/hjmasteruomini,Salto in alto
+saltoinalto/hjpentath.i/ojpsdonne,Salto in alto
+saltoinalto/hjpentathlonaf,Salto in alto
+saltoinalto/hjpentathlonallieve,Salto in alto
+saltoinalto/hjpentathlonallievi,Salto in alto
+saltoinalto/hjpentathlonam,Salto in alto
+saltoinalto/hjpentathlondonne,Salto in alto
+saltoinalto/hjpentathloni/oaf,Salto in alto
+saltoinalto/hjpentathloni/oam,Salto in alto
+saltoinalto/hjpentathloni/ojpsf,Salto in alto
+saltoinalto/hjpentathlonindooram,Salto in alto
+saltoinalto/hjpentathlonjpsf.,Salto in alto
+saltoinalto/hjpentathlonmasterf,Salto in alto
 saltoinalto/hjpromessedonne,Salto in alto
 saltoinalto/hjpromesseuomini,Salto in alto
 saltoinalto/hjragazze,Salto in alto
 saltoinalto/hjragazzi,Salto in alto
 saltoinalto/hjsf35,Salto in alto
+saltoinalto/hjsf35-50,Salto in alto
+saltoinalto/hjsf40,Salto in alto
 saltoinalto/hjsf45,Salto in alto
 saltoinalto/hjsf50,Salto in alto
 saltoinalto/hjsf55,Salto in alto
+saltoinalto/hjsf55+,Salto in alto
 saltoinalto/hjsf60,Salto in alto
+saltoinalto/hjsf65,Salto in alto
+saltoinalto/hjsf70,Salto in alto
 saltoinalto/hjsf75,Salto in alto
+saltoinalto/hjsf80,Salto in alto
 saltoinalto/hjsf85,Salto in alto
+saltoinalto/hjtetrathloncadette,Salto in alto
+saltoinalto/hjtetrathloncadetti,Salto in alto
+saltoinalto/hjtriathloncadette,Salto in alto
+saltoinalto/hjtriathlonef10,Salto in alto
+saltoinalto/hjtriathlonem10,Salto in alto
+saltoinalto/hjtriathlonragazze,Salto in alto
+saltoinalto/hjtriathlonragazzi,Salto in alto
 saltoinalto/hjuomini,Salto in alto
 saltoinaltoa/j/p/sf,Salto in alto
 saltoinaltoa/j/p/sm,Salto in alto
@@ -1732,12 +2358,15 @@ saltoinaltoajpsuomini,Salto in alto
 saltoinaltoallieve,Salto in alto
 saltoinaltoallieve/juniorf,Salto in alto
 saltoinaltoallieve+senioresdonne,Salto in alto
+saltoinaltoallievepentathlon,Salto in alto
 saltoinaltoallievepm,Salto in alto
 saltoinaltoallievi,Salto in alto
 saltoinaltoallievi+allieve,Salto in alto
 saltoinaltoallievi+senioresuomini,Salto in alto
+saltoinaltoallievipentathlon,Salto in alto
 saltoinaltoallievipm,Salto in alto
 saltoinaltoamp.m.,Salto in alto
+saltoinaltoass/femminilepentathon,Salto in alto
 saltoinaltoassolutedonne,Salto in alto
 saltoinaltoassolutidonne,Salto in alto
 saltoinaltoassolutidonnepm,Salto in alto
@@ -1745,16 +2374,25 @@ saltoinaltoassolutifemminili,Salto in alto
 saltoinaltoassolutimaschili,Salto in alto
 saltoinaltoassolutiuomini,Salto in alto
 saltoinaltoassolutiuominipm,Salto in alto
+saltoinaltoassolutofemminile,Salto in alto
+saltoinaltoassolutomaschieptathlon,Salto in alto
+saltoinaltoassolutomaschile,Salto in alto
 saltoinaltocadette,Salto in alto
 saltoinaltocadette(u16),Salto in alto
 saltoinaltocadetti,Salto in alto
 saltoinaltocadetti(u16),Salto in alto
 saltoinaltodonne,Salto in alto
+saltoinaltoef10,Salto in alto
+saltoinaltoem10,Salto in alto
 saltoinaltoept.junioresuomini,Salto in alto
 saltoinaltoept.uomini,Salto in alto
 saltoinaltoeptathlon,Salto in alto
+saltoinaltoeptathlonind.jpsm,Salto in alto
+saltoinaltoeptathlonjpsuomini,Salto in alto
 saltoinaltoeptathlonjuniorm,Salto in alto
+saltoinaltoeptathlonjunioruomini,Salto in alto
 saltoinaltoeptathlonp/sm,Salto in alto
+saltoinaltoeptathlonuomini,Salto in alto
 saltoinaltoesof10,Salto in alto
 saltoinaltoesom10,Salto in alto
 saltoinaltoesordientif10,Salto in alto
@@ -1762,39 +2400,74 @@ saltoinaltoesordientif8,Salto in alto
 saltoinaltoesordientim10,Salto in alto
 saltoinaltoesordientim8,Salto in alto
 saltoinaltofemminile,Salto in alto
+saltoinaltoj/p/sdonne,Salto in alto
 saltoinaltoj/p/sf,Salto in alto
+saltoinaltoj/p/sfemminilepentathlon,Salto in alto
+saltoinaltoj/p/sfemminilipentathlon,Salto in alto
 saltoinaltoj/p/sfp.m.,Salto in alto
 saltoinaltoj/p/sm,Salto in alto
+saltoinaltoj/p/smaschilieptathlon,Salto in alto
 saltoinaltoj/p/suomini,Salto in alto
 saltoinaltojmp.m.,Salto in alto
 saltoinaltojpsdonne,Salto in alto
+saltoinaltojpsuomini,Salto in alto
+saltoinaltojun/maschieptathlon,Salto in alto
 saltoinaltojunior/promessem,Salto in alto
 saltoinaltojunioresdonne,Salto in alto
 saltoinaltojunioresf,Salto in alto
 saltoinaltojunioresm,Salto in alto
+saltoinaltojunioresmaschi,Salto in alto
 saltoinaltojunioresuomini,Salto in alto
 saltoinaltojunioresuominipm,Salto in alto
+saltoinaltojuniormaschileeptathlon,Salto in alto
+saltoinaltojunmaschilieptathlon,Salto in alto
 saltoinaltomaschile,Salto in alto
+saltoinaltomasterdonne,Salto in alto
 saltoinaltomasteruomini,Salto in alto
 saltoinaltomen,Salto in alto
+saltoinaltop/sdonne,Salto in alto
 saltoinaltop/sp.m.,Salto in alto
+saltoinaltop/suomini,Salto in alto
 saltoinaltopent.allieve,Salto in alto
 saltoinaltopent.allievi,Salto in alto
 saltoinaltopent.donne,Salto in alto
 saltoinaltopentathlon,Salto in alto
 saltoinaltopentathlonallieve,Salto in alto
+saltoinaltopentathlonallievi,Salto in alto
+saltoinaltopentathlonass.f,Salto in alto
+saltoinaltopentathlondonne,Salto in alto
+saltoinaltopentathlonindjpsf,Salto in alto
+saltoinaltopentathlonindooraf,Salto in alto
+saltoinaltopentathlonindooram,Salto in alto
+saltoinaltopentathlonjpsdonne,Salto in alto
+saltoinaltopentathlonmasteruomini,Salto in alto
+saltoinaltopentathlonsm60,Salto in alto
 saltoinaltopenthalonallievi,Salto in alto
 saltoinaltopenthalonj/p/sf,Salto in alto
 saltoinaltopmcadette,Salto in alto
+saltoinaltopro/sendonne,Salto in alto
+saltoinaltopro/senmaschileeptathlon,Salto in alto
 saltoinaltopromesse/seniordonne,Salto in alto
+saltoinaltopromesse/senioruomini,Salto in alto
 saltoinaltopromessedonne,Salto in alto
 saltoinaltopromessem,Salto in alto
 saltoinaltopromesseuomini,Salto in alto
 saltoinaltoragazze,Salto in alto
 saltoinaltoragazze(u14),Salto in alto
+saltoinaltoragazze2009,Salto in alto
+saltoinaltoragazze2010,Salto in alto
+saltoinaltoragazzeanno2006,Salto in alto
+saltoinaltoragazzeanno2007,Salto in alto
+saltoinaltoragazzef,Salto in alto
 saltoinaltoragazzi,Salto in alto
 saltoinaltoragazzi(u14),Salto in alto
+saltoinaltoragazzi2009,Salto in alto
+saltoinaltoragazzi2010,Salto in alto
+saltoinaltoragazzianno2006,Salto in alto
+saltoinaltoragazzianno2007,Salto in alto
+saltoinaltoragazzim,Salto in alto
 saltoinaltosenioresf,Salto in alto
+saltoinaltoseniormasteruomini,Salto in alto
 saltoinaltosf60+pentathlon,Salto in alto
 saltoinaltosf60pentathlon,Salto in alto
 saltoinaltosf75pentathlon,Salto in alto
@@ -1806,40 +2479,99 @@ saltoinaltosm75pentathlon,Salto in alto
 saltoinaltosm80pentathlon,Salto in alto
 saltoinaltotetrathloncadette,Salto in alto
 saltoinaltotetrathloncadetti,Salto in alto
+saltoinaltotriathloncadetti,Salto in alto
 saltoinaltotriathlonragazze,Salto in alto
 saltoinaltouomini,Salto in alto
+saltoinaltouominim50,Salto in alto
+saltoinaltouominim60,Salto in alto
 saltoinaltowomen,Salto in alto
+saltoinlungo-ajpsdonne,Salto in lungo
+saltoinlungo-ajpsuomini,Salto in lungo
+saltoinlungo-allieve,Salto in lungo
+saltoinlungo-allievi,Salto in lungo
+saltoinlungo-junioresf,Salto in lungo
+saltoinlungo/lj-jpsdonne,Salto in lungo
+saltoinlungo/lj-jpsuomini,Salto in lungo
+saltoinlungo/lja/j/p/sf,Salto in lungo
+saltoinlungo/lja/j/p/sm,Salto in lungo
+saltoinlungo/lja/sdonne,Salto in lungo
+saltoinlungo/lja/suomini,Salto in lungo
 saltoinlungo/ljadultedonne,Salto in lungo
 saltoinlungo/ljadultidonne,Salto in lungo
+saltoinlungo/ljadultifemmine,Salto in lungo
+saltoinlungo/ljadultimaschi,Salto in lungo
 saltoinlungo/ljadultiuomini,Salto in lungo
 saltoinlungo/ljallieve,Salto in lungo
 saltoinlungo/ljallievi,Salto in lungo
 saltoinlungo/ljallievi/sm,Salto in lungo
+saltoinlungo/ljbiathlonef10,Salto in lungo
+saltoinlungo/ljbiathlonef6,Salto in lungo
+saltoinlungo/ljbiathlonef8,Salto in lungo
+saltoinlungo/ljbiathlonem10,Salto in lungo
+saltoinlungo/ljbiathlonem6,Salto in lungo
+saltoinlungo/ljbiathlonem8,Salto in lungo
 saltoinlungo/ljcadette,Salto in lungo
 saltoinlungo/ljcadetti,Salto in lungo
+saltoinlungo/ljcdsdonne,Salto in lungo
 saltoinlungo/ljdonne,Salto in lungo
 saltoinlungo/ljef10,Salto in lungo
 saltoinlungo/ljef5,Salto in lungo
+saltoinlungo/ljef6,Salto in lungo
 saltoinlungo/ljef8,Salto in lungo
 saltoinlungo/ljem10,Salto in lungo
+saltoinlungo/ljem6,Salto in lungo
 saltoinlungo/ljem8,Salto in lungo
+saltoinlungo/ljeptath.i/opsuomini,Salto in lungo
+saltoinlungo/ljeptathloni/ojm,Salto in lungo
+saltoinlungo/ljeptathloni/ojpsm,Salto in lungo
+saltoinlungo/ljeptathloni/opsm,Salto in lungo
+saltoinlungo/ljeptathlonjm,Salto in lungo
+saltoinlungo/ljeptathlonjunioresm,Salto in lungo
+saltoinlungo/ljeptathlonpsm.,Salto in lungo
+saltoinlungo/ljeptathlonuomini,Salto in lungo
 saltoinlungo/ljf35-40,Salto in lungo
+saltoinlungo/ljfemminile,Salto in lungo
+saltoinlungo/ljffispes,Salto in lungo
 saltoinlungo/ljj/p/sdonne,Salto in lungo
 saltoinlungo/ljj/p/suomini,Salto in lungo
 saltoinlungo/ljjunioresdonne,Salto in lungo
 saltoinlungo/ljjunioresuomini,Salto in lungo
+saltoinlungo/ljmaschile,Salto in lungo
+saltoinlungo/ljmasterdonne,Salto in lungo
 saltoinlungo/ljmasterfemminile,Salto in lungo
 saltoinlungo/ljmastermaschile,Salto in lungo
+saltoinlungo/ljmasteruomini,Salto in lungo
+saltoinlungo/ljomini,Salto in lungo
+saltoinlungo/ljpentath.i/ojpsdonne,Salto in lungo
+saltoinlungo/ljpentathlonaf,Salto in lungo
+saltoinlungo/ljpentathlonallieve,Salto in lungo
+saltoinlungo/ljpentathlonallievi,Salto in lungo
+saltoinlungo/ljpentathlonam,Salto in lungo
+saltoinlungo/ljpentathlondonne,Salto in lungo
+saltoinlungo/ljpentathloni/oaf,Salto in lungo
+saltoinlungo/ljpentathloni/oam,Salto in lungo
+saltoinlungo/ljpentathloni/ojpsf,Salto in lungo
+saltoinlungo/ljpentathlonindooram,Salto in lungo
+saltoinlungo/ljpentathlonjpsf.,Salto in lungo
+saltoinlungo/ljpentathlonmasterf,Salto in lungo
 saltoinlungo/ljpromessedonne,Salto in lungo
 saltoinlungo/ljpromesseuomini,Salto in lungo
 saltoinlungo/ljragazze,Salto in lungo
 saltoinlungo/ljragazzi,Salto in lungo
 saltoinlungo/ljsf35,Salto in lungo
+saltoinlungo/ljsf35-45,Salto in lungo
 saltoinlungo/ljsf40,Salto in lungo
 saltoinlungo/ljsf45,Salto in lungo
+saltoinlungo/ljsf50,Salto in lungo
 saltoinlungo/ljsf55,Salto in lungo
+saltoinlungo/ljsf55+,Salto in lungo
 saltoinlungo/ljsf60,Salto in lungo
+saltoinlungo/ljsf65,Salto in lungo
+saltoinlungo/ljsm35+,Salto in lungo
+saltoinlungo/ljtriathlonragazze,Salto in lungo
+saltoinlungo/ljtriathlonragazzi,Salto in lungo
 saltoinlungo/ljuomini,Salto in lungo
+saltoinlungoa/j/p/sf,Salto in lungo
 saltoinlungoa/j/p/sm,Salto in lungo
 saltoinlungoa/jf,Salto in lungo
 saltoinlungoa/p/sf,Salto in lungo
@@ -1852,11 +2584,14 @@ saltoinlungoajpsdonne,Salto in lungo
 saltoinlungoajpsuomini,Salto in lungo
 saltoinlungoallieve,Salto in lungo
 saltoinlungoallieve+senioresdonne,Salto in lungo
+saltoinlungoallievepentathlon,Salto in lungo
 saltoinlungoallievepm,Salto in lungo
 saltoinlungoallievi,Salto in lungo
 saltoinlungoallievi+senioresuomini,Salto in lungo
+saltoinlungoallievipentathlon,Salto in lungo
 saltoinlungoallievipm,Salto in lungo
 saltoinlungoamp.m.,Salto in lungo
+saltoinlungoass/femminilepentathlon,Salto in lungo
 saltoinlungoassolutedonne,Salto in lungo
 saltoinlungoassolutedonnepm,Salto in lungo
 saltoinlungoassolutidonne,Salto in lungo
@@ -1866,19 +2601,40 @@ saltoinlungoassolutim,Salto in lungo
 saltoinlungoassolutimaschili,Salto in lungo
 saltoinlungoassolutiuomini,Salto in lungo
 saltoinlungoassolutiuominipm,Salto in lungo
+saltoinlungoassolutofemminile,Salto in lungo
+saltoinlungoassolutomaschieptathlon,Salto in lungo
+saltoinlungoassolutomaschile,Salto in lungo
 saltoinlungocadette,Salto in lungo
+saltoinlungocadette-gruppo1,Salto in lungo
+saltoinlungocadette-gruppo2,Salto in lungo
 saltoinlungocadette(u16),Salto in lungo
 saltoinlungocadette2009-2010,Salto in lungo
 saltoinlungocadetti,Salto in lungo
 saltoinlungocadetti(u16),Salto in lungo
 saltoinlungocadetti2009-2010,Salto in lungo
+saltoinlungoclassec21f,Salto in lungo
+saltoinlungoclasseopenm,Salto in lungo
 saltoinlungodonne,Salto in lungo
+saltoinlungodonne(gruppo1),Salto in lungo
+saltoinlungodonne(gruppo2),Salto in lungo
+saltoinlungodonnea/j/p/s,Salto in lungo
 saltoinlungodonneadinvito,Salto in lungo
+saltoinlungodonnef45,Salto in lungo
+saltoinlungoef10,Salto in lungo
+saltoinlungoef5,Salto in lungo
+saltoinlungoef8,Salto in lungo
+saltoinlungoem10,Salto in lungo
+saltoinlungoem5,Salto in lungo
+saltoinlungoem8,Salto in lungo
 saltoinlungoept.junioresuomini,Salto in lungo
 saltoinlungoept.uomini,Salto in lungo
 saltoinlungoeptathlon,Salto in lungo
+saltoinlungoeptathlonind.jpsm,Salto in lungo
+saltoinlungoeptathlonjpsuomini,Salto in lungo
 saltoinlungoeptathlonjuniorm,Salto in lungo
+saltoinlungoeptathlonjunioruomini,Salto in lungo
 saltoinlungoeptathlonp/sm,Salto in lungo
+saltoinlungoeptathlonuomini,Salto in lungo
 saltoinlungoesof10,Salto in lungo
 saltoinlungoesof5,Salto in lungo
 saltoinlungoesof5-8,Salto in lungo
@@ -1900,14 +2656,20 @@ saltoinlungoj/p/sdonne,Salto in lungo
 saltoinlungoj/p/sf,Salto in lungo
 saltoinlungoj/p/sfp.m.,Salto in lungo
 saltoinlungoj/p/sm,Salto in lungo
+saltoinlungoj/p/smaschilieptathlon,Salto in lungo
 saltoinlungoj/p/suomini,Salto in lungo
 saltoinlungojmp.m.,Salto in lungo
 saltoinlungojpsdonne,Salto in lungo
+saltoinlungojpsuomini,Salto in lungo
+saltoinlungojun/maschieptathlon,Salto in lungo
 saltoinlungojunioresdonne,Salto in lungo
 saltoinlungojunioresf,Salto in lungo
 saltoinlungojunioresm,Salto in lungo
+saltoinlungojunioresmaschi,Salto in lungo
 saltoinlungojunioresuomini,Salto in lungo
 saltoinlungojunioresuominipm,Salto in lungo
+saltoinlungojuniormaschilieptathlon,Salto in lungo
+saltoinlungojunmaschilieptathlon,Salto in lungo
 saltoinlungomaschile,Salto in lungo
 saltoinlungomasterdonne,Salto in lungo
 saltoinlungomasteruomini,Salto in lungo
@@ -1920,20 +2682,41 @@ saltoinlungopent.allievi,Salto in lungo
 saltoinlungopent.donne,Salto in lungo
 saltoinlungopentathlon,Salto in lungo
 saltoinlungopentathlonallieve,Salto in lungo
+saltoinlungopentathlonallievi,Salto in lungo
+saltoinlungopentathlonass.f,Salto in lungo
+saltoinlungopentathlondonne,Salto in lungo
+saltoinlungopentathlonindjpsf,Salto in lungo
+saltoinlungopentathlonindooraf,Salto in lungo
+saltoinlungopentathlonindooram,Salto in lungo
+saltoinlungopentathlonjpsdonne,Salto in lungo
+saltoinlungopentathlonmasteruomini,Salto in lungo
+saltoinlungopentathlonsm60,Salto in lungo
 saltoinlungopenthalonallievi,Salto in lungo
 saltoinlungopenthalonj/p/sf,Salto in lungo
 saltoinlungopmcadetti,Salto in lungo
+saltoinlungopro/sendonne,Salto in lungo
+saltoinlungopro/senuomini,Salto in lungo
+saltoinlungopromesse/seniordonne,Salto in lungo
+saltoinlungopromesse/senioruomini,Salto in lungo
 saltoinlungopromessedonne,Salto in lungo
 saltoinlungopromessef,Salto in lungo
 saltoinlungopromessem,Salto in lungo
 saltoinlungopromesseuomini,Salto in lungo
 saltoinlungoragazze,Salto in lungo
 saltoinlungoragazze(u14),Salto in lungo
+saltoinlungoragazze2009,Salto in lungo
+saltoinlungoragazze2010,Salto in lungo
 saltoinlungoragazze2011,Salto in lungo
+saltoinlungoragazzeanno2006,Salto in lungo
+saltoinlungoragazzeanno2007,Salto in lungo
 saltoinlungoragazzi,Salto in lungo
 saltoinlungoragazzi(u14),Salto in lungo
 saltoinlungoragazzi(u14)c.r.i.,Salto in lungo
+saltoinlungoragazzi2009,Salto in lungo
+saltoinlungoragazzi2010,Salto in lungo
 saltoinlungoragazzi2011,Salto in lungo
+saltoinlungoragazzianno2006,Salto in lungo
+saltoinlungoragazzianno2007,Salto in lungo
 saltoinlungosenioresm,Salto in lungo
 saltoinlungosf45donne,Salto in lungo
 saltoinlungosf60+pentathlon,Salto in lungo
@@ -1950,37 +2733,78 @@ saltoinlungosm80pentathlon,Salto in lungo
 saltoinlungotetrathlon-cadette,Salto in lungo
 saltoinlungotetrathlon-cadetti,Salto in lungo
 saltoinlungotetrathloncadette,Salto in lungo
+saltoinlungotetrathloncadetti,Salto in lungo
+saltoinlungotriathloncadette,Salto in lungo
+saltoinlungotriathloncadetti,Salto in lungo
 saltoinlungouomini,Salto in lungo
 saltoinlungouominiadinvito,Salto in lungo
+saltoinlungouominim40,Salto in lungo
+saltoinlungouominim50,Salto in lungo
+saltoinlungouominim60,Salto in lungo
+saltoinlungouominim75,Salto in lungo
+saltol'astapro/senmaschileeptathon,Salto con l’asta
 saltolungodafermo1°mediadonne,Salto in lungo da fermo
 saltolungodafermo1°mediauomini,Salto in lungo da fermo
 saltolungodafermo2°mediadonne,Salto in lungo da fermo
 saltolungodafermo2°mediauomini,Salto in lungo da fermo
 saltolungodafermo3°mediadonne,Salto in lungo da fermo
 saltolungodafermo3°mediauomini,Salto in lungo da fermo
+saltolungoj/p/sfemminilepentathlon,Salto in lungo
+saltolungoj/p/sfemminilipentathlon,Salto in lungo
+saltolungopro/senmaschileeptathlon,Salto in lungo
+saltoquadruplo-ragazze,Salto quadruplo
+saltoquadruplo-ragazzi,Salto quadruplo
+saltoquadruplo+60hsragazze,Salto quadruplo
+saltoquadruplo+60mtragazze,Salto quadruplo
+saltoquadruplo+60mtragazzi,Salto quadruplo
+saltoquadruploragazze,Salto quadruplo
+saltoquadruploragazzebiathlon,Salto quadruplo
+saltoquadruploragazzi,Salto quadruplo
+saltoquadruploragazzibiathlon,Salto quadruplo
+saltoquaruplo+60hsragazzi,Salto quadruplo
+saltotriplo-ajpsdonne,Salto triplo
+saltotriplo-ajpsuomini,Salto triplo
+saltotriplo/tj-cadette,Salto triplo
+saltotriplo/tj-cadetti,Salto triplo
+saltotriplo/tj-jpsdonne,Salto triplo
+saltotriplo/tj-jpsuomini,Salto triplo
+saltotriplo/tja/sdonne,Salto triplo
 saltotriplo/tjallieve,Salto triplo
 saltotriplo/tjallievi,Salto triplo
 saltotriplo/tjcadette,Salto triplo
 saltotriplo/tjcadetti,Salto triplo
+saltotriplo/tjcdsdonne,Salto triplo
 saltotriplo/tjdonne,Salto triplo
 saltotriplo/tjf35-45,Salto triplo
 saltotriplo/tjf50-55,Salto triplo
 saltotriplo/tjf60+,Salto triplo
+saltotriplo/tjfemminile,Salto triplo
+saltotriplo/tjj/pdonne,Salto triplo
 saltotriplo/tjjunioresdonne,Salto triplo
 saltotriplo/tjjunioresuomini,Salto triplo
+saltotriplo/tjmaschile,Salto triplo
+saltotriplo/tjmasterdonne,Salto triplo
+saltotriplo/tjmasteruomini,Salto triplo
 saltotriplo/tjp/sdonne,Salto triplo
 saltotriplo/tjp/suomini,Salto triplo
 saltotriplo/tjpromessedonne,Salto triplo
 saltotriplo/tjpromesseuomini,Salto triplo
 saltotriplo/tjsf35,Salto triplo
+saltotriplo/tjsf35-50,Salto triplo
+saltotriplo/tjsf40,Salto triplo
 saltotriplo/tjsf45,Salto triplo
 saltotriplo/tjsf50,Salto triplo
 saltotriplo/tjsf55,Salto triplo
+saltotriplo/tjsf55+,Salto triplo
 saltotriplo/tjsf60,Salto triplo
+saltotriplo/tjsf65,Salto triplo
 saltotriplo/tjsf70,Salto triplo
+saltotriplo/tjtriathloncadette,Salto triplo
 saltotriplo/tjuomini,Salto triplo
 saltotriploa/j/p/sf,Salto triplo
 saltotriploa/j/p/sm,Salto triplo
+saltotriploa/sdonne,Salto triplo
+saltotriploa/suomini,Salto triplo
 saltotriploajpsdonne,Salto triplo
 saltotriploajpsuomini,Salto triplo
 saltotriploallieve,Salto triplo
@@ -1993,32 +2817,51 @@ saltotriploassolutidonne,Salto triplo
 saltotriploassolutifemminili,Salto triplo
 saltotriploassolutimaschili,Salto triplo
 saltotriploassolutiuomini,Salto triplo
+saltotriploassolutofemminile,Salto triplo
+saltotriploassolutomaschile,Salto triplo
 saltotriplocadette,Salto triplo
 saltotriplocadette(u16),Salto triplo
 saltotriplocadette(u16)c.r.i.,Salto triplo
 saltotriplocadetti,Salto triplo
 saltotriplocadetti(u16),Salto triplo
 saltotriplocadetti(u16)c.r.i.,Salto triplo
+saltotriploclasseopenf,Salto triplo
 saltotriplodonne,Salto triplo
+saltotriploextraallievi,Salto triplo
+saltotriploextradonne,Salto triplo
 saltotriplofemminile,Salto triplo
 saltotriploj/p/sdonne,Salto triplo
 saltotriploj/p/sf,Salto triplo
 saltotriploj/p/sm,Salto triplo
 saltotriploj/p/suomini,Salto triplo
+saltotriplojpsdonne,Salto triplo
+saltotriplojpsuomini,Salto triplo
 saltotriplojunioresdonne,Salto triplo
 saltotriplojunioresf,Salto triplo
 saltotriplojunioresm,Salto triplo
+saltotriplojunioresmaschi,Salto triplo
 saltotriplojunioresuomini,Salto triplo
 saltotriplomaschile,Salto triplo
 saltotriplomasterdonne,Salto triplo
 saltotriplomasteruomini,Salto triplo
+saltotriplop/sdonne,Salto triplo
+saltotriplop/suomini,Salto triplo
+saltotriplopro/sendonne,Salto triplo
+saltotriplopro/senuomini,Salto triplo
+saltotriplopromesse/seniordonne,Salto triplo
+saltotriplopromesse/senioruomini,Salto triplo
 saltotriplopromessedonne,Salto triplo
 saltotriplopromesseuomini,Salto triplo
+saltotriploseniormasterdonne,Salto triplo
+saltotriploseniormasteruomini,Salto triplo
 saltotriplosf40donne,Salto triplo
 saltotriplosm55uomini,Salto triplo
 saltotriplosm60uomini,Salto triplo
 saltotriplouomini,Salto triplo
 saltotriplouominiadinvito,Salto triplo
+saltotriplouominim50,Salto triplo
+saltotriplouominim60,Salto triplo
+saltotriplouominim75,Salto triplo
 staff.4x160donne,4x160m
 staff.4x160indoorcadette,4x160m
 staff.4x160indoorcadetti,4x160m
@@ -2044,6 +2887,8 @@ staffetta4x160indoorragazze,4x160m
 staffetta4x160indoorragazzi,4x160m
 staffetta4x160indooruomini,4x160m
 staffetta4x160junioresuomini,4x160m
+staffetta4x1giroadultifemmine,4x200m
+staffetta4x1giroadultimaschi,4x200m
 staffetta4x1giroallieve,4x200m
 staffetta4x1giroallievi,4x200m
 staffetta4x1girobancari-donne,4x200m
@@ -2060,6 +2905,8 @@ staffetta4x1giromasteruomini,4x200m
 staffetta4x1giromista,4x200m
 staffetta4x1giropromessedonne,4x200m
 staffetta4x1giropromesseuomini,4x200m
+staffetta4x1giroseniormasterdonne,4x200m
+staffetta4x1giroseniormasteruomini,4x200m
 staffetta4x1girouomini,4x200m
 staffetta4x200adulti+juniores+allievidonne,4x200m
 staffetta4x200adulti+juniores+allieviuomini,4x200m
@@ -2071,11 +2918,19 @@ staffetta4x200assolutidonne,4x200m
 staffetta4x200assolutiuomini,4x200m
 staffetta4x200cadette,4x200m
 staffetta4x200cadetti,4x200m
+staffetta4x200cdsdonne,4x200m
+staffetta4x200classec21m,4x200m
+staffetta4x200classeopenm,4x200m
 staffetta4x200donne,4x200m
 staffetta4x200masterdonne,4x200m
 staffetta4x200masteruomini,4x200m
 staffetta4x200ragazze,4x200m
 staffetta4x200ragazzi,4x200m
+staffetta4x200sf40,4x200m
+staffetta4x200sf45,4x200m
+staffetta4x200sf50,4x200m
+staffetta4x200sf55,4x200m
+staffetta4x200sf60,4x200m
 staffetta4x200uomini,4x200m
 staffetta4x2giridonne,4x400m
 staffetta4x2girimasteruomini,4x400m
@@ -2092,9 +2947,15 @@ tetrathloncadette,Tetrathlon indoor CF
 tetrathloncadetti,Tetrathlon indoor CM
 triathlon,ambiguo
 triathlon-b,ambiguo
+triathlonb,ambiguo
+triathlonbragazzi,Triathlon indoor RM
+triathloncadette,triathlon indoor CF
+triathloncadetti,triathlon indoor CM
 triathlonragazze,Triathlon indoor RF
 triathlonragazzi,Triathlon indoor RM
 triathlonrm,Triathlon indoor RM
+triplejumpmen,Salto triplo
+triplejumpwomen,Salto triplo
 triploallieve,Salto triplo
 triploallievi,Salto triplo
 triplocadette,Salto triplo
@@ -2106,6 +2967,10 @@ triplouomini,Salto triplo
 trofeo`premiodiqualità`,altro
 trofeopremiodiqualità,altro
 tuttiirisultati,altro
+tuttiirisultatiinunclick,altro
 tuttiirisultatimaschiliefemminili,altro
+uominisommatempi,altro
+vortexef5,Vortex
+vortexem5,Vortex
 vortextriathlonbef10,Vortex
 vortextriathlonbem10,Vortex
