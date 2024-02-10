@@ -1,9 +1,9 @@
 import pandas as pd
 import csv
 from Generale.calendario import extract_meet_codes_from_calendar
-from risultati_gara import extract_link_of_discipline_results
+from old_stuff.risultati_gara import extract_link_of_discipline_results
 from scraping_risultati import results_from_sigma
-from manage_file import write_file, read_file
+from old_stuff.manage_file import write_file, read_file
 
 
 
