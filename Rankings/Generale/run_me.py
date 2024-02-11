@@ -2,19 +2,19 @@ import pandas as pd
 import os
 import json
 from functions_general import extract_meet_codes_from_calendar, get_meet_info, get_events_link, hard_strip
+from assegnazione_evento import assegna_evento_generale, assegna_evento_specifico
 import time
 start_time = time.time()
 
 
-anno = '2024';      regione = '';       categoria = ''      
+anno = '2018';      regione = '';       categoria = ''      
 mese = '';          tipo = '3'
 
 folder = 'indoor_'+anno+'/'
 file_gare = folder + 'link_gare.csv'
 file_risultati = folder + 'link_risultati.csv'
-file_risultati_key = folder + 'link_risultati_key.csv'
 file_dizionario = 'Generale/event_dict.json'
-file_dizionario_new = 'Generale/event_dict_new.json'
+file_dizionario_new = 'Generale/event_dict_new.csv'
 
 
 ################# Codici gare (anno, mese, livello, regione, tipo, categoria) ###################
@@ -103,13 +103,13 @@ df_risultati.to_csv(file_risultati, index=False)
 ## Il rischio di errore in questa parte è alto a causa di typo miei, nomi molto ambigui, hard_strip()
 ## che incontra un nome così strano che tolta qualche lettera diventa una disciplina diversa (ho fatto
 ## in modo che questa cosa sia improbabile)
-print('---------------------------------------------')
+""" print('---------------------------------------------')
 print('Applico il dizionario per dare il nome corretto agli eventi')
 
 with open(file_dizionario, 'r') as f1:
     event_dict = json.load(f1)
 
-event_dict_new = {}
+eventi_ignoti = []
 for ii, row in df_risultati.iterrows():
     
     nome = row['Nome']
@@ -119,13 +119,43 @@ for ii, row in df_risultati.iterrows():
         df_risultati.loc[ii, 'Disciplina'] = event_dict[nome]
     else:
         print('\nNon conosco ' + nome)
-        event_dict_new[nome] = 'boh'
+        eventi_ignoti.append([nome, 'boh'])
 
 df_risultati.to_csv(file_risultati_key, index=False)
 
-if event_dict_new:
+if eventi_ignoti:
     with open(file_dizionario_new, 'w') as f2:
-        json.dump(event_dict_new, f2, sort_keys=True, indent=4)
+        f2.write('Nome,Disciplina\n')
+        for a, b in eventi_ignoti:
+            f2.write(a+','+b+'\n') """
+            
+for ii, row  in df_risultati.iterrows():
+    
+    nome = df_risultati.loc[ii,'Nome']
+    disciplina = df_risultati.loc[ii,'Disciplina']
+    disciplina = ''
+    if disciplina:
+        continue
+    
+    else:
+        eve_gen = ''
+        warn_gen = ''
+        eve_spec = ''
+        eve_gen = ''
+        
+        (eve_gen, warn_gen) = assegna_evento_generale(nome)
+        (eve_spec, warn_spec) = assegna_evento_specifico(nome, eve_gen)
+            
+        if warn_gen:
+            if warn_spec:
+                df_risultati.loc[ii,'Disciplina'] = '**' + eve_gen
+            else: 
+                df_risultati.loc[ii,'Disciplina'] = '*' + eve_spec 
+        elif warn_spec:
+            df_risultati.loc[ii,'Disciplina'] = '*' + eve_spec
+        else:
+            df_risultati.loc[ii,'Disciplina'] = eve_spec
 
 
 print("--- %s secondi ---" % round(time.time() - start_time, 2))
+df_risultati.to_csv(file_risultati, index=False)

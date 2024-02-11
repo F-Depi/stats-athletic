@@ -167,8 +167,8 @@ def get_meet_info(df_gare, update_criteria):
                     r2_jj = requests.get(url2_jj).status_code
                     
                     if r2_jj == 200:
-                        if jj == 4: print('Attenzione questa gara ha più di 3 link:'+url2_jj)
-                        if jj == 21: print('ATTENZIONE questa gara ha più di 20 link:'+url2_jj)
+                        if jj == 4: print('Attenzione questa gara ha più di 3 link: '+url2_jj)
+                        if jj == 21: print('ATTENZIONE questa gara ha più di 20 link: '+url2_jj)
                         df_gare.loc[ii,'Versione Sigma'] = 'Vecchio #'+str(jj)
                     else: continue
                     
@@ -235,7 +235,7 @@ def get_events_link(df_gare, update_criteria, *arg):
     for ii, row in df_links_nuovi.iterrows():
         print('\t' + str(ii+1) + '/' + tot, end="\r")
         cod = row['Codice']
-        updated_cods.append(cod)
+        if arg: updated_cods.append(cod)
         url = row['Risultati']
         r = requests.get(url).text
         soup = BeautifulSoup(r, 'html.parser')
@@ -275,7 +275,7 @@ def get_events_link(df_gare, update_criteria, *arg):
         cod = row[0]
         url = row[1]
         
-        updated_cods.append(cod)
+        if arg: updated_cods.append(cod)
         
         print('\t' + str(ii+1) + '/' + tot, end="\r")
         
@@ -308,7 +308,7 @@ def get_events_link(df_gare, update_criteria, *arg):
         cod = row['Codice']
         url = row['Risultati']
 
-        updated_cods.append(cod)
+        if arg: updated_cods.append(cod)
 
         r = requests.get(url).text
         soup = BeautifulSoup(r, 'html.parser')
@@ -324,7 +324,7 @@ def get_events_link(df_gare, update_criteria, *arg):
                 df_risultati = pd.concat([df_risultati, data])
     
     
-    if updated_cods:
+    if arg:
             
         df_risultati_not_so_old = df_risultati_old[~df_risultati_old['Codice'].isin(updated_cods)]
         len1 = str( len(df_risultati_old)-len(df_risultati_not_so_old) )
@@ -345,9 +345,12 @@ def hard_strip(nome_str):
     # without loosing any useful informations
     
     nome_str = nome_str.strip().lower()
-    if nome_str.startswith('modello 1'): return 'altro'
-    if nome_str.startswith('1/sta'): return 'altro'
-    nome_str = nome_str.replace('(', ' ').replace(')', ' ')
+    
+    starting_trash = ['modello 1','modello','risultati','classifica']
+    for word in starting_trash:
+        if nome_str.startswith(word): return 'altro'
+    
+    nome_str = nome_str.replace('(', ' ').replace(')', ' ').replace('-', ' ')
     
     first_trash = ['finale','extra','ad invito','invito','piani','staffetta','staff.',' u14 ',' u15 ',' u16 ',' u17 ',' u18 ',' u19 ',' u19 ',' u20 ',' u23 ']
     for word in first_trash:
