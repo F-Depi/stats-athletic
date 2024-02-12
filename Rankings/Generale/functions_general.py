@@ -201,13 +201,12 @@ def get_events_link(df_gare, update_criteria, *arg):
     ## assieme al nome della disciplina stessa.
     ## l'input deve essere un DataFrame con columns=['Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
     ## 'Data' and 'Ultimo Aggiornamento' devono essere riconosciuti come date() da python
-    ## l'output è un nuovo DataFrame con columns=['Codice','Versione Sigma','Disciplina','Nome','Link']
+    ## l'output è un nuovo DataFrame con columns=['Codice','Versione Sigma','Warining','Disciplina','Nome','Link']
     ## update_criteria: 'ok' per cotrollare tutte le gare con status 'ok'
     ##                  'date_N' per controllare solo le gare svolte da N giorni. In questo caso bisogna anche dare in input il DataFrame da aggiornare
     ##                           dopo update_criteria
     
-    df_risultati = pd.DataFrame(columns=['Codice', 'Versione Sigma', 'Disciplina', 'Nome', 'Link'])
-    df_risultati['Disciplina'] = ''
+    df_risultati = pd.DataFrame(columns=['Codice', 'Versione Sigma', 'Warning', 'Disciplina', 'Nome', 'Link'])
 
     if update_criteria == 'ok':
         print('Aggiorno tutti i link con status = \'ok\'')
@@ -323,6 +322,8 @@ def get_events_link(df_gare, update_criteria, *arg):
                 data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Vecchissimo', 'Nome':text, 'Link':link}])
                 df_risultati = pd.concat([df_risultati, data])
     
+    df_risultati['Disciplina'] = 'boh'
+    df_risultati['Warning'] = ''
     
     if arg:
             
@@ -331,9 +332,9 @@ def get_events_link(df_gare, update_criteria, *arg):
         len2 = str(len(df_risultati.reset_index(drop=True)))
         print('\nElimino '+len1+' dei risultati vecchi e ne aggiungo '+len2+' più aggiornati (forse).')
         
-        df_risultati = pd.concat([df_risultati_not_so_old, df_risultati]).reset_index(drop=True)
+        df_risultati = pd.concat([df_risultati_not_so_old, df_risultati])
                 
-            
+    df_risultati = df_risultati.reset_index(drop=True)
     return df_risultati
 
 

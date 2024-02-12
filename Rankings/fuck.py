@@ -2,7 +2,5 @@ import re
 
 
 
-a = 'd'
-if a:
+if a.empty:
     print('ciao')
-else: print('no')

@@ -273,7 +273,6 @@ def info_ostacoli(nome):
         
         # master
         if not(found) and check_master(nome):
-            print(nome)
             spec = re.findall(r'\d+', nome)[0].strip()+' Hs Master'
             found = True
             
@@ -295,9 +294,9 @@ def info_ostacoli(nome):
             
             if int(dist) > 110:
                 print('Benvenuto alle outdoor')
-            else:
-                spec = dist+' Hs h'+h
-                found = True
+                
+            spec = dist+' Hs h'+h
+            found = True
         
         # ora devo indentificare le categorie se voglio sapere l'altezza dell'ostacolo
         # ragazzi
@@ -391,8 +390,14 @@ def info_ostacoli(nome):
         
         
     else:
-        spec = 'ostacoli'
-        warn_spec = 'Non conosco la distanza'
+        match_dist = re.findall(r'\d+', nome)
+        if match_dist:
+            dist = match_dist[0].strip()
+            spec = dist+' Hs'
+            warn_spec = 'Distanza a caso'
+        else:
+            spec = 'ostacoli'
+            warn_spec = 'Non conosco la distanza'
         return spec, warn_spec
         
         
