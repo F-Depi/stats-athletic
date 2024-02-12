@@ -16,7 +16,7 @@ def merge_csv_files(output_file, N1, N2):
     df.to_csv(output_file, index=False)
 
 # Define the number of files (N)
-N1 = 2018  # Change this number to the actual number of files
+N1 = 2011  # Change this number to the actual number of files
 N2 = 2024
 
 # Call the function to merge CSV files

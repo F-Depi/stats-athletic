@@ -7,7 +7,7 @@ def assegna_evento_generale(nome_evento):
     ## 'lungo','alto','triplo','quadruplo','ostacoli','marcia','staffetta','corsa piana','prove multiple','boh'
     ## restituisce il nome della categoria e un'altra stringa con i possibili warning
     
-    nome_evento = nome_evento.lower().replace('finale','').strip()
+    nome_evento = nome_evento.lower().replace('finale','').replace('finalI','').strip()
     nome_evento = nome_evento.replace('1\u00b0','').replace('2\u00b0','').replace('3\u00b0','')
     evento_generale = ''
     warning_evento = ''
@@ -19,11 +19,11 @@ def assegna_evento_generale(nome_evento):
         warning_evento = '\'+\' sus'
     
     # ALTRO
-    for word in ['modello','classifica','complessiv','completi','risultati','1/sta','1 sta','1-sta','1sta','statistica','somma tempi','premio']:  
+    for word in ['modello','classifica','complessiv','completi','risultati','1/sta','1 sta','1-sta','1sta','statistica','somma tempi','premio','gran prix','podio']:  
         if word in nome_evento:
             evento_generale = 'altro'
-            check = check + 1
-            break
+            warning_evento= ''
+            return evento_generale, warning_evento
     
     # LANCI
     for word in ['peso','disco','martello','giavellotto','pallina','palla','vortex']:
@@ -33,11 +33,12 @@ def assegna_evento_generale(nome_evento):
             break
     
     # SALTI
-    for word in ['asta','lungo da fermo','lungo','alto','triplo','quadruplo']:
-        if word in nome_evento:
+    for word in ['asta','lungo da fermo','lungo','triplo','quadruplo','alto']:
+        if word in nome_evento.replace('salto', ''):
             evento_generale = word
             check = check + 1
             break
+        
     if 'high jump' in nome_evento:
         evento_generale = 'alto'
         check = check + 1
@@ -126,8 +127,8 @@ def check_master(nome):
         return True
     else:
         return False
-    
-    
+
+
 
 def info_categoria(nome):
     
@@ -244,7 +245,8 @@ def info_categoria(nome):
         print('Ho trovato '+str(check)+'categorie diverse. Restituisco la più giovane. Non fidarti di me!')
     
     return cat
-            
+
+
 
 def info_ostacoli(nome):
     
@@ -399,10 +401,9 @@ def info_ostacoli(nome):
             spec = 'ostacoli'
             warn_spec = 'Non conosco la distanza'
         return spec, warn_spec
-        
-        
-            
-            
+
+
+
 def assegna_evento_specifico(nome, eve):
     
     ## dato il nome dell'evento che compare nella pagina della gara e la categoria generale che gli è stata assegnata da
@@ -412,7 +413,7 @@ def assegna_evento_specifico(nome, eve):
     ## ritorna l'evento specifico e una stringa con possibli warning
     
     check = 0 # serve a controllare se per motivi scemi l'evento specifico viene scritto due volte
-    nome = nome.lower().replace('finale','').strip()
+    nome = nome.lower().replace('finale','').replace('finale','').strip()
     nome = nome.replace('1\u00b0','').replace('2\u00b0','').replace('3\u00b0','')
     spec = '' # evento specifico
     warn_spec = ''
@@ -422,7 +423,7 @@ def assegna_evento_specifico(nome, eve):
     
     # SALTI e VORTEX, evento generale: ['asta','lungo da fermo','lungo','alto','triplo','quadruplo']
     if eve == 'altro':              spec = 'altro'
-    elif eve == 'asta':               spec = 'Salto con l\'asta'
+    elif eve == 'asta':             spec = 'Salto con l\'asta'
     elif eve == 'lungo da fermo':   spec = 'Salto in lungo da fermo'
     elif eve == 'lungo':            spec = 'Salto in lungo'
     elif eve == 'alto':             spec = 'Salto in alto'
@@ -479,11 +480,9 @@ def assegna_evento_specifico(nome, eve):
     elif eve == 'marcia':
         nome = nome.replace(' ','')
         
-        
-        pat_marcia1 = r'\d+m'   # 3000m
-        pat_marcia2 = r'\d+km'  # 3km
-        match_marcia1 = re.findall(pat_marcia1, nome)
-        match_marcia2 = re.findall(pat_marcia2, nome)
+        match_marcia1 = re.findall(r'\d+m', nome)   # 3000m
+        match_marcia2 = re.findall(r'\d+km', nome)  # 3km
+        match_marcia3 = re.findall(r'km\d+', nome)  # km3
         
         if match_marcia1:
             spec = 'Marcia '+match_marcia1[0].strip()
@@ -493,6 +492,10 @@ def assegna_evento_specifico(nome, eve):
             spec = 'Marcia '+match_marcia2[0][:-2].strip()+'000m'
             check = check + 1
         
+        if match_marcia3:
+            spec = 'Marcia '+match_marcia3[0][2:].strip()+'000m'
+            check = check + 1
+            
         if check == 0:
             if check_master(nome):
                 spec = 'Marcia Master'

@@ -7,11 +7,11 @@ import time
 start_time = time.time()
 
 
-anni = ['2018','2019','2020','2021','2022','2023','2024'];      regione = '';       categoria = ''      
+anni = ['2011','2012','2013','2014','2015','2016','2017'];      regione = '';       categoria = ''      
 mese = '';          tipo = '3'
 
-for anno in anni:
-    
+for anno in range(2011,2025):
+    anno = str(anno)
     folder = 'indoor_'+anno+'/'
     file_gare = folder + 'link_gare.csv'
     file_risultati = folder + 'link_risultati.csv'
@@ -65,7 +65,7 @@ for anno in anni:
     ## ['Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
     print('---------------------------------------------')
 
-    df_gare = get_meet_info(df_gare, 'date_3')
+    df_gare = get_meet_info(df_gare, 'date_0')
     df_gare.to_csv(file_gare, sep='\t', index=False)
 
     ##################################################################################################
@@ -88,7 +88,7 @@ for anno in anni:
         print('Ho trovato il file di risultati '+file_risultati+', aggiorno questo.')
         df_risultati_old = pd.read_csv(file_risultati)
         
-        df_risultati = get_events_link(df_gare, 'date_3', df_risultati_old)
+        df_risultati = get_events_link(df_gare, 'date_0', df_risultati_old)
 
     else:
         print('Non ho trovato il file '+file_risultati+', lo creo.')
@@ -139,20 +139,19 @@ for anno in anni:
         nome = str(nome)
         disciplina = str(disciplina).strip()
         
-        if disciplina == 'boh':
+        #if disciplina == 'boh':
             
-            eve_gen = ''
-            warn_gen = ''
-            eve_spec = ''
-            eve_gen = ''
-            
-            (eve_gen, warn_gen) = assegna_evento_generale(nome)
-            (eve_spec, warn_spec) = assegna_evento_specifico(nome, eve_gen)
-                
-            df_risultati.loc[ii,'Disciplina'] = eve_spec
-            df_risultati.loc[ii,'Warning'] = (warn_gen+' '+warn_spec).strip()
-            
-
+        eve_gen = ''
+        warn_gen = ''
+        eve_spec = ''
+        eve_gen = ''
+        
+        (eve_gen, warn_gen) = assegna_evento_generale(nome)
+        (eve_spec, warn_spec) = assegna_evento_specifico(nome, eve_gen)
+        
+        df_risultati.loc[ii,'Disciplina'] = eve_spec
+        df_risultati.loc[ii,'Warning'] = (warn_gen+' '+warn_spec).strip()
+    
 
     print("--- %s secondi ---" % round(time.time() - start_time, 2))
     df_risultati.to_csv(file_risultati, index=False)
