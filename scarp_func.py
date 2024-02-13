@@ -125,7 +125,7 @@ def estrazione(folder_path, env, sex, club, mode, event):
     url = url.replace('event', event)
 
     # Extracting the data from fidal.it
-    years = [str(year) for year in range(2005, 2024)]
+    years = [str(year) for year in range(2005, 2025)]
     for year in years:
         url_year = url.replace("year", year)
         get_data_from_url(url_year, folder_path)
