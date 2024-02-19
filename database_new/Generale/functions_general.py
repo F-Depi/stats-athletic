@@ -1,10 +1,7 @@
-from old_stuff.manage_file import read_file
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests
 import re
-import json
-import os
 from datetime import date, datetime
 
 ## Function used by run_me.py to scrape the results meets
