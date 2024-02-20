@@ -118,7 +118,7 @@ def assegna_evento_generale(nome_evento, link):
         check = check + 1
         
     ## STAFFETTA
-    if ('staffetta' in nome_evento) | ('staff.' in nome_evento) | ('relay' in nome_evento) | ('realy' in nome_evento) | (nome_evento[1] == 'x'):
+    if ('staffetta' in nome_evento) | ('staff.' in nome_evento) | ('relay' in nome_evento) | ('realy' in nome_evento) | (nome_evento[1] == 'x') | ('giri' in nome_evento) | ('giro' in nome_evento):
         
         evento_generale = 'staffetta'
         check = check + 1    

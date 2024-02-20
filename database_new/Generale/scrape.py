@@ -5,14 +5,18 @@ import re
 
 def clean_tempo(tempo):
     
-    not_tempi = ['DNF','DNS','NM']
-    for a in not_tempi:
-        if str(tempo) == a: return tempo
+    tempo = str(tempo)
+    tempo = tempo.upper()
+    
+    if 'DNF' in tempo: return tempo
+    if 'DNS' in tempo: return tempo
+    if 'NM' in tempo: return tempo
     if 'DQ' in tempo: return 'DSQ'          # perché sì
     
     IQ_match = re.match(r'(\d[\d.:]*\d)', str(tempo))
     if IQ_match: return IQ_match[0]
     else: return 'boh'
+
 
 def clean_nome(nome):
     
@@ -24,8 +28,14 @@ def clean_nome(nome):
 
 
 def scrape_nuovo_corse(comptetition_row):
-    ## Ogni tabella è preceduta da una <div class='row' con alcune informazioni(data, luodo, numero di batteria/finale/serie o se è un riepilogo)
-    ## devo ancora gestire le start list
+    ## Funzione per fare scraping dei risultati delle corse (individuali), degli ostacoli e della marcia nel sito nuovo ('Versione Sigma' = 'Nuovo')
+    ## input è una riga di un DataFrame con columns=['Codice','Versione Sigma','Warning','Disciplina','Nome','Link']
+    ## Se la versione del sigma in input non è corretta la funzione stampa un errore e non restituisce nulla
+    ## Se la disciplina non è corretta stampa un errore e restituisce un DataFrame vuoto
+    ## Restituisce una DataFrame con columns=['Disciplina', 'Prestazione', 'Atleta','Anno','Categoria','Società','Data','Luogo','Gara]
+    
+    # Ogni tabella è preceduta da una <div class='row' con alcune informazioni(data, luodo, numero di batteria/finale/serie o se è un riepilogo)
+    # devo ancora gestire le start list
     
     # Controllo la versione del sigma
     if comptetition_row['Versione Sigma'] != 'Nuovo':
@@ -41,6 +51,7 @@ def scrape_nuovo_corse(comptetition_row):
         print('Non compatibile con '+disciplina+'. Solo corse individuali e marcia.')
         return batterie
     
+    # Recupero le linee di testo della pagina (titoli nomi delle batterie per la maggior parte)
     r = requests.get(url).text
     soup = BeautifulSoup(r, 'html.parser')
     div_righe = soup.find_all('div', class_='row')
@@ -52,7 +63,7 @@ def scrape_nuovo_corse(comptetition_row):
 
 
     # Ora prendo tutte le tabelle che ci sono
-    dfs = pd.read_html(url)
+    dfs = pd.read_html(r)
     if dfs[0].iloc[0,0] == 'Record': dfs = dfs[1:]  # a volte la prima tabella ha i record della disciplina
     
     if len(dfs) != len(div_batterie): # controllo se ho filtrato correttamente tabelle e titolo delle tabelle
