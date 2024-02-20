@@ -2,7 +2,7 @@ import pandas as pd
 
 def merge_csv_files(output_file, N1, N2):
     # List all files starting with the given prefix
-    files = [f"indoor_{num}/link_risultati.csv" for num in range(N1, N2+1)]
+    files = [f"database/indoor_{num}/link_risultati.csv" for num in range(N1, N2+1)]
     
     # Read the first file to initialize the DataFrame
     df = pd.read_csv(files[0])

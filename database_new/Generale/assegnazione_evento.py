@@ -1,13 +1,14 @@
 import re
 
-def assegna_evento_generale(nome_evento):
+def assegna_evento_generale(nome_evento, link):
     
     ## dato un nome di un evento n, come appare nella pagina della gara, gli assegna una categoria generale:
     ## 'altro','peso','disco','martello','giavellotto','pallina','palla','vortex','asta','lungo da fermo'
     ## 'lungo','alto','triplo','quadruplo','ostacoli','marcia','staffetta','corsa piana','prove multiple','boh'
     ## restituisce il nome della categoria e un'altra stringa con i possibili warning
     
-    nome_evento = nome_evento.lower().replace('finale','').replace('finalI','').strip()
+    link = link.split('/')[-1].lower()
+    nome_evento = nome_evento.lower().replace('finale','').replace('finali','').replace('batterie','').replace('mt.','').replace('metri','').strip()
     nome_evento = nome_evento.replace('1\u00b0','').replace('2\u00b0','').replace('3\u00b0','')
     evento_generale = ''
     warning_evento = ''
@@ -19,7 +20,12 @@ def assegna_evento_generale(nome_evento):
         warning_evento = '\'+\' sus'
     
     # ALTRO
-    for word in ['modello','classifica','complessiv','completi','risultati','1/sta','1 sta','1-sta','1sta','statistica','somma tempi','premio','gran prix','podio']:  
+    for word in ['list','soc','partecipanti','risultat','orario','iscr','programm']:
+        if link.startswith(word):
+            evento_generale = 'altro'
+            warning_evento= ''
+            return evento_generale, warning_evento
+    for word in ['modello','classifica','complessiv','completi','risultati','1/sta','1 sta','1-sta','1sta','statistica','somma tempi','premio','gran prix','podio','tutti gli']:  
         if word in nome_evento:
             evento_generale = 'altro'
             warning_evento= ''
@@ -74,7 +80,7 @@ def assegna_evento_generale(nome_evento):
         check = check + 1
         
     ## STAFFETTA
-    if ('staffetta' in nome_evento) | ('staff.' in nome_evento) | ('relay' in nome_evento) | (nome_evento[1] == 'x'):
+    if ('staffetta' in nome_evento) | ('staff.' in nome_evento) | ('relay' in nome_evento) | ('realy' in nome_evento) | (nome_evento[1] == 'x'):
         
         evento_generale = 'staffetta'
         check = check + 1    

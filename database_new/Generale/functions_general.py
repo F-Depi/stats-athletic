@@ -219,6 +219,8 @@ def get_events_link(df_gare, update_criteria, *arg):
         
     else: print('Update criteria \'' + update_criteria + '\' not valid. Valids one are \'ok\' and \'date_N\' where N is an integer')
     
+    data = None
+    
     # Link al sigma NUOVO
     
     df_links_nuovi = df_gare[(df_gare['Versione Sigma'] == 'Nuovo') & cond_update].reset_index(drop=True)
@@ -235,17 +237,19 @@ def get_events_link(df_gare, update_criteria, *arg):
         url = row['Risultati']
         r = requests.get(url).text
         soup = BeautifulSoup(r, 'html.parser')
-        elements = soup.find_all('div', class_='col-md-6')  # classe della div dove ci sono i link ai risultati
+        elements = soup.find_all('a')
         
         for element in elements:
-            anchor = element.find('a')
+            link = element['href']
             
-            if anchor:  # non ho idea di cosa sia anchor, ma a quanto pare ogni tanto è vuoto
-                link = anchor['href']
+            if link[0] != '#':
+                nome = element.text.strip()
                 link = url[:-26] + link
-                text = anchor.text.strip()
-                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Nuovo', 'Nome':text, 'Link':link}])
+                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Nuovo', 'Nome':nome, 'Link':link}])
                 df_risultati = pd.concat([df_risultati, data])
+        
+        if data is None: print('Link vuoto: '+url)
+        data = None
                 #df_links_results = df_links_results.append(, ignore_index=True)
 
     # Link al sigma VECCHIO #1, VECCHIO #2, VECCHIO #3 (ovvero con 1, 2 o 3 link risultati)
@@ -257,9 +261,9 @@ def get_events_link(df_gare, update_criteria, *arg):
         link = row['Risultati']
         urls.append([cod, link])
         deg = int(row['Versione Sigma'].split('#')[1])
-        for jj in range(1, deg):
-                link = link[:-5]+str(jj)+link[-4:]
-                urls.append([cod, link])
+        for jj in range(1, deg+1):
+                link_jj = link[:-5]+str(jj)+link[-4:]
+                urls.append([cod, link_jj])
 
     tot = str(len(urls))
     if int(tot) == 0:
@@ -283,11 +287,14 @@ def get_events_link(df_gare, update_criteria, *arg):
             a_tag = element.find('a')
             if a_tag:
                 link = a_tag['href']
-                link = url[:-19] + link
-                text = a_tag.get_text(strip=True)
-                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Vecchio', 'Nome':text, 'Link':link}])
+                link = url[:url.rfind('/')] + '/' + link
+                nome = a_tag.get_text(strip=True)
+                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Vecchio', 'Nome':nome, 'Link':link}])
                 df_risultati = pd.concat([df_risultati, data])
-
+        
+        if data is None: print('Link vuoto: '+url)
+        data = None
+                
 
     # Link al sigma VECCHISSIMO
     
@@ -308,17 +315,19 @@ def get_events_link(df_gare, update_criteria, *arg):
 
         r = requests.get(url).text
         soup = BeautifulSoup(r, 'html.parser')
-        elements = soup.find_all('td', id='idx_colonna2')
+        elements = soup.find_all('a') # class_='idx_link' non dovrebbe servire
         
         for element in elements:
-            a_tag = element.find('a')
-            if a_tag:
-                link = a_tag['href']
+            link = element['href']
+            if link[4] != 'L':      # gli iscritti hanno il link con la L prima del numero
                 link = url[:-9] + link
-                text = a_tag.get_text(strip=True)
-                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Vecchissimo', 'Nome':text, 'Link':link}])
+                nome = element.text.strip()
+                data = pd.DataFrame([{'Codice':cod, 'Versione Sigma':'Vecchissimo', 'Nome':nome, 'Link':link}])
                 df_risultati = pd.concat([df_risultati, data])
-    
+        
+        if data is None: print('Link vuoto: '+url)
+        data = None
+                
     df_risultati['Disciplina'] = 'boh'
     df_risultati['Warning'] = ''
     
