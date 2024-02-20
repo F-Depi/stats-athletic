@@ -16,28 +16,66 @@ def assegna_evento_generale(nome_evento, link):
     
     # Il + spesso compare quando ci sono due disciplina messe assieme.Ma se compare alla fine di solito è per fare riferimento all'età dei master.
     # Se compare più di una volta di solito è perchè concatenano le categorie con il +
-    if nome_evento[:-5].count('+') == 1:
-        warning_evento = '\'+\' sus'
+    if nome_evento[:-3].count('+') == 1:
+        
+        match_plus1 = re.search(r's\d{2}+', nome_evento)   # questa parte serve a cercare i più usadi per indicare le categorie master invece 
+        match_plus2 = re.search(r'm\d{2}+', nome_evento)   # che un biathlon. In qeusto modo posso diminuire drasticamente il numero di 
+        match_plus3 = re.search(r'm+\d{2}', nome_evento)   # warning
+        match_plus4 = re.search(r'f\d{2}+', nome_evento)
+        match_plus5 = re.search(r'f+\d{2}', nome_evento)
+        match_plus6 = re.search(r'w+\d{2}', nome_evento)
+
+        pseudo_cat = [r'ragazz\w',r'cadett\w',r'alliev\w',r'junior',r'juniores',r'promesse',r'uomini',r'donne',r'adulti',r'senior',r'seniores']
+        match_pseudo_cat = False
+        for word_sx in pseudo_cat:
+            for word_dx in pseudo_cat:
+                
+                pattern_cat = word_sx + r'\+' + word_dx
+
+                if re.search(pattern_cat, nome_evento.replace(' ','')):
+                    match_pseudo_cat = True
+                    break
+            
+            if match_pseudo_cat == True:
+                break
+        
+        if not (match_plus1 or match_plus2 or match_plus3 or match_plus4 or match_plus5 or match_plus6 or match_pseudo_cat):
+            warning_evento = '\'+\' sus'
     
     # ALTRO
-    for word in ['list','soc','partecipanti','risultat','orario','iscr','programm']:
+    for word in ['list','soc','partecipanti','risultat']:
         if link.startswith(word):
             evento_generale = 'altro'
             warning_evento= ''
             return evento_generale, warning_evento
-    for word in ['modello','classifica','complessiv','completi','risultati','1/sta','1 sta','1-sta','1sta','statistica','somma tempi','premio','gran prix','podio','tutti gli']:  
+    for word in ['modello','classific','complessiv','completi','risultati','1/sta','1 sta','1-sta','1sta',
+                 'statistic','somma tempi','premio','gran prix','podio','tutti gli','iscritti','iscrizioni',
+                 'orario','programma','discpositivo','composizione','start list','elenco','campioni',
+                 'regolamento','tutti i risultati','modulo','avviso','nota importante','comunicazione']:  
         if word in nome_evento:
             evento_generale = 'altro'
             warning_evento= ''
             return evento_generale, warning_evento
     
     # LANCI
-    for word in ['peso','disco','martello','giavellotto','pallina','palla','vortex']:
+    for word in ['peso','disco','martello','giavellotto','pallina','palla','vortex','maniglia']:
         if word in nome_evento:
             evento_generale = word
             check = check + 1
             break
-    
+    if 'discus' in nome_evento:
+        evento_generale = 'disco'
+        check = check + 1
+    if 'javelin' in nome_evento:
+        evento_generale = 'giavellotto'
+        check = check + 1
+    if 'hammer' in nome_evento:
+        evento_generale = 'martello'
+        check = check + 1
+    if 'shot put' in nome_evento:
+        evento_generale = 'peso'
+        check = check + 1
+        
     # SALTI
     for word in ['asta','lungo da fermo','lungo','triplo','quadruplo','alto']:
         if word in nome_evento.replace('salto', ''):
@@ -89,7 +127,7 @@ def assegna_evento_generale(nome_evento, link):
     # CORSE
     if check == 0:
         pattern_corse1 = r'^\d+' # assumo che le corse abbiano sempre la distanza all'inizio
-        match_corse1 = re.findall(pattern_corse1, nome_evento)
+        match_corse1 = re.search(pattern_corse1, nome_evento)
         if match_corse1:
             evento_generale = 'corsa piana'
             check = check + 1
@@ -123,13 +161,14 @@ def check_master(nome):
     
     nome = nome.lower()
     
-    match_master0 = re.findall(r'master', nome)
-    match_master1 = re.findall(r'm\d{2}', nome)     # M70+
-    match_master2 = re.findall(r'sm\d{2}', nome)    # SM45
-    match_master3 = re.findall(r'f\d{2}', nome)     # F90
-    match_master4 = re.findall(r'sf\d{2}', nome)    # SF50
+    match_master0 = re.search(r'master', nome)
+    match_master1 = re.search(r's\d{2}', nome.replace(' ',''))
+    match_master2 = re.search(r'm\d{2}', nome.replace(' ',''))     # M70+
+    match_master3 = re.search(r'sm\d{2}', nome.replace(' ',''))    # SM45
+    match_master4 = re.search(r'f\d{2}', nome.replace(' ',''))     # F90
+    match_master5 = re.search(r'sf\d{2}', nome.replace(' ',''))    # SF50
     
-    if match_master0 or match_master1 or match_master2 or match_master3 or match_master4:
+    if match_master0 or match_master1 or match_master2 or match_master3 or match_master4 or match_master5:
         return True
     else:
         return False
@@ -151,26 +190,26 @@ def info_categoria(nome):
     check = 0
     
     # Assoluti
-    match_hs_ass0 = re.findall(r'\badulti u\b', nome)   # adulti u
-    match_hs_ass1 = re.findall(r'uomini', nome)         # uomini
-    match_hs_ass2 = re.findall(r'men', nome)            # men
-    match_hs_ass3 = re.findall(r'maschile', nome)       # maschile
-    match_hs_ass4 = re.findall(r'\bm\b', nome)          # m
-    match_hs_ass5 = re.findall(r'\bu\b', nome)          # u
-    match_hs_ass6 = re.findall(r'\bpromesse u\b', nome) # promesse u
-    match_hs_ass7 = re.findall(r'\bpromesse m\b', nome) # promesse m
-    match_hs_ass8 = re.findall(r'\bpm\b', nome)         # pm
+    match_hs_ass0 = re.search(r'\badulti u\b', nome)   # adulti u
+    match_hs_ass1 = re.search(r'uomini', nome)         # uomini
+    match_hs_ass2 = re.search(r'men', nome)            # men
+    match_hs_ass3 = re.search(r'maschile', nome)       # maschile
+    match_hs_ass4 = re.search(r'\bm\b', nome)          # m
+    match_hs_ass5 = re.search(r'\bu\b', nome)          # u
+    match_hs_ass6 = re.search(r'\bpromesse u\b', nome) # promesse u
+    match_hs_ass7 = re.search(r'\bpromesse m\b', nome) # promesse m
+    match_hs_ass8 = re.search(r'\bpm\b', nome)         # pm
     
     
-    match_hs_ass9 = re.findall(r'donne', nome)          # donne
-    match_hs_ass10 = re.findall(r'women', nome)         # women
-    match_hs_ass11 = re.findall(r'femminile', nome)     # femminile
-    match_hs_ass12= re.findall(r'\bf\b', nome)          # f
-    match_hs_ass13 = re.findall(r'\bd\b', nome)         # d
-    match_hs_ass14 = re.findall(r'\badulti d\b', nome)  # adulti d
-    match_hs_ass15 = re.findall(r'\bpromesse d\b', nome) # promesse d
-    match_hs_ass16 = re.findall(r'\bpromesse f\b', nome) # promesse f
-    match_hs_ass17 = re.findall(r'\bpf\b', nome)         # pf
+    match_hs_ass9 = re.search(r'donne', nome)          # donne
+    match_hs_ass10 = re.search(r'women', nome)         # women
+    match_hs_ass11 = re.search(r'femminile', nome)     # femminile
+    match_hs_ass12= re.search(r'\bf\b', nome)          # f
+    match_hs_ass13 = re.search(r'\bd\b', nome)         # d
+    match_hs_ass14 = re.search(r'\badulti d\b', nome)  # adulti d
+    match_hs_ass15 = re.search(r'\bpromesse d\b', nome) # promesse d
+    match_hs_ass16 = re.search(r'\bpromesse f\b', nome) # promesse f
+    match_hs_ass17 = re.search(r'\bpf\b', nome)         # pf
     
     
     if match_hs_ass0 or match_hs_ass1 or match_hs_ass2 or match_hs_ass3 or match_hs_ass4 or match_hs_ass5 or match_hs_ass6 or match_hs_ass7 or match_hs_ass8:
@@ -180,30 +219,30 @@ def info_categoria(nome):
         cat = 'SF'
     
     # Esordienti
-    match_eso1 = re.findall(r'\besordienti\b', nome) # esordienti
-    match_eso2 = re.findall(r'\bef\d+', nome)        # EF8
-    match_eso3 = re.findall(r'\bem\d+', nome)        # EM5
-    match_eso4 = re.findall(r'\bef\b', nome)         # EF
-    match_eso5 = re.findall(r'\bef\b', nome)         # EM
+    match_eso1 = re.search(r'\besordienti\b', nome) # esordienti
+    match_eso2 = re.search(r'\bef\d+', nome)        # EF8
+    match_eso3 = re.search(r'\bem\d+', nome)        # EM5
+    match_eso4 = re.search(r'\bef\b', nome)         # EF
+    match_eso5 = re.search(r'\bef\b', nome)         # EM
     
     if match_eso1 or match_eso2 or match_eso3 or match_eso4 or match_eso5:
         check = check + 1
         cat = 'E'
 
     # Ragazzi
-    match_hs_r0 = re.findall(r'\bragazz', nome)   # ragazz
-    match_hs_r1 = re.findall(r'\brm\b', nome)   # rm
-    match_hs_r2 = re.findall(r'\brf\b', nome)   # rf
+    match_hs_r0 = re.search(r'\bragazz', nome)   # ragazz
+    match_hs_r1 = re.search(r'\brm\b', nome)   # rm
+    match_hs_r2 = re.search(r'\brf\b', nome)   # rf
     
     if match_hs_r0 or match_hs_r1 or match_hs_r2:
         cat = 'R'
         check = check + 1
     
     # Cadetti
-    match_hs_c1 = re.findall(r'cadetti', nome)  # cadetti
-    match_hs_c2 = re.findall(r'\bcm\b', nome)   # cm
-    match_hs_c3 = re.findall(r'cadette', nome)  # cadettte
-    match_hs_c4 = re.findall(r'\bcf\b', nome)   # cf
+    match_hs_c1 = re.search(r'cadetti', nome)  # cadetti
+    match_hs_c2 = re.search(r'\bcm\b', nome)   # cm
+    match_hs_c3 = re.search(r'cadette', nome)  # cadettte
+    match_hs_c4 = re.search(r'\bcf\b', nome)   # cf
     
     if match_hs_c1 or match_hs_c2:
         cat = 'CM'
@@ -214,10 +253,10 @@ def info_categoria(nome):
         check = check + 1
     
     # Allievi
-    match_hs_a1 = re.findall(r'allievi', nome)  # allievi
-    match_hs_a2 = re.findall(r'\bam\b', nome)   # am
-    match_hs_a3 = re.findall(r'allieve', nome)  # allieve
-    match_hs_a4 = re.findall(r'\baf\b', nome)   # af
+    match_hs_a1 = re.search(r'allievi', nome)  # allievi
+    match_hs_a2 = re.search(r'\bam\b', nome)   # am
+    match_hs_a3 = re.search(r'allieve', nome)  # allieve
+    match_hs_a4 = re.search(r'\baf\b', nome)   # af
     
     if match_hs_a1 or match_hs_a2:
         cat = 'AM'
@@ -228,16 +267,16 @@ def info_categoria(nome):
         check = check + 1
     
     # Junior
-    match_hs_j1 = re.findall(r'junior u', nome)     # junior u
-    match_hs_j2 = re.findall(r'junior m', nome)     # junior m
-    match_hs_j3 = re.findall(r'juniores u', nome)   # juniores u
-    match_hs_j4 = re.findall(r'juniores m', nome)   # juniores m
-    match_hs_j5 = re.findall(r'\bjm\b', nome)       # jm
-    match_hs_j6 = re.findall(r'junior d', nome)     # junior d
-    match_hs_j7 = re.findall(r'junior f', nome)     # junior f
-    match_hs_j8 = re.findall(r'juniores d', nome)   # juniores d
-    match_hs_j9 = re.findall(r'juniores f', nome)   # juniores f
-    match_hs_j10 = re.findall(r'\bjf\b', nome)      # jf
+    match_hs_j1 = re.search(r'junior u', nome)     # junior u
+    match_hs_j2 = re.search(r'junior m', nome)     # junior m
+    match_hs_j3 = re.search(r'juniores u', nome)   # juniores u
+    match_hs_j4 = re.search(r'juniores m', nome)   # juniores m
+    match_hs_j5 = re.search(r'\bjm\b', nome)       # jm
+    match_hs_j6 = re.search(r'junior d', nome)     # junior d
+    match_hs_j7 = re.search(r'junior f', nome)     # junior f
+    match_hs_j8 = re.search(r'juniores d', nome)   # juniores d
+    match_hs_j9 = re.search(r'juniores f', nome)   # juniores f
+    match_hs_j10 = re.search(r'\bjf\b', nome)      # jf
     
     if match_hs_j1 or match_hs_j2 or match_hs_j3 or match_hs_j4 or match_hs_j5:
         cat = 'JF'
@@ -266,38 +305,37 @@ def info_ostacoli(nome):
     if nome[0].isdigit(): #comincia con un numero, speranzosamente la dist. della gara
         
         # esordienti
-        match_eso1 = re.findall(r'esordienti', nome)     # esordienti
-        match_eso2 = re.findall(r'\bef\d+', nome)        # EF8
-        match_eso3 = re.findall(r'\bem\d+', nome)        # EM5
-        match_eso4 = re.findall(r'\bef\b', nome)         # EF
-        match_eso5 = re.findall(r'\bem\b', nome)         # EM
-        match_eso6 = re.findall(r'\bef\w\b', nome)       # EFA
-        match_eso7 = re.findall(r'\bem\w\b', nome)       # EMB
+        match_eso1 = re.search(r'esordienti', nome)     # esordienti
+        match_eso2 = re.search(r'\bef\d+', nome)        # EF8
+        match_eso3 = re.search(r'\bem\d+', nome)        # EM5
+        match_eso4 = re.search(r'\bef\b', nome)         # EF
+        match_eso5 = re.search(r'\bem\b', nome)         # EM
+        match_eso6 = re.search(r'\bef\w\b', nome)       # EFA
+        match_eso7 = re.search(r'\bem\w\b', nome)       # EMB
         
         if not(found) and (match_eso1 or match_eso2 or match_eso3 or match_eso4 or match_eso5 or match_eso6 or match_eso7):
-            dist = re.findall(r'\d+', nome)[0]
+            dist = re.search(r'\d+', nome)[0]
             spec = dist.strip()+' Hs Esordienti'
             found = True
         
         # master
         if not(found) and check_master(nome):
-            spec = re.findall(r'\d+', nome)[0].strip()+' Hs Master'
+            spec = re.search(r'\d+', nome)[0].strip()+' Hs Master'
             found = True
             
         # togliamoci dai piedi quelli scritti bene
         pat_hs0 = r'\d+hsh\d+-\d.\d{2}' # 60hsh106-9.14
-        match_hs0 = re.findall(pat_hs0, nome.replace(' ',''))
+        match_hs0 = re.search(pat_hs0, nome.replace(' ',''))
         
         if not(found) and match_hs0:
             spec = match_hs0[0].strip().split('h')[0]+' Hs h'+match_hs0[0].strip().split('h')[2][:-5]
             found = True
         
         # passiamo a quelli scritti senza distanza
-        match_hs1 = re.findall(r'\d+hsh\d+', nome.replace(' ','')) # 60hsh106
+        match_hs1 = re.search(r'h\d+', nome.replace(' ',''))      # h100
         
         if not(found) and match_hs1:
-            
-            dist = match_hs1[0].strip().split('h')[0]
+            dist = re.search(r'\d+hs', nome.replace(' ',''))[0].strip().split('h')[0]      # 60hs
             h = match_hs1[0].strip().split('h')[-1]
             
             if int(dist) > 110:
@@ -308,20 +346,20 @@ def info_ostacoli(nome):
         
         # ora devo indentificare le categorie se voglio sapere l'altezza dell'ostacolo
         # ragazzi
-        dist = re.findall(r'\d+', nome)[0].strip()
-        match_hs_r0 = re.findall(r'ragazz', nome)   # ragazz
-        match_hs_r1 = re.findall(r'\brm\b', nome)   # rm
-        match_hs_r2 = re.findall(r'\brf\b', nome)   # rf
+        dist = re.search(r'\d+', nome)[0].strip()
+        match_hs_r0 = re.search(r'ragazz', nome)   # ragazz
+        match_hs_r1 = re.search(r'\brm\b', nome)   # rm
+        match_hs_r2 = re.search(r'\brf\b', nome)   # rf
         
         if not(found) and (match_hs_r0 or match_hs_r1 or match_hs_r2):
             spec = dist+' Hs h60'
             found = True
             
         # cadetti e cadette
-        match_hs_c1 = re.findall(r'cadetti', nome)  # cadetti
-        match_hs_c2 = re.findall(r'\bcm\b', nome)   # cm
-        match_hs_c3 = re.findall(r'cadette', nome)  # cadettte
-        match_hs_c4 = re.findall(r'\bcf\b', nome)   # cf
+        match_hs_c1 = re.search(r'cadetti', nome)  # cadetti
+        match_hs_c2 = re.search(r'\bcm\b', nome)   # cm
+        match_hs_c3 = re.search(r'cadette', nome)  # cadettte
+        match_hs_c4 = re.search(r'\bcf\b', nome)   # cf
         
         if not(found) and (match_hs_c1 or match_hs_c2):
             spec = dist+' Hs h84'
@@ -332,10 +370,10 @@ def info_ostacoli(nome):
             found = True
             
         # allievi e allieve
-        match_hs_a1 = re.findall(r'allievi', nome)  # allievi
-        match_hs_a2 = re.findall(r'\bam\b', nome)   # am
-        match_hs_a3 = re.findall(r'allieve', nome)  # allieve
-        match_hs_a4 = re.findall(r'\baf\b', nome)   # af
+        match_hs_a1 = re.search(r'allievi', nome)  # allievi
+        match_hs_a2 = re.search(r'\bam\b', nome)   # am
+        match_hs_a3 = re.search(r'allieve', nome)  # allieve
+        match_hs_a4 = re.search(r'\baf\b', nome)   # af
         
         if not(found) and (match_hs_a1 or match_hs_a2):
             spec = dist+' Hs h91'
@@ -346,16 +384,16 @@ def info_ostacoli(nome):
             found = True
             
         # junior
-        match_hs_j1 = re.findall(r'junior u', nome)     # junior u
-        match_hs_j2 = re.findall(r'junior m', nome)     # junior m
-        match_hs_j3 = re.findall(r'juniores u', nome)   # juniores u
-        match_hs_j4 = re.findall(r'juniores m', nome)   # juniores m
-        match_hs_j5 = re.findall(r'\bjm\b', nome)       # jm
-        match_hs_j6 = re.findall(r'junior d', nome)     # junior d
-        match_hs_j7 = re.findall(r'junior f', nome)     # junior f
-        match_hs_j8 = re.findall(r'juniores d', nome)   # juniores d
-        match_hs_j9 = re.findall(r'juniores f', nome)   # juniores f
-        match_hs_j10 = re.findall(r'\bjf\b', nome)      # jf
+        match_hs_j1 = re.search(r'junior u', nome)     # junior u
+        match_hs_j2 = re.search(r'junior m', nome)     # junior m
+        match_hs_j3 = re.search(r'juniores u', nome)   # juniores u
+        match_hs_j4 = re.search(r'juniores m', nome)   # juniores m
+        match_hs_j5 = re.search(r'\bjm\b', nome)       # jm
+        match_hs_j6 = re.search(r'junior d', nome)     # junior d
+        match_hs_j7 = re.search(r'junior f', nome)     # junior f
+        match_hs_j8 = re.search(r'juniores d', nome)   # juniores d
+        match_hs_j9 = re.search(r'juniores f', nome)   # juniores f
+        match_hs_j10 = re.search(r'\bjf\b', nome)      # jf
         
         if not(found) and (match_hs_j1 or match_hs_j2 or match_hs_j3 or match_hs_j4 or match_hs_j5):
             spec = dist+' Hs h100'
@@ -366,16 +404,16 @@ def info_ostacoli(nome):
             found = True
         
         # In teoria mi sono rimasti solo gli assoluti ora. Devo solo distinguere tra uomo e donna
-        match_hs_ass1 = re.findall(r'uomini', nome)     # uomini
-        match_hs_ass2 = re.findall(r'men', nome)        # men
-        match_hs_ass3 = re.findall(r'maschile', nome)   # maschile
-        match_hs_ass4 = re.findall(r'\bm\b', nome)      # m
-        match_hs_ass5 = re.findall(r'\bu\b', nome)      # u
-        match_hs_ass6 = re.findall(r'donne', nome)      # donne
-        match_hs_ass7 = re.findall(r'women', nome)      # women
-        match_hs_ass8 = re.findall(r'femminile', nome)  # maschile
-        match_hs_ass9 = re.findall(r'\bf\b', nome)      # f
-        match_hs_ass10 = re.findall(r'\bd\b', nome)     # d
+        match_hs_ass1 = re.search(r'uomini', nome)     # uomini
+        match_hs_ass2 = re.search(r'men', nome)        # men
+        match_hs_ass3 = re.search(r'maschil\w', nome)   # maschile
+        match_hs_ass4 = re.search(r'\bm\b', nome)      # m
+        match_hs_ass5 = re.search(r'\bu\b', nome)      # u
+        match_hs_ass6 = re.search(r'donne', nome)      # donne
+        match_hs_ass7 = re.search(r'women', nome)      # women
+        match_hs_ass8 = re.search(r'femminil\w', nome)  # maschile
+        match_hs_ass9 = re.search(r'\bf\b', nome)      # f
+        match_hs_ass10 = re.search(r'\bd\b', nome)     # d
         
         if not(found) and (match_hs_ass1 or match_hs_ass2 or match_hs_ass3 or match_hs_ass4 or match_hs_ass5):
             spec = dist+' Hs h106'
@@ -398,7 +436,7 @@ def info_ostacoli(nome):
         
         
     else:
-        match_dist = re.findall(r'\d+', nome)
+        match_dist = re.search(r'\d+', nome)
         if match_dist:
             dist = match_dist[0].strip()
             spec = dist+' Hs'
@@ -445,7 +483,7 @@ def assegna_evento_specifico(nome, eve):
         nome = nome.replace(' ','')
         
         pat_corse = r'^\d+' # assumo che le corse abbiano sempre la distanza all'inizio
-        match_corse = re.findall(pat_corse, nome)
+        match_corse = re.search(pat_corse, nome)
         
         if match_corse:
             spec = match_corse[0].strip() + 'm'
@@ -463,8 +501,8 @@ def assegna_evento_specifico(nome, eve):
 
         pat_staff1 = r'\d+x\d+'    # 4x100
         pat_staff2 = r'\d+ x \d+'  # 4 x 100
-        match_staff1 = re.findall(pat_staff1, nome)
-        match_staff2 = re.findall(pat_staff2, nome)
+        match_staff1 = re.search(pat_staff1, nome)
+        match_staff2 = re.search(pat_staff2, nome)
             
         if match_staff1:
             spec = match_staff1[0].strip() + 'm'
@@ -486,9 +524,9 @@ def assegna_evento_specifico(nome, eve):
     elif eve == 'marcia':
         nome = nome.replace(' ','')
         
-        match_marcia1 = re.findall(r'\d+m', nome)   # 3000m
-        match_marcia2 = re.findall(r'\d+km', nome)  # 3km
-        match_marcia3 = re.findall(r'km\d+', nome)  # km3
+        match_marcia1 = re.search(r'\d+m', nome)   # 3000m
+        match_marcia2 = re.search(r'\d+km', nome)  # 3km
+        match_marcia3 = re.search(r'km\d+', nome)  # km3
         
         if match_marcia1:
             spec = 'Marcia '+match_marcia1[0].strip()
@@ -519,7 +557,7 @@ def assegna_evento_specifico(nome, eve):
         
         
         pat_disco = r'kg\d+.\d+'
-        match_disco = re.findall(pat_disco, nome)
+        match_disco = re.search(pat_disco, nome)
         
         if match_disco:
             spec = 'Disco '+match_disco[0][2:].strip()+'Kg'
@@ -540,9 +578,9 @@ def assegna_evento_specifico(nome, eve):
         pat_giav1 = r'g\d+'     # g400
         pat_giav2 = r'gr\d+'    # gr400
         pat_giav3 = r'\d+g'     # 400g
-        match_giav1 = re.findall(pat_giav1, nome)
-        match_giav2 = re.findall(pat_giav2, nome)        
-        match_giav3 = re.findall(pat_giav3, nome)
+        match_giav1 = re.search(pat_giav1, nome)
+        match_giav2 = re.search(pat_giav2, nome)        
+        match_giav3 = re.search(pat_giav3, nome)
         
         if match_giav1:
             spec = 'Giavellotto '+match_giav1[0][1:].strip()+'g'
@@ -572,7 +610,7 @@ def assegna_evento_specifico(nome, eve):
         nome = nome.replace(' ','')
         
         pat_mart = r'kg\d+.\d+'
-        match_mart = re.findall(pat_mart, nome)
+        match_mart = re.search(pat_mart, nome)
         
         if match_mart:
             spec = 'Martello '+match_mart[0][2:].strip()+'Kg'
@@ -591,10 +629,10 @@ def assegna_evento_specifico(nome, eve):
     elif eve == 'peso':
         nome = nome.replace(' ','')
         
-        match_peso1 = re.findall(r'kg\d+', nome)        # kg5               Nota: l'ordine è importante perchè
-        match_peso2 = re.findall(r'kg\d+.\d+', nome)    # kg5.000           la stringa 1 e 3 si può anche trovare
-        match_peso3 = re.findall(r'\d+kg', nome)        # 5kg               nella stringa 2 e 4. Quindi i match a
-        match_peso4 = re.findall(r'\d+.\d+kg', nome)    # 5.000kg           2 e 4 devono andare dopo per sovraiscrivere
+        match_peso1 = re.search(r'kg\d+', nome)        # kg5               Nota: l'ordine è importante perchè
+        match_peso2 = re.search(r'kg\d+.\d+', nome)    # kg5.000           la stringa 1 e 3 si può anche trovare
+        match_peso3 = re.search(r'\d+kg', nome)        # 5kg               nella stringa 2 e 4. Quindi i match a
+        match_peso4 = re.search(r'\d+.\d+kg', nome)    # 5.000kg           2 e 4 devono andare dopo per sovraiscrivere
         
         
         if match_peso1:

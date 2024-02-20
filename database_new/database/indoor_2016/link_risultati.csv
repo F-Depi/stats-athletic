@@ -403,7 +403,7 @@ REG10044,Vecchio,,3000m,3000 metri DONNE,https://www.fidal.it/risultati/2016/REG
 REG10044,Vecchio,,4x200m,Staffetta 4x200 DONNE,https://www.fidal.it/risultati/2016/REG10044/Gara160.htm
 REG10044,Vecchio,,Salto in alto,Salto in alto/HJ MASTER UOMINI,https://www.fidal.it/risultati/2016/REG10044/Gara026.htm
 REG10044,Vecchio,,Salto triplo,Salto triplo/TJ UOMINI,https://www.fidal.it/risultati/2016/REG10044/Gara029.htm
-REG10044,Vecchio,'+' sus,Salto in alto,Salto in alto/HJ MASTER DONNE +ALLIEVE,https://www.fidal.it/risultati/2016/REG10044/Gara126.htm
+REG10044,Vecchio,,Salto in alto,Salto in alto/HJ MASTER DONNE +ALLIEVE,https://www.fidal.it/risultati/2016/REG10044/Gara126.htm
 REG10044,Vecchio,,Salto in lungo,Salto in lungo/LJ DONNE,https://www.fidal.it/risultati/2016/REG10044/Gara128.htm
 REG10044,Vecchio,,Peso 4.000Kg,Peso/SP Kg 4.000 SM70-75,https://www.fidal.it/risultati/2016/REG10044/Gara031.htm
 REG10044,Vecchio,,Peso 5.000Kg,Peso/SP Kg 5.000 SM60-65,https://www.fidal.it/risultati/2016/REG10044/Gara032.htm
@@ -722,14 +722,14 @@ COD5568,Vecchio,,Salto in alto,High Jump Women,https://www.fidal.it/risultati/20
 COD5568,Vecchio,,Salto con l'asta,Pole Vault Women,https://www.fidal.it/risultati/2016/COD5568/Gara127.htm
 COD5568,Vecchio,,Salto in lungo,Long Jump Women,https://www.fidal.it/risultati/2016/COD5568/Gara128.htm
 COD5568,Vecchio,,Salto triplo,Triple Jump Women,https://www.fidal.it/risultati/2016/COD5568/Gara129.htm
-COD5568,Vecchio,,boh,Shot Put Men,https://www.fidal.it/risultati/2016/COD5568/Gara031.htm
-COD5568,Vecchio,,boh,Shot Put Women,https://www.fidal.it/risultati/2016/COD5568/Gara131.htm
-COD5568,Vecchio,PM sus,boh,Discus Throw U20-23 Men,https://www.fidal.it/risultati/2016/COD5568/Gara332.htm
-COD5568,Vecchio,PM sus,boh,Hammer Throw U20-23 Men,https://www.fidal.it/risultati/2016/COD5568/Gara333.htm
-COD5568,Vecchio,PM sus,boh,Javelin Throw U20-23 Men,https://www.fidal.it/risultati/2016/COD5568/Gara334.htm
-COD5568,Vecchio,PM sus,boh,Discus Throw U20-23 Women,https://www.fidal.it/risultati/2016/COD5568/Gara432.htm
-COD5568,Vecchio,PM sus,boh,Hammer Throw U20-23 Women,https://www.fidal.it/risultati/2016/COD5568/Gara433.htm
-COD5568,Vecchio,PM sus,boh,Javelin Throw U20-23 Women,https://www.fidal.it/risultati/2016/COD5568/Gara434.htm
+COD5568,Vecchio,non conosco la massa,Peso,Shot Put Men,https://www.fidal.it/risultati/2016/COD5568/Gara031.htm
+COD5568,Vecchio,non conosco la massa,Peso,Shot Put Women,https://www.fidal.it/risultati/2016/COD5568/Gara131.htm
+COD5568,Vecchio,non conosco la massa,Disco,Discus Throw U20-23 Men,https://www.fidal.it/risultati/2016/COD5568/Gara332.htm
+COD5568,Vecchio,non conosco la massa,Martello,Hammer Throw U20-23 Men,https://www.fidal.it/risultati/2016/COD5568/Gara333.htm
+COD5568,Vecchio,non conosco la massa,Giavellotto,Javelin Throw U20-23 Men,https://www.fidal.it/risultati/2016/COD5568/Gara334.htm
+COD5568,Vecchio,non conosco la massa,Disco,Discus Throw U20-23 Women,https://www.fidal.it/risultati/2016/COD5568/Gara432.htm
+COD5568,Vecchio,non conosco la massa,Martello,Hammer Throw U20-23 Women,https://www.fidal.it/risultati/2016/COD5568/Gara433.htm
+COD5568,Vecchio,non conosco la massa,Giavellotto,Javelin Throw U20-23 Women,https://www.fidal.it/risultati/2016/COD5568/Gara434.htm
 COD5566,Vecchio,,60m,60 piani SF35,https://www.fidal.it/risultati/2016/COD5566/Gara301.htm
 COD5566,Vecchio,,200m,200 metri SF35,https://www.fidal.it/risultati/2016/COD5566/Gara302.htm
 COD5566,Vecchio,,400m,400 metri SF35,https://www.fidal.it/risultati/2016/COD5566/Gara303.htm
@@ -744,7 +744,7 @@ COD5566,Vecchio,,Salto triplo,Salto triplo/TJ SF35,https://www.fidal.it/risultat
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SF35",https://www.fidal.it/risultati/2016/COD5566/Gara313.htm
 COD5566,Vecchio,,Martello 4.000Kg,Martello/HT Kg 4.000 SF35,https://www.fidal.it/risultati/2016/COD5566/Gara314.htm
 COD5566,Vecchio,,Giavellotto 600g,Giavellotto/JT Gr600 SF35,https://www.fidal.it/risultati/2016/COD5566/Gara315.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 9.08 SF35,https://www.fidal.it/risultati/2016/COD5566/Gara316.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 9.08 SF35,https://www.fidal.it/risultati/2016/COD5566/Gara316.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SF35,https://www.fidal.it/risultati/2016/COD5566/Gara317.htm
 COD5566,Vecchio,,60m,60 piani CDS DONNE,https://www.fidal.it/risultati/2016/COD5566/Gara561.htm
 COD5566,Vecchio,,200m,200 metri CDS DONNE,https://www.fidal.it/risultati/2016/COD5566/Gara562.htm
@@ -774,9 +774,9 @@ COD5566,Vecchio,,Peso 4.000Kg,Peso/SP Kg 4.000 SF35-45,https://www.fidal.it/risu
 COD5566,Vecchio,,Salto con l'asta,Salto con l'asta/PV SF35+,https://www.fidal.it/risultati/2016/COD5566/Gara840.htm
 COD5566,Vecchio,,Salto triplo,Salto triplo/TJ SF35-45,https://www.fidal.it/risultati/2016/COD5566/Gara845.htm
 COD5566,Vecchio,,Salto in alto,Salto in alto/HJ SF35-45,https://www.fidal.it/risultati/2016/COD5566/Gara857.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C. SF35-55,https://www.fidal.it/risultati/2016/COD5566/Gara861.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C. SF35-55,https://www.fidal.it/risultati/2016/COD5566/Gara861.htm
 COD5566,Vecchio,,Giavellotto Master,Giavellotto/JT SF35+,https://www.fidal.it/risultati/2016/COD5566/Gara871.htm
-COD5566,Vecchio,PM sus,boh,M.ManigliaC Kg 15.88 SM35-45,https://www.fidal.it/risultati/2016/COD5566/Gara873.htm
+COD5566,Vecchio,,maniglia,M.ManigliaC Kg 15.88 SM35-45,https://www.fidal.it/risultati/2016/COD5566/Gara873.htm
 COD5566,Vecchio,,1500m,1500 metri SF35-40,https://www.fidal.it/risultati/2016/COD5566/Gara874.htm
 COD5566,Vecchio,,60m,60 piani SF40,https://www.fidal.it/risultati/2016/COD5566/Gara321.htm
 COD5566,Vecchio,,200m,200 metri SF40,https://www.fidal.it/risultati/2016/COD5566/Gara322.htm
@@ -792,7 +792,7 @@ COD5566,Vecchio,,Salto triplo,Salto triplo/TJ SF40,https://www.fidal.it/risultat
 COD5566,Vecchio,,Peso 4.000Kg,Peso/SP Kg 4.000 SF40,https://www.fidal.it/risultati/2016/COD5566/Gara332.htm
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SF40",https://www.fidal.it/risultati/2016/COD5566/Gara333.htm
 COD5566,Vecchio,,Martello 4.000Kg,Martello/HT Kg 4.000 SF40,https://www.fidal.it/risultati/2016/COD5566/Gara334.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 9.08 SF40,https://www.fidal.it/risultati/2016/COD5566/Gara336.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 9.08 SF40,https://www.fidal.it/risultati/2016/COD5566/Gara336.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SF40,https://www.fidal.it/risultati/2016/COD5566/Gara337.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SF40,https://www.fidal.it/risultati/2016/COD5566/Gara338.htm
 COD5566,Vecchio,,60m,60 piani SF45,https://www.fidal.it/risultati/2016/COD5566/Gara341.htm
@@ -810,7 +810,7 @@ COD5566,Vecchio,,Peso 4.000Kg,Peso/SP Kg 4.000 SF45,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SF45",https://www.fidal.it/risultati/2016/COD5566/Gara353.htm
 COD5566,Vecchio,,Martello 4.000Kg,Martello/HT Kg 4.000 SF45,https://www.fidal.it/risultati/2016/COD5566/Gara354.htm
 COD5566,Vecchio,,Giavellotto 600g,Giavellotto/JT Gr600 SF45,https://www.fidal.it/risultati/2016/COD5566/Gara355.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 9.08 SF45,https://www.fidal.it/risultati/2016/COD5566/Gara356.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 9.08 SF45,https://www.fidal.it/risultati/2016/COD5566/Gara356.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SF45,https://www.fidal.it/risultati/2016/COD5566/Gara357.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SF45,https://www.fidal.it/risultati/2016/COD5566/Gara358.htm
 COD5566,Vecchio,,60m,60 piani SF50,https://www.fidal.it/risultati/2016/COD5566/Gara361.htm
@@ -828,7 +828,7 @@ COD5566,Vecchio,,Peso 3.000Kg,Peso/SP Kg 3.000 SF50,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SF50",https://www.fidal.it/risultati/2016/COD5566/Gara373.htm
 COD5566,Vecchio,,Martello 3.000Kg,Martello/HT Kg 3.000 SF50,https://www.fidal.it/risultati/2016/COD5566/Gara374.htm
 COD5566,Vecchio,,Giavellotto 500g,Giavellotto/JT Gr500 SF50,https://www.fidal.it/risultati/2016/COD5566/Gara375.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 7.26 SF50,https://www.fidal.it/risultati/2016/COD5566/Gara376.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 7.26 SF50,https://www.fidal.it/risultati/2016/COD5566/Gara376.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SF50,https://www.fidal.it/risultati/2016/COD5566/Gara377.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SF50,https://www.fidal.it/risultati/2016/COD5566/Gara378.htm
 COD5566,Vecchio,,Salto in lungo,Salto in lungo/LJ SF50+,https://www.fidal.it/risultati/2016/COD5566/Gara819.htm
@@ -852,7 +852,7 @@ COD5566,Vecchio,,Peso 3.000Kg,Peso/SP Kg 3.000 SF55,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SF55",https://www.fidal.it/risultati/2016/COD5566/Gara393.htm
 COD5566,Vecchio,,Martello 3.000Kg,Martello/HT Kg 3.000 SF55,https://www.fidal.it/risultati/2016/COD5566/Gara394.htm
 COD5566,Vecchio,,Giavellotto 500g,Giavellotto/JT Gr500 SF55,https://www.fidal.it/risultati/2016/COD5566/Gara395.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 7.26 SF55,https://www.fidal.it/risultati/2016/COD5566/Gara396.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 7.26 SF55,https://www.fidal.it/risultati/2016/COD5566/Gara396.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SF55,https://www.fidal.it/risultati/2016/COD5566/Gara397.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SF55,https://www.fidal.it/risultati/2016/COD5566/Gara398.htm
 COD5566,Vecchio,,Disco Master,Disco/DT SF55+,https://www.fidal.it/risultati/2016/COD5566/Gara814.htm
@@ -868,7 +868,7 @@ COD5566,Vecchio,,Peso 3.000Kg,Peso/SP Kg 3.000 SF60,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SF60",https://www.fidal.it/risultati/2016/COD5566/Gara413.htm
 COD5566,Vecchio,,Martello 3.000Kg,Martello/HT Kg 3.000 SF60,https://www.fidal.it/risultati/2016/COD5566/Gara414.htm
 COD5566,Vecchio,,Giavellotto 500g,Giavellotto/JT Gr500 SF60,https://www.fidal.it/risultati/2016/COD5566/Gara415.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 5.45 SF60,https://www.fidal.it/risultati/2016/COD5566/Gara416.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 5.45 SF60,https://www.fidal.it/risultati/2016/COD5566/Gara416.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SF60,https://www.fidal.it/risultati/2016/COD5566/Gara417.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SF60,https://www.fidal.it/risultati/2016/COD5566/Gara418.htm
 COD5566,Vecchio,,Martello Master,Martello/HT SF60+,https://www.fidal.it/risultati/2016/COD5566/Gara802.htm
@@ -877,7 +877,7 @@ COD5566,Vecchio,,Peso Master,Peso/SP SF60+,https://www.fidal.it/risultati/2016/C
 COD5566,Vecchio,,1500m,1500 metri SF60+,https://www.fidal.it/risultati/2016/COD5566/Gara829.htm
 COD5566,Vecchio,,60 Hs Master,60 Hs SF60+,https://www.fidal.it/risultati/2016/COD5566/Gara833.htm
 COD5566,Vecchio,,60m,60 piani SF60+,https://www.fidal.it/risultati/2016/COD5566/Gara841.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C. SF60+,https://www.fidal.it/risultati/2016/COD5566/Gara852.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C. SF60+,https://www.fidal.it/risultati/2016/COD5566/Gara852.htm
 COD5566,Vecchio,,800m,800 metri SF60+,https://www.fidal.it/risultati/2016/COD5566/Gara870.htm
 COD5566,Vecchio,,60m,60 piani SF65,https://www.fidal.it/risultati/2016/COD5566/Gara421.htm
 COD5566,Vecchio,,200m,200 metri SF65,https://www.fidal.it/risultati/2016/COD5566/Gara422.htm
@@ -892,7 +892,7 @@ COD5566,Vecchio,,Peso 3.000Kg,Peso/SP Kg 3.000 SF65,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SF65",https://www.fidal.it/risultati/2016/COD5566/Gara433.htm
 COD5566,Vecchio,,Martello 3.000Kg,Martello/HT Kg 3.000 SF65,https://www.fidal.it/risultati/2016/COD5566/Gara434.htm
 COD5566,Vecchio,,Giavellotto 500g,Giavellotto/JT Gr500 SF65,https://www.fidal.it/risultati/2016/COD5566/Gara435.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 5.45 SF65,https://www.fidal.it/risultati/2016/COD5566/Gara436.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 5.45 SF65,https://www.fidal.it/risultati/2016/COD5566/Gara436.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SF65,https://www.fidal.it/risultati/2016/COD5566/Gara437.htm
 COD5566,Vecchio,,200m,200 metri SF65+,https://www.fidal.it/risultati/2016/COD5566/Gara863.htm
 COD5566,Vecchio,,60m,60 piani SF70,https://www.fidal.it/risultati/2016/COD5566/Gara441.htm
@@ -908,14 +908,14 @@ COD5566,Vecchio,,Salto triplo,Salto triplo/TJ SF70,https://www.fidal.it/risultat
 COD5566,Vecchio,,Peso 3.000Kg,Peso/SP Kg 3.000 SF70,https://www.fidal.it/risultati/2016/COD5566/Gara452.htm
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SF70",https://www.fidal.it/risultati/2016/COD5566/Gara453.htm
 COD5566,Vecchio,,Martello 3.000Kg,Martello/HT Kg 3.000 SF70,https://www.fidal.it/risultati/2016/COD5566/Gara454.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 5.45 SF70,https://www.fidal.it/risultati/2016/COD5566/Gara456.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 5.45 SF70,https://www.fidal.it/risultati/2016/COD5566/Gara456.htm
 COD5566,Vecchio,,400m,400 metri SF70+,https://www.fidal.it/risultati/2016/COD5566/Gara849.htm
 COD5566,Vecchio,,Salto in lungo,Salto in lungo/LJ SF75,https://www.fidal.it/risultati/2016/COD5566/Gara470.htm
 COD5566,Vecchio,,Peso 2.000Kg,Peso/SP Kg 2.000 SF75,https://www.fidal.it/risultati/2016/COD5566/Gara472.htm
 COD5566,Vecchio,,"Disco 0,750Kg","Disco Kg 0,750 SF75",https://www.fidal.it/risultati/2016/COD5566/Gara473.htm
 COD5566,Vecchio,,Martello 2.000Kg,Martello/HT Kg 2.000 SF75,https://www.fidal.it/risultati/2016/COD5566/Gara474.htm
 COD5566,Vecchio,,Giavellotto 400g,Giavellotto/JT Gr400 SF75,https://www.fidal.it/risultati/2016/COD5566/Gara475.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 4.00 SF75,https://www.fidal.it/risultati/2016/COD5566/Gara476.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 4.00 SF75,https://www.fidal.it/risultati/2016/COD5566/Gara476.htm
 COD5566,Vecchio,,60m,60 piani SF80,https://www.fidal.it/risultati/2016/COD5566/Gara481.htm
 COD5566,Vecchio,,200m,200 metri SF80,https://www.fidal.it/risultati/2016/COD5566/Gara482.htm
 COD5566,Vecchio,,400m,400 metri SF80,https://www.fidal.it/risultati/2016/COD5566/Gara483.htm
@@ -923,7 +923,7 @@ COD5566,Vecchio,,Salto in alto,Salto in alto/HJ SF80,https://www.fidal.it/risult
 COD5566,Vecchio,,Peso 2.000Kg,Peso/SP Kg 2.000 SF80,https://www.fidal.it/risultati/2016/COD5566/Gara492.htm
 COD5566,Vecchio,,60m,60 piani SF85,https://www.fidal.it/risultati/2016/COD5566/Gara501.htm
 COD5566,Vecchio,,Peso 2.000Kg,Peso/SP Kg 2.000 SF85,https://www.fidal.it/risultati/2016/COD5566/Gara512.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 4.00 SF85,https://www.fidal.it/risultati/2016/COD5566/Gara516.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 4.00 SF85,https://www.fidal.it/risultati/2016/COD5566/Gara516.htm
 COD5566,Vecchio,,60m,60 piani SM100,https://www.fidal.it/risultati/2016/COD5566/Gara258.htm
 COD5566,Vecchio,,Salto in lungo,Salto in lungo/LJ SM100,https://www.fidal.it/risultati/2016/COD5566/Gara259.htm
 COD5566,Vecchio,,60m,60 piani CDS UOMINI,https://www.fidal.it/risultati/2016/COD5566/Gara261.htm
@@ -942,7 +942,7 @@ COD5566,Vecchio,,Salto con l'asta,Salto con l'asta/PV SM60+,https://www.fidal.it
 COD5566,Vecchio,,Giavellotto Master,Giavellotto/JT SM70+,https://www.fidal.it/risultati/2016/COD5566/Gara855.htm
 COD5566,Vecchio,,200m,200 metri SM80+,https://www.fidal.it/risultati/2016/COD5566/Gara860.htm
 COD5566,Vecchio,,Salto triplo,Salto triplo/TJ SM75+,https://www.fidal.it/risultati/2016/COD5566/Gara862.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C. SM70+,https://www.fidal.it/risultati/2016/COD5566/Gara864.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C. SM70+,https://www.fidal.it/risultati/2016/COD5566/Gara864.htm
 COD5566,Vecchio,,800m,800 metri SM75+,https://www.fidal.it/risultati/2016/COD5566/Gara867.htm
 COD5566,Vecchio,,60m,60 piani SM35,https://www.fidal.it/risultati/2016/COD5566/Gara001.htm
 COD5566,Vecchio,,200m,200 metri SM35,https://www.fidal.it/risultati/2016/COD5566/Gara002.htm
@@ -959,7 +959,7 @@ COD5566,Vecchio,,Peso 7.260Kg,Peso/SP Kg 7.260 SM35,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 2,000Kg","Disco/DT Kg 2,000 SM35",https://www.fidal.it/risultati/2016/COD5566/Gara013.htm
 COD5566,Vecchio,,Martello 7.260Kg,Martello/HT Kg 7.260 SM35,https://www.fidal.it/risultati/2016/COD5566/Gara014.htm
 COD5566,Vecchio,,Giavellotto 800g,Giavellotto/JT Gr800 SM35,https://www.fidal.it/risultati/2016/COD5566/Gara015.htm
-COD5566,Vecchio,PM sus,boh,M.ManigliaC Kg 15.88 SM35,https://www.fidal.it/risultati/2016/COD5566/Gara016.htm
+COD5566,Vecchio,,maniglia,M.ManigliaC Kg 15.88 SM35,https://www.fidal.it/risultati/2016/COD5566/Gara016.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM35,https://www.fidal.it/risultati/2016/COD5566/Gara017.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM35,https://www.fidal.it/risultati/2016/COD5566/Gara018.htm
 COD5566,Vecchio,,200m,200 metri CDS UOMINI,https://www.fidal.it/risultati/2016/COD5566/Gara262.htm
@@ -1003,7 +1003,7 @@ COD5566,Vecchio,,Peso 7.260Kg,Peso/SP Kg 7.260 SM40,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 2,000Kg","Disco/DT Kg 2,000 SM40",https://www.fidal.it/risultati/2016/COD5566/Gara033.htm
 COD5566,Vecchio,,Martello 7.260Kg,Martello/HT Kg 7.260 SM40,https://www.fidal.it/risultati/2016/COD5566/Gara034.htm
 COD5566,Vecchio,,Giavellotto 800g,Giavellotto/JT Gr800 SM40,https://www.fidal.it/risultati/2016/COD5566/Gara035.htm
-COD5566,Vecchio,PM sus,boh,M.ManigliaC Kg 15.88 SM40,https://www.fidal.it/risultati/2016/COD5566/Gara036.htm
+COD5566,Vecchio,,maniglia,M.ManigliaC Kg 15.88 SM40,https://www.fidal.it/risultati/2016/COD5566/Gara036.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM40,https://www.fidal.it/risultati/2016/COD5566/Gara037.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM40,https://www.fidal.it/risultati/2016/COD5566/Gara038.htm
 COD5566,Vecchio,,60m,60 piani SM45,https://www.fidal.it/risultati/2016/COD5566/Gara041.htm
@@ -1021,7 +1021,7 @@ COD5566,Vecchio,,Peso 7.260Kg,Peso/SP Kg 7.260 SM45,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 2,000Kg","Disco/DT Kg 2,000 SM45",https://www.fidal.it/risultati/2016/COD5566/Gara053.htm
 COD5566,Vecchio,,Martello 7.260Kg,Martello/HT Kg 7.260 SM45,https://www.fidal.it/risultati/2016/COD5566/Gara054.htm
 COD5566,Vecchio,,Giavellotto 800g,Giavellotto/JT Gr800 SM45,https://www.fidal.it/risultati/2016/COD5566/Gara055.htm
-COD5566,Vecchio,PM sus,boh,M.ManigliaC Kg 15.88 SM45,https://www.fidal.it/risultati/2016/COD5566/Gara056.htm
+COD5566,Vecchio,,maniglia,M.ManigliaC Kg 15.88 SM45,https://www.fidal.it/risultati/2016/COD5566/Gara056.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM45,https://www.fidal.it/risultati/2016/COD5566/Gara057.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM45,https://www.fidal.it/risultati/2016/COD5566/Gara058.htm
 COD5566,Vecchio,,Salto in alto,Salto in alto/HJ SM45-50,https://www.fidal.it/risultati/2016/COD5566/Gara815.htm
@@ -1040,12 +1040,12 @@ COD5566,Vecchio,,Peso 6.000Kg,Peso/SP Kg 6.000 SM50,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,500Kg","Disco/DT Kg 1,500 SM50",https://www.fidal.it/risultati/2016/COD5566/Gara073.htm
 COD5566,Vecchio,,Martello 6.000Kg,Martello/HT Kg 6.000 SM50,https://www.fidal.it/risultati/2016/COD5566/Gara074.htm
 COD5566,Vecchio,,Giavellotto 700g,Giavellotto/JT Gr700 SM50,https://www.fidal.it/risultati/2016/COD5566/Gara075.htm
-COD5566,Vecchio,PM sus,boh,M.ManigliaC Kg 11.34 SM50,https://www.fidal.it/risultati/2016/COD5566/Gara076.htm
+COD5566,Vecchio,,maniglia,M.ManigliaC Kg 11.34 SM50,https://www.fidal.it/risultati/2016/COD5566/Gara076.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM50,https://www.fidal.it/risultati/2016/COD5566/Gara077.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM50,https://www.fidal.it/risultati/2016/COD5566/Gara078.htm
 COD5566,Vecchio,,Martello 6.000Kg,Martello/HT Kg 6.000 SM50-55,https://www.fidal.it/risultati/2016/COD5566/Gara807.htm
 COD5566,Vecchio,,"Disco 1,500Kg","Disco/DT Kg 1,500 SM50-55",https://www.fidal.it/risultati/2016/COD5566/Gara832.htm
-COD5566,Vecchio,PM sus,boh,M.ManigliaC Kg 11.34 SM50-55,https://www.fidal.it/risultati/2016/COD5566/Gara872.htm
+COD5566,Vecchio,,maniglia,M.ManigliaC Kg 11.34 SM50-55,https://www.fidal.it/risultati/2016/COD5566/Gara872.htm
 COD5566,Vecchio,,60m,60 piani SM55,https://www.fidal.it/risultati/2016/COD5566/Gara081.htm
 COD5566,Vecchio,,200m,200 metri SM55,https://www.fidal.it/risultati/2016/COD5566/Gara082.htm
 COD5566,Vecchio,,400m,400 metri SM55,https://www.fidal.it/risultati/2016/COD5566/Gara083.htm
@@ -1061,7 +1061,7 @@ COD5566,Vecchio,,Peso 6.000Kg,Peso/SP Kg 6.000 SM55,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,500Kg","Disco/DT Kg 1,500 SM55",https://www.fidal.it/risultati/2016/COD5566/Gara093.htm
 COD5566,Vecchio,,Martello 6.000Kg,Martello/HT Kg 6.000 SM55,https://www.fidal.it/risultati/2016/COD5566/Gara094.htm
 COD5566,Vecchio,,Giavellotto 700g,Giavellotto/JT Gr700 SM55,https://www.fidal.it/risultati/2016/COD5566/Gara095.htm
-COD5566,Vecchio,PM sus,boh,M.ManigliaC Kg 11.34 SM55,https://www.fidal.it/risultati/2016/COD5566/Gara096.htm
+COD5566,Vecchio,,maniglia,M.ManigliaC Kg 11.34 SM55,https://www.fidal.it/risultati/2016/COD5566/Gara096.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM55,https://www.fidal.it/risultati/2016/COD5566/Gara097.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM55,https://www.fidal.it/risultati/2016/COD5566/Gara098.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM55-60,https://www.fidal.it/risultati/2016/COD5566/Gara817.htm
@@ -1082,14 +1082,14 @@ COD5566,Vecchio,,Peso 5.000Kg,Peso/SP Kg 5.000 SM60,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SM60",https://www.fidal.it/risultati/2016/COD5566/Gara113.htm
 COD5566,Vecchio,,Martello 5.000Kg,Martello/HT Kg 5.000 SM60,https://www.fidal.it/risultati/2016/COD5566/Gara114.htm
 COD5566,Vecchio,,Giavellotto 600g,Giavellotto/JT Gr600 SM60,https://www.fidal.it/risultati/2016/COD5566/Gara115.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 9.08 SM60,https://www.fidal.it/risultati/2016/COD5566/Gara116.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 9.08 SM60,https://www.fidal.it/risultati/2016/COD5566/Gara116.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM60,https://www.fidal.it/risultati/2016/COD5566/Gara117.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM60,https://www.fidal.it/risultati/2016/COD5566/Gara118.htm
 COD5566,Vecchio,,Martello 5.000Kg,Martello/HT Kg 5.000 SM60-65,https://www.fidal.it/risultati/2016/COD5566/Gara803.htm
 COD5566,Vecchio,,Salto in lungo,Salto in lungo/LJ SM60-65,https://www.fidal.it/risultati/2016/COD5566/Gara836.htm
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SM60-65",https://www.fidal.it/risultati/2016/COD5566/Gara838.htm
 COD5566,Vecchio,,Giavellotto 600g,Giavellotto/JT Gr600 SM60-65,https://www.fidal.it/risultati/2016/COD5566/Gara859.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 9.08 SM60-65,https://www.fidal.it/risultati/2016/COD5566/Gara869.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 9.08 SM60-65,https://www.fidal.it/risultati/2016/COD5566/Gara869.htm
 COD5566,Vecchio,,60m,60 piani SM65,https://www.fidal.it/risultati/2016/COD5566/Gara121.htm
 COD5566,Vecchio,,200m,200 metri SM65,https://www.fidal.it/risultati/2016/COD5566/Gara122.htm
 COD5566,Vecchio,,400m,400 metri SM65,https://www.fidal.it/risultati/2016/COD5566/Gara123.htm
@@ -1105,7 +1105,7 @@ COD5566,Vecchio,,Peso 5.000Kg,Peso/SP Kg 5.000 SM65,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SM65",https://www.fidal.it/risultati/2016/COD5566/Gara133.htm
 COD5566,Vecchio,,Martello 5.000Kg,Martello/HT Kg 5.000 SM65,https://www.fidal.it/risultati/2016/COD5566/Gara134.htm
 COD5566,Vecchio,,Giavellotto 600g,Giavellotto/JT Gr600 SM65,https://www.fidal.it/risultati/2016/COD5566/Gara135.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 9.08 SM65,https://www.fidal.it/risultati/2016/COD5566/Gara136.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 9.08 SM65,https://www.fidal.it/risultati/2016/COD5566/Gara136.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM65,https://www.fidal.it/risultati/2016/COD5566/Gara137.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM65,https://www.fidal.it/risultati/2016/COD5566/Gara138.htm
 COD5566,Vecchio,,1500m,1500 metri SM65-70,https://www.fidal.it/risultati/2016/COD5566/Gara824.htm
@@ -1125,7 +1125,7 @@ COD5566,Vecchio,,Peso 4.000Kg,Peso/SP Kg 4.000 SM70,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SM70",https://www.fidal.it/risultati/2016/COD5566/Gara153.htm
 COD5566,Vecchio,,Martello 4.000Kg,Martello/HT Kg 4.000 SM70,https://www.fidal.it/risultati/2016/COD5566/Gara154.htm
 COD5566,Vecchio,,Giavellotto 500g,Giavellotto/JT Gr500 SM70,https://www.fidal.it/risultati/2016/COD5566/Gara155.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 7.26 SM70,https://www.fidal.it/risultati/2016/COD5566/Gara156.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 7.26 SM70,https://www.fidal.it/risultati/2016/COD5566/Gara156.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM70,https://www.fidal.it/risultati/2016/COD5566/Gara157.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM70,https://www.fidal.it/risultati/2016/COD5566/Gara158.htm
 COD5566,Vecchio,,60 Hs Master,60 Hs SM70-75,https://www.fidal.it/risultati/2016/COD5566/Gara831.htm
@@ -1144,7 +1144,7 @@ COD5566,Vecchio,,Peso 4.000Kg,Peso/SP Kg 4.000 SM75,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SM75",https://www.fidal.it/risultati/2016/COD5566/Gara173.htm
 COD5566,Vecchio,,Martello 4.000Kg,Martello/HT Kg 4.000 SM75,https://www.fidal.it/risultati/2016/COD5566/Gara174.htm
 COD5566,Vecchio,,Giavellotto 500g,Giavellotto/JT Gr500 SM75,https://www.fidal.it/risultati/2016/COD5566/Gara175.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 7.26 SM75,https://www.fidal.it/risultati/2016/COD5566/Gara176.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 7.26 SM75,https://www.fidal.it/risultati/2016/COD5566/Gara176.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM75,https://www.fidal.it/risultati/2016/COD5566/Gara177.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM75,https://www.fidal.it/risultati/2016/COD5566/Gara178.htm
 COD5566,Vecchio,,60m,60 piani SM80,https://www.fidal.it/risultati/2016/COD5566/Gara181.htm
@@ -1162,7 +1162,7 @@ COD5566,Vecchio,,Peso 3.000Kg,Peso/SP Kg 3.000 SM80,https://www.fidal.it/risulta
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SM80",https://www.fidal.it/risultati/2016/COD5566/Gara193.htm
 COD5566,Vecchio,,Martello 3.000Kg,Martello/HT Kg 3.000 SM80,https://www.fidal.it/risultati/2016/COD5566/Gara194.htm
 COD5566,Vecchio,,Giavellotto 400g,Giavellotto/JT Gr400 SM80,https://www.fidal.it/risultati/2016/COD5566/Gara195.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 5.45 SM80,https://www.fidal.it/risultati/2016/COD5566/Gara196.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 5.45 SM80,https://www.fidal.it/risultati/2016/COD5566/Gara196.htm
 COD5566,Vecchio,,Marcia 3000m,Marcia 3000m SM80,https://www.fidal.it/risultati/2016/COD5566/Gara197.htm
 COD5566,Vecchio,,4x200m,Staffetta 4x200 SM80,https://www.fidal.it/risultati/2016/COD5566/Gara198.htm
 COD5566,Vecchio,,60m,60 piani SM85,https://www.fidal.it/risultati/2016/COD5566/Gara201.htm
@@ -1174,7 +1174,7 @@ COD5566,Vecchio,,Salto in lungo,Salto in lungo/LJ SM85,https://www.fidal.it/risu
 COD5566,Vecchio,,Salto triplo,Salto triplo/TJ SM85,https://www.fidal.it/risultati/2016/COD5566/Gara211.htm
 COD5566,Vecchio,,Peso 3.000Kg,Peso/SP Kg 3.000 SM85,https://www.fidal.it/risultati/2016/COD5566/Gara212.htm
 COD5566,Vecchio,,"Disco 1,000Kg","Disco/DT Kg 1,000 SM85",https://www.fidal.it/risultati/2016/COD5566/Gara213.htm
-COD5566,Vecchio,PM sus,boh,M.Maniglia C Kg 5.45 SM85,https://www.fidal.it/risultati/2016/COD5566/Gara216.htm
+COD5566,Vecchio,,maniglia,M.Maniglia C Kg 5.45 SM85,https://www.fidal.it/risultati/2016/COD5566/Gara216.htm
 COD5569,Vecchio,,60m,60m Uomini,https://www.fidal.it/risultati/2016/COD5569/Gara001.htm
 COD5569,Vecchio,,400m,400m Uomini,https://www.fidal.it/risultati/2016/COD5569/Gara006.htm
 COD5569,Vecchio,,800m,800m Uomini,https://www.fidal.it/risultati/2016/COD5569/Gara008.htm
@@ -1330,7 +1330,7 @@ REG9919,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2016/RE
 REG9919,Vecchissimo,,60 Hs h84,60 Hs H 84-8.50 Cadetti,https://www.fidal.it/risultati/2016/REG9919/Gara220.htm
 REG9919,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2016/REG9919/Gara301.htm
 REG9919,Vecchissimo,,60 Hs h76,60 Hs H 76-8.00 Cadette,https://www.fidal.it/risultati/2016/REG9919/Gara320.htm
-REG9919,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9919/gara.htm
+REG9919,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9919/gara.htm
 REG9919,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2016/REG9919/Risultat.htm
 REG9919,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9919/lista.htm
 REG9919,Vecchissimo,,altro,ORARIO,https://www.fidal.it/risultati/2016/REG9919/ORARIO.PDF
@@ -1381,7 +1381,7 @@ REG9984,Vecchissimo,,prove multiple,TRIATHLON CADETTI,https://www.fidal.it/risul
 REG9984,Vecchissimo,,prove multiple,TRIATHLON CADETTE,https://www.fidal.it/risultati/2016/REG9984/Gara942.htm
 REG9984,Vecchissimo,,altro,CLASSIFICA DI SOCIETA' MASCHILE,https://www.fidal.it/risultati/2016/REG9984/Soc010.htm
 REG9984,Vecchissimo,,altro,CLASSIFICA DI SOCIETA' FEMMINILE,https://www.fidal.it/risultati/2016/REG9984/Soc020.htm
-REG9805,Vecchissimo,,boh,Iscritti per Gara ed Accredito,https://www.fidal.it/risultati/2016/REG9805/Completo.htm
+REG9805,Vecchissimo,,altro,Iscritti per Gara ed Accredito,https://www.fidal.it/risultati/2016/REG9805/Completo.htm
 REG9805,Vecchissimo,,altro,Iscritti per Società,https://www.fidal.it/risultati/2016/REG9805/Lista.htm
 REG9805,Vecchissimo,,altro,Programma Orario,https://www.fidal.it/risultati/2016/REG9805/orario.pdf
 REG9994,Vecchissimo,,50m,50 metri ESORDIENTI MASCHI 2007-08,https://www.fidal.it/risultati/2016/REG9994/Gara102.htm
@@ -1497,7 +1497,7 @@ REG9920,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Cadette,https://www.fidal.
 REG9920,Vecchissimo,,Marcia 2000m,Marcia 2000m Cadette,https://www.fidal.it/risultati/2016/REG9920/Gara342.htm
 REG9920,Vecchissimo,,Marcia 1000m,Marcia 1000m Ragazzi,https://www.fidal.it/risultati/2016/REG9920/Gara450.htm
 REG9920,Vecchissimo,,Marcia 1000m,Marcia 1000m Ragazze,https://www.fidal.it/risultati/2016/REG9920/Gara550.htm
-REG9920,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9920/gara.htm
+REG9920,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9920/gara.htm
 REG9920,Vecchissimo,,altro,Classifica Maschile (RM+CM) 1^ prova,https://www.fidal.it/risultati/2016/REG9920/Soc001.htm
 REG9920,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9920/lista.htm
 REG9920,Vecchissimo,,altro,Classifica Femminile (RF+CF) 1^ prova,https://www.fidal.it/risultati/2016/REG9920/Soc002.htm
@@ -1612,7 +1612,7 @@ REG9921,Vecchissimo,,Salto in alto,Salto in alto/HJ Promesse Donne,https://www.f
 REG9921,Vecchissimo,,Salto con l'asta,Salto con l'asta/PV Promesse Donne,https://www.fidal.it/risultati/2016/REG9921/Gara527.htm
 REG9921,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Promesse Donne,https://www.fidal.it/risultati/2016/REG9921/Gara528.htm
 REG9921,Vecchissimo,,Salto triplo,Salto triplo/TJ Promesse Donne,https://www.fidal.it/risultati/2016/REG9921/Gara529.htm
-REG9921,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9921/gara.htm
+REG9921,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9921/gara.htm
 REG9921,Vecchissimo,,altro,tutti i risultati,https://www.fidal.it/risultati/2016/REG9921/Risultat.htm
 REG9921,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9921/lista.htm
 REG9921,Vecchissimo,,altro,ORARIO,https://www.fidal.it/risultati/2016/REG9921/ORARIO.PDF
@@ -1765,7 +1765,7 @@ REG9922,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2016/RE
 REG9922,Vecchissimo,,60 Hs h84,60 Hs H 84-8.50 Cadetti,https://www.fidal.it/risultati/2016/REG9922/Gara220.htm
 REG9922,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2016/REG9922/Gara301.htm
 REG9922,Vecchissimo,,60 Hs h76,60 Hs H 76-8.00 Cadette,https://www.fidal.it/risultati/2016/REG9922/Gara320.htm
-REG9922,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9922/gara.htm
+REG9922,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9922/gara.htm
 REG9922,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2016/REG9922/Risultat.htm
 REG9922,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9922/lista.htm
 REG9922,Vecchissimo,,altro,ORARIO,https://www.fidal.it/risultati/2016/REG9922/ORARIO.PDF
@@ -1855,7 +1855,7 @@ REG9923,Vecchissimo,,Marcia 1000m,Marcia 1000m Ragazze,https://www.fidal.it/risu
 REG9923,Vecchissimo,,150m,150 metri Ragazze,https://www.fidal.it/risultati/2016/REG9923/Gara654.htm
 REG9923,Vecchissimo,,Marcia 1000m,Marcia 1000m Esordienti Uomini,https://www.fidal.it/risultati/2016/REG9923/Gara750.htm
 REG9923,Vecchissimo,,Marcia 1000m,Marcia 1000m Esordienti Donne,https://www.fidal.it/risultati/2016/REG9923/Gara850.htm
-REG9923,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9923/gara.htm
+REG9923,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9923/gara.htm
 REG9923,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2016/REG9923/risultat.htm
 REG9923,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9923/lista.htm
 REG9923,Vecchissimo,,altro,ORARIO,https://www.fidal.it/risultati/2016/REG9923/ORARIO.PDF
@@ -1877,7 +1877,7 @@ REG10430,Vecchissimo,,50m,50 metri Eso M B,https://www.fidal.it/risultati/2016/R
 REG10430,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Eso F C,https://www.fidal.it/risultati/2016/REG10430/Gara728.htm
 REG10430,Vecchissimo,,50m,50 metri Eso F A,https://www.fidal.it/risultati/2016/REG10430/Gara756.htm
 REG10430,Vecchissimo,,50m,50 metri Eso F B,https://www.fidal.it/risultati/2016/REG10430/Gara757.htm
-REG10430,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG10430/gara.htm
+REG10430,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG10430/gara.htm
 REG10430,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2016/REG10430/risultat.htm
 REG10430,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG10430/lista.htm
 REG10430,Vecchissimo,,altro,ORARIO,https://www.fidal.it/risultati/2016/REG10430/ORARIO.PDF
@@ -2165,7 +2165,7 @@ REG9924,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2016/RE
 REG9924,Vecchissimo,,60 Hs h84,60 Hs H 84-8.50 Cadetti,https://www.fidal.it/risultati/2016/REG9924/Gara220.htm
 REG9924,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2016/REG9924/Gara301.htm
 REG9924,Vecchissimo,,60 Hs h76,60 Hs H 76-8.00 Cadette,https://www.fidal.it/risultati/2016/REG9924/Gara320.htm
-REG9924,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9924/gara.htm
+REG9924,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9924/gara.htm
 REG9924,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2016/REG9924/risultat.htm
 REG9924,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9924/lista.htm
 REG9924,Vecchissimo,,altro,ORARIO,https://www.fidal.it/risultati/2016/REG9924/ORARIO.PDF
@@ -2303,7 +2303,7 @@ REG9925,Vecchissimo,,Salto con l'asta,Salto con l'asta/PV Cadette,https://www.fi
 REG9925,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Cadette,https://www.fidal.it/risultati/2016/REG9925/Gara128.htm
 REG9925,Vecchissimo,,Salto triplo,Salto triplo/TJ Cadette,https://www.fidal.it/risultati/2016/REG9925/Gara129.htm
 REG9925,Vecchissimo,,Peso 3.000Kg,Peso/SP kg 3.000 Cadette,https://www.fidal.it/risultati/2016/REG9925/Gara131.htm
-REG9925,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9925/gara.htm
+REG9925,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9925/gara.htm
 REG9925,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2016/REG9925/Risultat.htm
 REG9925,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9925/lista.htm
 REG9925,Vecchissimo,,altro,Orario,https://www.fidal.it/risultati/2016/REG9925/orario.pdf
@@ -2432,7 +2432,7 @@ REG9926,Vecchissimo,,Salto in alto,Salto in alto/HJ Donne,https://www.fidal.it/r
 REG9926,Vecchissimo,,Salto con l'asta,Salto con l'asta/PV Donne,https://www.fidal.it/risultati/2016/REG9926/Gara127.htm
 REG9926,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Donne,https://www.fidal.it/risultati/2016/REG9926/Gara128.htm
 REG9926,Vecchissimo,,Salto triplo,Salto triplo/TJ Donne,https://www.fidal.it/risultati/2016/REG9926/Gara129.htm
-REG9926,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9926/gara.htm
+REG9926,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9926/gara.htm
 REG9926,Vecchissimo,,altro,Risultati Completi,https://www.fidal.it/risultati/2016/REG9926/risultat.htm
 REG9926,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9926/lista.htm
 REG9926,Vecchissimo,,altro,ORARIO,https://www.fidal.it/risultati/2016/REG9926/ORARIO.PDF
@@ -2504,7 +2504,7 @@ REG10431,Vecchissimo,,50m,50 metri Eso M C,https://www.fidal.it/risultati/2016/R
 REG10431,Vecchissimo,,50m,50 metri Eso F A,https://www.fidal.it/risultati/2016/REG10431/Gara756.htm
 REG10431,Vecchissimo,,50m,50 metri Eso F B,https://www.fidal.it/risultati/2016/REG10431/Gara757.htm
 REG10431,Vecchissimo,,50m,50 metri Eso F C,https://www.fidal.it/risultati/2016/REG10431/Gara758.htm
-REG10431,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG10431/gara.htm
+REG10431,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG10431/gara.htm
 REG10431,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2016/REG10431/Risultat.htm
 REG10431,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG10431/lista.htm
 REG9927,Vecchissimo,,60m,60 piani Juniores Uomini,https://www.fidal.it/risultati/2016/REG9927/Gara001.htm
@@ -2527,7 +2527,7 @@ REG9927,Vecchissimo,,60 Hs h76,60 Hs H 76-8.50 Allieve,https://www.fidal.it/risu
 REG9927,Vecchissimo,,Salto in alto,Salto in alto/HJ Allieve,https://www.fidal.it/risultati/2016/REG9927/Gara326.htm
 REG9927,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Allieve,https://www.fidal.it/risultati/2016/REG9927/Gara328.htm
 REG9927,Vecchissimo,,Martello 3.000Kg,Martello/HT kg 3.000 Allieve,https://www.fidal.it/risultati/2016/REG9927/Gara333.htm
-REG9927,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9927/gara.htm
+REG9927,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9927/gara.htm
 REG9927,Vecchissimo,,60m,60 piani Uomini extra,https://www.fidal.it/risultati/2016/REG9927/Gara401.htm
 REG9927,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9927/lista.htm
 REG9927,Vecchissimo,,altro,Classifica per Regioni,https://www.fidal.it/risultati/2016/REG9927/Soc001.htm
@@ -2677,7 +2677,7 @@ REG9928,Vecchissimo,,60 Hs h60,60 Hs H 60 Ragazze,https://www.fidal.it/risultati
 REG9928,Vecchissimo,,Salto in alto,Salto in alto/HJ Ragazze,https://www.fidal.it/risultati/2016/REG9928/Gara126.htm
 REG9928,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Ragazze,https://www.fidal.it/risultati/2016/REG9928/Gara128.htm
 REG9928,Vecchissimo,,Peso 2.000Kg,Peso/SP kg 2.000 Ragazze,https://www.fidal.it/risultati/2016/REG9928/Gara131.htm
-REG9928,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9928/gara.htm
+REG9928,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG9928/gara.htm
 REG9928,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2016/REG9928/Risultat.htm
 REG9928,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG9928/lista.htm
 REG9928,Vecchissimo,,altro,ORARIO,https://www.fidal.it/risultati/2016/REG9928/ORARIO.PDF
@@ -2828,7 +2828,7 @@ REG12570,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Eso F A,https://www.fidal
 REG12570,Vecchissimo,,50m,50 metri Eso F A,https://www.fidal.it/risultati/2016/REG12570/Gara756.htm
 REG12570,Vecchissimo,,50m,50 metri Eso F B,https://www.fidal.it/risultati/2016/REG12570/Gara757.htm
 REG12570,Vecchissimo,,50m,50 metri Eso F C,https://www.fidal.it/risultati/2016/REG12570/Gara758.htm
-REG12570,Vecchissimo,,boh,Eleno iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG12570/gara.htm
+REG12570,Vecchissimo,,altro,Eleno iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG12570/gara.htm
 REG12570,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2016/REG12570/risultat.htm
 REG12570,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG12570/lista.htm
 REG12571,Vecchissimo,,60m,60 piani Uomini,https://www.fidal.it/risultati/2016/REG12571/Gara001.htm
@@ -2839,9 +2839,9 @@ REG12571,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2016/R
 REG12571,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Cadetti,https://www.fidal.it/risultati/2016/REG12571/Gara228.htm
 REG12571,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2016/REG12571/Gara301.htm
 REG12571,Vecchissimo,,Salto in alto,Salto in alto/HJ Cadette,https://www.fidal.it/risultati/2016/REG12571/Gara326.htm
-REG12571,Vecchissimo,,5 Hs h60,60 Hs - 5 hs H 60 Ragazzi,https://www.fidal.it/risultati/2016/REG12571/Gara420.htm
+REG12571,Vecchissimo,,60 Hs h60,60 Hs - 5 hs H 60 Ragazzi,https://www.fidal.it/risultati/2016/REG12571/Gara420.htm
 REG12571,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Ragazzi,https://www.fidal.it/risultati/2016/REG12571/Gara428.htm
-REG12571,Vecchissimo,,5 Hs h60,60 Hs - 5 hs H 60 Ragazze,https://www.fidal.it/risultati/2016/REG12571/Gara520.htm
+REG12571,Vecchissimo,,60 Hs h60,60 Hs - 5 hs H 60 Ragazze,https://www.fidal.it/risultati/2016/REG12571/Gara520.htm
 REG12571,Vecchissimo,,Salto in alto,Salto in alto/HJ Ragazze,https://www.fidal.it/risultati/2016/REG12571/Gara526.htm
 REG12571,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Eso M B,https://www.fidal.it/risultati/2016/REG12571/Gara628.htm
 REG12571,Vecchissimo,,50m,50 metri Eso M A,https://www.fidal.it/risultati/2016/REG12571/Gara656.htm
@@ -2849,14 +2849,14 @@ REG12571,Vecchissimo,,50m,50 metri Eso M C,https://www.fidal.it/risultati/2016/R
 REG12571,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Eso F B,https://www.fidal.it/risultati/2016/REG12571/Gara728.htm
 REG12571,Vecchissimo,,50m,50 metri Eso F A,https://www.fidal.it/risultati/2016/REG12571/Gara756.htm
 REG12571,Vecchissimo,,50m,50 metri Eso F C,https://www.fidal.it/risultati/2016/REG12571/Gara757.htm
-REG12571,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG12571/gara.htm
+REG12571,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2016/REG12571/gara.htm
 REG12571,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2016/REG12571/Risultat.htm
 REG12571,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2016/REG12571/lista.htm
 REG12807,Vecchissimo,,50m,50 metri BIATHLON,https://www.fidal.it/risultati/2016/REG12807/Gara002.htm
 REG12807,Vecchissimo,,50 Hs Esordienti,50 Hs H50 EM-EF BIATHLON,https://www.fidal.it/risultati/2016/REG12807/Gara004.htm
 REG12807,Vecchissimo,,50m,50 metri BIATHLON,https://www.fidal.it/risultati/2016/REG12807/Gara006.htm
 REG12807,Vecchissimo,,50 Hs Esordienti,50 Hs H50 EM-EF BIATHLON,https://www.fidal.it/risultati/2016/REG12807/Gara008.htm
-REG12807,Vecchissimo,,boh,Iscritti per societa',https://www.fidal.it/risultati/2016/REG12807/20161218IscrittiSoci.pdf
+REG12807,Vecchissimo,,altro,Iscritti per societa',https://www.fidal.it/risultati/2016/REG12807/20161218IscrittiSoci.pdf
 REG12807,Vecchissimo,,60m,60 piani BIATHLON,https://www.fidal.it/risultati/2016/REG12807/Gara009.htm
 REG12807,Vecchissimo,,altro,Statistica Iscritti,https://www.fidal.it/risultati/2016/REG12807/20161218-StatisticaIscritti.pdf
 REG12807,Vecchissimo,,60 Hs h76,60 Hs H 76-7.00 BIATHLON,https://www.fidal.it/risultati/2016/REG12807/Gara011.htm

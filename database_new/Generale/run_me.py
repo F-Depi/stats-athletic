@@ -64,7 +64,7 @@ for anno in range(2011, 2025):
     ## ['Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
     print('---------------------------------------------')
 
-    df_gare = get_meet_info(df_gare, 'date_5')
+    df_gare = get_meet_info(df_gare, 'date_0')
     df_gare.to_csv(file_gare, sep='\t', index=False)
 
     ##################################################################################################
@@ -87,7 +87,7 @@ for anno in range(2011, 2025):
         print('Ho trovato il file di risultati '+file_risultati+', aggiorno questo.')
         df_risultati_old = pd.read_csv(file_risultati)
         
-        df_risultati = get_events_link(df_gare,'date_5', df_risultati_old)
+        df_risultati = get_events_link(df_gare,'date_0', df_risultati_old)
 
     else:
         print('Non ho trovato il file '+file_risultati+', lo creo.')

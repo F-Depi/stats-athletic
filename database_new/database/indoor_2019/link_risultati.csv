@@ -1235,14 +1235,14 @@ COD7573,Vecchio,,Salto in alto,High Jump WOMEN,https://www.fidal.it/risultati/20
 COD7573,Vecchio,,Salto con l'asta,Pole Vault WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara127.htm
 COD7573,Vecchio,,Salto in lungo,Long Jump WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara128.htm
 COD7573,Vecchio,,Salto triplo,Triple Jump WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara129.htm
-COD7573,Vecchio,,boh,Shot Put MEN,https://www.fidal.it/risultati/2019/COD7573/Gara031.htm
-COD7573,Vecchio,,boh,Shot Put WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara131.htm
-COD7573,Vecchio,PM sus,boh,Javelin Throw U20-23 MEN,https://www.fidal.it/risultati/2019/COD7573/Gara240.htm
-COD7573,Vecchio,PM sus,boh,Discus Throw U20-23 MEN,https://www.fidal.it/risultati/2019/COD7573/Gara250.htm
-COD7573,Vecchio,PM sus,boh,Hammer Throw U20-23 MEN,https://www.fidal.it/risultati/2019/COD7573/Gara260.htm
-COD7573,Vecchio,PM sus,boh,Javelin Throw U20-23 WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara340.htm
-COD7573,Vecchio,PM sus,boh,Discus Throw U20-23 WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara350.htm
-COD7573,Vecchio,PM sus,boh,Hammer Throw U20-23 WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara360.htm
+COD7573,Vecchio,non conosco la massa,Peso,Shot Put MEN,https://www.fidal.it/risultati/2019/COD7573/Gara031.htm
+COD7573,Vecchio,non conosco la massa,Peso,Shot Put WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara131.htm
+COD7573,Vecchio,non conosco la massa,Giavellotto,Javelin Throw U20-23 MEN,https://www.fidal.it/risultati/2019/COD7573/Gara240.htm
+COD7573,Vecchio,non conosco la massa,Disco,Discus Throw U20-23 MEN,https://www.fidal.it/risultati/2019/COD7573/Gara250.htm
+COD7573,Vecchio,non conosco la massa,Martello,Hammer Throw U20-23 MEN,https://www.fidal.it/risultati/2019/COD7573/Gara260.htm
+COD7573,Vecchio,non conosco la massa,Giavellotto,Javelin Throw U20-23 WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara340.htm
+COD7573,Vecchio,non conosco la massa,Disco,Discus Throw U20-23 WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara350.htm
+COD7573,Vecchio,non conosco la massa,Martello,Hammer Throw U20-23 WOMEN,https://www.fidal.it/risultati/2019/COD7573/Gara360.htm
 REG19193,Vecchio,,60m,60 piani RAGAZZI Anno 2006,https://www.fidal.it/risultati/2019/REG19193/Gara001.htm
 REG19193,Vecchio,,60 Hs h60,60 Hs H 60  RAGAZZI Anno 2006,https://www.fidal.it/risultati/2019/REG19193/Gara020.htm
 REG19193,Vecchio,,60m,60 piani RAGAZZE Anno 2006,https://www.fidal.it/risultati/2019/REG19193/Gara101.htm
@@ -1353,8 +1353,8 @@ REG19356,Vecchio,,600m,600 metri RAGAZZE,https://www.fidal.it/risultati/2019/REG
 REG19356,Vecchio,,60 Hs h60,60 Hs H 60 RAGAZZE,https://www.fidal.it/risultati/2019/REG19356/Gara320.htm
 REG19356,Vecchio,,Marcia 2000m,Marcia 2000m RAGAZZE,https://www.fidal.it/risultati/2019/REG19356/Gara342.htm
 REG19356,Vecchio,,4x200m,Staffetta 4x200 RAGAZZE,https://www.fidal.it/risultati/2019/REG19356/Gara360.htm
-REG19356,Vecchio,'+' sus,Marcia 2000m,Marcia 2000m RAGAZZI + RAGAZZE,https://www.fidal.it/risultati/2019/REG19356/Gara542.htm
-REG19356,Vecchio,'+' sus,Marcia 3000m,Marcia 3000m CADETTI+ CADETTE,https://www.fidal.it/risultati/2019/REG19356/Gara543.htm
+REG19356,Vecchio,,Marcia 2000m,Marcia 2000m RAGAZZI + RAGAZZE,https://www.fidal.it/risultati/2019/REG19356/Gara542.htm
+REG19356,Vecchio,,Marcia 3000m,Marcia 3000m CADETTI+ CADETTE,https://www.fidal.it/risultati/2019/REG19356/Gara543.htm
 REG19356,Vecchio,,Salto in alto,Salto in alto/HJ CADETTI,https://www.fidal.it/risultati/2019/REG19356/Gara026.htm
 REG19356,Vecchio,,Salto con l'asta,Salto con l'asta/PV CADETTI,https://www.fidal.it/risultati/2019/REG19356/Gara027.htm
 REG19356,Vecchio,,Salto in lungo,Salto in lungo/LJ CADETTI,https://www.fidal.it/risultati/2019/REG19356/Gara028.htm
@@ -1522,7 +1522,7 @@ COD7793,Vecchissimo,a esclusione,60 Hs h106,60 Hs Uomini,https://www.fidal.it/ri
 COD7793,Vecchissimo,,60 Hs h100,60 Hs Juniores M,https://www.fidal.it/risultati/2019/COD7793/Gara921.htm
 COD7793,Vecchissimo,,altro,ISCRITTI PER SOCIETA,https://www.fidal.it/risultati/2019/COD7793/Lista.htm
 COD7793,Vecchissimo,,altro,RISULTATI COMPLESSIVI,https://www.fidal.it/risultati/2019/COD7793/Risultat.htm
-COD7793,Vecchissimo,,boh,STATISTICHE,https://www.fidal.it/risultati/2019/COD7793/statistiche.pdf
+COD7793,Vecchissimo,,altro,STATISTICHE,https://www.fidal.it/risultati/2019/COD7793/statistiche.pdf
 REG19434,Vecchissimo,,60m,60 piani Ragazze,https://www.fidal.it/risultati/2019/REG19434/Gara101.htm
 REG19434,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Ragazze,https://www.fidal.it/risultati/2019/REG19434/Gara128.htm
 REG19434,Vecchissimo,,60m,60 piani Ragazzi,https://www.fidal.it/risultati/2019/REG19434/Gara201.htm
@@ -1560,7 +1560,7 @@ REG19223,Vecchissimo,,Marcia 3000m,Marcia 3000m Donne,https://www.fidal.it/risul
 REG19223,Vecchissimo,,50m,50 metri Donne,https://www.fidal.it/risultati/2019/REG19223/Gara156.htm
 REG19223,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2019/REG19223/Gara201.htm
 REG19223,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2019/REG19223/Gara301.htm
-REG19223,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19223/gara.htm
+REG19223,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19223/gara.htm
 REG19223,Vecchissimo,,altro,Risultati,https://www.fidal.it/risultati/2019/REG19223/risultat.htm
 REG19223,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19223/lista.htm
 REG19363,Vecchissimo,,60m,60 metri Uomini,https://www.fidal.it/risultati/2019/REG19363/Gara001.htm
@@ -1640,7 +1640,7 @@ REG19420,Vecchissimo,,prove multiple,TETRATHLON CADETTI,https://www.fidal.it/ris
 REG19420,Vecchissimo,,prove multiple,TETRATHLON CADETTE,https://www.fidal.it/risultati/2019/REG19420/Gara942.htm
 REG19420,Vecchissimo,,prove multiple,TRIATHLON RAGAZZI,https://www.fidal.it/risultati/2019/REG19420/Gara943.htm
 REG19420,Vecchissimo,,prove multiple,TRIATHLON RAGAZZE,https://www.fidal.it/risultati/2019/REG19420/Gara944.htm
-REG19420,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19420/gara.htm
+REG19420,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19420/gara.htm
 REG19420,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2019/REG19420/Risultat.htm
 REG19420,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19420/lista.htm
 REG19212,Vecchissimo,,altro,Elenco Iscritti per Gara ed Accredito,https://www.fidal.it/risultati/2019/REG19212/iscritti.htm
@@ -1742,7 +1742,7 @@ REG19224,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2019/R
 REG19224,Vecchissimo,,60 Hs h84,60 Hs H 84-8.50 Cadetti,https://www.fidal.it/risultati/2019/REG19224/Gara220.htm
 REG19224,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2019/REG19224/Gara301.htm
 REG19224,Vecchissimo,,60 Hs h76,60 Hs H 76-8.00 Cadette,https://www.fidal.it/risultati/2019/REG19224/Gara320.htm
-REG19224,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19224/gara.htm
+REG19224,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19224/gara.htm
 REG19224,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2019/REG19224/Risultat.htm
 REG19224,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19224/lista.htm
 REG19374,Vecchissimo,,60m,60 piani Donne,https://www.fidal.it/risultati/2019/REG19374/Gara001.htm
@@ -1767,7 +1767,7 @@ REG19374,Vecchissimo,,Peso 5.000Kg,Peso/SP Kg 5 Allievi,https://www.fidal.it/ris
 REG19374,Vecchissimo,,Peso 6.000Kg,Peso/SP Kg 6 Junior M,https://www.fidal.it/risultati/2019/REG19374/Gara133.htm
 REG19374,Vecchissimo,,altro,ISCRITTI PER SOCIETA,https://www.fidal.it/risultati/2019/REG19374/Lista.htm
 REG19374,Vecchissimo,,altro,RISULTATI COMPLESSIVI,https://www.fidal.it/risultati/2019/REG19374/Risultat.htm
-REG19374,Vecchissimo,,boh,STATISTICHE ISCRITTI,https://www.fidal.it/risultati/2019/REG19374/statistiche.pdf
+REG19374,Vecchissimo,,altro,STATISTICHE ISCRITTI,https://www.fidal.it/risultati/2019/REG19374/statistiche.pdf
 REG19374,Vecchissimo,,altro,ORARIO DEFINITIVO,https://www.fidal.it/risultati/2019/REG19374/orario.pdf
 REG19374,Vecchissimo,,Salto con l'asta,PROGRESSIONI ASTA,https://www.fidal.it/risultati/2019/REG19374/asta.pdf
 REG19374,Vecchissimo,,Salto in alto,PROGRESSIONI ALTO,https://www.fidal.it/risultati/2019/REG19374/alto.pdf
@@ -1802,7 +1802,7 @@ REG19574,Vecchissimo,,Salto in alto,Salto in alto/HJ Esordienti Femmine 8,https:
 REG19574,Vecchissimo,,40m,40 metri Esordienti Femmine 8,https://www.fidal.it/risultati/2019/REG19574/Gara757.htm
 REG19574,Vecchissimo,,40m,40 metri Esordienti Maschi 6,https://www.fidal.it/risultati/2019/REG19574/Gara857.htm
 REG19574,Vecchissimo,,40m,40 metri Esordienti Femmine 6,https://www.fidal.it/risultati/2019/REG19574/Gara858.htm
-REG19574,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19574/gara.htm
+REG19574,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19574/gara.htm
 REG19574,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2019/REG19574/risultat.htm
 REG19574,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19574/lista.htm
 REG19216,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Allieve,https://www.fidal.it/risultati/2019/REG19216/Gara028.htm
@@ -1857,7 +1857,7 @@ REG19199,Vecchissimo,,Salto in alto,Salto in alto/HJ Promesse Donne,https://www.
 REG19199,Vecchissimo,,Salto con l'asta,Salto con l'asta/PV Promesse Donne,https://www.fidal.it/risultati/2019/REG19199/Gara527.htm
 REG19199,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Promesse Donne,https://www.fidal.it/risultati/2019/REG19199/Gara528.htm
 REG19199,Vecchissimo,,Salto triplo,Salto triplo/TJ Promesse Donne,https://www.fidal.it/risultati/2019/REG19199/Gara529.htm
-REG19199,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19199/gara.htm
+REG19199,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19199/gara.htm
 REG19199,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2019/REG19199/Risultat.htm
 REG19199,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19199/lista.htm
 REG19219,Vecchissimo,,60m,60 piani Allieve,https://www.fidal.it/risultati/2019/REG19219/Gara101.htm
@@ -1899,7 +1899,7 @@ REG19226,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Ragazzi,https://www.fidal
 REG19226,Vecchissimo,,60m,60 piani Ragazze,https://www.fidal.it/risultati/2019/REG19226/Gara501.htm
 REG19226,Vecchissimo,,60 Hs h60,60 Hs H 60 Ragazze,https://www.fidal.it/risultati/2019/REG19226/Gara520.htm
 REG19226,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Ragazze,https://www.fidal.it/risultati/2019/REG19226/Gara528.htm
-REG19226,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19226/gara.htm
+REG19226,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19226/gara.htm
 REG19226,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2019/REG19226/risultat.htm
 REG19226,Vecchissimo,,altro,Elenco iscritti per società,https://www.fidal.it/risultati/2019/REG19226/lista.htm
 REG19625,Vecchissimo,,60 Hs h106,60 Hs H 106 MASCHILE,https://www.fidal.it/risultati/2019/REG19625/Gara007.htm
@@ -1945,7 +1945,7 @@ REG19227,Vecchissimo,,Marcia 2000m,Marcia 2000 m Cadette,https://www.fidal.it/ri
 REG19227,Vecchissimo,,1000m,1000 metri Ragazzi,https://www.fidal.it/risultati/2019/REG19227/Gara409.htm
 REG19227,Vecchissimo,,Marcia 1000m,Marcia 1000 m Ragazzi,https://www.fidal.it/risultati/2019/REG19227/Gara450.htm
 REG19227,Vecchissimo,,1000m,1000 metri Ragazze,https://www.fidal.it/risultati/2019/REG19227/Gara509.htm
-REG19227,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19227/gara.htm
+REG19227,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19227/gara.htm
 REG19227,Vecchissimo,,Marcia 1000m,Marcia 1000 m Ragazze,https://www.fidal.it/risultati/2019/REG19227/Gara550.htm
 REG19227,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19227/lista.htm
 REG19227,Vecchissimo,,altro,Grand Prix Marcia Maschile (Rag+Cad) 1^ prova,https://www.fidal.it/risultati/2019/REG19227/Soc001.htm
@@ -2013,7 +2013,7 @@ REG19225,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2019/R
 REG19225,Vecchissimo,,60 Hs h84,60 Hs H 84-8.50 Cadetti,https://www.fidal.it/risultati/2019/REG19225/Gara220.htm
 REG19225,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2019/REG19225/Gara301.htm
 REG19225,Vecchissimo,,60 Hs h76,60 Hs H 76-8.00 Cadette,https://www.fidal.it/risultati/2019/REG19225/Gara320.htm
-REG19225,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19225/gara.htm
+REG19225,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19225/gara.htm
 REG19225,Vecchissimo,,altro,tutti i risultati,https://www.fidal.it/risultati/2019/REG19225/Risultat.htm
 REG19225,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19225/lista.htm
 REG19376,Vecchissimo,,60m,60 piani Master Donne,https://www.fidal.it/risultati/2019/REG19376/Gara001.htm
@@ -2105,7 +2105,7 @@ REG19228,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Donne,https://www.fidal.i
 REG19228,Vecchissimo,,Salto triplo,Salto triplo/TJ Donne,https://www.fidal.it/risultati/2019/REG19228/Gara129.htm
 REG19228,Vecchissimo,,50m,50 metri Donne,https://www.fidal.it/risultati/2019/REG19228/Gara156.htm
 REG19228,Vecchissimo,,50 Hs h84,50 Hs H84 Donne,https://www.fidal.it/risultati/2019/REG19228/Gara158.htm
-REG19228,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19228/gara.htm
+REG19228,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19228/gara.htm
 REG19228,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2019/REG19228/risultat.htm
 REG19228,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19228/lista.htm
 REG19334,Vecchissimo,,60m,60 piani DONNE,https://www.fidal.it/risultati/2019/REG19334/Gara001.htm
@@ -2257,7 +2257,7 @@ REG19204,Vecchissimo,,Salto con l'asta,Salto con l'asta/PV Cadette,https://www.f
 REG19204,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Cadette,https://www.fidal.it/risultati/2019/REG19204/Gara328.htm
 REG19204,Vecchissimo,,Salto triplo,Salto triplo/TJ Cadette,https://www.fidal.it/risultati/2019/REG19204/Gara329.htm
 REG19204,Vecchissimo,,Peso 3.000Kg,Peso/SP Kg 3.000 Cadette,https://www.fidal.it/risultati/2019/REG19204/Gara331.htm
-REG19204,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19204/gara.htm
+REG19204,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19204/gara.htm
 REG19204,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2019/REG19204/Risultat.htm
 REG19204,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19204/lista.htm
 REG19342,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2019/REG19342/Gara101.htm
@@ -2334,7 +2334,7 @@ REG19575,Vecchissimo,,Peso 1.000Kg,Peso/SP Kg 1.000 Esordienti Femmine 8,https:/
 REG19575,Vecchissimo,,40m,40 metri Esordienti Femmine 8,https://www.fidal.it/risultati/2019/REG19575/Gara757.htm
 REG19575,Vecchissimo,,40m,40 metri Esordienti Maschi 6,https://www.fidal.it/risultati/2019/REG19575/Gara857.htm
 REG19575,Vecchissimo,,40m,40 metri Esordienti Femmine 6,https://www.fidal.it/risultati/2019/REG19575/Gara858.htm
-REG19575,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19575/gara.htm
+REG19575,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19575/gara.htm
 REG19575,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2019/REG19575/risultat.htm
 REG19575,Vecchissimo,,altro,Elenco iscirtti per Società,https://www.fidal.it/risultati/2019/REG19575/lista.htm
 REG19887,Vecchissimo,,Salto triplo,Salto triplo/TJ Cadette,https://www.fidal.it/risultati/2019/REG19887/Gara129.htm
@@ -2374,7 +2374,7 @@ REG19229,Vecchissimo,,60m,60 piani Allieve,https://www.fidal.it/risultati/2019/R
 REG19229,Vecchissimo,,60 Hs h76,60 Hs H 76-8.50 Allieve,https://www.fidal.it/risultati/2019/REG19229/Gara320.htm
 REG19229,Vecchissimo,,Salto in alto,Salto in alto/HJ Allieve,https://www.fidal.it/risultati/2019/REG19229/Gara326.htm
 REG19229,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Allieve,https://www.fidal.it/risultati/2019/REG19229/Gara328.htm
-REG19229,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19229/gara.htm
+REG19229,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19229/gara.htm
 REG19229,Vecchissimo,,altro,Classifica per Regioni,https://www.fidal.it/risultati/2019/REG19229/Soc001.htm
 REG19229,Vecchissimo,,altro,Elenco iscritti per Rappresentativa,https://www.fidal.it/risultati/2019/REG19229/lista.htm
 REG19229,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2019/REG19229/Risultat.htm
@@ -2417,16 +2417,16 @@ REG19999,Vecchissimo,,60 Hs h84,60 Hs H 84-8.50 Cadetti Finale,https://www.fidal
 REG19999,Vecchissimo,,Salto triplo,Salto triplo/TJ Cadetti,https://www.fidal.it/risultati/2019/REG19999/Gara229.htm
 REG19999,Vecchissimo,,altro,Riepilogo risultati,https://www.fidal.it/risultati/2019/REG19999/Gara502.htm
 REG19205,Vecchissimo,,60m,60 piani Ragazzi,https://www.fidal.it/risultati/2019/REG19205/Gara001.htm
-REG19205,Vecchissimo,,5 Hs h60,60 Hs- 5 hs H 60 Ragazzi,https://www.fidal.it/risultati/2019/REG19205/Gara020.htm
+REG19205,Vecchissimo,,60 Hs h60,60 Hs- 5 hs H 60 Ragazzi,https://www.fidal.it/risultati/2019/REG19205/Gara020.htm
 REG19205,Vecchissimo,,Salto in alto,Salto in alto/HJ Ragazzi,https://www.fidal.it/risultati/2019/REG19205/Gara026.htm
 REG19205,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Ragazzi,https://www.fidal.it/risultati/2019/REG19205/Gara028.htm
 REG19205,Vecchissimo,,Peso 2.000Kg,Peso/SP Kg 2.000 Ragazzi,https://www.fidal.it/risultati/2019/REG19205/Gara031.htm
 REG19205,Vecchissimo,,60m,60 piani Ragazze,https://www.fidal.it/risultati/2019/REG19205/Gara101.htm
-REG19205,Vecchissimo,,5 Hs h60,60 Hs- 5 hs H 60 Ragazze,https://www.fidal.it/risultati/2019/REG19205/Gara120.htm
+REG19205,Vecchissimo,,60 Hs h60,60 Hs- 5 hs H 60 Ragazze,https://www.fidal.it/risultati/2019/REG19205/Gara120.htm
 REG19205,Vecchissimo,,Salto in alto,Salto in alto/HJ Ragazze,https://www.fidal.it/risultati/2019/REG19205/Gara126.htm
 REG19205,Vecchissimo,,Salto in lungo,Salto in lungo/LJ Ragazze,https://www.fidal.it/risultati/2019/REG19205/Gara128.htm
 REG19205,Vecchissimo,,Peso 2.000Kg,Peso/SP Kg 2.000 Ragazze,https://www.fidal.it/risultati/2019/REG19205/Gara131.htm
-REG19205,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19205/gara.htm
+REG19205,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19205/gara.htm
 REG19205,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2019/REG19205/Risultat.htm
 REG19205,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19205/lista.htm
 REG19460,Vecchissimo,,60m,60 piani Ragazzi,https://www.fidal.it/risultati/2019/REG19460/Gara001.htm
@@ -2454,7 +2454,7 @@ REG19418,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2019/R
 REG19418,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2019/REG19418/Gara701.htm
 REG19418,Vecchissimo,,60m,60 piani Ragazzi,https://www.fidal.it/risultati/2019/REG19418/Gara801.htm
 REG19418,Vecchissimo,,60m,60 piani Ragazze,https://www.fidal.it/risultati/2019/REG19418/Gara901.htm
-REG19418,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19418/gara.htm
+REG19418,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG19418/gara.htm
 REG19418,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2019/REG19418/Risultat.htm
 REG19418,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG19418/lista.htm
 REG19885,Vecchissimo,,60m,60 metri Cadetti,https://www.fidal.it/risultati/2019/REG19885/Gara001.htm
@@ -2494,7 +2494,7 @@ REG22304,Vecchissimo,,60m,60 metri EM8,https://www.fidal.it/risultati/2019/REG22
 REG22304,Vecchissimo,,60m,60 piani EF8,https://www.fidal.it/risultati/2019/REG22304/Gara701.htm
 REG22304,Vecchissimo,,60m,60 piani EM6,https://www.fidal.it/risultati/2019/REG22304/Gara801.htm
 REG22304,Vecchissimo,,60m,60 piani EF6,https://www.fidal.it/risultati/2019/REG22304/Gara901.htm
-REG22304,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG22304/gara.htm
+REG22304,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG22304/gara.htm
 REG22304,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2019/REG22304/risultat.htm
 REG22304,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG22304/lista.htm
 REG22018,Vecchissimo,,Salto con l'asta,Salto con l'asta/PV Cadette,https://www.fidal.it/risultati/2019/REG22018/Gara127.htm
@@ -2529,7 +2529,7 @@ REG22358,Vecchissimo,,Salto in lungo,Salto in lungo/LJ EF6,https://www.fidal.it/
 REG22358,Vecchissimo,,50m,50 metri EF10,https://www.fidal.it/risultati/2019/REG22358/Gara756.htm
 REG22358,Vecchissimo,,50m,50 metri EF8,https://www.fidal.it/risultati/2019/REG22358/Gara757.htm
 REG22358,Vecchissimo,,50m,50 metri EF6,https://www.fidal.it/risultati/2019/REG22358/Gara758.htm
-REG22358,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG22358/gara.htm
+REG22358,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG22358/gara.htm
 REG22358,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2019/REG22358/Risultat.htm
 REG22358,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG22358/lista.htm
 REG22447,Vecchissimo,,Salto in alto,Salto in alto/HJ Esordienti F 10,https://www.fidal.it/risultati/2019/REG22447/Gara126.htm
@@ -2582,7 +2582,7 @@ REG22359,Vecchissimo,,60m,60 piani Cadetti,https://www.fidal.it/risultati/2019/R
 REG22359,Vecchissimo,,60m,60 piani Cadette,https://www.fidal.it/risultati/2019/REG22359/Gara701.htm
 REG22359,Vecchissimo,,60m,60 piani Ragazzi,https://www.fidal.it/risultati/2019/REG22359/Gara801.htm
 REG22359,Vecchissimo,,60m,60 piani Ragazze,https://www.fidal.it/risultati/2019/REG22359/Gara901.htm
-REG22359,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG22359/gara.htm
+REG22359,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG22359/gara.htm
 REG22359,Vecchissimo,,altro,Tutti i risultati,https://www.fidal.it/risultati/2019/REG22359/Risultat.htm
 REG22359,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG22359/lista.htm
 REG22506,Vecchissimo,,50 Hs Esordienti,50 Hs H50 Esordienti M10,https://www.fidal.it/risultati/2019/REG22506/Gara001.htm
@@ -2610,7 +2610,7 @@ REG22379,Vecchissimo,,50 Hs h91,50 Hs H91 Allievi,https://www.fidal.it/risultati
 REG22379,Vecchissimo,,50m,50 metri Donne,https://www.fidal.it/risultati/2019/REG22379/Gara156.htm
 REG22379,Vecchissimo,,50 Hs h84,50 Hs H84 Donne,https://www.fidal.it/risultati/2019/REG22379/Gara158.htm
 REG22379,Vecchissimo,,50 Hs h76,50 Hs H76 Allieve,https://www.fidal.it/risultati/2019/REG22379/Gara159.htm
-REG22379,Vecchissimo,,boh,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG22379/gara.htm
+REG22379,Vecchissimo,,altro,Elenco iscritti per gara e accredito,https://www.fidal.it/risultati/2019/REG22379/gara.htm
 REG22379,Vecchissimo,,altro,Risultati completi,https://www.fidal.it/risultati/2019/REG22379/risultat.htm
 REG22379,Vecchissimo,,altro,Elenco iscritti per Società,https://www.fidal.it/risultati/2019/REG22379/lista.htm
 REG22432,Vecchissimo,,60 Hs h60,60 Hs H 60 Ragazzi,https://www.fidal.it/risultati/2019/REG22432/Gara020.htm
