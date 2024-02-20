@@ -11,7 +11,7 @@ mese = '';          tipo = '3'
 
 for anno in range(2011, 2025):
     anno = str(anno)
-    folder = 'database/indoor_'+anno+'/'
+    folder = 'database_link/indoor_'+anno+'/'
     file_gare = folder + 'link_gare.csv'
     file_risultati = folder + 'link_risultati.csv'
     file_dizionario = 'Generale/event_dict.json'
