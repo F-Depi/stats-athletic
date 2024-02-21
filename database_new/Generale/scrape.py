@@ -1,7 +1,53 @@
 import requests
 import pandas as pd
-from bs4 import BeautifulSoup
 import re
+from bs4 import BeautifulSoup
+from datetime import datetime
+
+def luogo_data_batteria(date_str):
+    ## l'input è del tipo 'PHOTOFINISHPalaCasali Ancona - 4 gen 2024 - 11:51'
+    ## Gestisce anche cose del tipo 'Raul Guidobaldi - Indoor - 13 gen 2024 - 12:52'
+    ## rimuove 'PHOTOFINISH' se c'è
+    ## restituisce luogo della batteria e data-ora in formato 'YYYY-MM-DD hh:mm:ss'
+    
+    match_data = re.search(r'\b\d+ \w+ \d{4}\b', date_str) # 17 gen 2024
+    match_ora = re.findall(r'\b\d{2}:\d{2}', date_str)      # 13:57
+    
+    # Il luogo sembra sempre essere prima della data
+    if match_data:
+        data_batteria = match_data[0]
+        luogo_batteria = date_str.split(data_batteria)[0].replace('PHOTOFINISH','').replace('-','').strip()
+    
+        mese_batteria = data_batteria.split()[1].lower().strip()[0:3]
+        
+        mesi = {
+        'gen': 1, 'feb': 2, 'mar': 3, 'apr': 4,
+        'mag': 5, 'giu': 6, 'lug': 7, 'ago': 8,
+        'set': 9, 'ott': 10, 'nov': 11, 'dic': 12
+        }
+    
+        parti = data_batteria.split()
+
+        giorno = int(parti[0])
+        mese = mesi[mese_batteria]
+        anno = int(parti[2])
+    
+        # A volte manca l'orario, quindi se non c'è mette 00:00:00
+        if match_ora:
+            ora_batteria = match_ora[-1] # nel sigma vecchio spesso vengono messi l'orario di inizio e poi quello di fine.
+            ora, minuti = map(int, ora_batteria.split(':'))
+            data_ora = datetime(anno, mese, giorno, ora, minuti)
+            
+        else:
+            data_ora = datetime(anno, mese, giorno)
+            
+        return luogo_batteria, data_ora
+    
+    
+    # Se non c'è il giorno
+    else: return date_str, ''
+        
+    
 
 def clean_tempo(tempo):
     
@@ -21,6 +67,7 @@ def clean_tempo(tempo):
 def clean_nome(nome):
     
     nome = nome.replace('(I)','')
+    nome = nome.replace('(FC)','')
     nome = nome.replace('Campionessa Italiana','')
     nome = nome.replace('Campione Italiano','').strip()
     
@@ -83,8 +130,7 @@ def scrape_nuovo_corse(comptetition_row):
                 while batteria_N.iloc[-1,0] == batteria_N.iloc[-1,1]:   # le ultime righe hanno cose che non sono risultati. Vanno tolte e
                     batteria_N = batteria_N.iloc[:-1,:]                 # sfrutto il fatto che sono la stessa cella ripetutta per tutta la riga
                 
-                data_batteria = a.find_all('p')[1].text.split('-')[-2].strip()
-                luogo_batteria = a.find_all('p')[1].text.split('-')[-3].replace('PHOTOFINISH','').strip()
+                (luogo_batteria, data_batteria) = luogo_data_batteria(a.find_all('p')[-1].text)
                 
                 batteria_N['Data'] = data_batteria
                 batteria_N['Luogo'] = luogo_batteria
@@ -94,8 +140,34 @@ def scrape_nuovo_corse(comptetition_row):
                 batteria_N.columns = ['Disciplina', 'Prestazione', 'Atleta','Anno','Categoria','Società','Data','Luogo']
                 batteria_N['Gara'] = url
                 batteria_N['Prestazione'] = batteria_N['Prestazione'].apply(clean_tempo)
+                batteria_N['Atleta'] = batteria_N['Atleta'].apply(clean_nome)
 
                 batterie = pd.concat([batterie, batteria_N]).reset_index(drop=True)
     
     return batterie
             
+
+def scrape_vecchio_corse(competition_row):
+    ## Funzione per fare scraping dei risultati delle corse (individuali), degli ostacoli e della marcia nel sito nuovo ('Versione Sigma' = 'Nuovo')
+    ## input è una riga di un DataFrame con columns=['Codice','Versione Sigma','Warning','Disciplina','Nome','Link']
+    ## Se la versione del sigma in input non è corretta la funzione stampa un errore e non restituisce nulla
+    ## Se la disciplina non è corretta stampa un errore e restituisce un DataFrame vuoto
+    ## Restituisce una DataFrame con columns=['Disciplina', 'Prestazione', 'Atleta','Anno','Categoria','Società','Data','Luogo','Gara]
+    
+    # Controllo la versione del sigma
+    if competition_row['Versione Sigma'] != 'Vecchio':
+        print('Versione sigma '+competition_row['Versione Sigma']+'. Questa funzione funziona con il sigma nuovo')
+        return
+    
+    # Controllo che sia una corsa individuale o la marcia
+    if not(disciplina[0].isdigit() or disciplina.startswith('Marcia')) or 'x' in disciplina:
+        print('Non compatibile con '+disciplina+'. Solo corse individuali e marcia.')
+        return batterie
+    
+    url = competition_row['Link']
+    disciplina = competition_row['Disciplina']
+    batterie = pd.DataFrame(columns=['Disciplina', 'Prestazione', 'Atleta','Anno','Categoria','Società','Data','Luogo','Gara'])
+    
+    
+    
+    return
