@@ -159,15 +159,67 @@ def scrape_vecchio_corse(competition_row):
         print('Versione sigma '+competition_row['Versione Sigma']+'. Questa funzione funziona con il sigma nuovo')
         return
     
+    url = competition_row['Link']
+    disciplina = competition_row['Disciplina']
+    batterie = pd.DataFrame(columns=['Disciplina', 'Prestazione', 'Atleta','Anno','Categoria','Società','Data','Luogo','Gara'])
+    
     # Controllo che sia una corsa individuale o la marcia
     if not(disciplina[0].isdigit() or disciplina.startswith('Marcia')) or 'x' in disciplina:
         print('Non compatibile con '+disciplina+'. Solo corse individuali e marcia.')
         return batterie
     
-    url = competition_row['Link']
-    disciplina = competition_row['Disciplina']
-    batterie = pd.DataFrame(columns=['Disciplina', 'Prestazione', 'Atleta','Anno','Categoria','Società','Data','Luogo','Gara'])
+    r = requests.get(url).text
+    tabelle = pd.read_html(r)
+    tabelle = [tab.astype(str) for tab in tabelle]
+    # Prendo solo le tabelle con più di 4 colonne. Così sono solo tabelle corrispondenti a risultati(*)
+    tab_risultati = []
+    for a in tabelle:
+        if len(a.columns) >= 5:
+            tab_risultati.append(a)
+
+    # (*)il menù di navigazione del sito (HOME Liste x Gara Liste x Team Turni Iniziali Ris. x Gara)
+    # è una tabella molto bravo a sembrare una batteria, se c'è lo tolgo
+    if 'home' in str(tab_risultati[0].iloc[0,0]).lower():
+        tab_risultati = tab_risultati[1:]
     
+    # Ora prendo i titoli delle batterie assieme alla riga dove c'è scritto data e ora
+    soup = BeautifulSoup(r, 'html.parser')
+    titoli = soup.find_all('td', class_='tab_turno_titolo')
+    dataora_tutti = soup.find_all('td', class_='tab_turno_dataora')
     
+    # Se il titolo è 'riepilogo', allora quella dataora e quella tabella non mi interessano. In questo modo dovrei rimanere solo con batterie/serie/finali
     
-    return
+    if len(titoli) != len(tab_risultati): # controllo se ho filtrato correttamente tabelle e titolo delle tabelle
+        print(url)
+        print('Ho trovato ' + str(len(titoli)) + ' titoli e ' + str(len(tab_risultati)) + ' tabelle:')
+        
+    else:
+        for titolo, a, df in zip(titoli, dataora_tutti, tab_risultati):
+            if not('riepilogo' in titolo.text.lower()):
+                
+                if 'Atleta' in df: colonna_atleta = df.columns.get_loc('Atleta')
+                elif 'Athlete' in df: colonna_atleta = df.columns.get_loc('Athlete')
+                else: print('Non trovo la colonna atleta: ' + url)
+                
+                batteria_N = df.iloc[:, colonna_atleta:colonna_atleta+5]
+                batteria_N.dropna(inplace=True)
+                
+                while batteria_N.iloc[-1,0] == batteria_N.iloc[-1,1]:   # le ultime righe hanno cose che non sono risultati. Vanno tolte e
+                    batteria_N = batteria_N.iloc[:-1,:]                 # sfrutto il fatto che sono la stessa cella ripetutta per tutta la riga
+                
+                (luogo_batteria, data_batteria) = luogo_data_batteria(a.text)
+                
+                batteria_N['Data'] = data_batteria
+                batteria_N['Luogo'] = luogo_batteria
+                batteria_N['Disciplina'] = disciplina
+                
+                batteria_N = batteria_N.iloc[:, [7, 4, 0, 1, 2, 3, 5, 6]]
+                batteria_N.columns = ['Disciplina', 'Prestazione', 'Atleta','Anno','Categoria','Società','Data','Luogo']
+                batteria_N['Gara'] = url
+                batteria_N['Prestazione'] = batteria_N['Prestazione'].apply(clean_tempo)
+                batteria_N['Atleta'] = batteria_N['Atleta'].apply(clean_nome)
+                #batteria_N['Anno'] = batteria_N['Anno'].astype(int)     # non ho idea del perché ma con il sigma vecchio mi trasforma 2002 in 2002.0
+
+                batterie = pd.concat([batterie, batteria_N]).reset_index(drop=True)
+                
+    return batterie
