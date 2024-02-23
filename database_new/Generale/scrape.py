@@ -54,10 +54,10 @@ def clean_tempo(tempo):
     tempo = str(tempo)
     tempo = tempo.upper()
     
-    if 'DNF' in tempo: return tempo
-    if 'DNS' in tempo: return tempo
-    if 'NM' in tempo: return tempo
-    if 'DQ' in tempo: return 'DSQ'          # perché sì
+    if 'DNF' in tempo: return 'DNF'
+    if 'DNS' in tempo: return 'DNS'
+    if 'NM' in tempo: return 'NM'
+    if 'DQ' in tempo: return 'DSQ'
     
     IQ_match = re.match(r'(\d[\d.:]*\d)', str(tempo))
     if IQ_match: return IQ_match[0]
@@ -169,56 +169,82 @@ def scrape_vecchio_corse(competition_row):
         return batterie
     
     r = requests.get(url).text
-    tabelle = pd.read_html(r)
-    tabelle = [tab.astype(str) for tab in tabelle]
-    # Prendo solo le tabelle con più di 4 colonne. Così sono solo tabelle corrispondenti a risultati(*)
-    tab_risultati = []
-    for a in tabelle:
-        if len(a.columns) >= 5:
-            tab_risultati.append(a)
+    soup = BeautifulSoup(r, 'html.parser')
 
-    # (*)il menù di navigazione del sito (HOME Liste x Gara Liste x Team Turni Iniziali Ris. x Gara)
-    # è una tabella molto bravo a sembrare una batteria, se c'è lo tolgo
-    if 'home' in str(tab_risultati[0].iloc[0,0]).lower():
-        tab_risultati = tab_risultati[1:]
+    # Ora posso cominciare a scaricare le tabelle della pagina
+    
+    soup_tabelle = soup.find_all('table')
+
+    dfs_risultati = []
+    if soup_tabelle:
+        
+        for soup_tab in soup_tabelle:
+            
+            # Righe delle tabelle
+            rows = soup_tab.find_all('tr', class_=lambda x: x in ['due', 'uno'])
+            
+            tabella_N = []  # tabella N-esima
+            for row in rows:
+                
+                cells = row.find_all('td') # celle della riga
+                
+                for i, cell in enumerate(cells):
+                    if cell.get('id') == 't1_atle': # DEVE esistere almeno la cella Atleta
+                        
+                        # Assumendo che ci sia sempre Atleta, Anno, Categoria, Società, Prestazione
+                        atle_text = cell.text.strip()
+                        anno_text = cells[i+1].text.strip() if i+1 < len(cells) else ''
+                        cate_text = cells[i+2].text.strip() if i+2 < len(cells) else ''
+                        soci_text = cells[i+3].text.strip() if i+3 < len(cells) else ''
+                        pres_text = cells[i+4].text.strip() if i+4 < len(cells) else ''
+                        
+                        data = [atle_text, anno_text, cate_text, soci_text, pres_text]
+                        
+                        # Se tabella_N è non vuota, controllo che l'ultima riga non sia uguale a quella che voglio aggiungere
+                        if tabella_N:
+                            if tabella_N[-1] != data: tabella_N.append(data)
+                        else: tabella_N.append(data)
+                        
+                        # devo interrompere perché causa <tr> non chiusi nel codice html potrei continuare il ciclo sulle celle della riga dopo
+                        break
+                    
+            if tabella_N:
+                df_N = pd.DataFrame(tabella_N, columns=['Atleta','Anno','Categoria','Società','Prestazione'])
+                dfs_risultati.append(df_N)
+        
+    else: print('La pagina è senza tabelle '+url)
+    
+    # la prima tabella è una tabella con tutte le righe delle altre tabelle. Credo succeda per qualche errore di sitassi nel file html
+    dfs_risultati = dfs_risultati[1:]
     
     # Ora prendo i titoli delle batterie assieme alla riga dove c'è scritto data e ora
-    soup = BeautifulSoup(r, 'html.parser')
+    
     titoli = soup.find_all('td', class_='tab_turno_titolo')
     dataora_tutti = soup.find_all('td', class_='tab_turno_dataora')
     
     # Se il titolo è 'riepilogo', allora quella dataora e quella tabella non mi interessano. In questo modo dovrei rimanere solo con batterie/serie/finali
     
-    if len(titoli) != len(tab_risultati): # controllo se ho filtrato correttamente tabelle e titolo delle tabelle
+    if len(titoli) != len(dfs_risultati): # controllo se ho filtrato correttamente tabelle e titolo delle tabelle
         print(url)
-        print('Ho trovato ' + str(len(titoli)) + ' titoli e ' + str(len(tab_risultati)) + ' tabelle:')
+        print('Ho trovato ' + str(len(titoli)) + ' titoli e ' + str(len(dfs_risultati)) + ' tabelle:')
         
     else:
-        for titolo, a, df in zip(titoli, dataora_tutti, tab_risultati):
+        for titolo, a, df in zip(titoli, dataora_tutti, dfs_risultati):
             if not('riepilogo' in titolo.text.lower()):
                 
-                if 'Atleta' in df: colonna_atleta = df.columns.get_loc('Atleta')
-                elif 'Athlete' in df: colonna_atleta = df.columns.get_loc('Athlete')
-                else: print('Non trovo la colonna atleta: ' + url)
-                
-                batteria_N = df.iloc[:, colonna_atleta:colonna_atleta+5]
-                batteria_N.dropna(inplace=True)
-                
-                while batteria_N.iloc[-1,0] == batteria_N.iloc[-1,1]:   # le ultime righe hanno cose che non sono risultati. Vanno tolte e
-                    batteria_N = batteria_N.iloc[:-1,:]                 # sfrutto il fatto che sono la stessa cella ripetutta per tutta la riga
+                batteria_N = df[df['Atleta'] != df['Prestazione']].copy()
                 
                 (luogo_batteria, data_batteria) = luogo_data_batteria(a.text)
                 
                 batteria_N['Data'] = data_batteria
                 batteria_N['Luogo'] = luogo_batteria
                 batteria_N['Disciplina'] = disciplina
-                
-                batteria_N = batteria_N.iloc[:, [7, 4, 0, 1, 2, 3, 5, 6]]
-                batteria_N.columns = ['Disciplina', 'Prestazione', 'Atleta','Anno','Categoria','Società','Data','Luogo']
                 batteria_N['Gara'] = url
+                
                 batteria_N['Prestazione'] = batteria_N['Prestazione'].apply(clean_tempo)
                 batteria_N['Atleta'] = batteria_N['Atleta'].apply(clean_nome)
-                #batteria_N['Anno'] = batteria_N['Anno'].astype(int)     # non ho idea del perché ma con il sigma vecchio mi trasforma 2002 in 2002.0
+
+                batteria_N = batteria_N[['Disciplina','Prestazione','Atleta','Anno','Categoria','Società','Data','Luogo','Gara']]
 
                 batterie = pd.concat([batterie, batteria_N]).reset_index(drop=True)
                 
