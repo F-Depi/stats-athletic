@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import re
-from Generale.scrape import *
+from Generale.func_scrape import *
 
 """ data = {
     'Codice': ['REG34127', 'REG34144', 'REG34144'],
@@ -20,11 +20,20 @@ from Generale.scrape import *
 df = pd.DataFrame(data)
 df = scrape_vecchio_corse(df.iloc[0,:]) """
 
-df1 = pd.read_csv('TEST_vecchio.csv')
-df2 = pd.read_csv('TEST_vecchio2.csv')
-for (ii,a), (ii,b) in zip(df1.iterrows(), df2.iterrows()):
-    #if ii>1356:
-        if df1.iloc[ii,2] != df2.iloc[ii,2]:
-            print(ii+2)
-            break
+#df1 = pd.read_csv('TEST_vecchio.csv')
+#df2 = pd.read_csv('TEST_vecchio2.csv')
+#for (ii,a), (ii,b) in zip(df1.iterrows(), df2.iterrows()):
+#    #if ii>1356:
+#        if df1.iloc[ii,2] != df2.iloc[ii,2]:
+#            print(ii+2)
+#            break
     
+deg = 5
+urls = []
+link = 'vecchio'
+cod = '37'
+for jj in range(1, deg+1):
+    link_jj = link[:-5]+str(jj)+link[-4:]
+    urls.append([cod, link_jj])
+
+print(urls)
