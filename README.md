@@ -19,4 +19,4 @@ Fan statistics and analytics enthusiasts are free to use the database for their 
 
 Contributions to improve and expand the database are welcome! If you have suggestions, enhancements, or additional data sources to include, feel free to open an issue or submit a pull request.
 
-If you spot any mistakes or have feedback, please don't hesitate to email me at: fdp.federico@skiff.com
+If you spot any mistakes or have feedback, please don't hesitate to email me at: fdp.federico@proton.me
