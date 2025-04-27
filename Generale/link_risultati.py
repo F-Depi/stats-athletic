@@ -6,11 +6,9 @@ import time
 start_time = time.time()
 
 
-anno = '2024';      regione = '';       categoria = ''      
+anno = '2025';      regione = '';       categoria = ''      
 mese = '';          tipo = '5'
 
-#for anno in range(2011, 2025):
-#    anno = str(anno)
 folder_link = 'database_link/outdoor_'+anno+'/'
 #folder_link = 'test/'
 file_gare = folder_link + 'link_gare.csv'
@@ -22,11 +20,15 @@ file_dizionario_new = 'Generale/event_dict_new.csv'
 ################# Codici gare (anno, mese, livello, regione, tipo, categoria) ###################
 ## Se file_gare è già presente viene solo aggiornato con i nuovi codici gara
 ## la funzione usata restituisce un DataFrame columns=['Data', 'Codice', 'Ultimo Aggiornamento', 'Nome', 'Home Gara']
-print('---------------------------------------------')
+print("---------------------------------------------")
 
 df_REG_gare = extract_meet_codes_from_calendar(anno,mese,'REG',regione,tipo,categoria)
 df_COD_gare = extract_meet_codes_from_calendar(anno,mese,'COD',regione,tipo,categoria)
-df_gare = pd.concat([df_REG_gare, df_COD_gare], ignore_index=True)
+if df_REG_gare is not None and df_COD_gare is not None:
+    df_gare = pd.concat([df_REG_gare, df_COD_gare], ignore_index=True)
+else:
+    print("df_REG_gare o df_COD_gare è None, non posso continuare")
+    exit()
 df_gare[['Home','Risultati','Versione Sigma','Status']] = ''
 df_gare = df_gare[['Data','Codice','Nome','Home Gara','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']]
 
@@ -35,7 +37,7 @@ if not os.path.exists(folder_link): os.makedirs(folder_link)
 
 if os.path.exists(file_gare):
 
-    print('E\' stato trovato il file ' + file_gare)
+    print(f"E' stato trovato il file {file_gare}")
 
     df_gare_old = pd.read_csv(file_gare, sep='~')
     df_gare_old['Data'] = pd.to_datetime(df_gare_old['Data']).dt.date
@@ -45,12 +47,14 @@ if os.path.exists(file_gare):
     df_gare = pd.concat([df_gare_old, df_gare_new], ignore_index=True)
 
     if len(df_gare_new) > 0:
-        print('Sono stati aggiunti i codici gare:\n')
+        print("Sono stati aggiunti i codici gare:\n")
         for cod in df_gare_new['Codice']: print(cod + '\n')
 
-    else: print('Non sono stati aggiunti codici gare\n')
+    else:
+        print("Non sono stati aggiunti codici gare\n")
 
-else: print('Non ho trovato il file ' + file_gare + ', lo creo con i '+str(len(df_gare))+' codici gare trovati.')
+else:
+    print(f"Non ho trovato il file {file_gare}, lo creo con i {str(len(df_gare))} codici gare trovati.")
 
 ## Mettiamo le gare in ordine cronologico
 df_gare = df_gare.sort_values(by='Data')
@@ -66,17 +70,17 @@ df_gare = df_gare.reset_index(drop=True)
 ## (data_ultimo_aggiornamento - data_gara) < 7 giorni
 ## Il DataFrame deve essere già del tipo:
 ## ['Data','Codice','Home','Risultati','Versione Sigma','Status','Ultimo Aggiornamento']
-print('---------------------------------------------')
-update_condition = 'date_5'
+print("---------------------------------------------")
+update_condition = 'date_0'
 
 df_gare = get_meet_info(df_gare, update_condition)
-if df_gare:
+if df_gare is not None:
     df_gare.to_csv(file_gare, sep='~', index=False)
 
 ##################################################################################################
 
 
-################# Otteniamo i link a ogni risultato di ogni disciplina per ogni gara #############
+############## Otteniamo i link a ogni risultato di ogni disciplina per ogni gara ################
 ## usiamo come DataFrame ['Codice', 'Versione Sigma', 'Disciplina', 'Nome', 'Link']
 ## per ora ci occupiamo solo di trovare 'Nome' e 'Link'
 ## get_events_link() prende i link trovati prima e tira fuori i link alle pagine di risultati delle
@@ -85,20 +89,20 @@ if df_gare:
 ## Quindi gare più vecchie non vengono aggiornate, nel bene o nel male. Dovrei aggiungere un'altra
 ## colonna con 'Ultimo Aggiornamento', ma non oggi.
 print('\n---------------------------------------------')
-print('Ora cerco i link agli eventi di ogni gara')
+print("Ora cerco i link agli eventi di ogni gara")
 
-update_condition = 'date_5'
+update_condition = 'date_0'
 
 if os.path.exists(file_risultati):
 
-    print('Ho trovato il file di risultati '+file_risultati+', aggiorno questo.')
+    print(f"Ho trovato il file di risultati {file_risultati}, aggiorno questo.")
     df_risultati_old = pd.read_csv(file_risultati)
 
     df_risultati = get_events_link(df_gare, update_condition, df_risultati_old)
 
 else:
-    print('Non ho trovato il file ' + file_risultati + ', lo creo.')
-    df_risultati = get_events_link(df_gare,'ok')
+    print(f"Non ho trovato il file {file_risultati}, lo creo.")
+    df_risultati = get_events_link(df_gare, 'ok')
 
 df_risultati = df_risultati.drop_duplicates(subset=['Link'])
 df_risultati.to_csv(file_risultati, index=False)
@@ -155,8 +159,8 @@ for ii, row  in df_risultati.iterrows():
     eve_spec = ''
     eve_gen = ''
 
-    (eve_gen, warn_gen) = assegna_evento_generale(nome, link)
-    (eve_spec, warn_spec) = assegna_evento_specifico(nome, eve_gen)
+    eve_gen, warn_gen = assegna_evento_generale(nome, link)
+    eve_spec, warn_spec = assegna_evento_specifico(nome, eve_gen)
 
     df_risultati.loc[ii,'Disciplina'] = eve_spec
     df_risultati.loc[ii,'Warning'] = (warn_gen+' '+warn_spec).strip()

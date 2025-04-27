@@ -1,11 +1,12 @@
 import pandas as pd
 from bs4 import BeautifulSoup
+from pandas.core.api import DataFrame
 import requests
 import re
 from datetime import date, datetime
 
 
-def extract_meet_codes_from_calendar(anno, mese, livello, regione, tipo, categoria):
+def extract_meet_codes_from_calendar(anno, mese, livello, regione, tipo, categoria) -> pd.DataFrame | None:
     ## Scarica informazioni sulle gare presenti nel calendario fidal https://www.fidal.it/calendario.php
      # Per ogni gara scarica codice gara, data, nome, home page della gara
      # 'Ultimo Aggiornamento' è messo di defaul al 31 marzo 1896, data simbolica per dire che i risultati
@@ -59,15 +60,15 @@ def extract_meet_codes_from_calendar(anno, mese, livello, regione, tipo, categor
 
         else:
             print('No tables with class \'table_btm\' found')
-            return
+            return None
         
     else:
         print("Failed to fetch the webpage. Status code:", response.status_code)
-        return []
+        return None
 
 
 
-def get_meet_info(df_gare, update_criteria):
+def get_meet_info(df_gare, update_criteria) -> pd.DataFrame | None:
     ## Trova i link da mettere nelle colonne 'Home', 'Risultati' per ogni meeting
      # aggiorna anche le colonne 'Versione Sigma','Status','Ultimo Aggiornamento' perché sono utili.
      #
@@ -112,7 +113,7 @@ def get_meet_info(df_gare, update_criteria):
         
     else:
         print('Update criteria non valido. Quelli validi sono:\n\'date_N\', \'status\' and \'all\'')
-        return
+        return None
     
     if indices == []:
         print('Non c\'è nulla da aggiornare')
@@ -199,7 +200,7 @@ def get_meet_info(df_gare, update_criteria):
     df_gare['Ultimo Aggiornamento'] = pd.to_datetime(df_gare['Ultimo Aggiornamento']).dt.date
     df_gare['Data'] = pd.to_datetime(df_gare['Data']).dt.date
 
-    return(df_gare)
+    return df_gare
 
 
 

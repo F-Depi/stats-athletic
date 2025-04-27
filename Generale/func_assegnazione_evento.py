@@ -297,145 +297,13 @@ def info_ostacoli(nome):
     
     ## gli ostacoli sono così incasinati che ho dovuto fare una funzione a parte
     
-    nome = nome.lower().replace('finale','').strip()
+    nome = nome.lower().replace('finale','').strip().replace('ostacoli', 'hs')
     spec = ''
     warn_spec = ''
     found = False
-        
-    if nome[0].isdigit(): #comincia con un numero, speranzosamente la dist. della gara
-        
-        # esordienti
-        match_eso1 = re.search(r'esordienti', nome)     # esordienti
-        match_eso2 = re.search(r'\bef\d+', nome)        # EF8
-        match_eso3 = re.search(r'\bem\d+', nome)        # EM5
-        match_eso4 = re.search(r'\bef\b', nome)         # EF
-        match_eso5 = re.search(r'\bem\b', nome)         # EM
-        match_eso6 = re.search(r'\bef\w\b', nome)       # EFA
-        match_eso7 = re.search(r'\bem\w\b', nome)       # EMB
-        
-        if not(found) and (match_eso1 or match_eso2 or match_eso3 or match_eso4 or match_eso5 or match_eso6 or match_eso7):
-            dist = re.search(r'\d+', nome)[0]
-            spec = dist.strip()+' Hs Esordienti'
-            found = True
-        
-        # master
-        if not(found) and check_master(nome):
-            spec = re.search(r'\d+', nome)[0].strip()+' Hs Master'
-            found = True
-            
-        # togliamoci dai piedi quelli scritti bene
-        pat_hs0 = r'\d+hsh\d+-\d.\d{2}' # 60hsh106-9.14
-        match_hs0 = re.search(pat_hs0, nome.replace(' ',''))
-        
-        if not(found) and match_hs0:
-            spec = match_hs0[0].strip().split('h')[0]+' Hs h'+match_hs0[0].strip().split('h')[2][:-5]
-            found = True
-        
-        # passiamo a quelli scritti senza distanza
-        match_hs1 = re.search(r'h\d+', nome.replace(' ',''))      # h100
-        
-        if not(found) and match_hs1:
-            dist = re.search(r'\d+hs', nome.replace(' ',''))[0].strip().split('h')[0]      # 60hs
-            h = match_hs1[0].strip().split('h')[-1]
-            
-            if int(dist) > 110:
-                print('Benvenuto alle outdoor')
-                
-            spec = dist+' Hs h'+h
-            found = True
-        
-        # ora devo indentificare le categorie se voglio sapere l'altezza dell'ostacolo
-        # ragazzi
-        dist = re.search(r'\d+', nome)[0].strip()
-        match_hs_r0 = re.search(r'ragazz', nome)   # ragazz
-        match_hs_r1 = re.search(r'\brm\b', nome)   # rm
-        match_hs_r2 = re.search(r'\brf\b', nome)   # rf
-        
-        if not(found) and (match_hs_r0 or match_hs_r1 or match_hs_r2):
-            spec = dist+' Hs h60'
-            found = True
-            
-        # cadetti e cadette
-        match_hs_c1 = re.search(r'cadetti', nome)  # cadetti
-        match_hs_c2 = re.search(r'\bcm\b', nome)   # cm
-        match_hs_c3 = re.search(r'cadette', nome)  # cadettte
-        match_hs_c4 = re.search(r'\bcf\b', nome)   # cf
-        
-        if not(found) and (match_hs_c1 or match_hs_c2):
-            spec = dist+' Hs h84'
-            found = True
 
-        if not(found) and (match_hs_c3 or match_hs_c4):
-            spec = dist+' Hs h76'
-            found = True
-            
-        # allievi e allieve
-        match_hs_a1 = re.search(r'allievi', nome)  # allievi
-        match_hs_a2 = re.search(r'\bam\b', nome)   # am
-        match_hs_a3 = re.search(r'allieve', nome)  # allieve
-        match_hs_a4 = re.search(r'\baf\b', nome)   # af
-        
-        if not(found) and (match_hs_a1 or match_hs_a2):
-            spec = dist+' Hs h91'
-            found = True
-
-        if not(found) and (match_hs_a3 or match_hs_a4):
-            spec = dist+' Hs h76'
-            found = True
-            
-        # junior
-        match_hs_j1 = re.search(r'junior u', nome)     # junior u
-        match_hs_j2 = re.search(r'junior m', nome)     # junior m
-        match_hs_j3 = re.search(r'juniores u', nome)   # juniores u
-        match_hs_j4 = re.search(r'juniores m', nome)   # juniores m
-        match_hs_j5 = re.search(r'\bjm\b', nome)       # jm
-        match_hs_j6 = re.search(r'junior d', nome)     # junior d
-        match_hs_j7 = re.search(r'junior f', nome)     # junior f
-        match_hs_j8 = re.search(r'juniores d', nome)   # juniores d
-        match_hs_j9 = re.search(r'juniores f', nome)   # juniores f
-        match_hs_j10 = re.search(r'\bjf\b', nome)      # jf
-        
-        if not(found) and (match_hs_j1 or match_hs_j2 or match_hs_j3 or match_hs_j4 or match_hs_j5):
-            spec = dist+' Hs h100'
-            found = True
-        
-        if not(found) and (match_hs_j6 or match_hs_j7 or match_hs_j8 or match_hs_j9 or match_hs_j10):
-            spec = dist+' Hs h84'
-            found = True
-        
-        # In teoria mi sono rimasti solo gli assoluti ora. Devo solo distinguere tra uomo e donna
-        match_hs_ass1 = re.search(r'uomini', nome)     # uomini
-        match_hs_ass2 = re.search(r'men', nome)        # men
-        match_hs_ass3 = re.search(r'maschil\w', nome)   # maschile
-        match_hs_ass4 = re.search(r'\bm\b', nome)      # m
-        match_hs_ass5 = re.search(r'\bu\b', nome)      # u
-        match_hs_ass6 = re.search(r'donne', nome)      # donne
-        match_hs_ass7 = re.search(r'women', nome)      # women
-        match_hs_ass8 = re.search(r'femminil\w', nome)  # maschile
-        match_hs_ass9 = re.search(r'\bf\b', nome)      # f
-        match_hs_ass10 = re.search(r'\bd\b', nome)     # d
-        
-        if not(found) and (match_hs_ass1 or match_hs_ass2 or match_hs_ass3 or match_hs_ass4 or match_hs_ass5):
-            spec = dist+' Hs h106'
-            warn_spec = 'a esclusione'
-            found = True
-        
-        if not(found) and (match_hs_ass6 or match_hs_ass7 or match_hs_ass8 or match_hs_ass9 or match_hs_ass10):
-            spec = dist+' Hs h84'
-            warn_spec = 'a esclusione'
-            found = True
-        
-        if not(found):
-            spec = dist+' Hs'
-            warn_spec = 'non conosco l\'altezza'
-        
-        #if check > 2:
-        #    warn_spec = 'sus, ho trovato '+str(check)+' pattern'
-            
-        return spec, warn_spec
-        
-        
-    else:
+    #Se non comincia con un numero, faccio solo un guess su quale potrebbe essere la distanza della gara
+    if nome[0].isdigit() is False:        
         match_dist = re.search(r'\d+', nome)
         if match_dist:
             dist = match_dist[0].strip()
@@ -446,6 +314,140 @@ def info_ostacoli(nome):
             warn_spec = 'Non conosco la distanza'
         return spec, warn_spec
 
+    # D'ora in poi possiamo assumere che 'nome' cominci con un numero
+
+    # esordienti
+    match_eso1 = re.search(r'esordienti', nome)     # esordienti
+    match_eso2 = re.search(r'\bef\d+', nome)        # EF8
+    match_eso3 = re.search(r'\bem\d+', nome)        # EM5
+    match_eso4 = re.search(r'\bef\b', nome)         # EF
+    match_eso5 = re.search(r'\bem\b', nome)         # EM
+    match_eso6 = re.search(r'\bef\w\b', nome)       # EFA
+    match_eso7 = re.search(r'\bem\w\b', nome)       # EMB
+    
+    if not(found) and (match_eso1 or match_eso2 or match_eso3 or match_eso4 or match_eso5 or match_eso6 or match_eso7):
+        dist = re.search(r'\d+', nome)[0]
+        spec = dist.strip()+' Hs Esordienti'
+        found = True
+    
+    # master
+    if not(found) and check_master(nome):
+        spec = re.search(r'\d+', nome)[0].strip()+' Hs Master'
+        found = True
+        
+    # togliamoci dai piedi quelli scritti bene
+    pat_hs0 = r'\d+hsh\d+-\d.\d{2}' # 60hsh106-9.14
+    match_hs0 = re.search(pat_hs0, nome.replace(' ',''))
+    
+    if not(found) and match_hs0:
+        spec = match_hs0[0].strip().split('h')[0]+' Hs h'+match_hs0[0].strip().split('h')[2][:-5]
+        found = True
+    
+    # passiamo a quelli scritti senza distanza
+    match_hs1 = re.search(r'h\d+', nome.replace(' ',''))      # h100
+    
+    if not(found) and match_hs1:
+        print(nome)
+        dist = re.search(r'\d+[^\d]*hs', nome.replace(' ', ''), re.IGNORECASE)[0]  # match full "number-junk-hs"
+        dist = re.search(r'\d+', dist)[0]  # extract only the number
+        h = match_hs1[0].strip().split('h')[-1]
+        
+        if int(dist) > 110:
+            print('Benvenuto alle outdoor')
+            
+        spec = dist+' Hs h'+h
+        found = True
+    
+    # ora devo indentificare le categorie se voglio sapere l'altezza dell'ostacolo
+    # ragazzi
+    dist = re.search(r'\d+', nome)[0].strip()
+    match_hs_r0 = re.search(r'ragazz', nome)   # ragazz
+    match_hs_r1 = re.search(r'\brm\b', nome)   # rm
+    match_hs_r2 = re.search(r'\brf\b', nome)   # rf
+    
+    if not(found) and (match_hs_r0 or match_hs_r1 or match_hs_r2):
+        spec = dist+' Hs h60'
+        found = True
+        
+    # cadetti e cadette
+    match_hs_c1 = re.search(r'cadetti', nome)  # cadetti
+    match_hs_c2 = re.search(r'\bcm\b', nome)   # cm
+    match_hs_c3 = re.search(r'cadette', nome)  # cadettte
+    match_hs_c4 = re.search(r'\bcf\b', nome)   # cf
+    
+    if not(found) and (match_hs_c1 or match_hs_c2):
+        spec = dist+' Hs h84'
+        found = True
+
+    if not(found) and (match_hs_c3 or match_hs_c4):
+        spec = dist+' Hs h76'
+        found = True
+        
+    # allievi e allieve
+    match_hs_a1 = re.search(r'allievi', nome)  # allievi
+    match_hs_a2 = re.search(r'\bam\b', nome)   # am
+    match_hs_a3 = re.search(r'allieve', nome)  # allieve
+    match_hs_a4 = re.search(r'\baf\b', nome)   # af
+    
+    if not(found) and (match_hs_a1 or match_hs_a2):
+        spec = dist+' Hs h91'
+        found = True
+
+    if not(found) and (match_hs_a3 or match_hs_a4):
+        spec = dist+' Hs h76'
+        found = True
+        
+    # junior
+    match_hs_j1 = re.search(r'junior u', nome)     # junior u
+    match_hs_j2 = re.search(r'junior m', nome)     # junior m
+    match_hs_j3 = re.search(r'juniores u', nome)   # juniores u
+    match_hs_j4 = re.search(r'juniores m', nome)   # juniores m
+    match_hs_j5 = re.search(r'\bjm\b', nome)       # jm
+    match_hs_j6 = re.search(r'junior d', nome)     # junior d
+    match_hs_j7 = re.search(r'junior f', nome)     # junior f
+    match_hs_j8 = re.search(r'juniores d', nome)   # juniores d
+    match_hs_j9 = re.search(r'juniores f', nome)   # juniores f
+    match_hs_j10 = re.search(r'\bjf\b', nome)      # jf
+    
+    if not(found) and (match_hs_j1 or match_hs_j2 or match_hs_j3 or match_hs_j4 or match_hs_j5):
+        spec = dist+' Hs h100'
+        found = True
+    
+    if not(found) and (match_hs_j6 or match_hs_j7 or match_hs_j8 or match_hs_j9 or match_hs_j10):
+        spec = dist+' Hs h84'
+        found = True
+    
+    # In teoria mi sono rimasti solo gli assoluti ora. Devo solo distinguere tra uomo e donna
+    match_hs_ass1 = re.search(r'uomini', nome)     # uomini
+    match_hs_ass2 = re.search(r'men', nome)        # men
+    match_hs_ass3 = re.search(r'maschil\w', nome)   # maschile
+    match_hs_ass4 = re.search(r'\bm\b', nome)      # m
+    match_hs_ass5 = re.search(r'\bu\b', nome)      # u
+    match_hs_ass6 = re.search(r'donne', nome)      # donne
+    match_hs_ass7 = re.search(r'women', nome)      # women
+    match_hs_ass8 = re.search(r'femminil\w', nome)  # maschile
+    match_hs_ass9 = re.search(r'\bf\b', nome)      # f
+    match_hs_ass10 = re.search(r'\bd\b', nome)     # d
+    
+    if not(found) and (match_hs_ass1 or match_hs_ass2 or match_hs_ass3 or match_hs_ass4 or match_hs_ass5):
+        spec = dist+' Hs h106'
+        warn_spec = 'a esclusione'
+        found = True
+    
+    if not(found) and (match_hs_ass6 or match_hs_ass7 or match_hs_ass8 or match_hs_ass9 or match_hs_ass10):
+        spec = dist+' Hs h84'
+        warn_spec = 'a esclusione'
+        found = True
+    
+    if not(found):
+        spec = dist+' Hs'
+        warn_spec = 'non conosco l\'altezza'
+    
+    #if check > 2:
+    #    warn_spec = 'sus, ho trovato '+str(check)+' pattern'
+        
+    return spec, warn_spec
+        
 
 
 def assegna_evento_specifico(nome, eve):
